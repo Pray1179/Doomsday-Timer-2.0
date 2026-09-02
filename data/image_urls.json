@@ -1,0 +1,4 @@
+{
+  "_comment": "Per-character headshot sources, keyed by slug. Marvel's CDN URLs are content-hashed and must be captured from the character page (browser: right-click portrait -> Copy image address). Paste them here, then run: python3 scripts/fetch_images.py",
+  "robert-downey-jr": null
+}

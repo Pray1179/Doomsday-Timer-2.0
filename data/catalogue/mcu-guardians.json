@@ -1,0 +1,1022 @@
+{
+  "characters": [
+    {
+      "id": "star-lord-peter-quill",
+      "name": "Peter Quill",
+      "alias": "Star-Lord",
+      "aliases": [
+        "Peter Quill",
+        "The Legendary Star-Lord"
+      ],
+      "portrayed_by": "Chris Pratt",
+      "universe": "Earth-616 / MCU",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "Guardians of the Galaxy"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "mcu",
+        "guardians",
+        "space"
+      ],
+      "status": "Active",
+      "debut_title": "Guardians of the Galaxy (2014)",
+      "debut_year": 2014,
+      "summary": "Half-human, half-Celestial abducted from Earth in 1988 and raised by the Ravager Yondu. Leader of the Guardians, he sacrificed his father Ego's power to save the galaxy. Blipped for five years after the Snap, then rejoined his found family before the Guardians' departure with a new team.",
+      "image_url": "../assets/img/cat-star-lord-peter-quill.jpg",
+      "image_source_url": "https://en.wikipedia.org/wiki/Chris%20Pratt%20as%20Peter%20Quill.jpeg",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Peter Quill portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Key player across both Guardians films, the two Avengers films, and the Guardians Holiday Special; leaves with the new Guardians at the end of Vol. 3."
+      ],
+      "related_titles": [
+        "Guardians of the Galaxy (2014)",
+        "Avengers: Infinity War (2018)",
+        "Guardians of the Galaxy Vol. 3 (2023)"
+      ],
+      "allies": [
+        "gamora",
+        "rocket",
+        "groot",
+        "drax",
+        "mantis",
+        "nebula",
+        "kraglin",
+        "yondu-udonta"
+      ],
+      "enemies": [
+        "ego-the-living-planet"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Star-Lord_(Marvel_Cinematic_Universe)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "gamora",
+      "name": "Gamora",
+      "alias": "Gamora",
+      "aliases": [
+        "The Deadliest Woman in the Galaxy"
+      ],
+      "portrayed_by": "Zoe Saldaña",
+      "universe": "Earth-616 / MCU",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "Guardians of the Galaxy"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "mcu",
+        "guardians",
+        "space"
+      ],
+      "status": "Deceased",
+      "debut_title": "Guardians of the Galaxy (2014)",
+      "debut_year": 2014,
+      "summary": "The last daughter of Thanos, trained as an assassin before defecting to the Guardians. Thanos sacrificed her on Vormir for the Soul Stone in 2018. A 2014-era variant displaced into the present during Endgame survives and finds a new home with the Ravagers.",
+      "image_url": "../assets/img/cat-gamora.webp",
+      "image_source_url": "https://en.wikipedia.org/wiki/Gamora_%28Marvel_Cinematic_Universe%29",
+      "image_source_name": "Wikipedia",
+      "image_alt": "Gamora portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Original timeline Gamora dies on Vormir (Infinity War); a 2014 variant survives Endgame and Vol. 3."
+      ],
+      "related_titles": [
+        "Guardians of the Galaxy (2014)",
+        "Avengers: Endgame (2019)",
+        "Guardians of the Galaxy Vol. 3 (2023)"
+      ],
+      "allies": [
+        "star-lord-peter-quill",
+        "rocket",
+        "groot",
+        "drax",
+        "mantis",
+        "nebula"
+      ],
+      "enemies": [
+        "thanos",
+        "ego-the-living-planet",
+        "ronan-the-accuser"
+      ],
+      "verified": true,
+      "notes": "Separate record from the surviving 2014 variant is not kept; the current MCU Gamora is that variant.",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Gamora_(Marvel_Cinematic_Universe)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "rocket",
+      "name": "Rocket",
+      "alias": "Rocket",
+      "aliases": [
+        "Rocket Raccoon",
+        "Rocket the Magnificent"
+      ],
+      "portrayed_by": "Bradley Cooper (voice)",
+      "universe": "Earth-616 / MCU",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "Guardians of the Galaxy"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "mcu",
+        "guardians",
+        "space"
+      ],
+      "status": "Active",
+      "debut_title": "Guardians of the Galaxy (2014)",
+      "debut_year": 2014,
+      "summary": "A genetically engineered raccoon-like weapons expert created by the High Evolutionary. He becomes the new leader of the Guardians after Adam Warlock nearly kills him, then takes a captain's chair as the team reboots in Vol. 3.",
+      "image_url": "../assets/img/cat-rocket.png",
+      "image_source_url": "https://en.wikipedia.org/wiki/Rocket%20Raccoon%20singing%20in%20a%20spaceship%2C%20from%20Guardians%20of%20the%20Galaxy%20Vol%203%2C%202023.png",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Rocket portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Origin revealed fully in Vol. 3; becomes the Guardians' captain at its end."
+      ],
+      "related_titles": [
+        "Guardians of the Galaxy (2014)",
+        "Avengers: Endgame (2019)",
+        "Guardians of the Galaxy Vol. 3 (2023)"
+      ],
+      "allies": [
+        "star-lord-peter-quill",
+        "groot",
+        "gamora",
+        "drax",
+        "mantis",
+        "nebula"
+      ],
+      "enemies": [
+        "high-evolutionary"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Rocket_(Marvel_Cinematic_Universe)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "groot",
+      "name": "Groot",
+      "alias": "Groot",
+      "aliases": [
+        "Baby Groot",
+        "Teen Groot",
+        "I Am Groot"
+      ],
+      "portrayed_by": "Vin Diesel (voice)",
+      "universe": "Earth-616 / MCU",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "Guardians of the Galaxy"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "mcu",
+        "guardians",
+        "space",
+        "i-am-groot"
+      ],
+      "status": "Active",
+      "debut_title": "Guardians of the Galaxy (2014)",
+      "debut_year": 2014,
+      "summary": "A tree-like Flora Colossus who sacrifices himself to save his family in the first film, regrown from a twig as Baby Groot. The current Groot, now a full adult in Vol. 3, enters a new unlikely partnership with Rocket.",
+      "image_url": "../assets/img/cat-groot.jpg",
+      "image_source_url": "https://en.wikipedia.org/wiki/Vin%20Diesel%20as%20teenage%20Groot.jpeg",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Groot portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Original Groot dies in Guardians 1; the twig Groot is a distinct growth of the same character and featured in the I Am Groot shorts."
+      ],
+      "related_titles": [
+        "Guardians of the Galaxy (2014)",
+        "I Am Groot (2022)",
+        "Guardians of the Galaxy Vol. 3 (2023)"
+      ],
+      "allies": [
+        "rocket",
+        "star-lord-peter-quill",
+        "gamora",
+        "drax",
+        "mantis",
+        "kraglin"
+      ],
+      "enemies": [
+        "high-evolutionary",
+        "ego-the-living-planet"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Groot_(Marvel_Cinematic_Universe)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "drax",
+      "name": "Drax",
+      "alias": "Drax the Destroyer",
+      "aliases": [
+        "Drax",
+        "The Destroyer"
+      ],
+      "portrayed_by": "Dave Bautista",
+      "universe": "Earth-616 / MCU",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "Guardians of the Galaxy"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "mcu",
+        "guardians",
+        "space"
+      ],
+      "status": "Active",
+      "debut_title": "Guardians of the Galaxy (2014)",
+      "debut_year": 2014,
+      "summary": "A grieving warrior whose family was murdered by Ronan. He joins the Guardians seeking vengeance, and over time softens into a comic-relief father figure before joining the team's new era and eventually staying on Knowhere to raise the children.",
+      "image_url": "../assets/img/cat-drax.jpg",
+      "image_source_url": "https://en.wikipedia.org/wiki/Dave%20Bautista%20as%20Drax.jpg",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Drax portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Stays on Knowhere with Nebula at the end of Vol. 3 rather than departing with the new team."
+      ],
+      "related_titles": [
+        "Guardians of the Galaxy (2014)",
+        "Avengers: Infinity War (2018)",
+        "Guardians of the Galaxy Vol. 3 (2023)"
+      ],
+      "allies": [
+        "star-lord-peter-quill",
+        "gamora",
+        "rocket",
+        "groot",
+        "mantis",
+        "nebula"
+      ],
+      "enemies": [
+        "ronan-the-accuser",
+        "thanos"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Drax_(Marvel_Cinematic_Universe)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "mantis",
+      "name": "Mantis",
+      "alias": "Mantis",
+      "aliases": [
+        "Celestial's daughter"
+      ],
+      "portrayed_by": "Pom Klementieff",
+      "universe": "Earth-616 / MCU",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "Guardians of the Galaxy"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "mcu",
+        "guardians",
+        "space"
+      ],
+      "status": "Active",
+      "debut_title": "Guardians of the Galaxy Vol. 2 (2017)",
+      "debut_year": 2017,
+      "summary": "Raised by Ego as a sleeping servant with the power to sense and manipulate emotions. She uses that empathy to help stop Ego, joins the Guardians, and at the end of Vol. 3 leaves to discover her own path across the galaxy.",
+      "image_url": "../assets/img/cat-mantis.webp",
+      "image_source_url": "https://en.wikipedia.org/wiki/Mantis_%28Marvel_Cinematic_Universe%29",
+      "image_source_name": "Wikipedia",
+      "image_alt": "Mantis portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Ego's daughter, making her Peter Quill's sister; departs the Guardians in Vol. 3."
+      ],
+      "related_titles": [
+        "Guardians of the Galaxy Vol. 2 (2017)",
+        "Avengers: Endgame (2019)",
+        "Guardians of the Galaxy Vol. 3 (2023)"
+      ],
+      "allies": [
+        "star-lord-peter-quill",
+        "gamora",
+        "rocket",
+        "groot",
+        "drax",
+        "kraglin"
+      ],
+      "enemies": [
+        "ego-the-living-planet",
+        "high-evolutionary"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Mantis_(Marvel_Cinematic_Universe)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "nebula",
+      "name": "Nebula",
+      "alias": "Nebula",
+      "aliases": [
+        "The Mad Titan's daughter"
+      ],
+      "portrayed_by": "Karen Gillan",
+      "universe": "Earth-616 / MCU",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "Guardians of the Galaxy"
+      ],
+      "character_type": "Anti-hero",
+      "tags": [
+        "mcu",
+        "guardians",
+        "space"
+      ],
+      "status": "Active",
+      "debut_title": "Guardians of the Galaxy (2014)",
+      "debut_year": 2014,
+      "summary": "Thanos's cybernetically rebuilt daughter who endured torture each time she lost to Gamora. She turns against her father, helps the Avengers in the Time Heist, and eventually finds a home with the Ravagers before rebuilding them in Vol. 3.",
+      "image_url": "../assets/img/cat-nebula.webp",
+      "image_source_url": "https://en.wikipedia.org/wiki/Nebula_%28Marvel_Cinematic_Universe%29",
+      "image_source_name": "Wikipedia",
+      "image_alt": "Nebula portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Tortured by Thanos repeatedly as a child; key to the Time Heist's Nebula/Gamora encounters in Endgame."
+      ],
+      "related_titles": [
+        "Guardians of the Galaxy (2014)",
+        "Avengers: Endgame (2019)",
+        "Guardians of the Galaxy Vol. 3 (2023)"
+      ],
+      "allies": [
+        "gamora",
+        "star-lord-peter-quill",
+        "rocket",
+        "groot",
+        "drax",
+        "mantis"
+      ],
+      "enemies": [
+        "thanos",
+        "ronan-the-accuser",
+        "high-evolutionary"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Nebula_(Marvel_Cinematic_Universe)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "kraglin",
+      "name": "Kraglin Obfonteri",
+      "alias": "Kraglin",
+      "aliases": [],
+      "portrayed_by": "Sean Gunn",
+      "universe": "Earth-616 / MCU",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "Guardians of the Galaxy",
+        "Ravagers"
+      ],
+      "character_type": "Team-support",
+      "tags": [
+        "mcu",
+        "guardians",
+        "space"
+      ],
+      "status": "Active",
+      "debut_title": "Guardians of the Galaxy (2014)",
+      "debut_year": 2014,
+      "summary": "Yondu's loyal first mate who becomes one of the new Ravagers. He wields Yondu's whistling arrow after inheriting it and serves as a trusted lieutenant to the Guardians and the Ravager crew.",
+      "image_url": "",
+      "image_source_url": "",
+      "image_source_name": "",
+      "image_alt": "",
+      "image_verified": false,
+      "source_notes": [
+        "Inherits Yondu's fin and arrow; helps lead the new Ravagers in Vol. 3."
+      ],
+      "related_titles": [
+        "Guardians of the Galaxy (2014)",
+        "Guardians of the Galaxy Vol. 2 (2017)",
+        "Guardians of the Galaxy Vol. 3 (2023)"
+      ],
+      "allies": [
+        "yondu-udonta",
+        "star-lord-peter-quill",
+        "rocket",
+        "gamora"
+      ],
+      "enemies": [],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Kraglin",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "yondu-udonta",
+      "name": "Yondu Udonta",
+      "alias": "Yondu",
+      "aliases": [
+        "The Ravager"
+      ],
+      "portrayed_by": "Michael Rooker",
+      "universe": "Earth-616 / MCU",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "Ravagers"
+      ],
+      "character_type": "Anti-hero",
+      "tags": [
+        "mcu",
+        "guardians",
+        "space"
+      ],
+      "status": "Deceased",
+      "debut_title": "Guardians of the Galaxy (2014)",
+      "debut_year": 2014,
+      "summary": "The blue-skinned Ravager who abducted Peter Quill and raised him despite a fatherly bond he hid behind gruffness. He sacrifices himself to save Peter in the vacuum of space in Vol. 2 and dies a hero's death honored by the Ravager fleet.",
+      "image_url": "",
+      "image_source_url": "",
+      "image_source_name": "",
+      "image_alt": "",
+      "image_verified": false,
+      "source_notes": [
+        "The 2014 Yondu who attacks the Guardians in the first film is the same character who later redeems himself and dies in Vol. 2."
+      ],
+      "related_titles": [
+        "Guardians of the Galaxy (2014)",
+        "Guardians of the Galaxy Vol. 2 (2017)"
+      ],
+      "allies": [
+        "kraglin",
+        "star-lord-peter-quill",
+        "rocket",
+        "groot"
+      ],
+      "enemies": [
+        "ego-the-living-planet",
+        "taserface"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Yondu",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "ego-the-living-planet",
+      "name": "Ego",
+      "alias": "Ego the Living Planet",
+      "aliases": [
+        "J'son",
+        "Starlord's father"
+      ],
+      "portrayed_by": "Kurt Russell",
+      "universe": "Earth-616 / MCU",
+      "continuity": "MCU",
+      "team_or_affiliation": [],
+      "character_type": "Villain",
+      "tags": [
+        "mcu",
+        "guardians",
+        "celestial"
+      ],
+      "status": "Deceased",
+      "debut_title": "Guardians of the Galaxy Vol. 2 (2017)",
+      "debut_year": 2017,
+      "summary": "An ancient Celestial who is himself a living planet and the biological father of Peter Quill. He planned to terraform the universe in his image using Peter's power, and was destroyed by the Guardians in 2014.",
+      "image_url": "../assets/img/cat-ego-the-living-planet.jpg",
+      "image_source_url": "https://en.wikipedia.org/wiki/Kurt%20Russell%20as%20Ego.jpg",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Ego portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Ego's death in Vol. 2 is the reason Peter loses his Celestial powers."
+      ],
+      "related_titles": [
+        "Guardians of the Galaxy Vol. 2 (2017)"
+      ],
+      "allies": [
+        "mantis"
+      ],
+      "enemies": [
+        "star-lord-peter-quill",
+        "gamora",
+        "rocket",
+        "groot",
+        "drax",
+        "yondu-udonta",
+        "mantis"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Ego_(Marvel_Cinematic_Universe)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "ronan-the-accuser",
+      "name": "Ronan",
+      "alias": "Ronan the Accuser",
+      "aliases": [
+        "Supreme Accuser"
+      ],
+      "portrayed_by": "Lee Pace",
+      "universe": "Earth-616 / MCU",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "Kree"
+      ],
+      "character_type": "Villain",
+      "tags": [
+        "mcu",
+        "kree",
+        "villains"
+      ],
+      "status": "Deceased",
+      "debut_title": "Guardians of the Galaxy (2014)",
+      "debut_year": 2014,
+      "summary": "A fanatical Kree zealot who sought to destroy Xandar and, later, all of planet Xandar's enemies. Betrayed by his allies and destroyed by the Guardians after wielding one Infinity Stone too many.",
+      "source_notes": [
+        "First appears (briefly) in Captain Marvel (2019) set in 1995."
+      ],
+      "related_titles": [
+        "Guardians of the Galaxy (2014)",
+        "Captain Marvel (2019)"
+      ],
+      "allies": [
+        "thanos",
+        "nebula",
+        "korath-the-pursuer"
+      ],
+      "enemies": [
+        "star-lord-peter-quill",
+        "gamora",
+        "drax",
+        "rocket",
+        "groot"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Ronan_the_Accuser_(Marvel_Cinematic_Universe)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "taserface",
+      "name": "Taserface",
+      "alias": "Taserface",
+      "aliases": [],
+      "portrayed_by": "Chris Sullivan",
+      "universe": "Earth-616 / MCU",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "Ravagers"
+      ],
+      "character_type": "Villain",
+      "tags": [
+        "mcu",
+        "guardians",
+        "ravagers"
+      ],
+      "status": "Deceased",
+      "debut_title": "Guardians of the Galaxy Vol. 2 (2017)",
+      "debut_year": 2017,
+      "summary": "A mutinous Ravager who staged a coup against Yondu after the failed Ego job. He reveals the Ravagers' code that condemns Yondu's clan, and is later killed.",
+      "image_url": "",
+      "image_source_url": "",
+      "image_source_name": "",
+      "image_alt": "",
+      "image_verified": false,
+      "source_notes": [
+        "A comic-relief villain from Vol. 2."
+      ],
+      "related_titles": [
+        "Guardians of the Galaxy Vol. 2 (2017)"
+      ],
+      "allies": [],
+      "enemies": [
+        "yondu-udonta",
+        "rocket",
+        "groot",
+        "star-lord-peter-quill"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Taserface",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "high-evolutionary",
+      "name": "High Evolutionary",
+      "alias": "The High Evolutionary",
+      "aliases": [
+        "The High Evolutionary"
+      ],
+      "portrayed_by": "Chukwudi Iwuji",
+      "universe": "Earth-616 / MCU",
+      "continuity": "MCU",
+      "team_or_affiliation": [],
+      "character_type": "Villain",
+      "tags": [
+        "mcu",
+        "guardians",
+        "villains"
+      ],
+      "status": "Deceased",
+      "debut_title": "Guardians of the Galaxy Vol. 3 (2023)",
+      "debut_year": 2023,
+      "summary": "A brilliant but brutally narcissistic geneticist who created Rocket and an entire civilization on Counter-Earth. The Guardians defeat him, and he is left stranded and disfigured on his ruined flagship.",
+      "source_notes": [
+        "Creator of Rocket; the primary antagonist of Vol. 3."
+      ],
+      "related_titles": [
+        "Guardians of the Galaxy Vol. 3 (2023)"
+      ],
+      "allies": [
+        "adam-warlock",
+        "the-sovereign"
+      ],
+      "enemies": [
+        "rocket",
+        "star-lord-peter-quill",
+        "gamora",
+        "groot",
+        "drax",
+        "mantis",
+        "nebula"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/High_Evolutionary_(Marvel_Cinematic_Universe)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "adam-warlock",
+      "name": "Adam Warlock",
+      "alias": "Adam",
+      "aliases": [
+        "The Sovereign's creation"
+      ],
+      "portrayed_by": "Will Poulter",
+      "universe": "Earth-616 / MCU",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "The Sovereign"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "mcu",
+        "guardians",
+        "soul"
+      ],
+      "status": "Active",
+      "debut_title": "Guardians of the Galaxy Vol. 3 (2023)",
+      "debut_year": 2023,
+      "summary": "A bioengineered being nurtured by the Sovereign as a weapon against the Guardians. Born seemingly fully formed but childlike, he becomes a reluctant ally and joins the new Guardians, protecting the children of Knowhere.",
+      "image_url": "../assets/img/cat-adam-warlock.webp",
+      "image_source_url": "https://en.wikipedia.org/wiki/Adam_Warlock",
+      "image_source_name": "Wikipedia",
+      "image_alt": "Adam Warlock portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Featured prominently in the anti-credit scene of Vol. 2 and fully in Vol. 3."
+      ],
+      "related_titles": [
+        "Guardians of the Galaxy Vol. 3 (2023)"
+      ],
+      "allies": [
+        "rocket",
+        "groot",
+        "star-lord-peter-quill",
+        "gamora",
+        "kraglin"
+      ],
+      "enemies": [
+        "high-evolutionary"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Adam_Warlock_(Marvel_Cinematic_Universe)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "carol-danvers-captain-marvel",
+      "name": "Carol Danvers",
+      "alias": "Captain Marvel",
+      "aliases": [
+        "Vers",
+        "Avenger",
+        "Galactically powerful"
+      ],
+      "portrayed_by": "Brie Larson",
+      "universe": "Earth-616 / MCU",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "Avengers",
+        "S.A.B.E.R."
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "mcu",
+        "avengers",
+        "space",
+        "kree"
+      ],
+      "status": "Active",
+      "debut_title": "Captain Marvel (2019)",
+      "debut_year": 2019,
+      "summary": "A U.S. Air Force pilot who gained cosmic powers after an explosion exposed her to the Tesseract's energy. One of the MCU's most powerful heroes, she answers Nick Fury's pager in Endgame and later balances Earth defense with intergalactic responsibility.",
+      "image_url": "../assets/img/cat-carol-danvers-captain-marvel.jpg",
+      "image_source_url": "https://en.wikipedia.org/wiki/Brie%20Larson%20as%20Carol%20Danvers.jpeg",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Carol Danvers portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Central to The Marvels (2023) with Monica Rambeau and Kamala Khan."
+      ],
+      "related_titles": [
+        "Captain Marvel (2019)",
+        "Avengers: Endgame (2019)",
+        "The Marvels (2023)"
+      ],
+      "allies": [
+        "monica-rambeau",
+        "ms-marvel-kamala-khan",
+        "nick-fury",
+        "photon",
+        "talos"
+      ],
+      "enemies": [
+        "yon-rogg",
+        "narve-the-kree",
+        "supreme-intelligence"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Carol_Danvers_(Marvel_Cinematic_Universe)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "lylla",
+      "name": "Lylla",
+      "alias": "Lady Lylla",
+      "aliases": [
+        "Lady Lylla",
+        "Lylla the Otter"
+      ],
+      "portrayed_by": "Linda Cardellini (voice)",
+      "universe": "Earth-616 / MCU",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "Rocket's Batch 89"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "mcu",
+        "guardians",
+        "rocket-family"
+      ],
+      "status": "Dead",
+      "debut_title": "Guardians of the Galaxy Vol. 3 (2023)",
+      "debut_year": 2023,
+      "summary": "A wise, kind otter and Rocket's closest companion from the High Evolutionary's experiments on Counter-Earth. She dreamed with Rocket of a free life among the stars, only to be gunned down before they could escape — the loss that still haunts Rocket.",
+      "image_url": "",
+      "image_source_url": "",
+      "image_source_name": "",
+      "image_alt": "",
+      "image_verified": false,
+      "source_notes": [
+        "Her death in Vol. 3's flashbacks is presented as the emotional core of Rocket's arc."
+      ],
+      "related_titles": [
+        "Guardians of the Galaxy Vol. 3 (2023)"
+      ],
+      "allies": [
+        "rocket",
+        "teefs",
+        "floor"
+      ],
+      "enemies": [
+        "high-evolutionary"
+      ],
+      "verified": true,
+      "notes": "Memorial: Guardians' lab-animal friend. Killed by the High Evolutionary's forces.",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/List_of_Guardians_of_the_Galaxy_members",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "teefs",
+      "name": "Teefs",
+      "alias": "Teefs the Walrus",
+      "aliases": [
+        "Teefs"
+      ],
+      "portrayed_by": "Asim Chaudhry (voice)",
+      "universe": "Earth-616 / MCU",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "Rocket's Batch 89"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "mcu",
+        "guardians",
+        "rocket-family"
+      ],
+      "status": "Dead",
+      "debut_title": "Guardians of the Galaxy Vol. 3 (2023)",
+      "debut_year": 2023,
+      "summary": "A gentle walrus and one of Rocket's fellow experiment subjects in the High Evolutionary's lab. Slow-moving but sweet, he was killed along with Lylla and Floor on their failed escape.",
+      "image_url": "",
+      "image_source_url": "",
+      "image_source_name": "",
+      "image_alt": "",
+      "image_verified": false,
+      "source_notes": [
+        "Featured in Vol. 3 flashbacks; killed in the same scene as Lylla."
+      ],
+      "related_titles": [
+        "Guardians of the Galaxy Vol. 3 (2023)"
+      ],
+      "allies": [
+        "rocket",
+        "lylla",
+        "floor"
+      ],
+      "enemies": [
+        "high-evolutionary"
+      ],
+      "verified": true,
+      "notes": "Memorial: Guardians' lab-animal friend.",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/List_of_Guardians_of_the_Galaxy_members",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "floor",
+      "name": "Floor",
+      "alias": "Floor the Hare",
+      "aliases": [
+        "Floor"
+      ],
+      "portrayed_by": "Mikaela Hoover (voice)",
+      "universe": "Earth-616 / MCU",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "Rocket's Batch 89"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "mcu",
+        "guardians",
+        "rocket-family"
+      ],
+      "status": "Dead",
+      "debut_title": "Guardians of the Galaxy Vol. 3 (2023)",
+      "debut_year": 2023,
+      "summary": "A three-legged white hare and one of Rocket's lab-mates in the High Evolutionary's experiments. She was working on escaping her enclosure when the team's escape was betrayed, and she was killed in the crossfire.",
+      "image_url": "",
+      "image_source_url": "",
+      "image_source_name": "",
+      "image_alt": "",
+      "image_verified": false,
+      "source_notes": [
+        "Vol. 3 flashback character."
+      ],
+      "related_titles": [
+        "Guardians of the Galaxy Vol. 3 (2023)"
+      ],
+      "allies": [
+        "rocket",
+        "lylla",
+        "teefs"
+      ],
+      "enemies": [
+        "high-evolutionary"
+      ],
+      "verified": true,
+      "notes": "Memorial: Guardians' lab-animal friend.",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/List_of_Guardians_of_the_Galaxy_members",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    }
+  ]
+}

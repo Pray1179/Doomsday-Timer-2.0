@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Steve Rogers / Captain America emblem">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="36%" r="80%">
+      <stop offset="0%" stop-color="#26263c"/>
+      <stop offset="55%" stop-color="#15151f"/>
+      <stop offset="100%" stop-color="#07070c"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e63946"/>
+      <stop offset="100%" stop-color="#e63946"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="184" height="184" rx="36" fill="url(#bg)" stroke="rgba(255,255,255,0.07)" stroke-width="2"/>
+  <circle cx="100" cy="100" r="66" fill="none" stroke="#e63946" stroke-width="3" opacity="0.4"/>
+  <circle cx="100" cy="100" r="52" fill="none" stroke="#e63946" stroke-width="1.5" opacity="0.28" stroke-dasharray="2 7" stroke-linecap="round"/>
+  <text x="100" y="127" text-anchor="middle" font-family="Arial Black, 'Helvetica Neue', sans-serif"
+        font-size="58" font-weight="800" fill="#ffffff" letter-spacing="3">SR</text>
+  <circle cx="100" cy="168" r="3.5" fill="#e63946" opacity="0.85"/>
+</svg>

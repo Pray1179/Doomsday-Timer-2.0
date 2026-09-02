@@ -1,0 +1,1800 @@
+{
+  "characters": [
+    {
+      "id": "spidey-maguire",
+      "name": "Peter Parker",
+      "alias": "Spider-Man",
+      "aliases": [
+        "Spidey",
+        "Your Friendly Neighborhood Spider-Man"
+      ],
+      "portrayed_by": "Tobey Maguire",
+      "universe": "Earth-96283 / Raimi",
+      "continuity": "Spider-Man (Raimi trilogy)",
+      "team_or_affiliation": [],
+      "character_type": "Hero",
+      "tags": [
+        "spider-man",
+        "raimi",
+        "multiverse",
+        "legacy"
+      ],
+      "status": "Variant",
+      "debut_title": "Spider-Man (2002)",
+      "debut_year": 2002,
+      "summary": "The shy, noble Peter Parker bitten by a genetically-enhanced spider in the Raimi trilogy. He fought the Green Goblin, Doctor Octopus and Venom, and crossed into the MCU during the multiversal breach of No Way Home, where he reunited with his alternate-universe counterparts.",
+      "image_url": "../assets/img/cat-spidey-maguire.jpg",
+      "image_source_url": "https://en.wikipedia.org/wiki/Tobey%20Maguire%20as%20Peter%20Parker%20and%20Spider-Man.jpg",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Peter Parker portrait",
+      "image_verified": true,
+      "source_notes": [
+        "The first big-screen Spider-Man; returns as a variant in Spider-Man: No Way Home (2021)."
+      ],
+      "related_titles": [
+        "Spider-Man (2002)",
+        "Spider-Man 2 (2004)",
+        "Spider-Man 3 (2007)",
+        "Spider-Man: No Way Home (2021)"
+      ],
+      "allies": [
+        "mj-maguire",
+        "spidey-garfield",
+        "spider-man",
+        "aunt-may-raimi",
+        "harry-osborn"
+      ],
+      "enemies": [
+        "green-goblin-raimi",
+        "doctor-octopus-raimi",
+        "sandman-raimi",
+        "eddie-brock-raimi"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Peter_Parker_(Sam_Raimi_film_series)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "mj-maguire",
+      "name": "Mary Jane Watson",
+      "alias": "Mary Jane",
+      "aliases": [
+        "M.J."
+      ],
+      "portrayed_by": "Kirsten Dunst",
+      "universe": "Earth-96283 / Raimi",
+      "continuity": "Spider-Man (Raimi trilogy)",
+      "team_or_affiliation": [],
+      "character_type": "Ally",
+      "tags": [
+        "spider-man",
+        "raimi",
+        "love-interest"
+      ],
+      "status": "Variant",
+      "debut_title": "Spider-Man (2002)",
+      "debut_year": 2002,
+      "summary": "Peter Parker's lifelong love, an aspiring actress who runs between superhero tragedy and her own ambitions. She finally married Peter before the multiversal breach.",
+      "image_url": "../assets/img/cat-mj-maguire.jpg",
+      "image_source_url": "https://en.wikipedia.org/wiki/Kirsten%20Dunst%20as%20Mary%20Jane%20Watson.jpg",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Mary Jane Watson portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Peter's on-again, off-again partner across the Raimi trilogy."
+      ],
+      "related_titles": [
+        "Spider-Man (2002)",
+        "Spider-Man 2 (2004)",
+        "Spider-Man 3 (2007)",
+        "Spider-Man: No Way Home (2021)"
+      ],
+      "allies": [
+        "spidey-maguire",
+        "aunt-may-raimi"
+      ],
+      "enemies": [],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Mary_Jane_Watson/(Sam_Raimi_film_series)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "green-goblin-raimi",
+      "name": "Norman Osborn",
+      "alias": "Green Goblin",
+      "aliases": [
+        "The Goblin",
+        "Oscorp's founder"
+      ],
+      "portrayed_by": "Willem Dafoe",
+      "universe": "Earth-96283 / Raimi",
+      "continuity": "Spider-Man (Raimi trilogy)",
+      "team_or_affiliation": [],
+      "character_type": "Villain",
+      "tags": [
+        "spider-man",
+        "raimi",
+        "villains",
+        "goblin",
+        "multiverse"
+      ],
+      "status": "Variant",
+      "debut_title": "Spider-Man (2002)",
+      "debut_year": 2002,
+      "summary": "The brilliant, ruthless founder of Oscorp who split into a murderous Green Goblin persona after his experimental serum. He died at his own glider in 2002, but a variant crossed over in No Way Home and fatally wounded Aunt May.",
+      "image_url": "../assets/img/cat-green-goblin-raimi.png",
+      "image_source_url": "https://en.wikipedia.org/wiki/Willem%20Dafoe%20as%20Norman%20Osborn.png",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Norman Osborn portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Killed by his own glider in Spider-Man (2002); returns as a variant in No Way Home."
+      ],
+      "related_titles": [
+        "Spider-Man (2002)",
+        "Spider-Man: No Way Home (2021)"
+      ],
+      "allies": [
+        "harry-osborn"
+      ],
+      "enemies": [
+        "spidey-maguire",
+        "mj-maguire"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Green_Goblin/(Sam_Raimi_film_series)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "doctor-octopus-raimi",
+      "name": "Otto Octavius",
+      "alias": "Doctor Octopus",
+      "aliases": [
+        "Doc Ock",
+        "Otto"
+      ],
+      "portrayed_by": "Alfred Molina",
+      "universe": "Earth-96283 / Raimi",
+      "continuity": "Spider-Man (Raimi trilogy)",
+      "team_or_affiliation": [],
+      "character_type": "Villain",
+      "tags": [
+        "spider-man",
+        "raimi",
+        "villains",
+        "scientist",
+        "multiverse"
+      ],
+      "status": "Variant",
+      "debut_title": "Spider-Man 2 (2004)",
+      "debut_year": 2004,
+      "summary": "A brilliant physicist whose fusion experiment fused four mechanical tentacles to his spine and corrupted his mind. He drowned saving the city, but a pre-corruption variant was pulled into the MCU in No Way Home.",
+      "image_url": "../assets/img/cat-doctor-octopus-raimi.jpg",
+      "image_source_url": "https://en.wikipedia.org/wiki/Sint-Pieters-Kapelle%20Herne%20Altaarschilderij%20Otto%20Van%20Veen%201425.jpg",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Otto Octavius portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Redemptive antagonist of Spider-Man 2 (2004); variant appears in No Way Home."
+      ],
+      "related_titles": [
+        "Spider-Man 2 (2004)",
+        "Spider-Man: No Way Home (2021)"
+      ],
+      "allies": [
+        "spidey-maguire"
+      ],
+      "enemies": [
+        "spidey-maguire"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Doctor_Octopus/(Sam_Raimi_film_series)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "harry-osborn",
+      "name": "Harry Osborn",
+      "alias": "New Goblin",
+      "aliases": [
+        "Harry"
+      ],
+      "portrayed_by": "James Franco",
+      "universe": "Earth-96283 / Raimi",
+      "continuity": "Spider-Man (Raimi trilogy)",
+      "team_or_affiliation": [],
+      "character_type": "Anti-hero",
+      "tags": [
+        "spider-man",
+        "raimi",
+        "goblin"
+      ],
+      "status": "Deceased",
+      "debut_title": "Spider-Man (2002)",
+      "debut_year": 2002,
+      "summary": "Peter's best friend and Norman Osborn's son, who inherited the Goblin mantle believing Spider-Man killed his father. He discovered Peter's identity, saved him from Venom, and died from his injuries after reconciling.",
+      "image_url": "../assets/img/cat-harry-osborn.webp",
+      "image_source_url": "https://doomsdayhub.example",
+      "image_source_name": "Fan site archive",
+      "image_alt": "Harry Osborn portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Becomes the New Goblin in Spider-Man 3 (2007)."
+      ],
+      "related_titles": [
+        "Spider-Man (2002)",
+        "Spider-Man 2 (2004)",
+        "Spider-Man 3 (2007)"
+      ],
+      "allies": [
+        "spidey-maguire",
+        "green-goblin-raimi"
+      ],
+      "enemies": [
+        "eddie-brock-raimi"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Harry_Osborn_(Sam_Raimi_film_series)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "sandman-raimi",
+      "name": "Flint Marko",
+      "alias": "Sandman",
+      "aliases": [
+        "Flint"
+      ],
+      "portrayed_by": "Thomas Haden Church",
+      "universe": "Earth-96283 / Raimi",
+      "continuity": "Spider-Man (Raimi trilogy)",
+      "team_or_affiliation": [],
+      "character_type": "Anti-hero",
+      "tags": [
+        "spider-man",
+        "raimi",
+        "villains",
+        "sand"
+      ],
+      "status": "Variant",
+      "debut_title": "Spider-Man 3 (2007)",
+      "debut_year": 2007,
+      "summary": "A desperate fugitive transformed into living sand by a particle accelerator. He was revealed to be the true killer of Uncle Ben, but chose redemption alongside Spider-Man against Venom.",
+      "source_notes": [
+        "Tragic figure who accidentally killed Uncle Ben; turns ally against Venom."
+      ],
+      "related_titles": [
+        "Spider-Man 3 (2007)"
+      ],
+      "allies": [
+        "spidey-maguire",
+        "harry-osborn"
+      ],
+      "enemies": [
+        "eddie-brock-raimi"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Flint_Marko_(film_character)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "eddie-brock-raimi",
+      "name": "Eddie Brock",
+      "alias": "Venom",
+      "aliases": [
+        "Venom symbiote host"
+      ],
+      "portrayed_by": "Topher Grace",
+      "universe": "Earth-96283 / Raimi",
+      "continuity": "Spider-Man (Raimi trilogy)",
+      "team_or_affiliation": [],
+      "character_type": "Villain",
+      "tags": [
+        "spider-man",
+        "raimi",
+        "villains",
+        "symbiote"
+      ],
+      "status": "Variant",
+      "debut_title": "Spider-Man 3 (2007)",
+      "debut_year": 2007,
+      "summary": "A rival photographer who bonded with the black alien symbiote that had briefly corrupted Spider-Man. The union created the monstrous Venom, who teamed with Sandman before being destroyed along with the symbiote.",
+      "image_url": "../assets/img/cat-eddie-brock-raimi.webp",
+      "image_source_url": "https://en.wikipedia.org/wiki/Venom_%28Sam_Raimi_film_series%29",
+      "image_source_name": "Wikipedia",
+      "image_alt": "Eddie Brock portrait",
+      "image_verified": true,
+      "source_notes": [
+        "The Raimi-universe Venom, separate from the Tom Hardy version."
+      ],
+      "related_titles": [
+        "Spider-Man 3 (2007)"
+      ],
+      "allies": [
+        "sandman-raimi"
+      ],
+      "enemies": [
+        "spidey-maguire",
+        "harry-osborn",
+        "mj-maguire"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Venom/(Sam_Raimi_film_series)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "gwen-stacy-raimi",
+      "name": "Gwen Stacy",
+      "alias": "Gwen Stacy",
+      "aliases": [],
+      "portrayed_by": "Bryce Dallas Howard",
+      "universe": "Earth-96283 / Raimi",
+      "continuity": "Spider-Man (Raimi trilogy)",
+      "team_or_affiliation": [],
+      "character_type": "Ally",
+      "tags": [
+        "spider-man",
+        "raimi",
+        "ally"
+      ],
+      "status": "Variant",
+      "debut_title": "Spider-Man 3 (2007)",
+      "debut_year": 2007,
+      "summary": "A scientist's daughter and a brief love rival to Mary Jane in Spider-Man 3, whom Venom targeted to hurt Spider-Man.",
+      "image_url": "../assets/img/cat-gwen-stacy-raimi.webp",
+      "image_source_url": "https://en.wikipedia.org/wiki/Gwen_Stacy",
+      "image_source_name": "Wikipedia",
+      "image_alt": "Gwen Stacy portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Minor role in Spider-Man 3; distinct from the Webb-universe Gwen."
+      ],
+      "related_titles": [
+        "Spider-Man 3 (2007)"
+      ],
+      "allies": [
+        "spidey-maguire"
+      ],
+      "enemies": [
+        "eddie-brock-raimi"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Gwen_Stacy#Film",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "aunt-may-raimi",
+      "name": "May Parker",
+      "alias": "Aunt May",
+      "aliases": [],
+      "portrayed_by": "Rosemary Harris",
+      "universe": "Earth-96283 / Raimi",
+      "continuity": "Spider-Man (Raimi trilogy)",
+      "team_or_affiliation": [],
+      "character_type": "Ally",
+      "tags": [
+        "spider-man",
+        "raimi",
+        "family"
+      ],
+      "status": "Variant",
+      "debut_title": "Spider-Man (2002)",
+      "debut_year": 2002,
+      "summary": "Peter's warm, principled aunt who raised him after his parents died and nearly died of illness until Peter used his power to save her. She married again and survived into the No Way Home era.",
+      "image_url": "../assets/img/cat-aunt-may-raimi.webp",
+      "image_source_url": "https://doomsdayhub.example",
+      "image_source_name": "Fan site archive",
+      "image_alt": "May Parker portrait",
+      "image_verified": true,
+      "source_notes": [
+        "A stabilizing moral influence on Peter across the trilogy."
+      ],
+      "related_titles": [
+        "Spider-Man (2002)",
+        "Spider-Man 2 (2004)",
+        "Spider-Man 3 (2007)"
+      ],
+      "allies": [
+        "spidey-maguire",
+        "mj-maguire"
+      ],
+      "enemies": [],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Aunt_May",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "uncle-ben-raimi",
+      "name": "Ben Parker",
+      "alias": "Uncle Ben",
+      "aliases": [],
+      "portrayed_by": "Cliff Robertson",
+      "universe": "Earth-96283 / Raimi",
+      "continuity": "Spider-Man (Raimi trilogy)",
+      "team_or_affiliation": [],
+      "character_type": "Ally",
+      "tags": [
+        "spider-man",
+        "raimi",
+        "family"
+      ],
+      "status": "Deceased",
+      "debut_title": "Spider-Man (2002)",
+      "debut_year": 2002,
+      "summary": "Peter's gentle uncle whose murder imparted the lesson that 'with great power there must also come great responsibility.' He was shot by the fleeing Flint Marko.",
+      "image_url": "../assets/img/cat-uncle-ben-raimi.jpg",
+      "image_source_url": "https://en.wikipedia.org/wiki/Ben%20Parker.jpg",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "04/01/11 Cardiff V Leeds, Championship, Cardiff City Stadium, Cardiff, Wales",
+      "image_verified": true,
+      "source_notes": [
+        "His death motivates Peter to become Spider-Man."
+      ],
+      "related_titles": [
+        "Spider-Man (2002)",
+        "Spider-Man 3 (2007)"
+      ],
+      "allies": [
+        "aunt-may-raimi"
+      ],
+      "enemies": [
+        "sandman-raimi"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Ben_Parker",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "jjj-raimi",
+      "name": "J. Jonah Jameson",
+      "alias": "J. Jonah Jameson",
+      "aliases": [
+        "J.J.J.",
+        "The Bugle's editor"
+      ],
+      "portrayed_by": "J.K. Simmons",
+      "universe": "Earth-96283 / Raimi",
+      "continuity": "Spider-Man (Raimi trilogy)",
+      "team_or_affiliation": [
+        "Daily Bugle"
+      ],
+      "character_type": "Team-support",
+      "tags": [
+        "spider-man",
+        "raimi",
+        "bugle",
+        "media"
+      ],
+      "status": "Variant",
+      "debut_title": "Spider-Man (2002)",
+      "debut_year": 2002,
+      "summary": "The blustery, anti-spider crusading editor of the Daily Bugle who pays Peter for photos of Spider-Man. The same J.K. Simmons incarnation later headlines the MCU's YouTube-style bugle in Far From Home.",
+      "image_url": "../assets/img/cat-jjj-raimi.png",
+      "image_source_url": "https://en.wikipedia.org/wiki/J.%20K.%20Simmons%20as%20J.%20Jonah%20Jameson%20in%20Spider-Man%203.png",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "J. Jonah Jameson portrait",
+      "image_verified": true,
+      "source_notes": [
+        "A variant played by J.K. Simmons appears in the MCU (Far From Home onward)."
+      ],
+      "related_titles": [
+        "Spider-Man (2002)",
+        "Spider-Man 2 (2004)",
+        "Spider-Man 3 (2007)"
+      ],
+      "allies": [
+        "spidey-maguire"
+      ],
+      "enemies": [
+        "spidey-maguire"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/J._Jonah_Jameson",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "spidey-garfield",
+      "name": "Peter Parker",
+      "alias": "Spider-Man",
+      "aliases": [
+        "The Amazing Spider-Man"
+      ],
+      "portrayed_by": "Andrew Garfield",
+      "universe": "Earth-120703 / Webb",
+      "continuity": "The Amazing Spider-Man (Webb duology)",
+      "team_or_affiliation": [],
+      "character_type": "Hero",
+      "tags": [
+        "spider-man",
+        "amazing",
+        "multiverse",
+        "legacy"
+      ],
+      "status": "Variant",
+      "debut_title": "The Amazing Spider-Man (2012)",
+      "debut_year": 2012,
+      "summary": "The quip-heavy, skateboarding Peter Parker of the Webb duology, orphaned and seeking the truth about his parents. He lost Gwen Stacy and blamed himself, then redeemed himself by saving Michelle in No Way Home.",
+      "image_url": "../assets/img/cat-spidey-garfield.webp",
+      "image_source_url": "https://doomsdayhub.example",
+      "image_source_name": "Fan site archive",
+      "image_alt": "Peter Parker portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Returns for redemption arc in Spider-Man: No Way Home (2021)."
+      ],
+      "related_titles": [
+        "The Amazing Spider-Man (2012)",
+        "The Amazing Spider-Man 2 (2014)",
+        "Spider-Man: No Way Home (2021)"
+      ],
+      "allies": [
+        "gwen-stacy-webb",
+        "spidey-maguire",
+        "spider-man"
+      ],
+      "enemies": [
+        "lizard-webb",
+        "electro-webb",
+        "green-goblin-webb"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Peter_Parker_(The_Amazing_Spider-Man_film_series)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "gwen-stacy-webb",
+      "name": "Gwen Stacy",
+      "alias": "Gwen Stacy",
+      "aliases": [],
+      "portrayed_by": "Emma Stone",
+      "universe": "Earth-120703 / Webb",
+      "continuity": "The Amazing Spider-Man (Webb duology)",
+      "team_or_affiliation": [],
+      "character_type": "Ally",
+      "tags": [
+        "spider-man",
+        "amazing",
+        "love-interest"
+      ],
+      "status": "Deceased",
+      "debut_title": "The Amazing Spider-Man (2012)",
+      "debut_year": 2012,
+      "summary": "A brilliant Oscorp scientist and Peter's girlfriend, whose death - snapped by the Green Goblin - became the defining tragedy of the Webb films and Peter's deepest regret.",
+      "image_url": "../assets/img/cat-gwen-stacy-webb.jpg",
+      "image_source_url": "https://en.wikipedia.org/wiki/Emma%20Stone%20as%20Gwen%20Stacy%20in%20the%20Amazing%20Spider-Man%202.jpg",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Gwen Stacy portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Her death in The Amazing Spider-Man 2 haunts the Garfield version."
+      ],
+      "related_titles": [
+        "The Amazing Spider-Man (2012)",
+        "The Amazing Spider-Man 2 (2014)"
+      ],
+      "allies": [
+        "spidey-garfield",
+        "george-stacy-webb"
+      ],
+      "enemies": [
+        "green-goblin-webb"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Gwen_Stacy_(The_Amazing_Spider-Man_film_series)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "lizard-webb",
+      "name": "Dr. Curt Connors",
+      "alias": "The Lizard",
+      "aliases": [],
+      "portrayed_by": "Rhys Ifans",
+      "universe": "Earth-120703 / Webb",
+      "continuity": "The Amazing Spider-Man (Webb duology)",
+      "team_or_affiliation": [],
+      "character_type": "Villain",
+      "tags": [
+        "spider-man",
+        "amazing",
+        "villains",
+        "lizard"
+      ],
+      "status": "Variant",
+      "debut_title": "The Amazing Spider-Man (2012)",
+      "debut_year": 2012,
+      "summary": "A one-armed OsCorp geneticist who regrew his arm with a lizard-based serum but devolved into a monstrous, feral Lizard bent on 'rebuilding' humanity. He was cured, then pulled into No Way Home's multiversal breach.",
+      "source_notes": [
+        "Appears in No Way Home as a variant."
+      ],
+      "related_titles": [
+        "The Amazing Spider-Man (2012)",
+        "Spider-Man: No Way Home (2021)"
+      ],
+      "allies": [],
+      "enemies": [
+        "spidey-garfield",
+        "gwen-stacy-webb"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Lizard_(comics)#Film",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "electro-webb",
+      "name": "Max Dillon",
+      "alias": "Electro",
+      "aliases": [],
+      "portrayed_by": "Jamie Foxx",
+      "universe": "Earth-120703 / Webb",
+      "continuity": "The Amazing Spider-Man (Webb duology)",
+      "team_or_affiliation": [],
+      "character_type": "Villain",
+      "tags": [
+        "spider-man",
+        "amazing",
+        "villains",
+        "electricity"
+      ],
+      "status": "Variant",
+      "debut_title": "The Amazing Spider-Man 2 (2014)",
+      "debut_year": 2014,
+      "summary": "An overlooked Oscorp electrical engineer who transformed into a being of pure electrical power after an accident, resenting the world and Spider-Man. A variant returned energy-starved in No Way Home.",
+      "image_url": "../assets/img/cat-electro-webb.webp",
+      "image_source_url": "https://en.wikipedia.org/wiki/Electro_%28Marvel_Comics%29",
+      "image_source_name": "Wikipedia",
+      "image_alt": "Max Dillon portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Appears in No Way Home, seeking the Arc Reactor."
+      ],
+      "related_titles": [
+        "The Amazing Spider-Man 2 (2014)",
+        "Spider-Man: No Way Home (2021)"
+      ],
+      "allies": [],
+      "enemies": [
+        "spidey-garfield",
+        "gwen-stacy-webb"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Electro_(Marvel_Comics)#Film",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "green-goblin-webb",
+      "name": "Harry Osborn",
+      "alias": "Green Goblin",
+      "aliases": [],
+      "portrayed_by": "Dane DeHaan",
+      "universe": "Earth-120703 / Webb",
+      "continuity": "The Amazing Spider-Man (Webb duology)",
+      "team_or_affiliation": [],
+      "character_type": "Villain",
+      "tags": [
+        "spider-man",
+        "amazing",
+        "villains",
+        "goblin"
+      ],
+      "status": "Deceased",
+      "debut_title": "The Amazing Spider-Man 2 (2014)",
+      "debut_year": 2014,
+      "summary": "The embittered son of Norman Osborn who blamed Peter for his father's death. He experimented on himself, becoming the Goblin and killing Gwen Stacy before dying of his injuries.",
+      "source_notes": [
+        "Responsible for Gwen Stacy's death."
+      ],
+      "related_titles": [
+        "The Amazing Spider-Man 2 (2014)"
+      ],
+      "allies": [],
+      "enemies": [
+        "spidey-garfield",
+        "gwen-stacy-webb"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Harry_Osborn_(film_character)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "rhino-webb",
+      "name": "Aleksei Sytsevich",
+      "alias": "Rhino",
+      "aliases": [
+        "The Rhino"
+      ],
+      "portrayed_by": "Paul Giamatti",
+      "universe": "Earth-120703 / Webb",
+      "continuity": "The Amazing Spider-Man (Webb duology)",
+      "team_or_affiliation": [],
+      "character_type": "Villain",
+      "tags": [
+        "spider-man",
+        "amazing",
+        "villains",
+        "rhino"
+      ],
+      "status": "Active",
+      "debut_title": "The Amazing Spider-Man 2 (2014)",
+      "debut_year": 2014,
+      "summary": "A Russian gangster who dons a towering mechanized rhino suit. He rampaged through Manhattan in the film's cliffhanger ending, brawling with Spider-Man as sirens blared.",
+      "image_url": "../assets/img/cat-rhino-webb.webp",
+      "image_source_url": "https://en.wikipedia.org/wiki/Rhino_%28Marvel_Comics%29",
+      "image_source_name": "Wikipedia",
+      "image_alt": "Aleksei Sytsevich portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Final battle set-up that was never followed up due to the franchise's reboot."
+      ],
+      "related_titles": [
+        "The Amazing Spider-Man 2 (2014)"
+      ],
+      "allies": [],
+      "enemies": [
+        "spidey-garfield"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Rhino_(comics)#Film",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "george-stacy-webb",
+      "name": "George Stacy",
+      "alias": "Captain Stacy",
+      "aliases": [
+        "Captain of the NYPD"
+      ],
+      "portrayed_by": "Denis Leary",
+      "universe": "Earth-120703 / Webb",
+      "continuity": "The Amazing Spider-Man (Webb duology)",
+      "team_or_affiliation": [
+        "New York Police Department"
+      ],
+      "character_type": "Ally",
+      "tags": [
+        "spider-man",
+        "amazing",
+        "police"
+      ],
+      "status": "Deceased",
+      "debut_title": "The Amazing Spider-Man (2012)",
+      "debut_year": 2012,
+      "summary": "Gwen's protective father and an NYPD captain who investigated Spider-Man, learning his identity only after being fatally wounded saving him from the Lizard. He made Peter promise to stay away from Gwen.",
+      "image_url": "../assets/img/cat-george-stacy-webb.png",
+      "image_source_url": "https://en.wikipedia.org/wiki/George%20Stacy%20%28circa%201968%29.png",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "George Stacy portrait",
+      "image_verified": true,
+      "source_notes": [
+        "His dying request sets up the tragedy with Gwen."
+      ],
+      "related_titles": [
+        "The Amazing Spider-Man (2012)"
+      ],
+      "allies": [
+        "gwen-stacy-webb"
+      ],
+      "enemies": [
+        "lizard-webb"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Captain_Stacy",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "aunt-may-webb",
+      "name": "May Parker",
+      "alias": "Aunt May",
+      "aliases": [],
+      "portrayed_by": "Sally Field",
+      "universe": "Earth-120703 / Webb",
+      "continuity": "The Amazing Spider-Man (Webb duology)",
+      "team_or_affiliation": [],
+      "character_type": "Ally",
+      "tags": [
+        "spider-man",
+        "amazing",
+        "family"
+      ],
+      "status": "Variant",
+      "debut_title": "The Amazing Spider-Man (2012)",
+      "debut_year": 2012,
+      "summary": "The sharp-tongued but loving aunt who raised Peter with her late husband Ben, eventually learning and accepting that Peter is Spider-Man.",
+      "source_notes": [
+        "A more independent, knowing Aunt May than the Raimi version."
+      ],
+      "related_titles": [
+        "The Amazing Spider-Man (2012)",
+        "The Amazing Spider-Man 2 (2014)"
+      ],
+      "allies": [
+        "spidey-garfield",
+        "gwen-stacy-webb"
+      ],
+      "enemies": [],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Aunt_May",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "venom-hardy",
+      "name": "Eddie Brock",
+      "alias": "Venom",
+      "aliases": [
+        "Lethal Protector",
+        "The Symbiote"
+      ],
+      "portrayed_by": "Tom Hardy",
+      "universe": "Earth-688 / SSU",
+      "continuity": "Sony's Spider-Man Universe",
+      "team_or_affiliation": [],
+      "character_type": "Anti-hero",
+      "tags": [
+        "spider-man",
+        "ssu",
+        "venom",
+        "symbiote",
+        "anti-hero"
+      ],
+      "status": "Active",
+      "debut_title": "Venom (2018)",
+      "debut_year": 2018,
+      "summary": "A freelance investigative journalist who bonded with an alien symbiote named Venom, becoming a violent anti-hero 'lethal protector' of San Francisco. A variant of him was briefly pulled into the MCU and left a piece of the symbiote behind.",
+      "image_url": "../assets/img/cat-venom-hardy.jpg",
+      "image_source_url": "https://en.wikipedia.org/wiki/Tom%20Hardy%20as%20Eddie%20Brock.jpg",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Eddie Brock portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Eddie and the Venom symbiote share one body; a variant appears in No Way Home's mid-credits scene."
+      ],
+      "related_titles": [
+        "Venom (2018)",
+        "Venom: Let There Be Carnage (2021)",
+        "Venom: The Last Dance (2024)"
+      ],
+      "allies": [
+        "anne-weying",
+        "spider-man"
+      ],
+      "enemies": [
+        "carnage-ssu"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Venom_(Eddie_Brock)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "venom-symbiote",
+      "name": "Venom",
+      "alias": "Venom (Symbiote)",
+      "aliases": [
+        "The Symbiote",
+        "Direktor"
+      ],
+      "portrayed_by": "Tom Hardy (voice)",
+      "universe": "Earth-688 / SSU",
+      "continuity": "Sony's Spider-Man Universe",
+      "team_or_affiliation": [],
+      "character_type": "Anti-hero",
+      "tags": [
+        "spider-man",
+        "ssu",
+        "symbiote",
+        "alien"
+      ],
+      "status": "Active",
+      "debut_title": "Venom (2018)",
+      "debut_year": 2018,
+      "summary": "The chaotic, hungry alien symbiote bonded to Eddie Brock. It speaks its own thoughts, feeds on chocolates and host brains, and left a fragment in the MCU when a variant was pulled through at the end of No Way Home.",
+      "image_url": "../assets/img/cat-venom-symbiote.png",
+      "image_source_url": "https://en.wikipedia.org/wiki/Venom%20Extreme%20ch%C3%A1cara.png",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Venom Extreme farm",
+      "image_verified": true,
+      "source_notes": [
+        "A surviving droplet of the symbiote remains in the MCU."
+      ],
+      "related_titles": [
+        "Venom (2018)",
+        "Venom: Let There Be Carnage (2021)",
+        "Venom: The Last Dance (2024)"
+      ],
+      "allies": [
+        "venom-hardy"
+      ],
+      "enemies": [
+        "carnage-ssu"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Venom_(Eddie_Brock)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "carnage-ssu",
+      "name": "Cletus Kasady",
+      "alias": "Carnage",
+      "aliases": [
+        "The Red Symbiote"
+      ],
+      "portrayed_by": "Woody Harrelson",
+      "universe": "Earth-688 / SSU",
+      "continuity": "Sony's Spider-Man Universe",
+      "team_or_affiliation": [],
+      "character_type": "Villain",
+      "tags": [
+        "spider-man",
+        "ssu",
+        "carnage",
+        "symbiote",
+        "villains"
+      ],
+      "status": "Deceased",
+      "debut_title": "Venom: Let There Be Carnage (2021)",
+      "debut_year": 2021,
+      "summary": "A serial killer and Eddie's estranged childhood acquaintance who bonded with the offspring of the Venom symbiote, becoming the sadistic red monster Carnage. He was destroyed alongside his symbiote.",
+      "image_url": "../assets/img/cat-carnage-ssu.jpg",
+      "image_source_url": "https://en.wikipedia.org/wiki/Woody%20Harrelson%20as%20Cletus%20Kasady.jpg",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Cletus Kasady portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Primary antagonist of Venom: Let There Be Carnage."
+      ],
+      "related_titles": [
+        "Venom (2018; cameo)",
+        "Venom: Let There Be Carnage (2021)"
+      ],
+      "allies": [
+        "shriek-ssu"
+      ],
+      "enemies": [
+        "venom-hardy",
+        "venom-symbiote",
+        "anne-weying"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Carnage_(comics)#Film",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "shriek-ssu",
+      "name": "Frances Barrison",
+      "alias": "Shriek",
+      "aliases": [],
+      "portrayed_by": "Naomie Harris",
+      "universe": "Earth-688 / SSU",
+      "continuity": "Sony's Spider-Man Universe",
+      "team_or_affiliation": [],
+      "character_type": "Villain",
+      "tags": [
+        "spider-man",
+        "ssu",
+        "villains",
+        "sonic"
+      ],
+      "status": "Deceased",
+      "debut_title": "Venom: Let There Be Carnage (2021)",
+      "debut_year": 2021,
+      "summary": "A pyrokinetic prisoner with a sonic scream who becomes Cletus Kasady's love interest and ally, unleashing chaos while Carnage battles Venom.",
+      "image_url": "",
+      "image_source_url": "",
+      "image_source_name": "",
+      "image_alt": "",
+      "image_verified": false,
+      "source_notes": [
+        "Pairs with Carnage in Let There Be Carnage."
+      ],
+      "related_titles": [
+        "Venom: Let There Be Carnage (2021)"
+      ],
+      "allies": [
+        "carnage-ssu"
+      ],
+      "enemies": [
+        "venom-hardy",
+        "anne-weying"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Shriek_(comics)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "anne-weying",
+      "name": "Anne Weying",
+      "alias": "Anne Weying",
+      "aliases": [
+        "Eddie's ex-fiancée"
+      ],
+      "portrayed_by": "Michelle Williams",
+      "universe": "Earth-688 / SSU",
+      "continuity": "Sony's Spider-Man Universe",
+      "team_or_affiliation": [],
+      "character_type": "Ally",
+      "tags": [
+        "spider-man",
+        "ssu",
+        "ally"
+      ],
+      "status": "Active",
+      "debut_title": "Venom (2018)",
+      "debut_year": 2018,
+      "summary": "Eddie Brock's ex-fiancée and close friend, a lawyer who briefly bonded with the Venom symbiote to save a hostage and who continues to defend Eddie through the symbiote saga.",
+      "image_url": "../assets/img/cat-anne-weying.png",
+      "image_source_url": "https://en.wikipedia.org/wiki/Anne%20Weying.png",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Interior artwork from The Amazing Spider-Man vol. 1, 375 (March 1993 Marvel Comics) Art by Mark Magley",
+      "image_verified": true,
+      "source_notes": [
+        "Bonds with the symbiote to fight in Venom (2018)."
+      ],
+      "related_titles": [
+        "Venom (2018)",
+        "Venom: Let There Be Carnage (2021)"
+      ],
+      "allies": [
+        "venom-hardy",
+        "venom-symbiote"
+      ],
+      "enemies": [
+        "carnage-ssu"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Anne_Weying",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "morbius",
+      "name": "Dr. Michael Morbius",
+      "alias": "Morbius",
+      "aliases": [
+        "The Living Vampire"
+      ],
+      "portrayed_by": "Jared Leto",
+      "universe": "Earth-688 / SSU",
+      "continuity": "Sony's Spider-Man Universe",
+      "team_or_affiliation": [],
+      "character_type": "Anti-hero",
+      "tags": [
+        "spider-man",
+        "ssu",
+        "vampire",
+        "anti-hero"
+      ],
+      "status": "Active",
+      "debut_title": "Morbius (2022)",
+      "debut_year": 2022,
+      "summary": "A brilliant Nobel-winning biologist with a rare blood disease who transformed himself with bat DNA, gaining vampiric powers and a thirst for blood. He wages war on his former friend Milo and the vampire he became.",
+      "image_url": "../assets/img/cat-morbius.jpg",
+      "image_source_url": "https://en.wikipedia.org/wiki/Morbius%20The%20Living%20Vampire.jpg",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Sony's Marvel Universe",
+      "image_verified": true,
+      "source_notes": [
+        "The Living Vampire of the SSU; frog-meme beloved in pop culture."
+      ],
+      "related_titles": [
+        "Morbius (2022)"
+      ],
+      "allies": [
+        "milo-morbius"
+      ],
+      "enemies": [
+        "milo-morbius"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Morbius_(film)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "milo-morbius",
+      "name": "Lucien Crown",
+      "alias": "Milo",
+      "aliases": [],
+      "portrayed_by": "Matt Smith",
+      "universe": "Earth-688 / SSU",
+      "continuity": "Sony's Spider-Man Universe",
+      "team_or_affiliation": [],
+      "character_type": "Villain",
+      "tags": [
+        "spider-man",
+        "ssu",
+        "vampire",
+        "villains"
+      ],
+      "status": "Deceased",
+      "debut_title": "Morbius (2022)",
+      "debut_year": 2022,
+      "summary": "Michael Morbius's wealthy childhood friend who shared the same blood disease. After injecting himself with the same bat serum, he embraced his monstrous vampirism before being destroyed by Morbius.",
+      "source_notes": [
+        "The antagonist of Morbius (2022)."
+      ],
+      "related_titles": [
+        "Morbius (2022)"
+      ],
+      "allies": [
+        "morbius"
+      ],
+      "enemies": [
+        "morbius"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Morbius_(film)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "kraven-hunter",
+      "name": "Sergei Kravinoff",
+      "alias": "Kraven the Hunter",
+      "aliases": [
+        "Kraven"
+      ],
+      "portrayed_by": "Aaron Taylor-Johnson",
+      "universe": "Earth-688 / SSU",
+      "continuity": "Sony's Spider-Man Universe",
+      "team_or_affiliation": [],
+      "character_type": "Anti-hero",
+      "tags": [
+        "spider-man",
+        "ssu",
+        "kraven",
+        "anti-hero"
+      ],
+      "status": "Active",
+      "debut_title": "Kraven the Hunter (2023)",
+      "debut_year": 2023,
+      "summary": "A Russian aristocrat whose near-death encounter with a lion granted him enhanced strength and an animal connection. He hunts the villains who threaten his family, refusing to use guns against his prey.",
+      "image_url": "../assets/img/cat-kraven-hunter.webp",
+      "image_source_url": "https://en.wikipedia.org/wiki/Kraven_the_Hunter",
+      "image_source_name": "Wikipedia",
+      "image_alt": "Sergei Kravinoff portrait",
+      "image_verified": true,
+      "source_notes": [
+        "The SSU's anti-hero take on the classic Spider-Man villain."
+      ],
+      "related_titles": [
+        "Kraven the Hunter (2023)"
+      ],
+      "allies": [
+        "calypso-ssu"
+      ],
+      "enemies": [
+        "rhino-ssu",
+        "foreigner-ssu"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Kraven_the_Hunter",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "calypso-ssu",
+      "name": "Calypso Ezili",
+      "alias": "Calypso",
+      "aliases": [],
+      "portrayed_by": "Ariana DeBose",
+      "universe": "Earth-688 / SSU",
+      "continuity": "Sony's Spider-Man Universe",
+      "team_or_affiliation": [],
+      "character_type": "Ally",
+      "tags": [
+        "spider-man",
+        "ssu",
+        "ally"
+      ],
+      "status": "Active",
+      "debut_title": "Kraven the Hunter (2023)",
+      "debut_year": 2023,
+      "summary": "A forensic psychiatrist who aids Sergei Kravinoff and is drawn into his violent family affairs, serving as his confidante.",
+      "image_url": "../assets/img/cat-calypso-ssu.webp",
+      "image_source_url": "https://en.wikipedia.org/wiki/Calypso%20Ezili%20%282019%20Design%29.webp",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Calypso Ezili portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Comic counterpart is the voodoo priestess Calypso."
+      ],
+      "related_titles": [
+        "Kraven the Hunter (2023)"
+      ],
+      "allies": [
+        "kraven-hunter"
+      ],
+      "enemies": [
+        "foreigner-ssu"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Kraven_the_Hunter_(film)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "rhino-ssu",
+      "name": "Nikolai Kravinoff",
+      "alias": "The Rhino",
+      "aliases": [
+        "Nikolai"
+      ],
+      "portrayed_by": "Alessandro Nivola",
+      "universe": "Earth-688 / SSU",
+      "continuity": "Sony's Spider-Man Universe",
+      "team_or_affiliation": [],
+      "character_type": "Villain",
+      "tags": [
+        "spider-man",
+        "ssu",
+        "villains",
+        "rhino"
+      ],
+      "status": "Deceased",
+      "debut_title": "Kraven the Hunter (2023)",
+      "debut_year": 2023,
+      "summary": "Sergei's ambitious half-brother who experiments on himself with a rhinoceros serum, transforming into a monstrous human-rhino hybrid hunting his brother for control of the family empire.",
+      "image_url": "",
+      "image_source_url": "",
+      "image_source_name": "",
+      "image_alt": "",
+      "image_verified": false,
+      "source_notes": [
+        "A separate, animal-berserker Rhino from the Webb-universe version."
+      ],
+      "related_titles": [
+        "Kraven the Hunter (2023)"
+      ],
+      "allies": [],
+      "enemies": [
+        "kraven-hunter"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Kraven_the_Hunter_(film)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "foreigner-ssu",
+      "name": "Unknown / The Foreigner",
+      "alias": "The Foreigner",
+      "aliases": [],
+      "portrayed_by": "Christopher Abbott",
+      "universe": "Earth-688 / SSU",
+      "continuity": "Sony's Spider-Man Universe",
+      "team_or_affiliation": [],
+      "character_type": "Villain",
+      "tags": [
+        "spider-man",
+        "ssu",
+        "villains",
+        "assassin"
+      ],
+      "status": "Deceased",
+      "debut_title": "Kraven the Hunter (2023)",
+      "debut_year": 2023,
+      "summary": "A lethal assassin hired to kill a Mobster whom Kraven protects. His fatal encounter with one of Kraven's animal allies sets off the film's violent chain of events.",
+      "image_url": "../assets/img/cat-foreigner-ssu.jpg",
+      "image_source_url": "https://en.wikipedia.org/wiki/King%20Abdulaziz%20with%20a%20Foreigner%20in%20the%201930s.jpg",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "King Abdulaziz with a Foreigner in the 1930s",
+      "image_verified": true,
+      "source_notes": [
+        "Classic Spider-Man mercenary adapted for the SSU."
+      ],
+      "related_titles": [
+        "Kraven the Hunter (2023)"
+      ],
+      "allies": [
+        "ribery-ssu"
+      ],
+      "enemies": [
+        "kraven-hunter",
+        "calypso-ssu"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Kraven_the_Hunter_(film)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "ribery-ssu",
+      "name": "Aleksei Ribery",
+      "alias": "Ribery",
+      "aliases": [],
+      "portrayed_by": "Russell Crowe",
+      "universe": "Earth-688 / SSU",
+      "continuity": "Sony's Spider-Man Universe",
+      "team_or_affiliation": [],
+      "character_type": "Villain",
+      "tags": [
+        "spider-man",
+        "ssu",
+        "villains",
+        "mob"
+      ],
+      "status": "Deceased",
+      "debut_title": "Kraven the Hunter (2023)",
+      "debut_year": 2023,
+      "summary": "Kraven's ruthless father, a powerful crime lord who hunted exotic animals for sport and sought to expand his empire, ultimately meeting his end at the hands of his own sons.",
+      "image_url": "",
+      "image_source_url": "",
+      "image_source_name": "",
+      "image_alt": "",
+      "image_verified": false,
+      "source_notes": [
+        "The villainous family patriarch of Kraven the Hunter."
+      ],
+      "related_titles": [
+        "Kraven the Hunter (2023)"
+      ],
+      "allies": [
+        "foreigner-ssu"
+      ],
+      "enemies": [
+        "kraven-hunter",
+        "rhino-ssu"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Kraven_the_Hunter_(film)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "madame-web",
+      "name": "Cassandra Webb",
+      "alias": "Madame Web",
+      "aliases": [
+        "Cassie"
+      ],
+      "portrayed_by": "Dakota Johnson",
+      "universe": "Earth-688 / SSU",
+      "continuity": "Sony's Spider-Man Universe",
+      "team_or_affiliation": [],
+      "character_type": "Hero",
+      "tags": [
+        "spider-man",
+        "ssu",
+        "madame-web",
+        "precognition"
+      ],
+      "status": "Active",
+      "debut_title": "Madame Web (2024)",
+      "debut_year": 2024,
+      "summary": "A New York paramedic who begins seeing fragmented visions of the future after a near-fatal incident, learning to guide the young women who will become the Spider-Women against the hunter Ezekiel Sims.",
+      "source_notes": [
+        "The SSU's clairvoyant hero; connects the Spider-Girls."
+      ],
+      "related_titles": [
+        "Madame Web (2024)"
+      ],
+      "allies": [
+        "julia-cornwall",
+        "anya-corazon",
+        "mattie-franklin"
+      ],
+      "enemies": [
+        "ezekiel-sims"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Madame_Web_(film)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "ezekiel-sims",
+      "name": "Ezekiel Sims",
+      "alias": "Ezekiel Sims",
+      "aliases": [
+        "The Spider Hunter"
+      ],
+      "portrayed_by": "Tahar Rahim",
+      "universe": "Earth-688 / SSU",
+      "continuity": "Sony's Spider-Man Universe",
+      "team_or_affiliation": [],
+      "character_type": "Villain",
+      "tags": [
+        "spider-man",
+        "ssu",
+        "villains",
+        "spider"
+      ],
+      "status": "Deceased",
+      "debut_title": "Madame Web (2024)",
+      "debut_year": 2024,
+      "summary": "A wealthy industrialist who gained spider powers in the Peruvian Amazon and used his future-visions to hunt down the young women destined to become the Spider-Women before they can appear.",
+      "image_url": "../assets/img/cat-ezekiel-sims.png",
+      "image_source_url": "https://en.wikipedia.org/wiki/Ezekiel%20Sims.png",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Ezekiel Sims portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Antagonist of Madame Web; spider-powers mirroring the Spider-People."
+      ],
+      "related_titles": [
+        "Madame Web (2024)"
+      ],
+      "allies": [],
+      "enemies": [
+        "madame-web",
+        "julia-cornwall",
+        "anya-corazon",
+        "mattie-franklin"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Ezekiel_Sims",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "julia-cornwall",
+      "name": "Julia Cornwall",
+      "alias": "Spider-Woman",
+      "aliases": [
+        "Julia"
+      ],
+      "portrayed_by": "Sydney Sweeney",
+      "universe": "Earth-688 / SSU",
+      "continuity": "Sony's Spider-Man Universe",
+      "team_or_affiliation": [],
+      "character_type": "Hero",
+      "tags": [
+        "spider-man",
+        "ssu",
+        "spider-woman"
+      ],
+      "status": "Active",
+      "debut_title": "Madame Web (2024)",
+      "debut_year": 2024,
+      "summary": "A teenage New Yorker with a flair for impulsive decisions, one of three friends who discover spider abilities as Madame Web guides them away from Ezekiel Sims.",
+      "image_url": "",
+      "image_source_url": "",
+      "image_source_name": "",
+      "image_alt": "",
+      "image_verified": false,
+      "source_notes": [
+        "Comic counterpart becomes Spider-Woman (Julia Carpenter)."
+      ],
+      "related_titles": [
+        "Madame Web (2024)"
+      ],
+      "allies": [
+        "madame-web",
+        "anya-corazon",
+        "mattie-franklin"
+      ],
+      "enemies": [
+        "ezekiel-sims"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Julia_Carpenter",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "anya-corazon",
+      "name": "Anya Corazon",
+      "alias": "Spider-Girl",
+      "aliases": [
+        "Anya"
+      ],
+      "portrayed_by": "Isabela Merced",
+      "universe": "Earth-688 / SSU",
+      "continuity": "Sony's Spider-Man Universe",
+      "team_or_affiliation": [],
+      "character_type": "Hero",
+      "tags": [
+        "spider-man",
+        "ssu",
+        "spider-girl"
+      ],
+      "status": "Active",
+      "debut_title": "Madame Web (2024)",
+      "debut_year": 2024,
+      "summary": "A whip-smart and determined Brooklyn teen, one of the three future spider-heroes protected by Cassandra Webb as they awake to their powers.",
+      "image_url": "../assets/img/cat-anya-corazon.webp",
+      "image_source_url": "https://en.wikipedia.org/wiki/Anya_Corazon",
+      "image_source_name": "Wikipedia",
+      "image_alt": "Anya Corazon portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Adaptation of Anya Corazon, the comics' Spider-Girl."
+      ],
+      "related_titles": [
+        "Madame Web (2024)"
+      ],
+      "allies": [
+        "madame-web",
+        "julia-cornwall",
+        "mattie-franklin"
+      ],
+      "enemies": [
+        "ezekiel-sims"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Anya_Corazon",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "mattie-franklin",
+      "name": "Mattie Franklin",
+      "alias": "Spider-Woman",
+      "aliases": [
+        "Mattie"
+      ],
+      "portrayed_by": "Celeste O'Connor",
+      "universe": "Earth-688 / SSU",
+      "continuity": "Sony's Spider-Man Universe",
+      "team_or_affiliation": [],
+      "character_type": "Hero",
+      "tags": [
+        "spider-man",
+        "ssu",
+        "spider-woman"
+      ],
+      "status": "Active",
+      "debut_title": "Madame Web (2024)",
+      "debut_year": 2024,
+      "summary": "An outspoken, rebellious teenager and loyal friend, one of the three girls fated to become spider-powered heroes whose paths are guided by Madame Web away from Ezekiel Sims.",
+      "image_url": "../assets/img/cat-mattie-franklin.jpg",
+      "image_source_url": "https://en.wikipedia.org/wiki/Mattie%20Washburn%20House%2C%20Windsor%2C%20California.jpg",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Mattie Washburn House at 8660 Franklin Street, Windsor, California.  View looking northeast.",
+      "image_verified": true,
+      "source_notes": [
+        "Comics' Mattie Franklin was one of several Spider-Women."
+      ],
+      "related_titles": [
+        "Madame Web (2024)"
+      ],
+      "allies": [
+        "madame-web",
+        "julia-cornwall",
+        "anya-corazon"
+      ],
+      "enemies": [
+        "ezekiel-sims"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Mattie_Franklin",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    }
+  ]
+}

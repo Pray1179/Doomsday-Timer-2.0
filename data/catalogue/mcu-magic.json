@@ -1,0 +1,630 @@
+{
+  "characters": [
+    {
+      "id": "doctor-strange",
+      "name": "Stephen Strange",
+      "alias": "Doctor Strange",
+      "aliases": [
+        "Sorcerer Supreme"
+      ],
+      "portrayed_by": "Benedict Cumberbatch",
+      "universe": "Earth-616 / MCU",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "Masters of the Mystic Arts",
+        "Avengers"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "mcu",
+        "magic",
+        "sorcerer"
+      ],
+      "status": "Active",
+      "debut_title": "Doctor Strange (2016)",
+      "debut_year": 2016,
+      "summary": "A brilliant neurosurgeon who became Sorcerer Supreme's defender of reality after a car accident destroyed his hands. He wielded the Time Stone to bargain for half the universe, only for the Snap to still happen, and now guards the Multiverse.",
+      "image_url": "../assets/img/cat-doctor-strange.jpg",
+      "image_source_url": "https://en.wikipedia.org/wiki/Benedict%20Cumberbatch%20as%20Doctor%20Strange.jpeg",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Stephen Strange portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Wielded the Time Stone; central to Infinity War through Multiverse of Madness."
+      ],
+      "related_titles": [
+        "Doctor Strange (2016)",
+        "Thor: Ragnarok (2017)",
+        "Avengers: Infinity War (2018)",
+        "Avengers: Endgame (2019)",
+        "Spider-Man: No Way Home (2021)",
+        "Doctor Strange in the Multiverse of Madness (2022)"
+      ],
+      "allies": [
+        "wong",
+        "clea",
+        "america-chavez",
+        "iron-man-tony-stark",
+        "mordo"
+      ],
+      "enemies": [
+        "dormammu",
+        "kaecilius",
+        "thanos",
+        "wanda-maximoff"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Stephen_Strange_(Marvel_Cinematic_Universe)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "wong",
+      "name": "Wong",
+      "alias": "Wong",
+      "aliases": [
+        "Sorcerer Supreme"
+      ],
+      "portrayed_by": "Benedict Wong",
+      "universe": "Earth-616 / MCU",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "Masters of the Mystic Arts"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "mcu",
+        "magic",
+        "sorcerer"
+      ],
+      "status": "Active",
+      "debut_title": "Doctor Strange (2016)",
+      "debut_year": 2016,
+      "summary": "The keeper of the Kamar-Taj library who becomes the MCU's Sorcerer Supreme and an occasional Avenger. He loses the multiversal suite of the Darkhold in Multiverse of Madness.",
+      "image_url": "../assets/img/cat-wong.jpg",
+      "image_source_url": "https://en.wikipedia.org/wiki/Benedict%20Wong%20as%20Wong.jpg",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Wong portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Librarian of Kamar-Taj; promoted to Sorcerer Supreme."
+      ],
+      "related_titles": [
+        "Doctor Strange (2016)",
+        "Avengers: Endgame (2019)",
+        "Shang-Chi and the Legend of the Ten Rings (2021)",
+        "Doctor Strange in the Multiverse of Madness (2022)"
+      ],
+      "allies": [
+        "doctor-strange",
+        "america-chavez",
+        "shang-chi"
+      ],
+      "enemies": [
+        "thanos",
+        "kaecilius",
+        "dormammu"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Wong_(Marvel_Cinematic_Universe)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "mordo",
+      "name": "Karl Mordo",
+      "alias": "Baron Mordo",
+      "aliases": [],
+      "portrayed_by": "Chiwetel Ejiofor",
+      "universe": "Earth-616 / MCU",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "Masters of the Mystic Arts"
+      ],
+      "character_type": "Villain",
+      "tags": [
+        "mcu",
+        "magic",
+        "sorcerer",
+        "villains"
+      ],
+      "status": "Active",
+      "debut_title": "Doctor Strange (2016)",
+      "debut_year": 2016,
+      "summary": "A master sorcerer who rebelled against the ancient rules after the Ancient One's deception, declaring war on sorcerers who break the laws of nature.",
+      "image_url": "../assets/img/cat-mordo.webp",
+      "image_source_url": "https://en.wikipedia.org/wiki/Karl_Mordo",
+      "image_source_name": "Wikipedia",
+      "image_alt": "Karl Mordo portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Turns antagonist in the post-credits scene of Doctor Strange (2016)."
+      ],
+      "related_titles": [
+        "Doctor Strange (2016)"
+      ],
+      "allies": [],
+      "enemies": [
+        "doctor-strange",
+        "wong",
+        "ancient-one"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Karl_Mordo",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "ancient-one",
+      "name": "The Ancient One",
+      "alias": "The Ancient One",
+      "aliases": [],
+      "portrayed_by": "Tilda Swinton",
+      "universe": "Earth-616 / MCU",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "Masters of the Mystic Arts"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "mcu",
+        "magic",
+        "sorcerer"
+      ],
+      "status": "Deceased",
+      "debut_title": "Doctor Strange (2016)",
+      "debut_year": 2016,
+      "summary": "The centuries-old Sorcerer Supreme who protected Earth from dimensional threats. She denied Strange the Time Stone, then died defending Kamar-Taj, but appeared again during the Time Heist in Endgame.",
+      "image_url": "../assets/img/cat-ancient-one.webp",
+      "image_source_url": "https://en.wikipedia.org/wiki/Ancient_One",
+      "image_source_name": "Wikipedia",
+      "image_alt": "The Ancient One portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Killed by Kaecilius in Doctor Strange; meets Hulk/Banner during the Endgame Time Heist."
+      ],
+      "related_titles": [
+        "Doctor Strange (2016)",
+        "Avengers: Endgame (2019)"
+      ],
+      "allies": [
+        "doctor-strange",
+        "wong",
+        "mordo"
+      ],
+      "enemies": [
+        "dormammu",
+        "kaecilius"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Ancient_One",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "christine-palmer",
+      "name": "Christine Palmer",
+      "alias": "Dr. Christine Palmer",
+      "aliases": [],
+      "portrayed_by": "Rachel McAdams",
+      "universe": "Earth-616 / MCU",
+      "continuity": "MCU",
+      "team_or_affiliation": [],
+      "character_type": "Team-support",
+      "tags": [
+        "mcu",
+        "magic",
+        "medical"
+      ],
+      "status": "Active",
+      "debut_title": "Doctor Strange (2016)",
+      "debut_year": 2016,
+      "summary": "A trauma surgeon and Stephen Strange's former colleague and ex-girlfriend. She attended his wedding in an alternate universe in Multiverse of Madness.",
+      "image_url": "../assets/img/cat-christine-palmer.webp",
+      "image_source_url": "https://en.wikipedia.org/wiki/Christine_Palmer",
+      "image_source_name": "Wikipedia",
+      "image_alt": "Christine Palmer portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Appears in Doctor Strange and Multiverse of Madness."
+      ],
+      "related_titles": [
+        "Doctor Strange (2016)",
+        "Doctor Strange in the Multiverse of Madness (2022)"
+      ],
+      "allies": [
+        "doctor-strange"
+      ],
+      "enemies": [],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Christine_Palmer",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "clea",
+      "name": "Clea",
+      "alias": "Clea Strange",
+      "aliases": [],
+      "portrayed_by": "Charlize Theron",
+      "universe": "Earth-616 / MCU",
+      "continuity": "MCU",
+      "team_or_affiliation": [],
+      "character_type": "Hero",
+      "tags": [
+        "mcu",
+        "magic",
+        "dark-dimension"
+      ],
+      "status": "Active",
+      "debut_title": "Doctor Strange in the Multiverse of Madness (2022)",
+      "debut_year": 2022,
+      "summary": "A sorceress from the Dark Dimension, daughter of Dormammu in the comics, who recruits Strange to help fix an incursion in the post-credits scene of Multiverse of Madness.",
+      "source_notes": [
+        "Set up as Strange's next ally in Multiverse of Madness's post-credits scene."
+      ],
+      "related_titles": [
+        "Doctor Strange in the Multiverse of Madness (2022)"
+      ],
+      "allies": [
+        "doctor-strange"
+      ],
+      "enemies": [],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Clea",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "america-chavez",
+      "name": "America Chavez",
+      "alias": "America Chavez",
+      "aliases": [
+        "Ms. America"
+      ],
+      "portrayed_by": "Xochitl Gomez",
+      "universe": "Earth-616 / MCU",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "Masters of the Mystic Arts"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "mcu",
+        "magic",
+        "multiverse"
+      ],
+      "status": "Active",
+      "debut_title": "Doctor Strange in the Multiverse of Madness (2022)",
+      "debut_year": 2022,
+      "summary": "A young hero from another universe with the power to punch star-shaped portals through reality. She teams with Strange to stop Wanda and begins training at Kamar-Taj.",
+      "image_url": "../assets/img/cat-america-chavez.webp",
+      "image_source_url": "https://en.wikipedia.org/wiki/America_Chavez",
+      "image_source_name": "Wikipedia",
+      "image_alt": "America Chavez portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Introduced in Multiverse of Madness (2022); trained by Strange and Wong."
+      ],
+      "related_titles": [
+        "Doctor Strange in the Multiverse of Madness (2022)"
+      ],
+      "allies": [
+        "doctor-strange",
+        "wong",
+        "clea"
+      ],
+      "enemies": [
+        "wanda-maximoff",
+        "dormammu",
+        "kaecilius"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/America_Chavez",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "kaecilius",
+      "name": "Kaecilius",
+      "alias": "Kaecilius",
+      "aliases": [],
+      "portrayed_by": "Mads Mikkelsen",
+      "universe": "Earth-616 / MCU",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "Zealots"
+      ],
+      "character_type": "Villain",
+      "tags": [
+        "mcu",
+        "magic",
+        "villains"
+      ],
+      "status": "Deceased",
+      "debut_title": "Doctor Strange (2016)",
+      "debut_year": 2016,
+      "summary": "A former master of Kamar-Taj who betrayed the Ancient One to serve Dormammu, seeking eternal life. He was absorbed into the Dark Dimension.",
+      "image_url": "../assets/img/cat-kaecilius.jpg",
+      "image_source_url": "https://en.wikipedia.org/wiki/Kaecilius%20%28Earth-616%29%20from%20Valkyrie%20Jane%20Foster%20Vol%201%204%20001.jpg",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Kaecilius portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Primary antagonist of Doctor Strange (2016)."
+      ],
+      "related_titles": [
+        "Doctor Strange (2016)"
+      ],
+      "allies": [
+        "dormammu"
+      ],
+      "enemies": [
+        "doctor-strange",
+        "ancient-one",
+        "wong"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Kaecilius",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "dormammu",
+      "name": "Dormammu",
+      "alias": "Dormammu",
+      "aliases": [
+        "The Dreaded One",
+        "Dark Dimension's ruler"
+      ],
+      "portrayed_by": "Benedict Cumberbatch (voice)",
+      "universe": "Earth-616 / MCU",
+      "continuity": "MCU",
+      "team_or_affiliation": [],
+      "character_type": "Villain",
+      "tags": [
+        "mcu",
+        "magic",
+        "villains",
+        "dimensional"
+      ],
+      "status": "Active",
+      "debut_title": "Doctor Strange (2016)",
+      "debut_year": 2016,
+      "summary": "The all-consuming ruler of the Dark Dimension who hungers to absorb realities. Doctor Strange trapped him in an endless time loop until he relented.",
+      "image_url": "../assets/img/cat-dormammu.png",
+      "image_source_url": "https://en.wikipedia.org/wiki/Dormammu%20in%20Doctor%20Strange%20%282016%20film%29.png",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Dormammu portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Voiced by Benedict Cumberbatch; defeated by a time loop in Doctor Strange."
+      ],
+      "related_titles": [
+        "Doctor Strange (2016)"
+      ],
+      "allies": [
+        "kaecilius"
+      ],
+      "enemies": [
+        "doctor-strange",
+        "ancient-one",
+        "clea"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Dormammu",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "katy",
+      "name": "Katy Chen",
+      "alias": "Katy",
+      "aliases": [],
+      "portrayed_by": "Awkwafina",
+      "universe": "Earth-616 / MCU",
+      "continuity": "MCU",
+      "team_or_affiliation": [],
+      "character_type": "Team-support",
+      "tags": [
+        "mcu",
+        "shang-chi",
+        "comedy"
+      ],
+      "status": "Active",
+      "debut_title": "Shang-Chi and the Legend of the Ten Rings (2021)",
+      "debut_year": 2021,
+      "summary": "Shang-Chi's best friend and a valet-turned-archer who finds herself pulled into his family's war, proving a surprisingly gifted fighter.",
+      "image_url": "",
+      "image_source_url": "",
+      "image_source_name": "",
+      "image_alt": "",
+      "image_verified": false,
+      "source_notes": [
+        "Shang-Chi's comic-relief best friend."
+      ],
+      "related_titles": [
+        "Shang-Chi and the Legend of the Ten Rings (2021)"
+      ],
+      "allies": [
+        "shang-chi",
+        "xialing"
+      ],
+      "enemies": [
+        "wenwu"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Katy_(Marvel_Cinematic_Universe)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "xialing",
+      "name": "Xu Xialing",
+      "alias": "Xialing",
+      "aliases": [
+        "Sister of Shang-Chi"
+      ],
+      "portrayed_by": "Meng'er Zhang",
+      "universe": "Earth-616 / MCU",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "Ten Rings"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "mcu",
+        "shang-chi"
+      ],
+      "status": "Active",
+      "debut_title": "Shang-Chi and the Legend of the Ten Rings (2021)",
+      "debut_year": 2021,
+      "summary": "Shang-Chi's estranged younger sister who secretly runs a criminal underground. She reunites with her brother against their father and later reforms the Ten Rings organization.",
+      "image_url": "",
+      "image_source_url": "",
+      "image_source_name": "",
+      "image_alt": "",
+      "image_verified": false,
+      "source_notes": [
+        "Featured in Shang-Chi; associated with the Ten Rings post-film."
+      ],
+      "related_titles": [
+        "Shang-Chi and the Legend of the Ten Rings (2021)"
+      ],
+      "allies": [
+        "shang-chi",
+        "katy",
+        "wenwu"
+      ],
+      "enemies": [
+        "wenwu",
+        "death-dealer"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Xialing",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "wenwu",
+      "name": "Xu Wenwu",
+      "alias": "The Mandarin",
+      "aliases": [
+        "The Ten Rings leader"
+      ],
+      "portrayed_by": "Tony Leung",
+      "universe": "Earth-616 / MCU",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "Ten Rings"
+      ],
+      "character_type": "Villain",
+      "tags": [
+        "mcu",
+        "shang-chi",
+        "ten-rings",
+        "villains"
+      ],
+      "status": "Deceased",
+      "debut_title": "Shang-Chi and the Legend of the Ten Rings (2021)",
+      "debut_year": 2021,
+      "summary": "The immortal warlord who wielded the Ten Rings for a thousand years and fathered Shang-Chi. Nagged by grief for his wife, he was slain by the Dweller-in-Darkness, which then possessed him.",
+      "image_url": "",
+      "image_source_url": "",
+      "image_source_name": "",
+      "image_alt": "",
+      "image_verified": false,
+      "source_notes": [
+        "The Mandarin reveal in Shang-Chi; killed by the Dweller-in-Darkness."
+      ],
+      "related_titles": [
+        "Shang-Chi and the Legend of the Ten Rings (2021)"
+      ],
+      "allies": [
+        "xialing",
+        "death-dealer"
+      ],
+      "enemies": [
+        "shang-chi",
+        "katy",
+        "ying-li"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Wenwu",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    }
+  ]
+}
