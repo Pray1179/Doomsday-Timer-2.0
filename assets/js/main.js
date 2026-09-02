@@ -681,7 +681,7 @@
     // Collect every card / section / heading that should rise into view.
     // Using selector-based discovery keeps build scripts untouched.
     const candidates = $$(
-      '.mem-card, .stat-card, .cast-card, .card, .tl-item, ' +
+      '.mem-card, .stat-card, .cast-card, .card, ' +
       '.wrap > section, .explore-grid .card, .cat-card, ' +
       '.stat-grid .stat-card, .mem-grid .mem-card'
     );
@@ -692,19 +692,30 @@
       seen.add(el);
       // Already handled by the catalogue stagger — skip
       if (el.classList.contains('js-animate')) return false;
+      // The timeline rail has its own scroll-zoom affordance. Exclude it (and
+      // the section wrapping it) so its cards are never parked at opacity:0 —
+      // otherwise a long rail can stay invisible if the observer mis-fires.
+      if (el.classList.contains('tl-item') || el.querySelector('.tl-rail')) return false;
       el.classList.add('reveal');
       return true;
     });
     if (!targets.length) return;
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(en => {
-        if (en.isIntersecting) {
-          en.target.classList.add('revealed');
-          observer.unobserve(en.target);
-        }
-      });
-    }, { threshold: 0.08, rootMargin: '0px 0px -60px 0px' });
+    let observer;
+    try {
+      observer = new IntersectionObserver((entries) => {
+        entries.forEach(en => {
+          if (en.isIntersecting) {
+            en.target.classList.add('revealed');
+            observer.unobserve(en.target);
+          }
+        });
+      }, { threshold: 0.08, rootMargin: '0px 0px -60px 0px' });
+    } catch {
+      // No IntersectionObserver (or init failure): never leave content hidden.
+      targets.forEach(el => el.classList.add('revealed'));
+      return;
+    }
     targets.forEach(el => observer.observe(el));
   }
 
