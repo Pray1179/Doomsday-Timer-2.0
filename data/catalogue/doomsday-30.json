@@ -1,0 +1,1595 @@
+{
+  "characters": [
+    {
+      "id": "beast-hank-mccoy",
+      "name": "Hank McCoy",
+      "alias": "Beast",
+      "aliases": [
+        "Beast"
+      ],
+      "portrayed_by": "Kelsey Grammer",
+      "universe": "X-Men universe",
+      "continuity": "X-Men",
+      "team_or_affiliation": [
+        "X-Men"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "x-men"
+      ],
+      "status": "Legacy",
+      "debut_title": "X-Men: The Last Stand (2006; Fox continuity)",
+      "debut_year": 2008,
+      "summary": "The blue-furred genius",
+      "image_url": "../assets/img/cat-beast-hank-mccoy.webp",
+      "image_source_url": "https://en.wikipedia.org/wiki/Kelsey%20Grammer%20as%20Beast%20in%20X-Men%20The%20Last%20Stand.webp",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Hank McCoy portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
+      ],
+      "related_titles": [
+        "X-Men: The Last Stand (2006)",
+        "X-Men: Days of Future Past (2014)",
+        "Avengers: Doomsday (2026)"
+      ],
+      "allies": [
+        "professor-x-charles-xavier"
+      ],
+      "enemies": [],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": "kelsey-grammer",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Avengers:_Doomsday",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-29"
+        }
+      ]
+    },
+    {
+      "id": "ben-grimm",
+      "name": "Ben Grimm",
+      "alias": "The Thing",
+      "aliases": [
+        "The Thing"
+      ],
+      "portrayed_by": "Ebon Moss-Bachrach",
+      "universe": "Earth-828",
+      "continuity": "Fantastic Four",
+      "team_or_affiliation": [
+        "Fantastic Four"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "fantastic-four",
+        "mcu"
+      ],
+      "status": "Active",
+      "debut_title": "The Fantastic Four: First Steps (2025)",
+      "debut_year": 2008,
+      "summary": "The Thing",
+      "image_url": "",
+      "image_source_url": "https://en.wikipedia.org/wiki/Ebon%20Moss-Bachrach%20as%20Micro.jpeg",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Ben Grimm portrait",
+      "image_verified": false,
+      "source_notes": [
+        "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
+      ],
+      "related_titles": [
+        "The Fantastic Four: First Steps (2025)",
+        "Avengers: Doomsday (2026)"
+      ],
+      "allies": [
+        "reed-richards",
+        "sue-storm",
+        "johnny-storm"
+      ],
+      "enemies": [
+        "doctor-doom",
+        "galactus"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": "ebon-moss-bachrach",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Avengers:_Doomsday",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-29"
+        }
+      ]
+    },
+    {
+      "id": "bucky-barnes-winter-soldier",
+      "name": "Bucky Barnes",
+      "alias": "Winter Soldier",
+      "aliases": [
+        "Winter Soldier"
+      ],
+      "portrayed_by": "Sebastian Stan",
+      "universe": "MCU (Earth-616)",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "Avengers"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "avengers",
+        "mcu"
+      ],
+      "status": "Active",
+      "debut_title": "Captain America: The First Avenger (2011)",
+      "debut_year": 2008,
+      "summary": "The Winter Soldier",
+      "image_url": "../assets/img/cat-bucky-barnes-winter-soldier.jpg",
+      "image_source_url": "https://en.wikipedia.org/wiki/Sebastian%20Stan%20as%20Bucky%20Barnes.jpg",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Promotional image of Sebastian Stan as Bucky Barnes in the Marvel Studios film, Captain America: The Winter Soldier.",
+      "image_verified": true,
+      "source_notes": [
+        "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
+      ],
+      "related_titles": [
+        "Captain America: The First Avenger (2011)",
+        "Captain America: The Winter Soldier (2014)",
+        "Avengers: Age of Ultron (2015)",
+        "Captain America: Civil War (2016)",
+        "Avengers: Infinity War (2018)",
+        "Avengers: Endgame (2019)",
+        "The Falcon and the Winter Soldier (2021)",
+        "Thunderbolts* (2025)",
+        "Avengers: Doomsday (2026)"
+      ],
+      "allies": [
+        "sam-wilson-captain-america"
+      ],
+      "enemies": [],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": "sebastian-stan",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Avengers:_Doomsday",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-29"
+        }
+      ]
+    },
+    {
+      "id": "captain-america-steve-rogers",
+      "name": "Steve Rogers",
+      "alias": "Captain America",
+      "aliases": [
+        "Captain America"
+      ],
+      "portrayed_by": "Chris Evans",
+      "universe": "MCU (Earth-616)",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "Avengers"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "avengers",
+        "mcu"
+      ],
+      "status": "Active",
+      "debut_title": "Captain America: The First Avenger (2011)",
+      "debut_year": 2008,
+      "summary": "The Sentinel of Liberty",
+      "image_url": "",
+      "image_source_url": "",
+      "image_source_name": "",
+      "image_alt": "",
+      "image_verified": false,
+      "source_notes": [
+        "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
+      ],
+      "related_titles": [
+        "Captain America: The First Avenger (2011)",
+        "The Avengers (2012)",
+        "Captain America: The Winter Soldier (2014)",
+        "Avengers: Age of Ultron (2015)",
+        "Captain America: Civil War (2016)",
+        "Avengers: Infinity War (2018)",
+        "Avengers: Endgame (2019)"
+      ],
+      "allies": [
+        "bucky-barnes-winter-soldier"
+      ],
+      "enemies": [
+        "red-skull",
+        "thanos"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": "chris-evans",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Avengers:_Doomsday",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-29"
+        }
+      ]
+    },
+    {
+      "id": "cassie-lang",
+      "name": "Cassie Lang",
+      "alias": "Stature",
+      "aliases": [],
+      "portrayed_by": "Kathryn Newton",
+      "universe": "MCU (Earth-616)",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "Avengers"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "avengers",
+        "mcu"
+      ],
+      "status": "Active",
+      "debut_title": "Ant-Man and the Wasp: Quantumania (2023)",
+      "debut_year": 2008,
+      "summary": "The size-shifting Stature",
+      "image_url": "",
+      "image_source_url": "https://en.wikipedia.org/wiki/Kathryn%20Newton%20during%20an%20interview%2C%20February%202023.jpg",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Kathryn Newton during an interview for Ant-Man and The Wasp: Quantamania in February 2023",
+      "image_verified": false,
+      "source_notes": [
+        "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
+      ],
+      "related_titles": [
+        "Ant-Man and the Wasp: Quantumania (2023)",
+        "Avengers: Doomsday (2026)"
+      ],
+      "allies": [
+        "scott-lang-ant-man",
+        "hope-van-dyne"
+      ],
+      "enemies": [
+        "kang"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": "kathryn-newton",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Avengers:_Doomsday",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-29"
+        }
+      ]
+    },
+    {
+      "id": "cyclops-scott-summers",
+      "name": "Scott Summers",
+      "alias": "Cyclops",
+      "aliases": [
+        "Cyclops"
+      ],
+      "portrayed_by": "James Marsden",
+      "universe": "X-Men universe",
+      "continuity": "X-Men",
+      "team_or_affiliation": [
+        "X-Men"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "x-men"
+      ],
+      "status": "Legacy",
+      "debut_title": "X-Men (2000; Fox continuity)",
+      "debut_year": 2008,
+      "summary": "The optic-blast field commander",
+      "image_url": "../assets/img/cat-cyclops-scott-summers.jpg",
+      "image_source_url": "https://en.wikipedia.org/wiki/James%20Marsden%20as%20Cyclops.jpg",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Scott Summers portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
+      ],
+      "related_titles": [
+        "X-Men (2000)",
+        "X2 (2003)",
+        "X-Men: The Last Stand (2006)",
+        "X-Men: Days of Future Past (2014)",
+        "Avengers: Doomsday (2026)"
+      ],
+      "allies": [
+        "jean-grey",
+        "storm"
+      ],
+      "enemies": [
+        "magneto-erik"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": "james-marsden",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Avengers:_Doomsday",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-29"
+        }
+      ]
+    },
+    {
+      "id": "doctor-doom",
+      "name": "Victor von Doom",
+      "alias": "Doctor Doom",
+      "aliases": [
+        "Doctor Doom"
+      ],
+      "portrayed_by": "Robert Downey Jr.",
+      "universe": "MCU (Earth-616)",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "Villain"
+      ],
+      "character_type": "Villain",
+      "tags": [
+        "villain",
+        "mcu"
+      ],
+      "status": "Active",
+      "debut_title": "Avengers: Doomsday (2026)",
+      "debut_year": 2026,
+      "summary": "The Multiverse Saga threat",
+      "image_url": "",
+      "image_source_url": "",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Victor von Doom portrait",
+      "image_verified": false,
+      "source_notes": [
+        "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
+      ],
+      "related_titles": [
+        "Avengers: Doomsday (2026)"
+      ],
+      "allies": [],
+      "enemies": [
+        "thanos"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": "robert-downey-jr",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Avengers:_Doomsday",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-29"
+        },
+        {
+          "url": "https://www.marvel.com/movies/avengers-doomsday",
+          "publisher": "Marvel",
+          "verified_at": "2026-08-29"
+        }
+      ]
+    },
+    {
+      "id": "gambit",
+      "name": "Remy LeBeau",
+      "alias": "Gambit",
+      "aliases": [
+        "Gambit"
+      ],
+      "portrayed_by": "Channing Tatum",
+      "universe": "X-Men universe",
+      "continuity": "X-Men",
+      "team_or_affiliation": [
+        "X-Men"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "x-men",
+        "multiverse"
+      ],
+      "status": "Legacy",
+      "debut_title": "Deadpool & Wolverine (2024)",
+      "debut_year": 2008,
+      "summary": "The ragin Cajun",
+      "image_url": "../assets/img/cat-gambit.jpg",
+      "image_source_url": "https://en.wikipedia.org/wiki/Channing%20Tatum%20as%20Gambit.jpeg",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Remy LeBeau portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
+      ],
+      "related_titles": [
+        "Deadpool & Wolverine (2024)",
+        "Avengers: Doomsday (2026)"
+      ],
+      "allies": [
+        "cyclops-scott-summers",
+        "storm"
+      ],
+      "enemies": [],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": "channing-tatum",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Avengers:_Doomsday",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-29"
+        }
+      ]
+    },
+    {
+      "id": "ghost-ava-starr",
+      "name": "Ava Starr",
+      "alias": "Ghost",
+      "aliases": [
+        "Ghost"
+      ],
+      "portrayed_by": "Hannah John-Kamen",
+      "universe": "MCU (Earth-616)",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "New Avengers"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "new-avengers",
+        "thunderbolts",
+        "mcu"
+      ],
+      "status": "Active",
+      "debut_title": "Ant-Man and the Wasp (2018)",
+      "debut_year": 2008,
+      "summary": "The phasing Ghost",
+      "image_url": "",
+      "image_source_url": "https://en.wikipedia.org/wiki/Hannah%20John-Kamen%20Comic-Con%202024.jpg",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Alex Montiel entrevistando a Hannah John-Kamen y a Jake Schreier en la Comic-Con de San Diego 2024",
+      "image_verified": false,
+      "source_notes": [
+        "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
+      ],
+      "related_titles": [
+        "Ant-Man and the Wasp (2018)",
+        "Thunderbolts* (2025)",
+        "Avengers: Doomsday (2026)"
+      ],
+      "allies": [
+        "john-walker-us-agent"
+      ],
+      "enemies": [],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": "hannah-john-kamen",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Avengers:_Doomsday",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-29"
+        }
+      ]
+    },
+    {
+      "id": "joaquin-torres-falcon",
+      "name": "Joaquin Torres",
+      "alias": "Falcon",
+      "aliases": [
+        "Falcon"
+      ],
+      "portrayed_by": "Danny Ramirez",
+      "universe": "MCU (Earth-616)",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "Avengers"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "avengers",
+        "mcu"
+      ],
+      "status": "Active",
+      "debut_title": "The Falcon and the Winter Soldier (2021)",
+      "debut_year": 2008,
+      "summary": "The new Falcon",
+      "image_url": "",
+      "image_source_url": "https://en.wikipedia.org/wiki/Joaqu%C3%ADn%20Torres%20Garc%C3%ADa%20-%20Autorretrato%20%281946%29.jpg",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Joaquin Torres portrait",
+      "image_verified": false,
+      "source_notes": [
+        "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
+      ],
+      "related_titles": [
+        "The Falcon and the Winter Soldier (2021)",
+        "Captain America: Brave New World (2025)",
+        "Avengers: Doomsday (2026)"
+      ],
+      "allies": [
+        "sam-wilson-captain-america"
+      ],
+      "enemies": [],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": "danny-ramirez",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Avengers:_Doomsday",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-29"
+        }
+      ]
+    },
+    {
+      "id": "john-walker-us-agent",
+      "name": "John Walker",
+      "alias": "U.S. Agent",
+      "aliases": [
+        "U.S. Agent"
+      ],
+      "portrayed_by": "Wyatt Russell",
+      "universe": "MCU (Earth-616)",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "Avengers"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "new-avengers",
+        "thunderbolts",
+        "mcu"
+      ],
+      "status": "Active",
+      "debut_title": "The Falcon and the Winter Soldier (2021)",
+      "debut_year": 2008,
+      "summary": "U.S. Agent",
+      "image_url": "",
+      "image_source_url": "https://en.wikipedia.org/wiki/Johnnie%20Walker%20Splash.JPG",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Chronophotograph at high speed. Johnnie Walker splash without any montage! Glass was glued to an inclined plane, which was dropped to create the splash",
+      "image_verified": false,
+      "source_notes": [
+        "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
+      ],
+      "related_titles": [
+        "The Falcon and the Winter Soldier (2021)",
+        "Black Widow (2021)",
+        "Avengers: Doomsday (2026)"
+      ],
+      "allies": [
+        "ghost-ava-starr"
+      ],
+      "enemies": [
+        "sam-wilson-captain-america"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": "wyatt-russell",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Avengers:_Doomsday",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-29"
+        }
+      ]
+    },
+    {
+      "id": "johnny-storm",
+      "name": "Johnny Storm",
+      "alias": "Human Torch",
+      "aliases": [
+        "Human Torch"
+      ],
+      "portrayed_by": "Joseph Quinn",
+      "universe": "Earth-828",
+      "continuity": "Fantastic Four",
+      "team_or_affiliation": [
+        "Fantastic Four"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "fantastic-four",
+        "mcu"
+      ],
+      "status": "Active",
+      "debut_title": "The Fantastic Four: First Steps (2025)",
+      "debut_year": 2008,
+      "summary": "The Human Torch",
+      "image_url": "",
+      "image_source_url": "https://en.wikipedia.org/wiki/Human%20Torch%20%28Johnny%20Storm%29.png",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Artwork for the cover of Fantastic Four vol. 4, 645 (April 2015 Marvel Comics) Art by Michael Komarck (Variant cover art)",
+      "image_verified": false,
+      "source_notes": [
+        "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
+      ],
+      "related_titles": [
+        "The Fantastic Four: First Steps (2025)",
+        "Avengers: Doomsday (2026)"
+      ],
+      "allies": [
+        "reed-richards",
+        "sue-storm",
+        "ben-grimm"
+      ],
+      "enemies": [
+        "doctor-doom"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": "joseph-quinn",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Avengers:_Doomsday",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-29"
+        }
+      ]
+    },
+    {
+      "id": "loki",
+      "name": "Loki",
+      "alias": "Loki",
+      "aliases": [],
+      "portrayed_by": "Tom Hiddleston",
+      "universe": "MCU (Earth-616)",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "Avengers"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "avengers",
+        "mcu",
+        "multiverse"
+      ],
+      "status": "Active",
+      "debut_title": "Thor (2011)",
+      "debut_year": 2008,
+      "summary": "God of Mischief",
+      "image_url": "",
+      "image_source_url": "",
+      "image_source_name": "",
+      "image_alt": "",
+      "image_verified": false,
+      "source_notes": [
+        "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
+      ],
+      "related_titles": [
+        "Thor (2011)",
+        "The Avengers (2012)",
+        "Thor: The Dark World (2013)",
+        "Thor: Ragnarok (2017)",
+        "Avengers: Infinity War (2018)",
+        "Loki (2021-2023)"
+      ],
+      "allies": [
+        "thor"
+      ],
+      "enemies": [
+        "thanos",
+        "he-who-remains"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": "tom-hiddleston",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Avengers:_Doomsday",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-29"
+        }
+      ]
+    },
+    {
+      "id": "magneto-erik",
+      "name": "Erik Lehnsherr",
+      "alias": "Magneto",
+      "aliases": [
+        "Magneto"
+      ],
+      "portrayed_by": "Ian McKellen",
+      "universe": "X-Men universe",
+      "continuity": "X-Men",
+      "team_or_affiliation": [
+        "X-Men"
+      ],
+      "character_type": "Villain",
+      "tags": [
+        "x-men"
+      ],
+      "status": "Legacy",
+      "debut_title": "X-Men (2000; Fox continuity)",
+      "debut_year": 2008,
+      "summary": "Master of magnetism",
+      "image_url": "",
+      "image_source_url": "https://en.wikipedia.org/wiki/Erik%20Lehnsherr",
+      "image_source_name": "Wikipedia",
+      "image_alt": "Marvel Comics character",
+      "image_verified": false,
+      "source_notes": [
+        "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
+      ],
+      "related_titles": [
+        "X-Men (2000)",
+        "X2 (2003)",
+        "X-Men: The Last Stand (2006)",
+        "X-Men: Days of Future Past (2014)",
+        "Avengers: Doomsday (2026)"
+      ],
+      "allies": [
+        "mystique"
+      ],
+      "enemies": [
+        "professor-x-charles-xavier"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": "ian-mckellen",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Avengers:_Doomsday",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-29"
+        }
+      ]
+    },
+    {
+      "id": "mbaku",
+      "name": "M'Baku",
+      "alias": "M'Baku",
+      "aliases": [],
+      "portrayed_by": "Winston Duke",
+      "universe": "MCU (Earth-616)",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "Wakandans"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "wakandans",
+        "mcu"
+      ],
+      "status": "Active",
+      "debut_title": "Black Panther (2018)",
+      "debut_year": 2008,
+      "summary": "Leader of the Jabari",
+      "image_url": "",
+      "image_source_url": "",
+      "image_source_name": "",
+      "image_alt": "",
+      "image_verified": false,
+      "source_notes": [
+        "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
+      ],
+      "related_titles": [
+        "Black Panther (2018)",
+        "Avengers: Infinity War (2018)",
+        "Avengers: Endgame (2019)",
+        "Black Panther: Wakanda Forever (2022)",
+        "Avengers: Doomsday (2026)"
+      ],
+      "allies": [
+        "shuri-black-panther"
+      ],
+      "enemies": [
+        "killmonger"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": "winston-duke",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Avengers:_Doomsday",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-29"
+        }
+      ]
+    },
+    {
+      "id": "mystique",
+      "name": "Raven Darkhölme",
+      "alias": "Mystique",
+      "aliases": [
+        "Mystique"
+      ],
+      "portrayed_by": "Rebecca Romijn",
+      "universe": "X-Men universe",
+      "continuity": "X-Men",
+      "team_or_affiliation": [
+        "X-Men"
+      ],
+      "character_type": "Villain",
+      "tags": [
+        "x-men"
+      ],
+      "status": "Legacy",
+      "debut_title": "X-Men (2000; Fox continuity)",
+      "debut_year": 2008,
+      "summary": "The shape-shifting spy",
+      "image_url": "",
+      "image_source_url": "",
+      "image_source_name": "",
+      "image_alt": "",
+      "image_verified": false,
+      "source_notes": [
+        "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
+      ],
+      "related_titles": [
+        "X-Men (2000)",
+        "X2 (2003)",
+        "X-Men: The Last Stand (2006)",
+        "X-Men: Days of Future Past (2014)",
+        "Avengers: Doomsday (2026)"
+      ],
+      "allies": [
+        "magneto-erik"
+      ],
+      "enemies": [
+        "professor-x-charles-xavier"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": "rebecca-romijn",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Avengers:_Doomsday",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-29"
+        }
+      ]
+    },
+    {
+      "id": "namor",
+      "name": "Namor",
+      "alias": "Namor",
+      "aliases": [],
+      "portrayed_by": "Tenoch Huerta Mejia",
+      "universe": "MCU (Earth-616)",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "Wakandans"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "wakandans",
+        "mcu"
+      ],
+      "status": "Active",
+      "debut_title": "Black Panther: Wakanda Forever (2022)",
+      "debut_year": 2008,
+      "summary": "King of Talokan",
+      "image_url": "",
+      "image_source_url": "https://en.wikipedia.org/wiki/Guillermo%20Namor%20Kong.jpg",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Guillermo Namor Kong, membre de l'Assemblée constituante chilienne.",
+      "image_verified": false,
+      "source_notes": [
+        "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
+      ],
+      "related_titles": [
+        "Black Panther: Wakanda Forever (2022)",
+        "Avengers: Doomsday (2026)"
+      ],
+      "allies": [
+        "namora",
+        "shuri-black-panther"
+      ],
+      "enemies": [
+        "attuma"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": "tenoch-huerta-mejia",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Avengers:_Doomsday",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-29"
+        }
+      ]
+    },
+    {
+      "id": "namora",
+      "name": "Namora",
+      "alias": "Namora",
+      "aliases": [],
+      "portrayed_by": "Mabel Cadena",
+      "universe": "MCU (Earth-616)",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "Wakandans"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "wakandans",
+        "mcu"
+      ],
+      "status": "Active",
+      "debut_title": "Black Panther: Wakanda Forever (2022)",
+      "debut_year": 2008,
+      "summary": "Warrior of Talokan",
+      "image_url": "",
+      "image_source_url": "https://en.wikipedia.org/wiki/Retrato%20Fernando%20Namora.jpg",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "portrait of Fernando Namora, portuguese writer (1919-1989)",
+      "image_verified": false,
+      "source_notes": [
+        "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
+      ],
+      "related_titles": [
+        "Black Panther: Wakanda Forever (2022)",
+        "Avengers: Doomsday (2026)"
+      ],
+      "allies": [
+        "namor",
+        "shuri-black-panther"
+      ],
+      "enemies": [
+        "attuma"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": "mabel-cadena",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Avengers:_Doomsday",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-29"
+        }
+      ]
+    },
+    {
+      "id": "nightcrawler",
+      "name": "Kurt Wagner",
+      "alias": "Nightcrawler",
+      "aliases": [
+        "Nightcrawler"
+      ],
+      "portrayed_by": "Alan Cumming",
+      "universe": "X-Men universe",
+      "continuity": "X-Men",
+      "team_or_affiliation": [
+        "X-Men"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "x-men"
+      ],
+      "status": "Legacy",
+      "debut_title": "X2 (2003; Fox continuity)",
+      "debut_year": 2008,
+      "summary": "The blue teleporter",
+      "image_url": "",
+      "image_source_url": "",
+      "image_source_name": "",
+      "image_alt": "",
+      "image_verified": false,
+      "source_notes": [
+        "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
+      ],
+      "related_titles": [
+        "X2 (2003)",
+        "Avengers: Doomsday (2026)"
+      ],
+      "allies": [
+        "storm",
+        "cyclops-scott-summers"
+      ],
+      "enemies": [],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": "alan-cumming",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Avengers:_Doomsday",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-29"
+        }
+      ]
+    },
+    {
+      "id": "professor-x-charles-xavier",
+      "name": "Charles Xavier",
+      "alias": "Professor X",
+      "aliases": [
+        "Professor X"
+      ],
+      "portrayed_by": "Patrick Stewart",
+      "universe": "X-Men universe",
+      "continuity": "X-Men",
+      "team_or_affiliation": [
+        "X-Men"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "x-men",
+        "multiverse"
+      ],
+      "status": "Active",
+      "debut_title": "X-Men (2000; Fox continuity)",
+      "debut_year": 2008,
+      "summary": "Founder of the X-Men",
+      "image_url": "../assets/img/cat-professor-x-charles-xavier.jpg",
+      "image_source_url": "https://en.wikipedia.org/wiki/Charles%20Xavier%20%28Patrick%20Stewart%29.jpg",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Charles Xavier portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
+      ],
+      "related_titles": [
+        "X-Men (2000)",
+        "X2 (2003)",
+        "X-Men: The Last Stand (2006)",
+        "X-Men: Days of Future Past (2014)",
+        "Doctor Strange in the Multiverse of Madness (2022)",
+        "Avengers: Doomsday (2026)"
+      ],
+      "allies": [
+        "magneto-erik",
+        "beast-hank-mccoy"
+      ],
+      "enemies": [
+        "magneto-erik"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": "patrick-stewart",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Avengers:_Doomsday",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-29"
+        }
+      ]
+    },
+    {
+      "id": "red-guardian",
+      "name": "Alexei Shostakov",
+      "alias": "Red Guardian",
+      "aliases": [
+        "Red Guardian"
+      ],
+      "portrayed_by": "David Harbour",
+      "universe": "MCU (Earth-616)",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "Avengers"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "new-avengers",
+        "thunderbolts",
+        "mcu"
+      ],
+      "status": "Active",
+      "debut_title": "Black Widow (2021)",
+      "debut_year": 2008,
+      "summary": "The Red Guardian",
+      "image_url": "",
+      "image_source_url": "https://en.wikipedia.org/wiki/Florence%20Pugh%20%26%20David%20Harbour%202025%2002.jpg",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Florence Pugh &amp; David Harbour in an interview with Escorpión Dorado in 2025  (2:00)",
+      "image_verified": false,
+      "source_notes": [
+        "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
+      ],
+      "related_titles": [
+        "Black Widow (2021)",
+        "Avengers: Doomsday (2026)"
+      ],
+      "allies": [
+        "yelena-belova"
+      ],
+      "enemies": [],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": "david-harbour",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Avengers:_Doomsday",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-29"
+        }
+      ]
+    },
+    {
+      "id": "reed-richards",
+      "name": "Reed Richards",
+      "alias": "Mr. Fantastic",
+      "aliases": [
+        "Mr. Fantastic"
+      ],
+      "portrayed_by": "Pedro Pascal",
+      "universe": "Earth-828",
+      "continuity": "Fantastic Four",
+      "team_or_affiliation": [
+        "Fantastic Four"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "fantastic-four",
+        "mcu"
+      ],
+      "status": "Active",
+      "debut_title": "The Fantastic Four: First Steps (2025)",
+      "debut_year": 2008,
+      "summary": "Leader of the Fantastic Four",
+      "image_url": "",
+      "image_source_url": "https://en.wikipedia.org/wiki/Mister_Fantastic",
+      "image_source_name": "Wikipedia",
+      "image_alt": "Reed Richards portrait",
+      "image_verified": false,
+      "source_notes": [
+        "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
+      ],
+      "related_titles": [
+        "The Fantastic Four: First Steps (2025)",
+        "Avengers: Doomsday (2026)"
+      ],
+      "allies": [
+        "sue-storm",
+        "johnny-storm",
+        "ben-grimm"
+      ],
+      "enemies": [
+        "doctor-doom",
+        "galactus"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": "pedro-pascal",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Avengers:_Doomsday",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-29"
+        }
+      ]
+    },
+    {
+      "id": "sam-wilson-captain-america",
+      "name": "Sam Wilson",
+      "alias": "Captain America",
+      "aliases": [
+        "Captain America"
+      ],
+      "portrayed_by": "Anthony Mackie",
+      "universe": "MCU (Earth-616)",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "Avengers"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "avengers",
+        "mcu"
+      ],
+      "status": "Active",
+      "debut_title": "Captain America: The Winter Soldier (2014)",
+      "debut_year": 2008,
+      "summary": "The new Captain America",
+      "image_url": "",
+      "image_source_url": "https://en.wikipedia.org/wiki/Anthony%20Mackie%20as%20Captain%20America.jpeg",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Sam Wilson portrait",
+      "image_verified": false,
+      "source_notes": [
+        "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
+      ],
+      "related_titles": [
+        "Captain America: The Winter Soldier (2014)",
+        "Avengers: Age of Ultron (2015)",
+        "Captain America: Civil War (2016)",
+        "Avengers: Infinity War (2018)",
+        "Avengers: Endgame (2019)",
+        "The Falcon and the Winter Soldier (2021)",
+        "Captain America: Brave New World (2025)"
+      ],
+      "allies": [
+        "bucky-barnes-winter-soldier",
+        "joaquin-torres-falcon"
+      ],
+      "enemies": [
+        "john-walker-us-agent",
+        "red-skull"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": "anthony-mackie",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Avengers:_Doomsday",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-29"
+        }
+      ]
+    },
+    {
+      "id": "scott-lang-ant-man",
+      "name": "Scott Lang",
+      "alias": "Ant-Man",
+      "aliases": [
+        "Ant-Man"
+      ],
+      "portrayed_by": "Paul Rudd",
+      "universe": "MCU (Earth-616)",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "Avengers"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "avengers",
+        "mcu"
+      ],
+      "status": "Active",
+      "debut_title": "Ant-Man (2015)",
+      "debut_year": 2008,
+      "summary": "The size-shifting Avenger",
+      "image_url": "",
+      "image_source_url": "https://en.wikipedia.org/wiki/Paul%20Rudd%20%28cropped%29.jpg",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "www.redcarpetreportv.com\nMingle Media TV and our Red Carpet Report team were on hand for Marvel’s \"Ant-Man” World Premiere at the Dolby Theatre in Hollywood.\nGet the Story from the Red Carpet Report Team, follow us on Twitter and Facebook at:\ntwitter.com/TheRedCarpetTV\nwww.facebook.com/RedCarpetReportTV\nwww.youtube.com/MingleMediaTVNetwork\nwww.tsu.co/RedCarpetReport\nAbout Ant-Man\nThe next evolution of the Marvel Cinematic Universe brings a founding member of The Avengers to the big screen for the first time with Marvel Studios’ “Ant-Man.” Armed with the astonishing ability to shrink in scale but increase in strength, master thief Scott Lang must embrace his inner-hero and help his mentor, Dr. Hank Pym, protect the secret behind his spectacular Ant-Man suit from a new generation of towering threats. Against seemingly insurmountable obstacles, Pym and Lang must plan and pull off a heist that will save the world. \nMarvel’s “Ant-Man” stars Paul Rudd as Scott Lang aka Ant-Man, Evangeline Lilly as Hope Van Dyne, Corey Stoll as Darren Cross aka Yellowjacket, Bobby Cannavale as Paxton, Michael Peña as Luis, Judy Greer as Maggie, Tip “Ti” Harris as Dave, David Dastmalchian as Kurt, Wood Harris as Gale, Jordi Mollà as Castillo and Michael Douglas as Hank Pym.\nFollow Marvel on Twitter: twitter.com/marvel\nLike Marvel on FaceBook: www.facebook.com/Marvel\nFor even more Marvel Comics news follow at\nTumblr: marvelentertainment.tumblr.com/\nInstagram: instagram.com/marvel\nGoogle+: plus.google.com/+marvel/\nPintrest: pinterest.com/marvelofficial/\nFor more of Mingle Media TV’s Red Carpet Report coverage, please visit our website and follow us on Twitter and Facebook here:\nwww.facebook.com/minglemediatvnetwork\nwww.flickr.com/MingleMediaTVNetwork\n\nwww.twitter.com/minglemediatv",
+      "image_verified": false,
+      "source_notes": [
+        "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
+      ],
+      "related_titles": [
+        "Ant-Man (2015)",
+        "Captain America: Civil War (2016)",
+        "Ant-Man and the Wasp (2018)",
+        "Avengers: Endgame (2019)",
+        "Ant-Man and the Wasp: Quantumania (2023)"
+      ],
+      "allies": [
+        "hope-van-dyne",
+        "cassie-lang"
+      ],
+      "enemies": [
+        "yellowjacket",
+        "kang"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": "paul-rudd",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Avengers:_Doomsday",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-29"
+        }
+      ]
+    },
+    {
+      "id": "sentry-bob-reynolds",
+      "name": "Bob Reynolds",
+      "alias": "Sentry",
+      "aliases": [
+        "Sentry"
+      ],
+      "portrayed_by": "Lewis Pullman",
+      "universe": "MCU (Earth-616)",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "New Avengers"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "new-avengers",
+        "thunderbolts",
+        "mcu"
+      ],
+      "status": "Active",
+      "debut_title": "Thunderbolts* (2025)",
+      "debut_year": 2008,
+      "summary": "The Sentry",
+      "image_url": "",
+      "image_source_url": "https://en.wikipedia.org/wiki/Bob-reynolds%20DSC08759.jpg",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Bob Reynolds playing with Snarky Puppy in Aarhus (Denmark 2019)",
+      "image_verified": false,
+      "source_notes": [
+        "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
+      ],
+      "related_titles": [
+        "Thunderbolts* (2025)",
+        "Avengers: Doomsday (2026)"
+      ],
+      "allies": [],
+      "enemies": [],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": "lewis-pullman",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Avengers:_Doomsday",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-29"
+        }
+      ]
+    },
+    {
+      "id": "shang-chi",
+      "name": "Xu Shang-Chi",
+      "alias": "Shang-Chi",
+      "aliases": [],
+      "portrayed_by": "Simu Liu",
+      "universe": "MCU (Earth-616)",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "Avengers"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "avengers",
+        "mcu"
+      ],
+      "status": "Active",
+      "debut_title": "Shang-Chi and the Legend of the Ten Rings (2021)",
+      "debut_year": 2008,
+      "summary": "Master of the Ten Rings",
+      "image_url": "../assets/img/cat-shang-chi.jpg",
+      "image_source_url": "https://en.wikipedia.org/wiki/Simu%20Liu%20as%20Shang-Chi.jpg",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Xu Shang-Chi portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
+      ],
+      "related_titles": [
+        "Shang-Chi and the Legend of the Ten Rings (2021)",
+        "Avengers: Doomsday (2026)"
+      ],
+      "allies": [
+        "shang-alias-katy"
+      ],
+      "enemies": [
+        "wenwu"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": "simu-liu",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Avengers:_Doomsday",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-29"
+        }
+      ]
+    },
+    {
+      "id": "shuri-black-panther",
+      "name": "Shuri",
+      "alias": "Black Panther",
+      "aliases": [
+        "Black Panther"
+      ],
+      "portrayed_by": "Letitia Wright",
+      "universe": "MCU (Earth-616)",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "Wakandans"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "wakandans",
+        "mcu"
+      ],
+      "status": "Active",
+      "debut_title": "Black Panther (2018)",
+      "debut_year": 2008,
+      "summary": "The Black Panther",
+      "image_url": "../assets/img/cat-shuri-black-panther.jpg",
+      "image_source_url": "https://en.wikipedia.org/wiki/Letitia%20Wright%20as%20Shuri%20in%20Black%20Panther%20Wakanda%20Forever%20poster.jpg",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Shuri portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
+      ],
+      "related_titles": [
+        "Black Panther (2018)",
+        "Avengers: Infinity War (2018)",
+        "Avengers: Endgame (2019)",
+        "Black Panther: Wakanda Forever (2022)",
+        "Avengers: Doomsday (2026)"
+      ],
+      "allies": [
+        "mbaku",
+        "namora",
+        "namor",
+        "okoye"
+      ],
+      "enemies": [
+        "killmonger",
+        "attuma"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": "letitia-wright",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Avengers:_Doomsday",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-29"
+        }
+      ]
+    },
+    {
+      "id": "sue-storm",
+      "name": "Sue Storm",
+      "alias": "Invisible Woman",
+      "aliases": [
+        "Invisible Woman"
+      ],
+      "portrayed_by": "Vanessa Kirby",
+      "universe": "Earth-828",
+      "continuity": "Fantastic Four",
+      "team_or_affiliation": [
+        "Fantastic Four"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "fantastic-four",
+        "mcu"
+      ],
+      "status": "Active",
+      "debut_title": "The Fantastic Four: First Steps (2025)",
+      "debut_year": 2008,
+      "summary": "The Invisible Woman",
+      "image_url": "",
+      "image_source_url": "https://en.wikipedia.org/wiki/Invisible_Woman",
+      "image_source_name": "Wikipedia",
+      "image_alt": "Sue Storm portrait",
+      "image_verified": false,
+      "source_notes": [
+        "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
+      ],
+      "related_titles": [
+        "The Fantastic Four: First Steps (2025)",
+        "Avengers: Doomsday (2026)"
+      ],
+      "allies": [
+        "reed-richards",
+        "johnny-storm",
+        "ben-grimm"
+      ],
+      "enemies": [
+        "doctor-doom",
+        "galactus"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": "vanessa-kirby",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Avengers:_Doomsday",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-29"
+        }
+      ]
+    },
+    {
+      "id": "thor",
+      "name": "Thor",
+      "alias": "Thor",
+      "aliases": [],
+      "portrayed_by": "Chris Hemsworth",
+      "universe": "MCU (Earth-616)",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "Avengers"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "avengers",
+        "mcu"
+      ],
+      "status": "Active",
+      "debut_title": "Thor (2011)",
+      "debut_year": 2008,
+      "summary": "The God of Thunder",
+      "image_url": "../assets/img/cat-thor.jpg",
+      "image_source_url": "https://en.wikipedia.org/wiki/Chris%20Hemsworth%20as%20Thor.jpg",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "A still from the 2013 film Thor: The Dark World showing actor Chris Hemsworth as Thor",
+      "image_verified": true,
+      "source_notes": [
+        "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
+      ],
+      "related_titles": [
+        "Thor (2011)",
+        "The Avengers (2012)",
+        "Thor: The Dark World (2013)",
+        "Avengers: Age of Ultron (2015)",
+        "Thor: Ragnarok (2017)",
+        "Avengers: Infinity War (2018)",
+        "Avengers: Endgame (2019)",
+        "Thor: Love and Thunder (2022)"
+      ],
+      "allies": [
+        "loki",
+        "valkyrie"
+      ],
+      "enemies": [
+        "hela",
+        "thanos"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": "chris-hemsworth",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Avengers:_Doomsday",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-29"
+        }
+      ]
+    },
+    {
+      "id": "yelena-belova",
+      "name": "Yelena Belova",
+      "alias": "Black Widow",
+      "aliases": [
+        "Black Widow"
+      ],
+      "portrayed_by": "Florence Pugh",
+      "universe": "MCU (Earth-616)",
+      "continuity": "MCU",
+      "team_or_affiliation": [
+        "Avengers"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "new-avengers",
+        "thunderbolts",
+        "mcu"
+      ],
+      "status": "Active",
+      "debut_title": "Black Widow (2021)",
+      "debut_year": 2008,
+      "summary": "The second Black Widow",
+      "image_url": "../assets/img/cat-yelena-belova.jpg",
+      "image_source_url": "https://en.wikipedia.org/wiki/Florence%20Pugh%20as%20Yelena%20Belova.jpg",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Yelena Belova portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
+      ],
+      "related_titles": [
+        "Black Widow (2021)",
+        "Hawkeye (2021)",
+        "Avengers: Doomsday (2026)"
+      ],
+      "allies": [
+        "red-guardian",
+        "ghost-ava-starr",
+        "yelenas-ally-taskmaster"
+      ],
+      "enemies": [
+        "taskmaster"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": "florence-pugh",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Avengers:_Doomsday",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-29"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "label": "Confirmed Doomsday cast (30), cross-listed in the wider catalogue",
+    "source": "data/cast.json"
+  }
+}

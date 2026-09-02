@@ -1,0 +1,1253 @@
+{
+  "characters": [
+    {
+      "id": "charles-xavier-xmen",
+      "name": "Charles Xavier",
+      "alias": "Professor X",
+      "aliases": [
+        "The Professor"
+      ],
+      "portrayed_by": "Patrick Stewart",
+      "universe": "Earth-10005 / Fox",
+      "continuity": "X-Men",
+      "team_or_affiliation": [
+        "X-Men"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "x-men",
+        "telepath",
+        "mutant",
+        "multiverse"
+      ],
+      "status": "Variant",
+      "debut_title": "X-Men (2000)",
+      "debut_year": 2000,
+      "summary": "The telepathic founder and leader of the X-Men who dreams of peaceful mutant-human coexistence. In the 2024 film Deadpool & Wolverine he abdicated his Earth-10005 Xavier's School responsibilities to the X-Men at large.",
+      "image_url": "../assets/img/cat-charles-xavier-xmen.webp",
+      "image_source_url": "https://doomsdayhub.example",
+      "image_source_name": "Fan site archive",
+      "image_alt": "Charles Xavier portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Played by Patrick Stewart in the original timeline and James McAvoy in the young-timeline prequels; appears in Doctor Strange in the Multiverse of Madness (2022)."
+      ],
+      "related_titles": [
+        "X-Men (2000)",
+        "X-Men: First Class (2011)",
+        "Deadpool & Wolverine (2024)"
+      ],
+      "allies": [
+        "mystique-xmen",
+        "wolverine-logan",
+        "magneto-xmen",
+        "jean-grey-xmen",
+        "storm-xmen"
+      ],
+      "enemies": [
+        "magneto-xmen",
+        "apocalypse-xmen"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Professor_X",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "wolverine-logan",
+      "name": "Logan",
+      "alias": "Wolverine",
+      "aliases": [
+        "James Howlett",
+        "The Weapon X"
+      ],
+      "portrayed_by": "Hugh Jackman",
+      "universe": "Earth-10005 / Fox",
+      "continuity": "X-Men",
+      "team_or_affiliation": [
+        "X-Men"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "x-men",
+        "wolverine",
+        "mutant",
+        "multiverse"
+      ],
+      "status": "Variant",
+      "debut_title": "X-Men (2000)",
+      "debut_year": 2000,
+      "summary": "A near-immortal mutant with retractable adamantium claws and a healing factor, and the breakout star of the Fox X-Men films. He died in Logan (2017) but returned in Deadpool & Wolverine (2024) across variant timelines.",
+      "source_notes": [
+        "Played by Hugh Jackman for over two decades; death in Logan (2017); returns as variants in Deadpool & Wolverine (2024)."
+      ],
+      "related_titles": [
+        "X-Men (2000)",
+        "X-Men Origins: Wolverine (2009)",
+        "Logan (2017)",
+        "Deadpool & Wolverine (2024)"
+      ],
+      "allies": [
+        "charles-xavier-xmen",
+        "deadpool",
+        "x-23-xmen"
+      ],
+      "enemies": [
+        "sabretooth-xmen",
+        "magneto-xmen"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Wolverine_(film_character)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "magneto-xmen",
+      "name": "Erik Lehnsherr",
+      "alias": "Magneto",
+      "aliases": [
+        "The Master of Magnetism"
+      ],
+      "portrayed_by": "Ian McKellen / Michael Fassbender",
+      "universe": "Earth-10005 / Fox",
+      "continuity": "X-Men",
+      "team_or_affiliation": [
+        "X-Men",
+        "Brotherhood of Mutants"
+      ],
+      "character_type": "Anti-hero",
+      "tags": [
+        "x-men",
+        "mutant",
+        "villain",
+        "multiverse"
+      ],
+      "status": "Variant",
+      "debut_title": "X-Men (2000)",
+      "debut_year": 2000,
+      "summary": "A Holocaust survivor who controls magnetism and believes mutants must dominate rather than coexist. He oscillates between villain and ally of the X-Men across the Fox films.",
+      "image_url": "../assets/img/cat-magneto-xmen.webp",
+      "image_source_url": "https://en.wikipedia.org/wiki/Magneto%20%28film%20character%29",
+      "image_source_name": "Wikipedia",
+      "image_alt": "Erik Lehnsherr portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Played by Ian McKellen and Michael Fassbender at different ages; sees Xavier as his friend and rival."
+      ],
+      "related_titles": [
+        "X-Men (2000)",
+        "X-Men: First Class (2011)",
+        "Dark Phoenix (2019)"
+      ],
+      "allies": [
+        "mystique-xmen",
+        "charles-xavier-xmen"
+      ],
+      "enemies": [
+        "charles-xavier-xmen",
+        "wolverine-logan",
+        "apocalypse-xmen"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Magneto_(film_character)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "mystique-xmen",
+      "name": "Raven Darkholme",
+      "alias": "Mystique",
+      "aliases": [
+        "Raven"
+      ],
+      "portrayed_by": "Rebecca Romijn / Jennifer Lawrence",
+      "universe": "Earth-10005 / Fox",
+      "continuity": "X-Men",
+      "team_or_affiliation": [
+        "X-Men",
+        "Brotherhood of Mutants"
+      ],
+      "character_type": "Anti-hero",
+      "tags": [
+        "x-men",
+        "mutant",
+        "shapeshifter",
+        "multiverse"
+      ],
+      "status": "Variant",
+      "debut_title": "X-Men (2000)",
+      "debut_year": 2000,
+      "summary": "A blue-skinned shapeshifter raised as a sister to Charles Xavier who cycles between the X-Men and Magneto's Brotherhood, becoming a pivotal figure in the young-timeline films.",
+      "source_notes": [
+        "Played by Rebecca Romijn in the original timeline and Jennifer Lawrence in the prequels."
+      ],
+      "related_titles": [
+        "X-Men (2000)",
+        "X-Men: First Class (2011)",
+        "X-Men: Apocalypse (2016)"
+      ],
+      "allies": [
+        "magneto-xmen",
+        "charles-xavier-xmen"
+      ],
+      "enemies": [
+        "apocalypse-xmen",
+        "sabretooth-xmen"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Mystique_(film_character)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "jean-grey-xmen",
+      "name": "Jean Grey",
+      "alias": "Jean Grey",
+      "aliases": [
+        "Phoenix",
+        "Dark Phoenix"
+      ],
+      "portrayed_by": "Famke Janssen / Sophie Turner",
+      "universe": "Earth-10005 / Fox",
+      "continuity": "X-Men",
+      "team_or_affiliation": [
+        "X-Men"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "x-men",
+        "mutant",
+        "telepath",
+        "multiverse"
+      ],
+      "status": "Deceased",
+      "debut_title": "X-Men (2000)",
+      "debut_year": 2000,
+      "summary": "An immensely powerful telekinetic and telepath who hosts the cosmic Phoenix Force. Her destructive Dark Phoenix persona is a recurring tragedy across the Fox films, culminating in Dark Phoenix (2019).",
+      "image_url": "",
+      "image_source_url": "",
+      "image_source_name": "",
+      "image_alt": "",
+      "image_verified": false,
+      "source_notes": [
+        "Played by Famke Janssen (adult) and Sophie Turner (young); the Phoenix arc adapts the classic comics storyline."
+      ],
+      "related_titles": [
+        "X-Men (2000)",
+        "X-Men: The Last Stand (2006)",
+        "Dark Phoenix (2019)"
+      ],
+      "allies": [
+        "cyclops-xmen",
+        "storm-xmen",
+        "charles-xavier-xmen",
+        "wolverine-logan"
+      ],
+      "enemies": [
+        "apocalypse-xmen"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Jean_Grey_(film_character)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "storm-xmen",
+      "name": "Ororo Munroe",
+      "alias": "Storm",
+      "aliases": [
+        "The Weather Witch"
+      ],
+      "portrayed_by": "Halle Berry / Alexandra Shipp",
+      "universe": "Earth-10005 / Fox",
+      "continuity": "X-Men",
+      "team_or_affiliation": [
+        "X-Men"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "x-men",
+        "mutant",
+        "weather",
+        "multiverse"
+      ],
+      "status": "Variant",
+      "debut_title": "X-Men (2000)",
+      "debut_year": 2000,
+      "summary": "A mutant able to control the weather, and one of the X-Men's most formidable core members across both the original and young-timeline teams.",
+      "image_url": "../assets/img/cat-storm-xmen.png",
+      "image_source_url": "https://en.wikipedia.org/wiki/Storm%20%28Ororo%20Munroe%29.png",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Ororo Munroe portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Played by Halle Berry and Alexandra Shipp."
+      ],
+      "related_titles": [
+        "X-Men (2000)",
+        "X-Men: Days of Future Past (2014)",
+        "X-Men: Dark Phoenix (2019)"
+      ],
+      "allies": [
+        "jean-grey-xmen",
+        "cyclops-xmen",
+        "charles-xavier-xmen"
+      ],
+      "enemies": [
+        "magneto-xmen",
+        "apocalypse-xmen"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Storm_(Marvel_Comics)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "cyclops-xmen",
+      "name": "Scott Summers",
+      "alias": "Cyclops",
+      "aliases": [
+        "Slim"
+      ],
+      "portrayed_by": "James Marsden / Tye Sheridan",
+      "universe": "Earth-10005 / Fox",
+      "continuity": "X-Men",
+      "team_or_affiliation": [
+        "X-Men"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "x-men",
+        "mutant",
+        "optics",
+        "multiverse"
+      ],
+      "status": "Variant",
+      "debut_title": "X-Men (2000)",
+      "debut_year": 2000,
+      "summary": "The disciplined field leader of the X-Men whose eyes emit powerful energy beams he controls with a visor. He is Jean Grey's longtime partner.",
+      "image_url": "../assets/img/cat-cyclops-xmen.png",
+      "image_source_url": "https://en.wikipedia.org/wiki/Cyclops%20%28Scott%20Summers%20circa%202019%29.png",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Scott Summers portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Played by James Marsden and Tye Sheridan."
+      ],
+      "related_titles": [
+        "X-Men (2000)",
+        "X-Men: The Last Stand (2006)",
+        "X-Men: Apocalypse (2016)"
+      ],
+      "allies": [
+        "jean-grey-xmen",
+        "storm-xmen",
+        "charles-xavier-xmen"
+      ],
+      "enemies": [
+        "magneto-xmen",
+        "juggernaut-xmen"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Cyclops_(Marvel_Comics)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "rogue-xmen",
+      "name": "Marie D'Ancanto",
+      "alias": "Rogue",
+      "aliases": [],
+      "portrayed_by": "Anna Paquin",
+      "universe": "Earth-10005 / Fox",
+      "continuity": "X-Men",
+      "team_or_affiliation": [
+        "X-Men"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "x-men",
+        "mutant",
+        "power-absorption"
+      ],
+      "status": "Variant",
+      "debut_title": "X-Men (2000)",
+      "debut_year": 2000,
+      "summary": "A mutant who absorbs the powers, memories, and life-force of anyone she touches skin-to-skin, making human contact dangerous. She is a central early X-Men member.",
+      "image_url": "../assets/img/cat-rogue-xmen.webp",
+      "image_source_url": "https://en.wikipedia.org/wiki/Anna%20Paquin%20Rogue.webp",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Marie D'Ancanto portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Played by Anna Paquin in the original trilogy."
+      ],
+      "related_titles": [
+        "X-Men (2000)",
+        "X-Men 2 (2003)",
+        "X-Men: The Last Stand (2006)"
+      ],
+      "allies": [
+        "wolverine-logan",
+        "charles-xavier-xmen",
+        "iceman-xmen"
+      ],
+      "enemies": [
+        "magneto-xmen"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Rogue_(Marvel_Comics)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "iceman-xmen",
+      "name": "Bobby Drake",
+      "alias": "Iceman",
+      "aliases": [],
+      "portrayed_by": "Shawn Ashmore",
+      "universe": "Earth-10005 / Fox",
+      "continuity": "X-Men",
+      "team_or_affiliation": [
+        "X-Men"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "x-men",
+        "mutant",
+        "cryokinesis"
+      ],
+      "status": "Variant",
+      "debut_title": "X-Men 2 (2003)",
+      "debut_year": 2003,
+      "summary": "A young mutant who can freeze moisture and form ice, and one of the earliest X-Men students. His coming-out as a mutant to his family is a defining scene in X-Men 2.",
+      "source_notes": [
+        "Played by Shawn Ashmore."
+      ],
+      "related_titles": [
+        "X-Men 2 (2003)",
+        "X-Men: The Last Stand (2006)"
+      ],
+      "allies": [
+        "rogue-xmen",
+        "charles-xavier-xmen"
+      ],
+      "enemies": [
+        "magneto-xmen"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Iceman_(Marvel_Comics)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "beast-xmen",
+      "name": "Hank McCoy",
+      "alias": "Beast",
+      "aliases": [
+        "The Beast"
+      ],
+      "portrayed_by": "Kelsey Grammer / Nicholas Hoult",
+      "universe": "Earth-10005 / Fox",
+      "continuity": "X-Men",
+      "team_or_affiliation": [
+        "X-Men"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "x-men",
+        "mutant",
+        "brains",
+        "multiverse"
+      ],
+      "status": "Variant",
+      "debut_title": "X-Men: The Last Stand (2006)",
+      "debut_year": 2006,
+      "summary": "A brilliant scientist and mutant with superhuman agility and a blue-furred appearance. A key member and thinker among the X-Men in both timelines, and a Cabinet-secretary rebel in Days of Future Past.",
+      "source_notes": [
+        "Played by Kelsey Grammer and Nicholas Hoult."
+      ],
+      "related_titles": [
+        "X-Men: The Last Stand (2006)",
+        "X-Men: First Class (2011)",
+        "X-Men: Days of Future Past (2014)"
+      ],
+      "allies": [
+        "charles-xavier-xmen",
+        "mystique-xmen",
+        "jean-grey-xmen"
+      ],
+      "enemies": [
+        "magneto-xmen",
+        "apocalypse-xmen"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Beast_(Marvel_Comics)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "gambit-xmen",
+      "name": "Remy LeBeau",
+      "alias": "Gambit",
+      "aliases": [
+        "The Ragin' Cajun"
+      ],
+      "portrayed_by": "Taylor Kitsch / Channing Tatum",
+      "universe": "Earth-10005 / Fox",
+      "continuity": "X-Men",
+      "team_or_affiliation": [
+        "X-Men"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "x-men",
+        "mutant",
+        "kinetic-energy",
+        "multiverse"
+      ],
+      "status": "Variant",
+      "debut_title": "X-Men Origins: Wolverine (2009)",
+      "debut_year": 2009,
+      "summary": "A Cajun thief and mutant who charges objects with kinetic energy and throws explosive playing cards. He appears briefly in Wolverine's origin film and returns in Deadpool & Wolverine (2024).",
+      "image_url": "../assets/img/cat-gambit-xmen.jpg",
+      "image_source_url": "https://en.wikipedia.org/wiki/Channing%20Tatum%20as%20Gambit.jpeg",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Remy LeBeau portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Played by Taylor Kitsch (2009) and Channing Tatum (Deadpool & Wolverine 2024)."
+      ],
+      "related_titles": [
+        "X-Men Origins: Wolverine (2009)",
+        "Deadpool & Wolverine (2024)"
+      ],
+      "allies": [
+        "wolverine-logan",
+        "deadpool"
+      ],
+      "enemies": [
+        "sabretooth-xmen"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Gambit_(Marvel_Comics)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "deadpool",
+      "name": "Wade Wilson",
+      "alias": "Deadpool",
+      "aliases": [
+        "The Merc with a Mouth"
+      ],
+      "portrayed_by": "Ryan Reynolds",
+      "universe": "Earth-10005 / Fox",
+      "continuity": "X-Men",
+      "team_or_affiliation": [
+        "X-Men",
+        "X-Force"
+      ],
+      "character_type": "Anti-hero",
+      "tags": [
+        "x-men",
+        "deadpool",
+        "multiverse",
+        "comedy"
+      ],
+      "status": "Active",
+      "debut_title": "X-Men Origins: Wolverine (2009)",
+      "debut_year": 2009,
+      "summary": "A wisecracking, fourth-wall-breaking mercenary with a powerful healing factor. His meta, R-rated solo films became Fox's biggest Marvel successes, and he joins the MCU's wider multiverse alongside Wolverine in 2024.",
+      "image_url": "../assets/img/cat-deadpool.webp",
+      "image_source_url": "https://en.wikipedia.org/wiki/Deadpool",
+      "image_source_name": "Wikipedia",
+      "image_alt": "Wade Wilson portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Played by Ryan Reynolds; Deadpool & Wolverine (2024) is technically MCU-set but follows his Fox-era continuity."
+      ],
+      "related_titles": [
+        "Deadpool (2016)",
+        "Deadpool 2 (2018)",
+        "Deadpool & Wolverine (2024)"
+      ],
+      "allies": [
+        "wolverine-logan",
+        "x-23-xmen",
+        "colossus-xmen",
+        "domino-xmen",
+        "cable-xmen"
+      ],
+      "enemies": [
+        "sabretooth-xmen",
+        "juggernaut-xmen"
+      ],
+      "verified": true,
+      "notes": "Appears in the upcoming Avengers: Doomsday (2026).",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Deadpool_(film_character)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "colossus-xmen",
+      "name": "Piotr Rasputin",
+      "alias": "Colossus",
+      "aliases": [],
+      "portrayed_by": "Stefan Kapičić (voice)",
+      "universe": "Earth-10005 / Fox",
+      "continuity": "X-Men",
+      "team_or_affiliation": [
+        "X-Men"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "x-men",
+        "mutant",
+        "metal-body"
+      ],
+      "status": "Variant",
+      "debut_title": "X-Men 2 (2003)",
+      "debut_year": 2003,
+      "summary": "A gentle Russian mutant who can transform his body into organic steel, giving him superhuman strength and durability. He serves as Deadpool's exasperated moral compass.",
+      "image_url": "../assets/img/cat-colossus-xmen.jpg",
+      "image_source_url": "https://en.wikipedia.org/wiki/Piotr%20Rasputin",
+      "image_source_name": "Wikipedia",
+      "image_alt": "Marvel Comics character",
+      "image_verified": true,
+      "source_notes": [
+        "Voiced by Stefan Kapičić in the Deadpool films."
+      ],
+      "related_titles": [
+        "X-Men 2 (2003)",
+        "Deadpool (2016)",
+        "Deadpool 2 (2018)"
+      ],
+      "allies": [
+        "deadpool",
+        "negasonic-teenage-warhead-xmen"
+      ],
+      "enemies": [
+        "juggernaut-xmen"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Colossus_(character)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "x-23-xmen",
+      "name": "Laura Kinney",
+      "alias": "X-23",
+      "aliases": [
+        "Laura Howlett"
+      ],
+      "portrayed_by": "Dafne Keen",
+      "universe": "Earth-10005 / Fox",
+      "continuity": "X-Men",
+      "team_or_affiliation": [
+        "X-Force"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "x-men",
+        "mutant",
+        "wolverine",
+        "clone"
+      ],
+      "status": "Deceased",
+      "debut_title": "Logan (2017)",
+      "debut_year": 2017,
+      "summary": "A young clone of Wolverine created as a weapon, inheriting his adamantium claws and healing factor. She is the emotional heart of Logan and carries on his legacy.",
+      "image_url": "../assets/img/cat-x-23-xmen.webp",
+      "image_source_url": "https://en.wikipedia.org/wiki/X-23",
+      "image_source_name": "Wikipedia",
+      "image_alt": "Laura Kinney portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Played by Dafne Keen in Logan (2017)."
+      ],
+      "related_titles": [
+        "Logan (2017)"
+      ],
+      "allies": [
+        "wolverine-logan",
+        "charles-xavier-xmen"
+      ],
+      "enemies": [
+        "sabretooth-xmen"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/X-23",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "cable-xmen",
+      "name": "Nathan Summers",
+      "alias": "Cable",
+      "aliases": [],
+      "portrayed_by": "Josh Brolin",
+      "universe": "Earth-10005 / Fox",
+      "continuity": "X-Men",
+      "team_or_affiliation": [
+        "X-Force"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "x-men",
+        "time-travel",
+        "cyborg",
+        "mutant"
+      ],
+      "status": "Variant",
+      "debut_title": "Deadpool 2 (2018)",
+      "debut_year": 2018,
+      "summary": "A grizzled, cybernetic mutant soldier from a dystopian future who travels back in time to prevent a tragedy, reluctantly teaming with Deadpool.",
+      "image_url": "../assets/img/cat-cable-xmen.jpg",
+      "image_source_url": "https://en.wikipedia.org/wiki/Josh%20Brolin%20as%20Thanos.jpeg",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Nathan Summers portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Played by Josh Brolin in Deadpool 2 (2018)."
+      ],
+      "related_titles": [
+        "Deadpool 2 (2018)"
+      ],
+      "allies": [
+        "deadpool",
+        "domino-xmen"
+      ],
+      "enemies": [
+        "juggernaut-xmen"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Cable_(character)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "domino-xmen",
+      "name": "Neena Thurman",
+      "alias": "Domino",
+      "aliases": [],
+      "portrayed_by": "Zazie Beetz",
+      "universe": "Earth-10005 / Fox",
+      "continuity": "X-Men",
+      "team_or_affiliation": [
+        "X-Force"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "x-men",
+        "mutant",
+        "luck",
+        "probability"
+      ],
+      "status": "Variant",
+      "debut_title": "Deadpool 2 (2018)",
+      "debut_year": 2018,
+      "summary": "A mutant whose power is improbably good luck, bending probability in her favor. She joins Deadpool's X-Force and proves invaluable in Deadpool 2.",
+      "image_url": "../assets/img/cat-domino-xmen.jpg",
+      "image_source_url": "https://en.wikipedia.org/wiki/Zazie%20Beetz%20as%20Domino.jpg",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Neena Thurman portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Played by Zazie Beetz in Deadpool 2 (2018)."
+      ],
+      "related_titles": [
+        "Deadpool 2 (2018)"
+      ],
+      "allies": [
+        "deadpool",
+        "cable-xmen",
+        "colossus-xmen"
+      ],
+      "enemies": [
+        "juggernaut-xmen"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Domino_(character)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "nightcrawler-xmen",
+      "name": "Kurt Wagner",
+      "alias": "Nightcrawler",
+      "aliases": [
+        "The Fuzzy Elf"
+      ],
+      "portrayed_by": "Alan Cumming / Kodi Smit-McPhee",
+      "universe": "Earth-10005 / Fox",
+      "continuity": "X-Men",
+      "team_or_affiliation": [
+        "X-Men"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "x-men",
+        "mutant",
+        "teleport",
+        "multiverse"
+      ],
+      "status": "Variant",
+      "debut_title": "X-Men 2 (2003)",
+      "debut_year": 2003,
+      "summary": "A deeply devout, blue-furred mutant who can teleport short distances, leaving a puff of smoke and brimstone scent. A beloved member of the X-Men in both eras.",
+      "image_url": "../assets/img/cat-nightcrawler-xmen.jpg",
+      "image_source_url": "https://en.wikipedia.org/wiki/WAGNER%201%20Before%20and%20After%20Makeover%20by%20Kurt%20J.%20Wagner%20Plastic%20Surgery.jpg",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "wagner Before and After 1 makeover plastic surgery",
+      "image_verified": true,
+      "source_notes": [
+        "Played by Alan Cumming and Kodi Smit-McPhee."
+      ],
+      "related_titles": [
+        "X-Men 2 (2003)",
+        "X-Men: Apocalypse (2016)",
+        "Dark Phoenix (2019)"
+      ],
+      "allies": [
+        "jean-grey-xmen",
+        "charles-xavier-xmen",
+        "mystique-xmen"
+      ],
+      "enemies": [
+        "apocalypse-xmen",
+        "magneto-xmen"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Nightcrawler_(character)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "sabretooth-xmen",
+      "name": "Victor Creed",
+      "alias": "Sabretooth",
+      "aliases": [],
+      "portrayed_by": "Liev Schreiber / Tyler Mane",
+      "universe": "Earth-10005 / Fox",
+      "continuity": "X-Men",
+      "team_or_affiliation": [
+        "Brotherhood of Mutants"
+      ],
+      "character_type": "Villain",
+      "tags": [
+        "x-men",
+        "mutant",
+        "villain",
+        "wolverine"
+      ],
+      "status": "Variant",
+      "debut_title": "X-Men (2000)",
+      "debut_year": 2000,
+      "summary": "A feral, fanged mutant who shares Wolverine's healing factor and animal instincts, and serves as his lifelong rival. He appears in the first X-Men film and Wolverine's origin story.",
+      "image_url": "",
+      "image_source_url": "",
+      "image_source_name": "",
+      "image_alt": "",
+      "image_verified": false,
+      "source_notes": [
+        "Played by Tyler Mane (X-Men 2000) and Liev Schreiber (X-Men Origins: Wolverine 2009)."
+      ],
+      "related_titles": [
+        "X-Men (2000)",
+        "X-Men Origins: Wolverine (2009)"
+      ],
+      "allies": [
+        "magneto-xmen"
+      ],
+      "enemies": [
+        "wolverine-logan",
+        "rogue-xmen",
+        "deadpool"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Sabretooth_(character)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "juggernaut-xmen",
+      "name": "Cain Marko",
+      "alias": "Juggernaut",
+      "aliases": [],
+      "portrayed_by": "Vinnie Jones / Ryan Reynolds",
+      "universe": "Earth-10005 / Fox",
+      "continuity": "X-Men",
+      "team_or_affiliation": [
+        "Brotherhood of Mutants"
+      ],
+      "character_type": "Villain",
+      "tags": [
+        "x-men",
+        "mutant",
+        "villain",
+        "strength"
+      ],
+      "status": "Variant",
+      "debut_title": "X-Men: The Last Stand (2006)",
+      "debut_year": 2006,
+      "summary": "An unstoppable armored powerhouse, Charles Xavier's stepbrother, who rampages through his foes' ranks. He appears in The Last Stand and as a CGI prison-cell monster in Deadpool 2.",
+      "image_url": "../assets/img/cat-juggernaut-xmen.png",
+      "image_source_url": "https://en.wikipedia.org/wiki/Cain%20Marko",
+      "image_source_name": "Wikipedia",
+      "image_alt": "Marvel Comics character",
+      "image_verified": true,
+      "source_notes": [
+        "Played by Vinnie Jones (2006) and voiced by Ryan Reynolds in Deadpool 2 (2018)."
+      ],
+      "related_titles": [
+        "X-Men: The Last Stand (2006)",
+        "Deadpool 2 (2018)"
+      ],
+      "allies": [],
+      "enemies": [
+        "colossus-xmen",
+        "deadpool",
+        "cyclops-xmen"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Juggernaut_(character)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "apocalypse-xmen",
+      "name": "En Sabah Nur",
+      "alias": "Apocalypse",
+      "aliases": [
+        "The First Mutant"
+      ],
+      "portrayed_by": "Oscar Isaac",
+      "universe": "Earth-10005 / Fox",
+      "continuity": "X-Men",
+      "team_or_affiliation": [
+        "The Four Horsemen"
+      ],
+      "character_type": "Villain",
+      "tags": [
+        "x-men",
+        "mutant",
+        "villain",
+        "immortal"
+      ],
+      "status": "Variant",
+      "debut_title": "X-Men: Apocalypse (2016)",
+      "debut_year": 2016,
+      "summary": "The world's first mutant, an ancient godlike being who amasses power and recruits four Horsemen to remake the world. He is the antagonist of X-Men: Apocalypse.",
+      "image_url": "../assets/img/cat-apocalypse-xmen.jpg",
+      "image_source_url": "https://en.wikipedia.org/wiki/Oscar%20Isaac%20as%20Moon%20Knight.jpg",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "En Sabah Nur portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Played by Oscar Isaac in X-Men: Apocalypse (2016)."
+      ],
+      "related_titles": [
+        "X-Men: Apocalypse (2016)"
+      ],
+      "allies": [],
+      "enemies": [
+        "charles-xavier-xmen",
+        "magneto-xmen",
+        "jean-grey-xmen",
+        "mystique-xmen"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Apocalypse_(character)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "quicksilver-maximoff-xmen",
+      "name": "Pietro Maximoff",
+      "alias": "Quicksilver",
+      "aliases": [],
+      "portrayed_by": "Evan Peters",
+      "universe": "Earth-10005 / Fox",
+      "continuity": "X-Men",
+      "team_or_affiliation": [
+        "X-Men"
+      ],
+      "character_type": "Anti-hero",
+      "tags": [
+        "x-men",
+        "mutant",
+        "speedster",
+        "multiverse"
+      ],
+      "status": "Variant",
+      "debut_title": "X-Men: Days of Future Past (2014)",
+      "debut_year": 2014,
+      "summary": "A superfast mutant with a wisecracking streak whose famous slow-motion rescue sequences defined the young-timeline films. A variant of him appears in the MCU series WandaVision.",
+      "image_url": "../assets/img/cat-quicksilver-maximoff-xmen.png",
+      "image_source_url": "https://en.wikipedia.org/wiki/Quicksilver%20%28Pietro%20Maximoff%29.png",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Pietro Maximoff portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Played by Evan Peters; distinct from the MCU's own Pietro also played by Aaron Taylor-Johnson."
+      ],
+      "related_titles": [
+        "X-Men: Days of Future Past (2014)",
+        "X-Men: Apocalypse (2016)"
+      ],
+      "allies": [
+        "mystique-xmen",
+        "charles-xavier-xmen"
+      ],
+      "enemies": [
+        "apocalypse-xmen",
+        "magneto-xmen"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Quicksilver_(comics)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "professor-charles-young-xmen",
+      "name": "Charles Xavier (young)",
+      "alias": "Professor X (young)",
+      "aliases": [
+        "The Professor"
+      ],
+      "portrayed_by": "James McAvoy",
+      "universe": "Earth-10005 / Fox",
+      "continuity": "X-Men",
+      "team_or_affiliation": [
+        "X-Men"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "x-men",
+        "telepath",
+        "mutant",
+        "young"
+      ],
+      "status": "Variant",
+      "debut_title": "X-Men: First Class (2011)",
+      "debut_year": 2011,
+      "summary": "The younger incarnation of Charles Xavier seen in the prequel films, who founds the X-Men and struggles with his wheelchair-bound fate and his bond with Magneto.",
+      "image_url": "../assets/img/cat-professor-charles-young-xmen.webp",
+      "image_source_url": "https://en.wikipedia.org/wiki/Professor%20X",
+      "image_source_name": "Wikipedia",
+      "image_alt": "Charles Xavier (young) portrait",
+      "image_verified": true,
+      "source_notes": [
+        "James McAvoy's version is tracked separately from Patrick Stewart's as a distinct young-timeline variant."
+      ],
+      "related_titles": [
+        "X-Men: First Class (2011)",
+        "X-Men: Days of Future Past (2014)",
+        "X-Men: Apocalypse (2016)"
+      ],
+      "allies": [
+        "mystique-xmen",
+        "beast-xmen",
+        "magneto-xmen"
+      ],
+      "enemies": [
+        "apocalypse-xmen",
+        "magneto-xmen"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Professor_X",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "magneto-young-xmen",
+      "name": "Erik Lehnsherr (young)",
+      "alias": "Magneto (young)",
+      "aliases": [
+        "The Master of Magnetism"
+      ],
+      "portrayed_by": "Michael Fassbender",
+      "universe": "Earth-10005 / Fox",
+      "continuity": "X-Men",
+      "team_or_affiliation": [
+        "X-Men",
+        "Brotherhood of Mutants"
+      ],
+      "character_type": "Anti-hero",
+      "tags": [
+        "x-men",
+        "mutant",
+        "magnetism",
+        "young"
+      ],
+      "status": "Variant",
+      "debut_title": "X-Men: First Class (2011)",
+      "debut_year": 2011,
+      "summary": "The younger Erik Lehnsherr of the prequel films, who finds an ally in Xavier before their philosophies diverge and he becomes Magneto.",
+      "image_url": "",
+      "image_source_url": "",
+      "image_source_name": "",
+      "image_alt": "",
+      "image_verified": false,
+      "source_notes": [
+        "Michael Fassbender's young-timeline version tracked separately from Ian McKellen's."
+      ],
+      "related_titles": [
+        "X-Men: First Class (2011)",
+        "X-Men: Days of Future Past (2014)",
+        "Dark Phoenix (2019)"
+      ],
+      "allies": [
+        "mystique-xmen",
+        "professor-charles-young-xmen"
+      ],
+      "enemies": [
+        "apocalypse-xmen",
+        "professor-charles-young-xmen"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Magneto_(film_character)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    }
+  ]
+}

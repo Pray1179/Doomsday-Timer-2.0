@@ -1,0 +1,33 @@
+{
+  "total": 277,
+  "images": 166,
+  "verified_images": 166,
+  "pending_images": 0,
+  "spider_man": 36,
+  "mcu": 134,
+  "multiverse_and_legacy": 67,
+  "xmen": 30,
+  "fantastic_four": 13,
+  "by_continuity": {
+    "Elektra (2005)": 3,
+    "Blade (trilogy)": 10,
+    "MCU": 107,
+    "Agents of S.H.I.E.L.D.": 23,
+    "Netflix Marvel": 30,
+    "Fantastic Four": 13,
+    "Sony's Spider-Man Universe": 17,
+    "X-Men": 30,
+    "Spider-Man (Raimi trilogy)": 11,
+    "The Amazing Spider-Man (Webb duology)": 8,
+    "Nick Fury: Agent of S.H.I.E.L.D.": 2,
+    "Howard the Duck (1986)": 3,
+    "Ghost Rider (2007)": 1,
+    "Daredevil (2003)": 5,
+    "Captain America (1990)": 2,
+    "Ghost Rider (2007–2011)": 3,
+    "Daredevil / Elektra (2003–2005)": 1,
+    "The Punisher (2004)": 3,
+    "Punisher: War Zone (2008)": 3,
+    "Man-Thing (2005)": 2
+  }
+}

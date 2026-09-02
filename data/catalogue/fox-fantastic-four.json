@@ -1,0 +1,484 @@
+{
+  "characters": [
+    {
+      "id": "reed-richards-ff",
+      "name": "Reed Richards",
+      "alias": "Mr. Fantastic",
+      "aliases": [
+        "The Stretch",
+        "Reed"
+      ],
+      "portrayed_by": "Ioan Gruffudd / Miles Teller",
+      "universe": "Earth-121698 / Fox",
+      "continuity": "Fantastic Four",
+      "team_or_affiliation": [
+        "Fantastic Four"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "fantastic-four",
+        "stretch",
+        "genius",
+        "multiverse"
+      ],
+      "status": "Variant",
+      "debut_title": "Fantastic Four (2005)",
+      "debut_year": 2005,
+      "summary": "A brilliant scientist who gains the ability to stretch his body to incredible lengths and shapes. He leads the Fantastic Four and is the team's strategic genius.",
+      "image_url": "../assets/img/cat-reed-richards-ff.webp",
+      "image_source_url": "https://en.wikipedia.org/wiki/Mister_Fantastic",
+      "image_source_name": "Wikipedia",
+      "image_alt": "Reed Richards portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Played by Ioan Gruffudd (2005) and Miles Teller (2015)."
+      ],
+      "related_titles": [
+        "Fantastic Four (2005)",
+        "Fantastic Four: Rise of the Silver Surfer (2007)",
+        "Fantastic Four (2015)"
+      ],
+      "allies": [
+        "sue-storm-ff",
+        "johnny-storm-ff",
+        "ben-grimm-ff",
+        "silver-surfer-ff"
+      ],
+      "enemies": [
+        "doctor-doom-ff",
+        "galactus-ff"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Mister_Fantastic",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "sue-storm-ff",
+      "name": "Susan Storm",
+      "alias": "Invisible Woman",
+      "aliases": [
+        "Sue Richards"
+      ],
+      "portrayed_by": "Jessica Alba / Kate Mara",
+      "universe": "Earth-121698 / Fox",
+      "continuity": "Fantastic Four",
+      "team_or_affiliation": [
+        "Fantastic Four"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "fantastic-four",
+        "invisibility",
+        "force-field",
+        "multiverse"
+      ],
+      "status": "Variant",
+      "debut_title": "Fantastic Four (2005)",
+      "debut_year": 2005,
+      "summary": "A scientist who can turn invisible and project protective force fields. She is Reed's partner and the team's emotional anchor.",
+      "image_url": "../assets/img/cat-sue-storm-ff.webp",
+      "image_source_url": "https://en.wikipedia.org/wiki/Invisible_Woman",
+      "image_source_name": "Wikipedia",
+      "image_alt": "Susan Storm portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Played by Jessica Alba (2005) and Kate Mara (2015)."
+      ],
+      "related_titles": [
+        "Fantastic Four (2005)",
+        "Fantastic Four: Rise of the Silver Surfer (2007)",
+        "Fantastic Four (2015)"
+      ],
+      "allies": [
+        "reed-richards-ff",
+        "johnny-storm-ff",
+        "ben-grimm-ff"
+      ],
+      "enemies": [
+        "doctor-doom-ff",
+        "galactus-ff"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Invisible_Woman",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "johnny-storm-ff",
+      "name": "Johnny Storm",
+      "alias": "Human Torch",
+      "aliases": [
+        "Hothead"
+      ],
+      "portrayed_by": "Chris Evans / Michael B. Jordan",
+      "universe": "Earth-121698 / Fox",
+      "continuity": "Fantastic Four",
+      "team_or_affiliation": [
+        "Fantastic Four"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "fantastic-four",
+        "fire",
+        "flight",
+        "multiverse"
+      ],
+      "status": "Variant",
+      "debut_title": "Fantastic Four (2005)",
+      "debut_year": 2005,
+      "summary": "Sue's impulsive younger brother who can engulf himself in flame, fly, and throw fireballs. He is the team's cocky hothead and resident flirt.",
+      "image_url": "../assets/img/cat-johnny-storm-ff.webp",
+      "image_source_url": "https://en.wikipedia.org/wiki/Human_Torch",
+      "image_source_name": "Wikipedia",
+      "image_alt": "Johnny Storm portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Played by Chris Evans (2005) and Michael B. Jordan (2015); a variant of Johnny Storm also appears in Deadpool & Wolverine (2024)."
+      ],
+      "related_titles": [
+        "Fantastic Four (2005)",
+        "Fantastic Four: Rise of the Silver Surfer (2007)",
+        "Fantastic Four (2015)"
+      ],
+      "allies": [
+        "reed-richards-ff",
+        "sue-storm-ff",
+        "ben-grimm-ff"
+      ],
+      "enemies": [
+        "doctor-doom-ff",
+        "galactus-ff"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Human_Torch",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "ben-grimm-ff",
+      "name": "Ben Grimm",
+      "alias": "The Thing",
+      "aliases": [
+        "Benjy",
+        "The Ever-Lovin' Blue-Eyed Thing"
+      ],
+      "portrayed_by": "Michael Chiklis / Jamie Bell",
+      "universe": "Earth-121698 / Fox",
+      "continuity": "Fantastic Four",
+      "team_or_affiliation": [
+        "Fantastic Four"
+      ],
+      "character_type": "Hero",
+      "tags": [
+        "fantastic-four",
+        "rock",
+        "strength",
+        "multiverse"
+      ],
+      "status": "Variant",
+      "debut_title": "Fantastic Four (2005)",
+      "debut_year": 2005,
+      "summary": "A kind-hearted pilot transformed into a rocky, super-strong orange brute by cosmic radiation. He struggles with his appearance but remains the team's fearless powerhouse and Reed's best friend.",
+      "image_url": "",
+      "image_source_url": "",
+      "image_source_name": "",
+      "image_alt": "",
+      "image_verified": false,
+      "source_notes": [
+        "Played by Michael Chiklis (2005, practical suit) and Jamie Bell (2015, CGI)."
+      ],
+      "related_titles": [
+        "Fantastic Four (2005)",
+        "Fantastic Four: Rise of the Silver Surfer (2007)",
+        "Fantastic Four (2015)"
+      ],
+      "allies": [
+        "reed-richards-ff",
+        "sue-storm-ff",
+        "johnny-storm-ff"
+      ],
+      "enemies": [
+        "doctor-doom-ff",
+        "galactus-ff"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Thing_(comics)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "doctor-doom-ff",
+      "name": "Victor Von Doom",
+      "alias": "Doctor Doom",
+      "aliases": [
+        "Doom"
+      ],
+      "portrayed_by": "Julian McMahon / Toby Kebbell",
+      "universe": "Earth-121698 / Fox",
+      "continuity": "Fantastic Four",
+      "team_or_affiliation": [],
+      "character_type": "Villain",
+      "tags": [
+        "fantastic-four",
+        "villain",
+        "genius",
+        "multiverse"
+      ],
+      "status": "Variant",
+      "debut_title": "Fantastic Four (2005)",
+      "debut_year": 2005,
+      "summary": "A brilliant but arrogant scientist whose rivalry with Reed Richards turns to villainy. In the films he gains metal-based powers that twist him into a despot bent on conquering Earth.",
+      "image_url": "",
+      "image_source_url": "https://en.wikipedia.org/wiki/Riff%20funeral%20doom.ogg",
+      "image_source_name": "Wikimedia Commons",
+      "image_alt": "Nu riff di funeral doom di circa 30 sicunni.",
+      "image_verified": false,
+      "source_notes": [
+        "Played by Julian McMahon (2005) and Toby Kebbell (2015). The character is slated to appear as the central antagonist of Avengers: Doomsday (2026)."
+      ],
+      "related_titles": [
+        "Fantastic Four (2005)",
+        "Fantastic Four: Rise of the Silver Surfer (2007)",
+        "Fantastic Four (2015)"
+      ],
+      "allies": [],
+      "enemies": [
+        "reed-richards-ff",
+        "sue-storm-ff",
+        "johnny-storm-ff",
+        "ben-grimm-ff"
+      ],
+      "verified": true,
+      "notes": "Reimagined as the central antagonist of the upcoming Avengers: Doomsday (2026), played by Robert Downey Jr.",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Doctor_Doom",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "galactus-ff",
+      "name": "Galactus",
+      "alias": "Galactus",
+      "aliases": [
+        "The World Devourer",
+        "Galan"
+      ],
+      "portrayed_by": "Laurence Fishburne (voice)",
+      "universe": "Earth-121698 / Fox",
+      "continuity": "Fantastic Four",
+      "team_or_affiliation": [],
+      "character_type": "Villain",
+      "tags": [
+        "fantastic-four",
+        "cosmic",
+        "villain",
+        "multiverse"
+      ],
+      "status": "Variant",
+      "debut_title": "Fantastic Four: Rise of the Silver Surfer (2007)",
+      "debut_year": 2007,
+      "summary": "An ancient cosmic entity that consumes planets to sustain itself. He serves as the apocalyptic threat in Rise of the Silver Surfer, depicted as a planet-devouring storm cloud in the 2007 film.",
+      "image_url": "../assets/img/cat-galactus-ff.webp",
+      "image_source_url": "https://en.wikipedia.org/wiki/Galactus",
+      "image_source_name": "Wikipedia",
+      "image_alt": "Galactus portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Voiced by Laurence Fishburne in Fantastic Four: Rise of the Silver Surfer (2007)."
+      ],
+      "related_titles": [
+        "Fantastic Four: Rise of the Silver Surfer (2007)"
+      ],
+      "allies": [
+        "silver-surfer-ff"
+      ],
+      "enemies": [
+        "reed-richards-ff",
+        "sue-storm-ff",
+        "johnny-storm-ff",
+        "ben-grimm-ff"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Galactus",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "silver-surfer-ff",
+      "name": "Norrin Radd",
+      "alias": "Silver Surfer",
+      "aliases": [
+        "The Sentinel of the Spaceways"
+      ],
+      "portrayed_by": "Laurence Fishburne (voice) / Doug Jones",
+      "universe": "Earth-121698 / Fox",
+      "continuity": "Fantastic Four",
+      "team_or_affiliation": [],
+      "character_type": "Anti-hero",
+      "tags": [
+        "fantastic-four",
+        "cosmic",
+        "surfer",
+        "multiverse"
+      ],
+      "status": "Variant",
+      "debut_title": "Fantastic Four: Rise of the Silver Surfer (2007)",
+      "debut_year": 2007,
+      "summary": "A cosmic herald bonded to a silver surfboard who scouts worlds for Galactus. He rebels against his master after connecting with humanity in Rise of the Silver Surfer.",
+      "image_url": "../assets/img/cat-silver-surfer-ff.png",
+      "image_source_url": "https://en.wikipedia.org/wiki/Norrin%20Radd",
+      "image_source_name": "Wikipedia",
+      "image_alt": "Marvel Comics character",
+      "image_verified": true,
+      "source_notes": [
+        "Portrayed by Doug Jones (physical) and voiced by Laurence Fishburne in Rise of the Silver Surfer (2007)."
+      ],
+      "related_titles": [
+        "Fantastic Four: Rise of the Silver Surfer (2007)"
+      ],
+      "allies": [
+        "reed-richards-ff",
+        "sue-storm-ff"
+      ],
+      "enemies": [
+        "galactus-ff"
+      ],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Silver_Surfer",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "alicia-masters-ff",
+      "name": "Alicia Masters",
+      "alias": "Alicia Masters",
+      "aliases": [],
+      "portrayed_by": "Kerry Washington / Kate Mara",
+      "universe": "Earth-121698 / Fox",
+      "continuity": "Fantastic Four",
+      "team_or_affiliation": [],
+      "character_type": "Ally",
+      "tags": [
+        "fantastic-four",
+        "artist",
+        "ally"
+      ],
+      "status": "Variant",
+      "debut_title": "Fantastic Four (2005)",
+      "debut_year": 2005,
+      "summary": "A blind sculptor who is Ben Grimm's love interest. She sees past his rocky exterior and supports the team.",
+      "image_url": "../assets/img/cat-alicia-masters-ff.webp",
+      "image_source_url": "https://doomsdayhub.example",
+      "image_source_name": "Fan site archive",
+      "image_alt": "Alicia Masters portrait",
+      "image_verified": true,
+      "source_notes": [
+        "Played by Kerry Washington in the 2005 films."
+      ],
+      "related_titles": [
+        "Fantastic Four (2005)",
+        "Fantastic Four: Rise of the Silver Surfer (2007)"
+      ],
+      "allies": [
+        "ben-grimm-ff",
+        "sue-storm-ff"
+      ],
+      "enemies": [],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Alicia_Masters",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    },
+    {
+      "id": "franklin-storm-ff",
+      "name": "Franklin Storm",
+      "alias": "Franklin Storm",
+      "aliases": [
+        "The Chief"
+      ],
+      "portrayed_by": "Andre Braugher",
+      "universe": "Earth-121698 / Fox",
+      "continuity": "Fantastic Four",
+      "team_or_affiliation": [],
+      "character_type": "Ally",
+      "tags": [
+        "fantastic-four",
+        "doctor",
+        "ally"
+      ],
+      "status": "Variant",
+      "debut_title": "Fantastic Four (2015)",
+      "debut_year": 2015,
+      "summary": "The senior scientist whose experiments in the 2015 reboot accidentally trigger the accident that gives the Four their powers.",
+      "source_notes": [
+        "Played by Andre Braugher in Fantastic Four (2015)."
+      ],
+      "related_titles": [
+        "Fantastic Four (2015)"
+      ],
+      "allies": [
+        "reed-richards-ff",
+        "sue-storm-ff",
+        "johnny-storm-ff"
+      ],
+      "enemies": [],
+      "verified": true,
+      "notes": "",
+      "doomsday_cast_slug": null,
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Fantastic_Four_(2015_film)",
+          "publisher": "Wikipedia",
+          "verified_at": "2026-08-30"
+        }
+      ]
+    }
+  ]
+}
