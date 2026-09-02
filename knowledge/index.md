@@ -5,7 +5,7 @@ Machine-readable entity documents generated deterministically from `data/cast.js
 - Characters: 30
 - Teams: 6
 - Universes: 3
-- Movies: 26
+- Movies: 27
 - Events: 1 (Multiverse Saga / phase milestones)
 
 ## Characters
@@ -13,7 +13,6 @@ Machine-readable entity documents generated deterministically from `data/cast.js
 - [Kurt Wagner / Nightcrawler](characters/alan-cumming.md)
 - [Sam Wilson / Captain America](characters/anthony-mackie.md)
 - [Remy LeBeau / Gambit](characters/channing-tatum.md)
-- [Steve Rogers / Captain America](characters/chris-evans.md)
 - [Thor](characters/chris-hemsworth.md)
 - [Joaquin Torres / Falcon](characters/danny-ramirez.md)
 - [Alexei Shostakov / Red Guardian](characters/david-harbour.md)
@@ -33,6 +32,7 @@ Machine-readable entity documents generated deterministically from `data/cast.js
 - [Reed Richards / Mr. Fantastic](characters/pedro-pascal.md)
 - [Raven Darkhölme / Mystique](characters/rebecca-romijn.md)
 - [Victor von Doom / Doctor Doom](characters/robert-downey-jr.md)
+- [Jean Grey](characters/sadiesink.md)
 - [Bucky Barnes / Winter Soldier](characters/sebastian-stan.md)
 - [Xu Shang-Chi](characters/simu-liu.md)
 - [Namor](characters/tenoch-huerta-mejia.md)
@@ -75,6 +75,7 @@ Machine-readable entity documents generated deterministically from `data/cast.js
 - [Iron Man (2008)](movies/iron-man-2008.md)
 - [Loki (2021)](movies/loki-2021.md)
 - [Shang-Chi and the Legend of the Ten Rings (2021)](movies/shang-chi-and-the-legend-of-the-ten-rings-2021.md)
+- [Spider-Man: Brand New Day (2026)](movies/spider-man-brand-new-day-2026.md)
 - [The Falcon and the Winter Soldier (2021)](movies/the-falcon-and-the-winter-soldier-2021.md)
 - [The Fantastic Four: First Steps (2025)](movies/the-fantastic-four-first-steps-2025.md)
 - [Thor (2011)](movies/thor-2011.md)

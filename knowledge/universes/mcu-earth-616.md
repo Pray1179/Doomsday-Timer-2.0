@@ -1,7 +1,6 @@
 # MCU (Earth-616)
 
 - Sam Wilson / Captain America belongs to the MCU (Earth-616) universe. *(verified — [S1])*
-- Steve Rogers / Captain America belongs to the MCU (Earth-616) universe. *(verified — [S1])*
 - Thor belongs to the MCU (Earth-616) universe. *(verified — [S1])*
 - Joaquin Torres / Falcon belongs to the MCU (Earth-616) universe. *(verified — [S1])*
 - Alexei Shostakov / Red Guardian belongs to the MCU (Earth-616) universe. *(verified — [S1])*

@@ -249,9 +249,9 @@ p, .lede, .char-hero .lede, .card p, .muted, .verified,
 }
 .hero .subtitle {
   font-size: 1.25rem;
-  color: var(--text-muted);
+  color: #ffffff;
   margin-bottom: 3rem;
-  font-weight: 300;
+  font-weight: 700;
 }
 /* === ROTATING QUOTES === */
 .quote {
@@ -1182,9 +1182,14 @@ body.reduce-motion .page-veil { transition: none; }
   font-family: var(--font-ui);
   letter-spacing: 0.32em;
   text-transform: uppercase;
-  color: var(--accent-villain);
   font-size: clamp(1rem, 2.4vw, 1.6rem);
   margin-top: 1rem;
+}
+.hero .subtitle {
+  color: #ffffff;
+}
+.char-hero .lede {
+  color: var(--accent-villain);
 }
 
 /* === COLLAPSIBLE ACCORDIONS (native <details>) === */

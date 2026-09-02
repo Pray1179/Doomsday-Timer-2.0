@@ -254,7 +254,7 @@ def _cat_card(r):
     return f"""
 <a class="cat-card" href="./catalogue/{r['id']}.html"
    data-uni="{cu.esc(cont)}"
-   data-team="{cu.esc(' '.join(r.get('team_or_affiliation') or []))}"
+   data-team="{cu.esc('|'.join(r.get('team_or_affiliation') or []))}"
    data-type="{cu.esc(r.get('character_type', 'Hero'))}"
    style="--ring:{cont_color}">
   <div class="cat-media">
@@ -315,9 +315,15 @@ def build_listing(records, cast_doc):
     # Order records (deterministic): top-30 → original Avengers → by relevance.
     ordered = _listing_order(records)
 
-    # Gather unique filter values
+    # Gather unique filter values — only emit pills that actually match records.
+    # Continuities and character types are kept whole; teams with a single member
+    # are dropped as near-empty filters that clutter the list.
     unis = sorted(set(r.get("continuity", "Other") for r in records))
-    teams = sorted(set(t for r in records for t in (r.get("team_or_affiliation") or [])))
+    team_counts = {}
+    for r in records:
+        for t in (r.get("team_or_affiliation") or []):
+            team_counts[t] = team_counts.get(t, 0) + 1
+    teams = sorted(t for t, n in team_counts.items() if n >= 2)
     types = sorted(set(r.get("character_type", "Hero") for r in records))
 
     # Filter chips — tucked inside a collapsed dropdown so the hero stays compact.

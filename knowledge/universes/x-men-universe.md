@@ -7,6 +7,7 @@
 - Hank McCoy / Beast belongs to the X-Men universe universe. *(verified — [S1])*
 - Charles Xavier / Professor X belongs to the X-Men universe universe. *(verified — [S1])*
 - Raven Darkhölme / Mystique belongs to the X-Men universe universe. *(verified — [S1])*
+- Jean Grey belongs to the X-Men universe universe. *(verified — [S1])*
 - The X-Men is based in the X-Men universe universe. *(verified — [S1])*
 
 ## Sources

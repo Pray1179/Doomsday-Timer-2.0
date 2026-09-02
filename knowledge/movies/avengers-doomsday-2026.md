@@ -3,7 +3,6 @@
 - Kurt Wagner / Nightcrawler appears in Avengers: Doomsday (2026). *(verified — [S1])*
 - Sam Wilson / Captain America appears in Avengers: Doomsday (2026). *(verified — [S1])*
 - Remy LeBeau / Gambit appears in Avengers: Doomsday (2026). *(verified — [S1])*
-- Steve Rogers / Captain America appears in Avengers: Doomsday (2026). *(verified — [S1])*
 - Thor appears in Avengers: Doomsday (2026). *(verified — [S1])*
 - Joaquin Torres / Falcon appears in Avengers: Doomsday (2026). *(verified — [S1])*
 - Alexei Shostakov / Red Guardian appears in Avengers: Doomsday (2026). *(verified — [S1])*
@@ -23,6 +22,7 @@
 - Reed Richards / Mr. Fantastic appears in Avengers: Doomsday (2026). *(verified — [S1])*
 - Raven Darkhölme / Mystique appears in Avengers: Doomsday (2026). *(verified — [S1])*
 - Victor von Doom / Doctor Doom appears in Avengers: Doomsday (2026). *(verified — [S1], [S2])*
+- Jean Grey appears in Avengers: Doomsday (2026). *(verified — [S1])*
 - Bucky Barnes / Winter Soldier appears in Avengers: Doomsday (2026). *(verified — [S1])*
 - Xu Shang-Chi appears in Avengers: Doomsday (2026). *(verified — [S1])*
 - Namor appears in Avengers: Doomsday (2026). *(verified — [S1])*

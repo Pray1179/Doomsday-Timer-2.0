@@ -7,6 +7,7 @@
 - Hank McCoy / Beast is a member of the X-Men. *(verified — [S1])*
 - Charles Xavier / Professor X is a member of the X-Men. *(verified — [S1])*
 - Raven Darkhölme / Mystique is a member of the X-Men. *(verified — [S1])*
+- Jean Grey is a member of the X-Men. *(verified — [S1])*
 - The X-Men is based in the X-Men universe universe. *(verified — [S1])*
 
 ## Sources

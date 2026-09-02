@@ -1,6 +1,5 @@
 # Avengers: Endgame (2019)
 
-- Steve Rogers / Captain America appears in Avengers: Endgame (2019). *(verified — [S1])*
 - Victor von Doom / Doctor Doom appears in Avengers: Endgame (2019). *(verified — [S1], [S2])*
 
 ## Sources

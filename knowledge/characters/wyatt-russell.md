@@ -1,7 +1,7 @@
 # John Walker / U.S. Agent
 
 - John Walker / U.S. Agent is portrayed by Wyatt Russell. *(verified — [S1])*
-- John Walker / U.S. Agent is a member of the Avengers. *(verified — [S1])*
+- John Walker / U.S. Agent is a member of the New Avengers. *(verified — [S1])*
 - John Walker / U.S. Agent belongs to the MCU (Earth-616) universe. *(verified — [S1])*
 - John Walker / U.S. Agent has the faction Avengers. *(verified — [S1])*
 - John Walker / U.S. Agent appears in Avengers: Doomsday (2026). *(verified — [S1])*

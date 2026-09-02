@@ -12,9 +12,9 @@
   // Pre-stamp a searchable text blob per card (name, alias, actor, team, tags).
   cards.forEach(function (c) { c.setAttribute('data-search', c.textContent); });
 
-  // Team names are whitespace-joined in data-team; split for matching.
+  // Team names are '|'-delimited in data-team; split for exact matching.
   function teamMatch(cardTeams, team) {
-    return cardTeams.split(' ').indexOf(team) !== -1;
+    return cardTeams.split('|').indexOf(team) !== -1;
   }
 
   function apply() {

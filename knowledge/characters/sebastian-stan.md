@@ -1,7 +1,7 @@
 # Bucky Barnes / Winter Soldier
 
 - Bucky Barnes / Winter Soldier is portrayed by Sebastian Stan. *(verified — [S1])*
-- Bucky Barnes / Winter Soldier is a member of the Avengers. *(verified — [S1])*
+- Bucky Barnes / Winter Soldier is a member of the New Avengers. *(verified — [S1])*
 - Bucky Barnes / Winter Soldier belongs to the MCU (Earth-616) universe. *(verified — [S1])*
 - Bucky Barnes / Winter Soldier has the faction Avengers. *(verified — [S1])*
 - Bucky Barnes / Winter Soldier appears in Avengers: Doomsday (2026). *(verified — [S1])*

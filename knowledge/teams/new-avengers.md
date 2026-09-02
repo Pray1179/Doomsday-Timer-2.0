@@ -1,7 +1,10 @@
 # New Avengers
 
+- Yelena Belova / Black Widow is a member of the New Avengers. *(verified — [S1])*
 - Ava Starr / Ghost is a member of the New Avengers. *(verified — [S1])*
 - Bob Reynolds / Sentry is a member of the New Avengers. *(verified — [S1])*
+- Bucky Barnes / Winter Soldier is a member of the New Avengers. *(verified — [S1])*
+- John Walker / U.S. Agent is a member of the New Avengers. *(verified — [S1])*
 - The New Avengers is based in the MCU (Earth-616) universe. *(verified — [S1])*
 
 ## Sources
