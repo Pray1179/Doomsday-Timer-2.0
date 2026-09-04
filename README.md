@@ -1,7 +1,5 @@
 # Doomsday Fan Hub
 
-Static fan site for **Avengers: Doomsday** (Dec 18, 2026). Cinematic homepage + deep fan-service behind the Explore tier.
-
 ## Quick start
 
 ```bash
