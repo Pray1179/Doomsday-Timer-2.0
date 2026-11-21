@@ -1090,6 +1090,25 @@
     const counterPct = $('#wl-counter-pct');
     const barFill = $('#wl-bar-fill');
     const statusLabel = $('#wl-status-label');
+    const miniCounter = $('#wl-mini-counter');
+    const miniBarFill = $('#wl-mini-bar-fill');
+    const collapseBtn = $('#wl-collapse-btn');
+    const expandBtn = $('#wl-expand-btn');
+
+    const COLLAPSE_KEY = 'doomsday_wl_collapsed';
+    if (card && localStorage.getItem(COLLAPSE_KEY) === 'true') {
+      card.classList.add('collapsed');
+    }
+
+    const toggleCollapse = () => {
+      if (!card) return;
+      const isCollapsed = card.classList.toggle('collapsed');
+      localStorage.setItem(COLLAPSE_KEY, isCollapsed ? 'true' : 'false');
+      if (window.doomsdayAudio) window.doomsdayAudio.playClick();
+    };
+
+    if (collapseBtn) collapseBtn.addEventListener('click', toggleCollapse);
+    if (expandBtn) expandBtn.addEventListener('click', toggleCollapse);
 
     function syncUI() {
       const total = checkboxes.length;
@@ -1108,6 +1127,8 @@
       if (counterNum) counterNum.textContent = `${count} / ${total}`;
       if (counterPct) counterPct.textContent = `${pct}% Complete`;
       if (barFill) barFill.style.width = `${pct}%`;
+      if (miniCounter) miniCounter.textContent = `${count} / ${total} • ${pct}%`;
+      if (miniBarFill) miniBarFill.style.width = `${pct}%`;
 
       if (statusLabel) {
         if (count === 0) statusLabel.textContent = 'Ready to begin your marathon';

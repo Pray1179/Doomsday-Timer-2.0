@@ -960,12 +960,12 @@ body.doom-mode .nav { background: rgba(0,10,4,0.85); }
 }
 
 /* === RESPONSIVE === */
-/* Phones only: brand rides center; the links collapse into a hamburger
-   dropdown in the top-left. Tablets/laptops (>720px) keep the brand in the
-   corner with the inline links — see the 768px block below. */
-@media (max-width: 720px) {
+/* === RESPONSIVE NAV ===
+   Below 1200px: brand rides center; links collapse into mobile-style hamburger dropdown.
+   Desktops (>1200px) keep inline links across the header. */
+@media (max-width: 1200px) {
   .nav-inner { position: relative; justify-content: center; padding: 0.6rem 1rem; }
-  .nav-toggle { position: absolute; left: 0.9rem; top: 50%; translate: 0 -50%; display: flex; z-index: 3; }
+  .nav-toggle { position: absolute; left: 1rem; top: 50%; translate: 0 -50%; display: flex; z-index: 3; }
 
   .nav ul {
     position: absolute;
@@ -1002,6 +1002,7 @@ body.doom-mode .nav { background: rgba(0,10,4,0.85); }
   }
   .nav ul a.active { color: var(--accent); }
   .nav ul a:hover { color: var(--text); background: rgba(255, 255, 255, 0.05); }
+  .audio-toggle-btn { margin: 0.6rem 1.4rem; width: calc(100% - 2.8rem); justify-content: center; }
 }
 
 @media (max-width: 768px) {
@@ -2427,15 +2428,98 @@ a.pnav:hover { color: var(--accent-villain); }
 /* === INTERACTIVE WATCHLIST === */
 .wl-progress-card {
   position: sticky;
-  top: 70px;
-  z-index: 10;
+  top: 60px;
+  z-index: 15;
   margin-bottom: 2rem;
-  background: rgba(6, 18, 10, 0.92) !important;
+  background: rgba(6, 18, 10, 0.94) !important;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid rgba(var(--accent-rgb), 0.35) !important;
   box-shadow: 0 12px 36px rgba(0, 0, 0, 0.6);
+  border-radius: 14px;
+  transition: padding 0.25s var(--ease), border-color 0.25s;
 }
+
+/* Collapsed mini-bar */
+.wl-mini-bar {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.wl-mini-left {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  white-space: nowrap;
+}
+.wl-mini-title {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+.wl-mini-mid {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  flex: 1;
+  max-width: 500px;
+}
+.wl-mini-track {
+  flex: 1;
+  height: 6px;
+  margin-bottom: 0 !important;
+  background: rgba(255, 255, 255, 0.1);
+}
+.wl-mini-counter {
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+/* Collapsed state */
+.wl-progress-card.collapsed {
+  padding: 0.55rem 1.1rem !important;
+  border-color: rgba(var(--accent-rgb), 0.5) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+}
+.wl-progress-card.collapsed .wl-full-card {
+  display: none !important;
+}
+.wl-progress-card.collapsed .wl-mini-bar {
+  display: flex !important;
+}
+
+/* Toggle Arrow Button */
+.wl-toggle-btn {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(var(--accent-rgb), 0.3);
+  color: var(--text);
+  border-radius: 8px;
+  padding: 0.3rem 0.65rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  transition: all 0.2s var(--ease);
+  flex-shrink: 0;
+}
+.wl-toggle-btn:hover {
+  background: rgba(0, 204, 85, 0.15);
+  border-color: var(--accent);
+  color: #fff;
+}
+.wl-toggle-icon {
+  font-size: 0.75rem;
+  line-height: 1;
+  color: var(--accent);
+}
+
 .wl-head {
   display: flex;
   justify-content: space-between;
