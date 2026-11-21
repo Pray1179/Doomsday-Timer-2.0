@@ -1,7 +1,7 @@
 /**
  * Avengers: Doomsday — 14,000,605 Futures Simulator Engine
  * Client-side battle simulation, team builder, preset loader,
- * and multi-provider AI integration (NVIDIA NIM via local proxy, Groq, Gemini, OpenRouter).
+ * and multi-provider AI integration (NVIDIA NIM, Groq, Gemini, OpenRouter).
  */
 (function() {
   'use strict';
@@ -11,7 +11,7 @@
   let presets = [];
   let selectedChampions = [];
   let apiKey = localStorage.getItem('time_stone_api_key') || '';
-  let apiProvider = localStorage.getItem('time_stone_provider') || 'nvidia';
+  let apiProvider = localStorage.getItem('time_stone_provider') || 'groq';
 
   // Elements
   const searchInput = document.getElementById('champ-search-input');
@@ -66,9 +66,9 @@
     if (apiKey) {
       keyIndicator.classList.add('active');
       const names = {
-        nvidia: 'AI: NVIDIA NIM (Active)',
         groq: 'AI: Groq Llama 3.3 (Active)',
         gemini: 'AI: Google Gemini (Active)',
+        nvidia: 'AI: NVIDIA NIM (Active)',
         openrouter: 'AI: OpenRouter (Active)'
       };
       keyLabel.textContent = names[apiProvider] || 'AI Active';
@@ -274,52 +274,116 @@
     };
   }
 
+  // Call Google Gemini API with smart model discovery & dual auth
+  async function callGeminiApi(cleanKey, prompt) {
+    const payload = JSON.stringify({
+      contents: [{ parts: [{ text: prompt }] }],
+      generationConfig: {
+        temperature: 0.7,
+        maxOutputTokens: 1024
+      }
+    });
+
+    // 1. Try to discover available models dynamically
+    let discoveredModel = null;
+    try {
+      const listUrl = `https://generativelanguage.googleapis.com/v1beta/models?key=${encodeURIComponent(cleanKey)}`;
+      const listRes = await fetch(listUrl, {
+        headers: { 'x-goog-api-key': cleanKey }
+      });
+      if (listRes.ok) {
+        const listData = await listRes.json();
+        const models = listData.models || [];
+        const match = models.find(m => 
+          (m.supportedGenerationMethods || []).includes('generateContent') &&
+          /flash|pro|gemini/i.test(m.name)
+        );
+        if (match) {
+          discoveredModel = match.name; // e.g. "models/gemini-2.0-flash" or "models/gemini-1.5-flash"
+        }
+      }
+    } catch (e) {
+      console.warn('Could not auto-list Gemini models:', e);
+    }
+
+    // Candidate models in priority order
+    const modelCandidates = discoveredModel ? [discoveredModel] : [
+      'models/gemini-2.0-flash',
+      'models/gemini-1.5-flash',
+      'models/gemini-1.5-flash-latest',
+      'models/gemini-2.0-flash-exp',
+      'models/gemini-1.5-pro',
+      'models/gemini-pro'
+    ];
+
+    let lastError = null;
+
+    for (const modelPath of modelCandidates) {
+      const cleanPath = modelPath.startsWith('models/') ? modelPath : `models/${modelPath}`;
+      // Test both v1beta and v1
+      const endpoints = [
+        `https://generativelanguage.googleapis.com/v1beta/${cleanPath}:generateContent`,
+        `https://generativelanguage.googleapis.com/v1/${cleanPath}:generateContent`
+      ];
+
+      for (const ep of endpoints) {
+        try {
+          const url = `${ep}?key=${encodeURIComponent(cleanKey)}`;
+          const res = await fetch(url, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'x-goog-api-key': cleanKey
+            },
+            body: payload
+          });
+
+          if (res.ok) {
+            const data = await res.json();
+            return data.candidates?.[0]?.content?.parts?.[0]?.text || '';
+          }
+
+          const errText = await res.text();
+          let errJson = null;
+          try { errJson = JSON.parse(errText); } catch (_) {}
+          const errMsg = errJson?.error?.message || errText.slice(0, 140);
+
+          if (res.status === 404) {
+            lastError = new Error(`HTTP 404 on ${cleanPath}`);
+            continue; // Try next endpoint or model
+          }
+
+          if (res.status === 400) {
+            throw new Error(`Google API Key Invalid: ${errMsg}`);
+          }
+
+          throw new Error(`Google HTTP ${res.status}: ${errMsg}`);
+        } catch (e) {
+          if (e.message && e.message.includes('Invalid')) throw e;
+          lastError = e;
+        }
+      }
+    }
+
+    throw lastError || new Error('All Gemini model endpoints returned 404. Please verify the key has Generative Language API enabled in Google Cloud/AI Studio.');
+  }
+
   // Dispatch AI Model API Call
   async function callModelApi(provider, key, prompt) {
     const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    const cleanKey = (key || '').trim();
 
-    if (provider === 'nvidia') {
-      // Use local proxy if running locally to bypass CORS
-      const endpoint = isLocalhost ? '/api/nvidia-proxy' : 'https://integrate.api.nvidia.com/v1/chat/completions';
-      try {
-        const res = await fetch(endpoint, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${key.trim()}`
-          },
-          body: JSON.stringify({
-            model: 'meta/llama-3.1-70b-instruct',
-            messages: [{ role: 'user', content: prompt }],
-            temperature: 0.7,
-            max_tokens: 1024
-          })
-        });
+    if (!cleanKey) {
+      throw new Error('Please enter an API key.');
+    }
 
-        if (res.status === 404 && endpoint === '/api/nvidia-proxy') {
-          throw new Error("Local NVIDIA proxy not active. Please run 'python3 scripts/serve.py' in your terminal, or switch to Groq (same Llama 3.1 70B model with instant browser CORS) or Google Gemini!");
-        }
-
-        if (!res.ok) {
-          const errText = await res.text();
-          throw new Error(`NVIDIA NIM HTTP ${res.status}: ${errText.slice(0, 150)}`);
-        }
-        const data = await res.json();
-        return data.choices?.[0]?.message?.content || '';
-      } catch (err) {
-        if (err.message && err.message.includes('Failed to fetch')) {
-          throw new Error("NVIDIA's cloud blocks direct browser CORS. Run 'python3 scripts/serve.py' locally, or switch provider to Groq (same Llama 3.1 70B) or Google Gemini!");
-        }
-        throw err;
-      }
-    } 
-    else if (provider === 'groq') {
+    if (provider === 'groq') {
       // Groq officially supports browser CORS with Access-Control-Allow-Origin: *
       const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${key.trim()}`
+          'Authorization': `Bearer ${cleanKey}`
         },
         body: JSON.stringify({
           model: 'llama-3.3-70b-versatile',
@@ -336,13 +400,51 @@
       const data = await res.json();
       return data.choices?.[0]?.message?.content || '';
     }
-    else if (provider === 'openrouter') {
+    else if (provider === 'gemini') {
+      return await callGeminiApi(cleanKey, prompt);
+    }
+    else if (provider === 'nvidia') {
+      // Use local proxy if running locally to bypass CORS
+      const endpoint = isLocalhost ? '/api/nvidia-proxy' : 'https://integrate.api.nvidia.com/v1/chat/completions';
+      try {
+        const res = await fetch(endpoint, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${cleanKey}`
+          },
+          body: JSON.stringify({
+            model: 'meta/llama-3.1-70b-instruct',
+            messages: [{ role: 'user', content: prompt }],
+            temperature: 0.7,
+            max_tokens: 1024
+          })
+        });
+
+        if (res.status === 404 && endpoint === '/api/nvidia-proxy') {
+          throw new Error("Local NVIDIA proxy not running. Please run 'python3 scripts/serve.py' in your terminal, or select Groq (runs the same Llama 3.1 70B with browser CORS) or Google Gemini!");
+        }
+
+        if (!res.ok) {
+          const errText = await res.text();
+          throw new Error(`NVIDIA NIM HTTP ${res.status}: ${errText.slice(0, 150)}`);
+        }
+        const data = await res.json();
+        return data.choices?.[0]?.message?.content || '';
+      } catch (err) {
+        if (err.message && err.message.includes('Failed to fetch')) {
+          throw new Error("NVIDIA's cloud blocks direct browser CORS. Run 'python3 scripts/serve.py' locally, or switch provider to Groq (same Llama 3.1 70B) or Google Gemini!");
+        }
+        throw err;
+      }
+    } 
+    else {
       // OpenRouter supports browser CORS
       const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${key.trim()}`
+          'Authorization': `Bearer ${cleanKey}`
         },
         body: JSON.stringify({
           model: 'meta-llama/llama-3.1-70b-instruct',
@@ -358,48 +460,6 @@
       }
       const data = await res.json();
       return data.choices?.[0]?.message?.content || '';
-    }
-    else {
-      // Google Gemini multi-model fallback resolver
-      const candidates = [
-        'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent',
-        'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent',
-        'https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent',
-        'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent',
-        'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent',
-        'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent'
-      ];
-
-      let lastErr = null;
-      for (const base of candidates) {
-        try {
-          const url = `${base}?key=${encodeURIComponent(key.trim())}`;
-          const res = await fetch(url, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-              contents: [{ parts: [{ text: prompt }] }]
-            })
-          });
-
-          if (res.ok) {
-            const data = await res.json();
-            return data.candidates?.[0]?.content?.parts?.[0]?.text || '';
-          }
-
-          const errText = await res.text();
-          if (res.status === 404) {
-            lastErr = new Error(`HTTP 404 on ${base}`);
-            continue;
-          }
-
-          throw new Error(`Gemini HTTP ${res.status}: ${errText.slice(0, 150)}`);
-        } catch (e) {
-          if (e.message && e.message.includes('Gemini HTTP 400')) throw e;
-          lastErr = e;
-        }
-      }
-      throw lastErr || new Error('All Gemini model endpoints returned HTTP 404. Please verify your Gemini API key from aistudio.google.com.');
     }
   }
 
@@ -435,7 +495,6 @@
       else if (currentSec === 4) divText += line + '\n';
     }
 
-    // Fallbacks if formatting differed
     if (!fatalText.trim() && !victoryText.trim()) {
       const half = Math.floor(raw.length / 2);
       fatalText = raw.slice(0, half);
@@ -466,9 +525,9 @@ Keep the tone dark, thrilling, grounded in Marvel lore, and worthy of a Russo Br
 
     aiActiveBadge.style.display = 'inline-flex';
     const providerNames = {
-      nvidia: 'NVIDIA NIM (Llama 3.1 70B)',
       groq: 'Groq (Llama 3.3 70B)',
-      gemini: 'Google Gemini 1.5 Flash',
+      gemini: 'Google Gemini (Flash / Pro)',
+      nvidia: 'NVIDIA NIM (Llama 3.1 70B)',
       openrouter: 'OpenRouter (Llama 3.1 70B)'
     };
     aiProviderLabel.textContent = `${providerNames[apiProvider] || 'AI Model'} Active`;
@@ -493,11 +552,7 @@ Keep the tone dark, thrilling, grounded in Marvel lore, and worthy of a Russo Br
       aiActiveBadge.style.display = 'none';
 
       let msg = err.message || '';
-      if (msg.includes('Failed to fetch') && apiProvider === 'nvidia') {
-        alert("CORS Notice: NVIDIA's cloud servers block direct browser calls. Please run 'python3 scripts/serve.py' locally (which provides our automatic local proxy), or select Groq / Google Gemini in the AI settings modal for 1-click browser access!");
-      } else {
-        alert(`AI API notice: ${err.message}. Falling back to high-fidelity built-in temporal archive.`);
-      }
+      alert(`AI API notice: ${msg}\n\nFalling back to high-fidelity built-in temporal archive.`);
 
       const outcome = generateCustomOutcome(squad);
       renderOutcome(outcome);
@@ -574,14 +629,10 @@ Keep the tone dark, thrilling, grounded in Marvel lore, and worthy of a Russo Br
       const pingPrompt = "Respond with exactly the single word 'ACTIVE'.";
       const res = await callModelApi(provider, key, pingPrompt);
       testKeyResult.style.color = '#00cc55';
-      testKeyResult.textContent = `✅ Connected successfully! Model verified response: "${res.trim().slice(0, 30)}"`;
+      testKeyResult.textContent = `✅ Connected successfully! Model response: "${res.trim().slice(0, 40)}"`;
     } catch (err) {
       testKeyResult.style.color = '#e63946';
-      if (err.message.includes('Failed to fetch') && provider === 'nvidia') {
-        testKeyResult.innerHTML = `❌ Browser CORS block: NVIDIA's cloud does not allow direct browser calls.<br>👉 <strong>Fix:</strong> Run <code>python3 scripts/serve.py</code> locally, or switch provider above to <strong>Groq</strong> (runs the same Llama 3.1 70B with browser CORS) or <strong>Gemini</strong>!`;
-      } else {
-        testKeyResult.textContent = `❌ Connection failed: ${err.message}`;
-      }
+      testKeyResult.innerHTML = `❌ Connection failed: ${err.message}`;
     }
   }
 
