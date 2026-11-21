@@ -100,16 +100,6 @@
     $('.countdown').innerHTML = segs.map(s =>
       `<div class="countdown-segment"><div class="num">${String(s.num).padStart(2,'0')}</div><div class="label">${s.label}</div></div>`
     ).join('');
-
-    // Weekend/Friday count
-    const weekends = Math.ceil(d / 7);
-    const existingMeta = $('.meta-weekends');
-    if (!existingMeta && d < 60) {
-      const meta = document.createElement('p');
-      meta.className = 'meta-weekends';
-      meta.textContent = `~${weekends} weekends left`;
-      $('.countdown').appendChild(meta);
-    }
   }
 
   // === COMMAND PALETTE ===

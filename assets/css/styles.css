@@ -286,17 +286,22 @@ p, .lede, .char-hero .lede, .card p, .muted, .verified,
 /* === COUNTDOWN === */
 .countdown {
   display: flex;
-  gap: clamp(0.6rem, 2vw, 1.5rem);
+  gap: clamp(0.4rem, 1.8vw, 1.25rem);
   margin-bottom: 2rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap !important;
   justify-content: center;
+  width: 100%;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .countdown-segment {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 12px;
-  padding: clamp(0.75rem, 1.8vw, 1.25rem) clamp(0.6rem, 2vw, 1.5rem);
-  min-width: clamp(72px, 16vw, 105px);
+  padding: clamp(0.6rem, 1.8vw, 1.25rem) clamp(0.3rem, 1.5vw, 1.25rem);
+  flex: 1 1 0;
+  min-width: 0;
   position: relative;
   overflow: hidden;
   text-align: center;
@@ -308,18 +313,18 @@ p, .lede, .char-hero .lede, .card p, .muted, .verified,
   background: linear-gradient(180deg, rgba(255,255,255,0.03) 0%, transparent 50%);
 }
 .countdown-segment .num {
-  font-size: clamp(1.8rem, 4.5vw, 3rem);
+  font-size: clamp(1.4rem, 4.5vw, 2.8rem);
   font-weight: 700;
   font-variant-numeric: tabular-nums;
   line-height: 1;
   color: var(--text);
 }
 .countdown-segment .label {
-  font-size: 0.7rem;
+  font-size: clamp(0.55rem, 1.6vw, 0.72rem);
   text-transform: uppercase;
-  letter-spacing: 0.15em;
+  letter-spacing: clamp(0.06em, 0.3vw, 0.15em);
   color: var(--text-muted);
-  margin-top: 0.5rem;
+  margin-top: 0.45rem;
 }
 
 /* === BUTTONS === */
@@ -1007,9 +1012,17 @@ body.doom-mode .nav { background: rgba(0,10,4,0.85); }
 
 @media (max-width: 768px) {
   .hero h1 { font-size: 2.25rem; letter-spacing: 0.08em; }
-  .countdown { gap: 0.75rem; }
-  .countdown-segment { padding: 1rem; min-width: 70px; }
-  .countdown-segment .num { font-size: 2rem; }
+  .countdown {
+    gap: clamp(0.35rem, 1.8vw, 0.6rem);
+    flex-wrap: nowrap !important;
+    max-width: 440px;
+  }
+  .countdown-segment {
+    padding: clamp(0.6rem, 2vw, 0.95rem) clamp(0.2rem, 1.5vw, 0.5rem);
+    min-width: 0;
+  }
+  .countdown-segment .num { font-size: clamp(1.4rem, 5.5vw, 2.1rem); }
+  .countdown-segment .label { font-size: 0.6rem; letter-spacing: 0.08em; margin-top: 0.35rem; }
   .btn-group { flex-direction: column; align-items: center; }
   .cast-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); }
 }
