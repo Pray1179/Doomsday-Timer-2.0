@@ -2136,6 +2136,91 @@ details.cat-filters[open] summary .filters-caret { transform: rotate(180deg); }
 .pill:hover { color: var(--text); border-color: var(--accent-villain); }
 .pill.active { color: #0b1f12; background: var(--accent-villain); border-color: var(--accent-villain); font-weight: 700; }
 
+/* === CATALOGUE QUICK PILLS === */
+.cat-quick-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.85rem auto 0.4rem;
+  justify-content: center;
+  max-width: 800px;
+}
+.cat-quick-pill {
+  background: rgba(18, 28, 22, 0.7);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s var(--ease);
+}
+.cat-quick-pill:hover {
+  color: var(--text);
+  border-color: var(--accent-villain);
+  background: rgba(0, 255, 102, 0.08);
+}
+.cat-quick-pill.active {
+  color: #030608;
+  background: var(--accent-villain);
+  border-color: var(--accent-villain);
+  box-shadow: 0 0 15px rgba(0, 255, 102, 0.35);
+}
+
+/* === CATALOGUE PAGINATION === */
+.cat-pagination-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 2.5rem 0 1.5rem;
+  width: 100%;
+}
+.cat-page-count {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+}
+.cat-pagination {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cat-page-btn, .cat-page-num {
+  background: rgba(18, 28, 22, 0.75);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  padding: 0.45rem 0.85rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.18s var(--ease);
+}
+.cat-page-btn:hover:not(:disabled), .cat-page-num:hover:not(.active) {
+  border-color: var(--accent-villain);
+  color: var(--accent-villain);
+  background: rgba(0, 255, 102, 0.06);
+}
+.cat-page-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.cat-page-num.active {
+  background: var(--accent-villain);
+  color: #030608;
+  border-color: var(--accent-villain);
+  font-weight: 700;
+  box-shadow: 0 0 14px rgba(0, 255, 102, 0.4);
+}
+
 /* hidden filter backing */
 .cat-full { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
 

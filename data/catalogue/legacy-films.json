@@ -23,12 +23,12 @@
       "debut_year": 1998,
       "summary": "A half-vampire, half-human hybrid who hunts vampires. Loyal only to his mentor Whistler and his network of allies, he fights against a vampire conspiracy to awaken the ancient vampire lord Dracula.",
       "image_url": "../assets/img/cat-blade.webp",
-      "image_source_url": "https://en.wikipedia.org/wiki/Blade_%28New_Line_franchise_character%29",
-      "image_source_name": "Wikipedia",
-      "image_alt": "Eric Brooks portrait",
+      "image_source_url": "https://marvel.fandom.com/wiki/Eric_Brooks_(Earth-26320)",
+      "image_source_name": "New Line Cinema / Marvel Studios / Deadpool & Wolverine",
+      "image_alt": "Wesley Snipes as Blade in sunglasses portrait",
       "image_verified": true,
       "source_notes": [
-        "Played by Wesley Snipes in the Blade trilogy (1998–2004). The character is slated to join the MCU, played by Mahershala Ali, in the upcoming Blade."
+        "Played by Wesley Snipes in the Blade trilogy (1998\u20132004). The character is slated to join the MCU, played by Mahershala Ali, in the upcoming Blade."
       ],
       "related_titles": [
         "Blade (1998)",
@@ -204,7 +204,9 @@
       "image_url": "../assets/img/cat-frank-castle-2004.jpg",
       "image_verified": true,
       "image_source": "Lionsgate / Artisan / The Punisher (2004)",
-      "image_alt": "Frank Castle in Punisher skull shirt portrait"
+      "image_alt": "Thomas Jane as Frank Castle / The Punisher in skull shirt portrait",
+      "image_source_url": "https://marvel.fandom.com/wiki/The_Punisher_(2004_film)",
+      "image_source_name": "Lionsgate / Artisan / The Punisher (2004)"
     },
     {
       "id": "frank-castle-warzone",
@@ -228,9 +230,9 @@
       "debut_year": 2008,
       "summary": "A brutal vigilante who wages war against New York's organized crime. His battle with the disfigured Jigsaw escalates until he destroys the mob and its corrupt officials.",
       "image_url": "../assets/img/cat-frank-castle-warzone.jpg",
-      "image_source_url": "https://en.wikipedia.org/wiki/Punisher%2C%20Ray%20Stevenson.jpg",
-      "image_source_name": "Wikimedia Commons",
-      "image_alt": "Frank Castle portrait",
+      "image_source_url": "https://marvel.fandom.com/wiki/Punisher:_War_Zone_(film)",
+      "image_source_name": "Lionsgate / Punisher: War Zone (2008)",
+      "image_alt": "Ray Stevenson as Frank Castle / The Punisher portrait",
       "image_verified": true,
       "source_notes": [
         "Played by Ray Stevenson in Punisher: War Zone (2008), a distinct variant from the 2004 film."
@@ -263,7 +265,7 @@
       ],
       "portrayed_by": "Nicolas Cage",
       "universe": "Legacy (Sony)",
-      "continuity": "Ghost Rider (2007–2011)",
+      "continuity": "Ghost Rider (2007\u20132011)",
       "team_or_affiliation": [],
       "character_type": "Hero",
       "tags": [
@@ -276,10 +278,10 @@
       "debut_title": "Ghost Rider (2007)",
       "debut_year": 2007,
       "summary": "A motorcycle stuntman who sells his soul to Mephistopheles to save his father, becoming the fiery Ghost Rider. He rides a flaming motorcycle and hunts the damned, later returning to defeat the Devil's son in Spirit of Vengeance.",
-      "image_url": "../assets/img/cat-johnny-blaze-gr.png",
-      "image_source_url": "https://en.wikipedia.org/wiki/Johnny%20Blaze%20Ghost%20Rider%20in%20Agents%20of%20S.H.I.E.L.D.png",
-      "image_source_name": "Wikimedia Commons",
-      "image_alt": "Johnny Blaze portrait",
+      "image_url": "../assets/img/cat-johnny-blaze-gr.jpg",
+      "image_source_url": "https://marvel.fandom.com/wiki/Johnathon_Blaze_(Earth-121347)",
+      "image_source_name": "Sony Pictures / Ghost Rider",
+      "image_alt": "Nicolas Cage as Johnny Blaze / Ghost Rider in leather jacket portrait",
       "image_verified": true,
       "source_notes": [
         "Played by Nicolas Cage in Ghost Rider (2007) and Ghost Rider: Spirit of Vengeance (2011)."
@@ -415,7 +417,7 @@
       "aliases": [],
       "portrayed_by": "Jennifer Garner",
       "universe": "Legacy (Fox 2003)",
-      "continuity": "Daredevil / Elektra (2003–2005)",
+      "continuity": "Daredevil / Elektra (2003\u20132005)",
       "team_or_affiliation": [],
       "character_type": "Hero",
       "tags": [
@@ -427,10 +429,10 @@
       "debut_title": "Daredevil (2003)",
       "debut_year": 2003,
       "summary": "A deadly assassin who romances Matt Murdock. Believed killed by Bullseye, she returns in her own spinoff film, fighting for a young girl threatened by the Hand and their super-powered foes.",
-      "image_url": "../assets/img/cat-elektra-natchios.webp",
-      "image_source_url": "",
-      "image_source_name": "",
-      "image_alt": "Elektra Natchios portrait",
+      "image_url": "../assets/img/cat-elektra-2003.jpg",
+      "image_source_url": "https://marvel.fandom.com/wiki/Elektra_Natchios_(Earth-701306)",
+      "image_source_name": "20th Century Fox / Marvel Studios / Deadpool & Wolverine",
+      "image_alt": "Jennifer Garner as Elektra Natchios in red costume portrait",
       "image_verified": true,
       "source_notes": [
         "Played by Jennifer Garner in Daredevil (2003) and Elektra (2005)."

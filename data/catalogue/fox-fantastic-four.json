@@ -26,9 +26,9 @@
       "debut_year": 2005,
       "summary": "A brilliant scientist who gains the ability to stretch his body to incredible lengths and shapes. He leads the Fantastic Four and is the team's strategic genius.",
       "image_url": "../assets/img/cat-reed-richards-ff.webp",
-      "image_source_url": "https://en.wikipedia.org/wiki/Mister_Fantastic",
-      "image_source_name": "Wikipedia",
-      "image_alt": "Reed Richards portrait",
+      "image_source_url": "https://marvel.fandom.com/wiki/Reed_Richards_(Earth-121698)",
+      "image_source_name": "20th Century Fox / Fantastic Four",
+      "image_alt": "Ioan Gruffudd as Reed Richards / Mr. Fantastic portrait",
       "image_verified": true,
       "source_notes": [
         "Played by Ioan Gruffudd (2005) and Miles Teller (2015)."
@@ -85,9 +85,9 @@
       "debut_year": 2005,
       "summary": "A scientist who can turn invisible and project protective force fields. She is Reed's partner and the team's emotional anchor.",
       "image_url": "../assets/img/cat-sue-storm-ff.webp",
-      "image_source_url": "https://en.wikipedia.org/wiki/Invisible_Woman",
-      "image_source_name": "Wikipedia",
-      "image_alt": "Susan Storm portrait",
+      "image_source_url": "https://marvel.fandom.com/wiki/Susan_Storm_(Earth-121698)",
+      "image_source_name": "20th Century Fox / Fantastic Four",
+      "image_alt": "Jessica Alba as Susan Storm / Invisible Woman portrait",
       "image_verified": true,
       "source_notes": [
         "Played by Jessica Alba (2005) and Kate Mara (2015)."
@@ -142,10 +142,10 @@
       "debut_title": "Fantastic Four (2005)",
       "debut_year": 2005,
       "summary": "Sue's impulsive younger brother who can engulf himself in flame, fly, and throw fireballs. He is the team's cocky hothead and resident flirt.",
-      "image_url": "../assets/img/cat-johnny-storm-ff.webp",
-      "image_source_url": "https://en.wikipedia.org/wiki/Human_Torch",
-      "image_source_name": "Wikipedia",
-      "image_alt": "Johnny Storm portrait",
+      "image_url": "../assets/img/cat-johnny-storm-ff.jpg",
+      "image_source_url": "https://marvel.fandom.com/wiki/Jonathan_Storm_(Earth-121698)",
+      "image_source_name": "20th Century Fox / Marvel Studios / Deadpool & Wolverine",
+      "image_alt": "Chris Evans as Johnny Storm / Human Torch in blue Fantastic Four suit portrait",
       "image_verified": true,
       "source_notes": [
         "Played by Chris Evans (2005) and Michael B. Jordan (2015); a variant of Johnny Storm also appears in Deadpool & Wolverine (2024)."
@@ -201,10 +201,10 @@
       "debut_title": "Fantastic Four (2005)",
       "debut_year": 2005,
       "summary": "A kind-hearted pilot transformed into a rocky, super-strong orange brute by cosmic radiation. He struggles with his appearance but remains the team's fearless powerhouse and Reed's best friend.",
-      "image_url": "../assets/img/cat-ben-grimm.jpg",
-      "image_source_url": "",
-      "image_source_name": "",
-      "image_alt": "Ben Grimm portrait",
+      "image_url": "../assets/img/cat-ben-grimm-ff.jpg",
+      "image_source_url": "https://marvel.fandom.com/wiki/Benjamin_Grimm_(Earth-121698)",
+      "image_source_name": "20th Century Fox / Fantastic Four",
+      "image_alt": "Michael Chiklis as Ben Grimm / The Thing in rock prosthetic suit portrait",
       "image_verified": true,
       "source_notes": [
         "Played by Michael Chiklis (2005, practical suit) and Jamie Bell (2015, CGI)."

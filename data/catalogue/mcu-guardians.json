@@ -67,7 +67,7 @@
       "aliases": [
         "The Deadliest Woman in the Galaxy"
       ],
-      "portrayed_by": "Zoe Saldaña",
+      "portrayed_by": "Zoe Salda\u00f1a",
       "universe": "Earth-616 / MCU",
       "continuity": "MCU",
       "team_or_affiliation": [
@@ -437,9 +437,9 @@
       "debut_year": 2017,
       "summary": "An ancient Celestial who is himself a living planet and the biological father of Peter Quill. He planned to terraform the universe in his image using Peter's power, and was destroyed by the Guardians in 2014.",
       "image_url": "../assets/img/cat-ego-the-living-planet.jpg",
-      "image_source_url": "https://en.wikipedia.org/wiki/Kurt%20Russell%20as%20Ego.jpg",
-      "image_source_name": "Wikimedia Commons",
-      "image_alt": "Ego portrait",
+      "image_source_url": "https://marvelcinematicuniverse.fandom.com/wiki/Ego",
+      "image_source_name": "Marvel Studios / Guardians of the Galaxy Vol. 2",
+      "image_alt": "Kurt Russell as Ego the Living Planet portrait",
       "image_verified": true,
       "source_notes": [
         "Ego's death in Vol. 2 is the reason Peter loses his Celestial powers."
@@ -604,9 +604,9 @@
       "debut_year": 2023,
       "summary": "A bioengineered being nurtured by the Sovereign as a weapon against the Guardians. Born seemingly fully formed but childlike, he becomes a reluctant ally and joins the new Guardians, protecting the children of Knowhere.",
       "image_url": "../assets/img/cat-adam-warlock.webp",
-      "image_source_url": "https://en.wikipedia.org/wiki/Adam_Warlock",
-      "image_source_name": "Wikipedia",
-      "image_alt": "Adam Warlock portrait",
+      "image_source_url": "https://marvelcinematicuniverse.fandom.com/wiki/Adam_Warlock",
+      "image_source_name": "Marvel Studios / Guardians of the Galaxy Vol. 3",
+      "image_alt": "Will Poulter as Adam Warlock in golden Sovereign armor portrait",
       "image_verified": true,
       "source_notes": [
         "Featured prominently in the anti-credit scene of Vol. 2 and fully in Vol. 3."

@@ -722,7 +722,7 @@
   // === HOLLYWOOD CINEMATIC AUDIO SUITE ===
   function initAudioEngine() {
     let ctx = null;
-    let enabled = localStorage.getItem('doomsday_audio_v1') === 'on';
+    let enabled = localStorage.getItem('doomsday_audio_v1') !== 'off';
     let ambientAudio = null;
     let synthDroneOsc1 = null;
     let synthDroneOsc2 = null;
@@ -947,6 +947,27 @@
       }
     };
     updateBtn();
+
+    // Auto-start ambient audio on page load whenever audio is enabled
+    if (enabled) {
+      try {
+        startAmbientTheme();
+      } catch (err) {}
+
+      // If browser autoplay policy blocks unprompted audio, resume on first user interaction
+      const unlockAudio = () => {
+        if (enabled) {
+          getCtx();
+          startAmbientTheme();
+        }
+        window.removeEventListener('pointerdown', unlockAudio);
+        window.removeEventListener('click', unlockAudio);
+        window.removeEventListener('keydown', unlockAudio);
+      };
+      window.addEventListener('pointerdown', unlockAudio, { once: true });
+      window.addEventListener('click', unlockAudio, { once: true });
+      window.addEventListener('keydown', unlockAudio, { once: true });
+    }
 
     if (toggle) {
       toggle.addEventListener('click', () => {

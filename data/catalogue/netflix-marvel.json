@@ -150,9 +150,9 @@
       "debut_year": 2015,
       "summary": "A psychopathic FBI agent with impossibly precise aim who is manipulated by Kingpin into wearing a Daredevil suit and terrorizing Hell's Kitchen. He was rendered crippled but surgically repaired to become Bullseye.",
       "image_url": "../assets/img/cat-benjamin-poindexter-bullseye.jpg",
-      "image_source_url": "",
-      "image_source_name": "",
-      "image_alt": "Benjamin Poindexter portrait",
+      "image_source_url": "https://marvelcinematicuniverse.fandom.com/wiki/Bullseye",
+      "image_source_name": "Marvel Studios / Netflix / Daredevil",
+      "image_alt": "Wilson Bethel as Benjamin Poindexter / Bullseye portrait",
       "image_verified": true,
       "source_notes": [
         "Teased as Bullseye in the season 3 finale; returns in Daredevil: Born Again."
@@ -299,7 +299,9 @@
       "image_url": "../assets/img/cat-luke-cage.jpg",
       "image_verified": true,
       "image_source": "Official on-screen character photo",
-      "image_alt": "Carl Lucas portrait"
+      "image_alt": "Mike Colter as Luke Cage portrait",
+      "image_source_url": "https://marvelcinematicuniverse.fandom.com/wiki/Luke_Cage",
+      "image_source_name": "Marvel Studios / Netflix / Luke Cage"
     },
     {
       "id": "danny-rand-iron-fist",
@@ -329,9 +331,9 @@
       "debut_year": 2017,
       "summary": "The last survivor of a plane crash, raised in the mystical city of K'un-Lun and granted the iron fist after defeating the dragon Shou-Lao. He returns to New York to reclaim Rand Enterprises, fights the Hand, and eventually renounces the iron fist to end their war.",
       "image_url": "../assets/img/cat-danny-rand-iron-fist.jpg",
-      "image_source_url": "https://en.wikipedia.org/wiki/Finn%20Jones%20as%20Danny%20Rand.jpg",
-      "image_source_name": "Wikimedia Commons",
-      "image_alt": "Danny Rand portrait",
+      "image_source_url": "https://marvelcinematicuniverse.fandom.com/wiki/Iron_Fist",
+      "image_source_name": "Marvel Studios / Netflix / Iron Fist",
+      "image_alt": "Finn Jones as Danny Rand / Iron Fist portrait",
       "image_verified": true,
       "source_notes": [
         "The comics' storm-summoning marks him as a potential avatar of Shou-Lao."
@@ -387,9 +389,9 @@
       "debut_year": 2015,
       "summary": "A decorated Marine whose family was executed under a conspiracy he later joined the military's censorship. He wages a ruthless one-man war on criminals, at war with his own methods alongside Daredevil, and returned as a covert dealer of justice.",
       "image_url": "../assets/img/cat-frank-castle-punisher.jpg",
-      "image_source_url": "https://en.wikipedia.org/wiki/Jon%20Bernthal%20as%20Frank%20Castle.jpg",
-      "image_source_name": "Wikimedia Commons",
-      "image_alt": "Frank Castle portrait",
+      "image_source_url": "https://marvelcinematicuniverse.fandom.com/wiki/Punisher",
+      "image_source_name": "Marvel Studios / Netflix / The Punisher",
+      "image_alt": "Jon Bernthal as Frank Castle / The Punisher with skull tactical vest portrait",
       "image_verified": true,
       "source_notes": [
         "Debuts in Daredevil season 2; returns in Daredevil: Born Again (2025)."

@@ -347,9 +347,9 @@
       "debut_year": 2026,
       "summary": "The Multiverse Saga threat",
       "image_url": "../assets/img/cat-doctor-doom.jpg",
-      "image_source_url": "",
-      "image_source_name": "Wikimedia Commons",
-      "image_alt": "Victor von Doom portrait",
+      "image_source_url": "https://marvelcinematicuniverse.fandom.com/wiki/Doctor_Doom",
+      "image_source_name": "Marvel Studios / Avengers: Doomsday",
+      "image_alt": "Victor von Doom / Doctor Doom in green hooded cloak and iconic iron mask portrait",
       "image_verified": true,
       "source_notes": [
         "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
@@ -401,9 +401,9 @@
       "debut_year": 2008,
       "summary": "The ragin Cajun",
       "image_url": "../assets/img/cat-gambit.jpg",
-      "image_source_url": "https://en.wikipedia.org/wiki/Channing%20Tatum%20as%20Gambit.jpeg",
-      "image_source_name": "Wikimedia Commons",
-      "image_alt": "Remy LeBeau portrait",
+      "image_source_url": "https://marvelcinematicuniverse.fandom.com/wiki/Gambit",
+      "image_source_name": "Marvel Studios / Deadpool & Wolverine",
+      "image_alt": "Channing Tatum as Remy LeBeau / Gambit in costume portrait",
       "image_verified": true,
       "source_notes": [
         "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
@@ -804,7 +804,7 @@
     },
     {
       "id": "mystique",
-      "name": "Raven Darkhölme",
+      "name": "Raven Darkh\u00f6lme",
       "alias": "Mystique",
       "aliases": [
         "Mystique"
@@ -826,7 +826,7 @@
       "image_url": "../assets/img/cat-mystique.jpg",
       "image_source_url": "",
       "image_source_name": "",
-      "image_alt": "Raven Darkhölme portrait",
+      "image_alt": "Raven Darkh\u00f6lme portrait",
       "image_verified": true,
       "source_notes": [
         "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
@@ -980,9 +980,9 @@
       "debut_year": 2008,
       "summary": "The blue teleporter",
       "image_url": "../assets/img/cat-nightcrawler-xmen.jpg",
-      "image_source_url": "",
-      "image_source_name": "",
-      "image_alt": "Kurt Wagner portrait",
+      "image_source_url": "https://xmenmovies.fandom.com/wiki/Nightcrawler",
+      "image_source_name": "20th Century Fox / X2: X-Men United",
+      "image_alt": "Kurt Wagner as Nightcrawler portrayed by Alan Cumming in X2",
       "image_verified": true,
       "source_notes": [
         "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
@@ -1138,9 +1138,9 @@
       "debut_year": 2008,
       "summary": "Leader of the Fantastic Four",
       "image_url": "../assets/img/cat-reed-richards.webp",
-      "image_source_url": "https://en.wikipedia.org/wiki/Mister_Fantastic",
-      "image_source_name": "Wikipedia",
-      "image_alt": "Reed Richards portrait",
+      "image_source_url": "https://marvelcinematicuniverse.fandom.com/wiki/Mister_Fantastic",
+      "image_source_name": "Marvel Studios / The Fantastic Four: First Steps",
+      "image_alt": "Pedro Pascal as Reed Richards / Mister Fantastic portrait",
       "image_verified": true,
       "source_notes": [
         "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
@@ -1465,9 +1465,9 @@
       "debut_year": 2008,
       "summary": "The Invisible Woman",
       "image_url": "../assets/img/cat-sue-storm.webp",
-      "image_source_url": "https://en.wikipedia.org/wiki/Invisible_Woman",
-      "image_source_name": "Wikipedia",
-      "image_alt": "Sue Storm portrait",
+      "image_source_url": "https://marvelcinematicuniverse.fandom.com/wiki/Invisible_Woman",
+      "image_source_name": "Marvel Studios / The Fantastic Four: First Steps",
+      "image_alt": "Vanessa Kirby as Sue Storm / Invisible Woman portrait",
       "image_verified": true,
       "source_notes": [
         "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"

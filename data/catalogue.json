@@ -74,9 +74,9 @@
     "debut_year": 2023,
     "summary": "A bioengineered being nurtured by the Sovereign as a weapon against the Guardians. Born seemingly fully formed but childlike, he becomes a reluctant ally and joins the new Guardians, protecting the children of Knowhere.",
     "image_url": "../assets/img/cat-adam-warlock.webp",
-    "image_source_url": "https://en.wikipedia.org/wiki/Adam_Warlock",
-    "image_source_name": "Wikipedia",
-    "image_alt": "Adam Warlock portrait",
+    "image_source_url": "https://marvelcinematicuniverse.fandom.com/wiki/Adam_Warlock",
+    "image_source_name": "Marvel Studios / Guardians of the Galaxy Vol. 3",
+    "image_alt": "Will Poulter as Adam Warlock in golden Sovereign armor portrait",
     "image_verified": true,
     "source_notes": [
       "Featured prominently in the anti-credit scene of Vol. 2 and fully in Vol. 3."
@@ -129,9 +129,9 @@
     "debut_year": 2022,
     "summary": "A young hero from another universe with the power to punch star-shaped portals through reality. She teams with Strange to stop Wanda and begins training at Kamar-Taj.",
     "image_url": "../assets/img/cat-america-chavez.webp",
-    "image_source_url": "https://en.wikipedia.org/wiki/America_Chavez",
-    "image_source_name": "Wikipedia",
-    "image_alt": "America Chavez portrait",
+    "image_source_url": "https://marvelcinematicuniverse.fandom.com/wiki/America_Chavez",
+    "image_source_name": "Marvel Studios / Doctor Strange in the Multiverse of Madness",
+    "image_alt": "Xochitl Gomez as America Chavez in star jacket portrait",
     "image_verified": true,
     "source_notes": [
       "Introduced in Multiverse of Madness (2022); trained by Strange and Wong."
@@ -182,9 +182,9 @@
     "debut_year": 2016,
     "summary": "The centuries-old Sorcerer Supreme who protected Earth from dimensional threats. She denied Strange the Time Stone, then died defending Kamar-Taj, but appeared again during the Time Heist in Endgame.",
     "image_url": "../assets/img/cat-ancient-one.webp",
-    "image_source_url": "https://en.wikipedia.org/wiki/Ancient_One",
-    "image_source_name": "Wikipedia",
-    "image_alt": "The Ancient One portrait",
+    "image_source_url": "https://marvelcinematicuniverse.fandom.com/wiki/Ancient_One",
+    "image_source_name": "Marvel Studios / Doctor Strange",
+    "image_alt": "Tilda Swinton as The Ancient One in yellow robes portrait",
     "image_verified": true,
     "source_notes": [
       "Killed by Kaecilius in Doctor Strange; meets Hulk/Banner during the Endgame Time Heist."
@@ -396,10 +396,10 @@
     "debut_title": "Fantastic Four (2005)",
     "debut_year": 2005,
     "summary": "A kind-hearted pilot transformed into a rocky, super-strong orange brute by cosmic radiation. He struggles with his appearance but remains the team's fearless powerhouse and Reed's best friend.",
-    "image_url": "../assets/img/cat-ben-grimm.jpg",
-    "image_source_url": "",
-    "image_source_name": "",
-    "image_alt": "Ben Grimm portrait",
+    "image_url": "../assets/img/cat-ben-grimm-ff.jpg",
+    "image_source_url": "https://marvel.fandom.com/wiki/Benjamin_Grimm_(Earth-121698)",
+    "image_source_name": "20th Century Fox / Fantastic Four",
+    "image_alt": "Michael Chiklis as Ben Grimm / The Thing in rock prosthetic suit portrait",
     "image_verified": true,
     "source_notes": [
       "Played by Michael Chiklis (2005, practical suit) and Jamie Bell (2015, CGI)."
@@ -457,9 +457,9 @@
     "debut_year": 2015,
     "summary": "A psychopathic FBI agent with impossibly precise aim who is manipulated by Kingpin into wearing a Daredevil suit and terrorizing Hell's Kitchen. He was rendered crippled but surgically repaired to become Bullseye.",
     "image_url": "../assets/img/cat-benjamin-poindexter-bullseye.jpg",
-    "image_source_url": "",
-    "image_source_name": "",
-    "image_alt": "Benjamin Poindexter portrait",
+    "image_source_url": "https://marvelcinematicuniverse.fandom.com/wiki/Bullseye",
+    "image_source_name": "Marvel Studios / Netflix / Daredevil",
+    "image_alt": "Wilson Bethel as Benjamin Poindexter / Bullseye portrait",
     "image_verified": true,
     "source_notes": [
       "Teased as Bullseye in the season 3 finale; returns in Daredevil: Born Again."
@@ -618,9 +618,9 @@
     "debut_year": 1998,
     "summary": "A half-vampire, half-human hybrid who hunts vampires. Loyal only to his mentor Whistler and his network of allies, he fights against a vampire conspiracy to awaken the ancient vampire lord Dracula.",
     "image_url": "../assets/img/cat-blade.webp",
-    "image_source_url": "https://en.wikipedia.org/wiki/Blade_%28New_Line_franchise_character%29",
-    "image_source_name": "Wikipedia",
-    "image_alt": "Eric Brooks portrait",
+    "image_source_url": "https://marvel.fandom.com/wiki/Eric_Brooks_(Earth-26320)",
+    "image_source_name": "New Line Cinema / Marvel Studios / Deadpool & Wolverine",
+    "image_alt": "Wesley Snipes as Blade in sunglasses portrait",
     "image_verified": true,
     "source_notes": [
       "Played by Wesley Snipes in the Blade trilogy (1998–2004). The character is slated to join the MCU, played by Mahershala Ali, in the upcoming Blade."
@@ -897,9 +897,9 @@
     "debut_year": 2021,
     "summary": "A serial killer and Eddie's estranged childhood acquaintance who bonded with the offspring of the Venom symbiote, becoming the sadistic red monster Carnage. He was destroyed alongside his symbiote.",
     "image_url": "../assets/img/cat-carnage-ssu.jpg",
-    "image_source_url": "https://en.wikipedia.org/wiki/Woody%20Harrelson%20as%20Cletus%20Kasady.jpg",
-    "image_source_name": "Wikimedia Commons",
-    "image_alt": "Cletus Kasady portrait",
+    "image_source_url": "https://marvel.fandom.com/wiki/Cletus_Kasady_(Earth-688B)",
+    "image_source_name": "Sony Pictures / Venom: Let There Be Carnage",
+    "image_alt": "Woody Harrelson as Cletus Kasady / Carnage portrait",
     "image_verified": true,
     "source_notes": [
       "Primary antagonist of Venom: Let There Be Carnage."
@@ -1337,9 +1337,9 @@
     "debut_year": 2013,
     "summary": "A gifted S.H.I.E.L.D. agent and Inhuman with seismic powers who begins as a hacker named Skye. After undergoing Terrigenesis she becomes Quake, leads the Secret Warriors, and eventually takes over as field director of S.H.I.E.L.D.",
     "image_url": "../assets/img/cat-daisy-johnson-quake.jpg",
-    "image_source_url": "https://en.wikipedia.org/wiki/Chloe%20Bennet%20as%20Daisy%20Johnson.jpg",
-    "image_source_name": "Wikimedia Commons",
-    "image_alt": "Daisy Johnson portrait",
+    "image_source_url": "https://marvelcinematicuniverse.fandom.com/wiki/Quake",
+    "image_source_name": "Marvel Studios / ABC / Agents of S.H.I.E.L.D.",
+    "image_alt": "Chloe Bennet as Daisy Johnson / Quake in tactical suit portrait",
     "image_verified": true,
     "source_notes": [
       "Co-lead of Agents of S.H.I.E.L.D. seasons 1–7; Skye's real name revealed as Daisy Johnson in season 2."
@@ -1399,9 +1399,9 @@
     "debut_year": 2017,
     "summary": "The last survivor of a plane crash, raised in the mystical city of K'un-Lun and granted the iron fist after defeating the dragon Shou-Lao. He returns to New York to reclaim Rand Enterprises, fights the Hand, and eventually renounces the iron fist to end their war.",
     "image_url": "../assets/img/cat-danny-rand-iron-fist.jpg",
-    "image_source_url": "https://en.wikipedia.org/wiki/Finn%20Jones%20as%20Danny%20Rand.jpg",
-    "image_source_name": "Wikimedia Commons",
-    "image_alt": "Danny Rand portrait",
+    "image_source_url": "https://marvelcinematicuniverse.fandom.com/wiki/Iron_Fist",
+    "image_source_name": "Marvel Studios / Netflix / Iron Fist",
+    "image_alt": "Finn Jones as Danny Rand / Iron Fist portrait",
     "image_verified": true,
     "source_notes": [
       "The comics' storm-summoning marks him as a potential avatar of Shou-Lao."
@@ -1554,9 +1554,9 @@
     "debut_year": 2009,
     "summary": "A wisecracking, fourth-wall-breaking mercenary with a powerful healing factor. His meta, R-rated solo films became Fox's biggest Marvel successes, and he joins the MCU's wider multiverse alongside Wolverine in 2024.",
     "image_url": "../assets/img/cat-deadpool.webp",
-    "image_source_url": "https://en.wikipedia.org/wiki/Deadpool",
-    "image_source_name": "Wikipedia",
-    "image_alt": "Wade Wilson portrait",
+    "image_source_url": "https://xmenmovies.fandom.com/wiki/Deadpool",
+    "image_source_name": "20th Century Fox / Deadpool",
+    "image_alt": "Ryan Reynolds as Wade Wilson / Deadpool in costume portrait",
     "image_verified": true,
     "source_notes": [
       "Played by Ryan Reynolds; Deadpool & Wolverine (2024) is technically MCU-set but follows his Fox-era continuity."
@@ -1611,9 +1611,9 @@
     "debut_year": 2026,
     "summary": "The Multiverse Saga threat",
     "image_url": "../assets/img/cat-doctor-doom.jpg",
-    "image_source_url": "",
-    "image_source_name": "Wikimedia Commons",
-    "image_alt": "Victor von Doom portrait",
+    "image_source_url": "https://marvelcinematicuniverse.fandom.com/wiki/Doctor_Doom",
+    "image_source_name": "Marvel Studios / Avengers: Doomsday",
+    "image_alt": "Victor von Doom / Doctor Doom in green hooded cloak and iconic iron mask portrait",
     "image_verified": true,
     "source_notes": [
       "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
@@ -1947,10 +1947,10 @@
     "debut_title": "Eternals (2021)",
     "debut_year": 2021,
     "summary": "An Eternal with telepathic and telekinetic abilities to control minds. He broke away to live in isolation, then rejoined his family to save Earth.",
-    "image_url": "../assets/img/cat-druig.webp",
-    "image_source_url": "https://en.wikipedia.org/wiki/Druig",
-    "image_source_name": "Wikipedia",
-    "image_alt": "Druig portrait",
+    "image_url": "../assets/img/cat-druig.jpg",
+    "image_source_url": "https://marvelcinematicuniverse.fandom.com/wiki/Druig",
+    "image_source_name": "Marvel Studios / Eternals",
+    "image_alt": "Barry Keoghan as Druig in dark armor portrait",
     "image_verified": true,
     "source_notes": [
       "Romantically paired with Makkari."
@@ -2000,10 +2000,10 @@
     "debut_title": "Spider-Man 3 (2007)",
     "debut_year": 2007,
     "summary": "A rival photographer who bonded with the black alien symbiote that had briefly corrupted Spider-Man. The union created the monstrous Venom, who teamed with Sandman before being destroyed along with the symbiote.",
-    "image_url": "../assets/img/cat-eddie-brock-raimi.webp",
-    "image_source_url": "https://en.wikipedia.org/wiki/Venom_%28Sam_Raimi_film_series%29",
-    "image_source_name": "Wikipedia",
-    "image_alt": "Eddie Brock portrait",
+    "image_url": "../assets/img/cat-eddie-brock-raimi.jpg",
+    "image_source_url": "https://marvel.fandom.com/wiki/Edward_Brock_Jr._(Earth-96283)",
+    "image_source_name": "Sony Pictures / Spider-Man 3",
+    "image_alt": "Topher Grace as Eddie Brock / Venom portrait",
     "image_verified": true,
     "source_notes": [
       "The Raimi-universe Venom, separate from the Tom Hardy version."
@@ -2053,9 +2053,9 @@
     "debut_year": 2017,
     "summary": "An ancient Celestial who is himself a living planet and the biological father of Peter Quill. He planned to terraform the universe in his image using Peter's power, and was destroyed by the Guardians in 2014.",
     "image_url": "../assets/img/cat-ego-the-living-planet.jpg",
-    "image_source_url": "https://en.wikipedia.org/wiki/Kurt%20Russell%20as%20Ego.jpg",
-    "image_source_name": "Wikimedia Commons",
-    "image_alt": "Ego portrait",
+    "image_source_url": "https://marvelcinematicuniverse.fandom.com/wiki/Ego",
+    "image_source_name": "Marvel Studios / Guardians of the Galaxy Vol. 2",
+    "image_alt": "Kurt Russell as Ego the Living Planet portrait",
     "image_verified": true,
     "source_notes": [
       "Ego's death in Vol. 2 is the reason Peter loses his Celestial powers."
@@ -2106,10 +2106,10 @@
     "debut_title": "The Amazing Spider-Man 2 (2014)",
     "debut_year": 2014,
     "summary": "An overlooked Oscorp electrical engineer who transformed into a being of pure electrical power after an accident, resenting the world and Spider-Man. A variant returned energy-starved in No Way Home.",
-    "image_url": "../assets/img/cat-electro-webb.webp",
-    "image_source_url": "https://en.wikipedia.org/wiki/Electro_%28Marvel_Comics%29",
-    "image_source_name": "Wikipedia",
-    "image_alt": "Max Dillon portrait",
+    "image_url": "../assets/img/cat-electro-webb.jpg",
+    "image_source_url": "https://marvel.fandom.com/wiki/Maxwell_Dillon_(Earth-120703)",
+    "image_source_name": "Sony Pictures / The Amazing Spider-Man 2",
+    "image_alt": "Jamie Foxx as Max Dillon / Electro with blue electricity portrait",
     "image_verified": true,
     "source_notes": [
       "Appears in No Way Home, seeking the Arc Reactor."
@@ -2153,10 +2153,10 @@
     "debut_title": "Daredevil (2003)",
     "debut_year": 2003,
     "summary": "A deadly assassin who romances Matt Murdock. Believed killed by Bullseye, she returns in her own spinoff film, fighting for a young girl threatened by the Hand and their super-powered foes.",
-    "image_url": "../assets/img/cat-elektra-natchios.webp",
-    "image_source_url": "",
-    "image_source_name": "",
-    "image_alt": "Elektra Natchios portrait",
+    "image_url": "../assets/img/cat-elektra-2003.jpg",
+    "image_source_url": "https://marvel.fandom.com/wiki/Elektra_Natchios_(Earth-701306)",
+    "image_source_name": "20th Century Fox / Marvel Studios / Deadpool & Wolverine",
+    "image_alt": "Jennifer Garner as Elektra Natchios in red costume portrait",
     "image_verified": true,
     "source_notes": [
       "Played by Jennifer Garner in Daredevil (2003) and Elektra (2005)."
@@ -2283,7 +2283,9 @@
     "image_url": "../assets/img/cat-frank-castle-2004.jpg",
     "image_verified": true,
     "image_source": "Lionsgate / Artisan / The Punisher (2004)",
-    "image_alt": "Frank Castle in Punisher skull shirt portrait"
+    "image_alt": "Thomas Jane as Frank Castle / The Punisher in skull shirt portrait",
+    "image_source_url": "https://marvel.fandom.com/wiki/The_Punisher_(2004_film)",
+    "image_source_name": "Lionsgate / Artisan / The Punisher (2004)"
   },
   {
     "id": "frank-castle-punisher",
@@ -2310,9 +2312,9 @@
     "debut_year": 2015,
     "summary": "A decorated Marine whose family was executed under a conspiracy he later joined the military's censorship. He wages a ruthless one-man war on criminals, at war with his own methods alongside Daredevil, and returned as a covert dealer of justice.",
     "image_url": "../assets/img/cat-frank-castle-punisher.jpg",
-    "image_source_url": "https://en.wikipedia.org/wiki/Jon%20Bernthal%20as%20Frank%20Castle.jpg",
-    "image_source_name": "Wikimedia Commons",
-    "image_alt": "Frank Castle portrait",
+    "image_source_url": "https://marvelcinematicuniverse.fandom.com/wiki/Punisher",
+    "image_source_name": "Marvel Studios / Netflix / The Punisher",
+    "image_alt": "Jon Bernthal as Frank Castle / The Punisher with skull tactical vest portrait",
     "image_verified": true,
     "source_notes": [
       "Debuts in Daredevil season 2; returns in Daredevil: Born Again (2025)."
@@ -2365,9 +2367,9 @@
     "debut_year": 2008,
     "summary": "A brutal vigilante who wages war against New York's organized crime. His battle with the disfigured Jigsaw escalates until he destroys the mob and its corrupt officials.",
     "image_url": "../assets/img/cat-frank-castle-warzone.jpg",
-    "image_source_url": "https://en.wikipedia.org/wiki/Punisher%2C%20Ray%20Stevenson.jpg",
-    "image_source_name": "Wikimedia Commons",
-    "image_alt": "Frank Castle portrait",
+    "image_source_url": "https://marvel.fandom.com/wiki/Punisher:_War_Zone_(film)",
+    "image_source_name": "Lionsgate / Punisher: War Zone (2008)",
+    "image_alt": "Ray Stevenson as Frank Castle / The Punisher portrait",
     "image_verified": true,
     "source_notes": [
       "Played by Ray Stevenson in Punisher: War Zone (2008), a distinct variant from the 2004 film."
@@ -2472,9 +2474,9 @@
     "debut_year": 2008,
     "summary": "The ragin Cajun",
     "image_url": "../assets/img/cat-gambit.jpg",
-    "image_source_url": "https://en.wikipedia.org/wiki/Channing%20Tatum%20as%20Gambit.jpeg",
-    "image_source_name": "Wikimedia Commons",
-    "image_alt": "Remy LeBeau portrait",
+    "image_source_url": "https://marvelcinematicuniverse.fandom.com/wiki/Gambit",
+    "image_source_name": "Marvel Studios / Deadpool & Wolverine",
+    "image_alt": "Channing Tatum as Remy LeBeau / Gambit in costume portrait",
     "image_verified": true,
     "source_notes": [
       "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
@@ -2635,10 +2637,10 @@
     "debut_title": "Agents of S.H.I.E.L.D. (2016)",
     "debut_year": 2016,
     "summary": "A Los Angeles car enthusiast who is resurrected by the Spirit of Vengeance after being murdered by his uncle. He wields a flaming Dodge Charger and hellfire chain, briefly works with S.H.I.E.L.D. to contain the Darkhold's effects, and is pulled through a portal to an alternate Earth.",
-    "image_url": "../assets/img/cat-ghost-rider-robbie.webp",
-    "image_source_url": "https://en.wikipedia.org/wiki/Robbie_Reyes_%28Marvel_Cinematic_Universe%29",
-    "image_source_name": "Wikipedia",
-    "image_alt": "Robbie Reyes portrait",
+    "image_url": "../assets/img/cat-ghost-rider-robbie.jpg",
+    "image_source_url": "https://marvelcinematicuniverse.fandom.com/wiki/Ghost_Rider",
+    "image_source_name": "Marvel Studios / ABC / Agents of S.H.I.E.L.D.",
+    "image_alt": "Gabriel Luna as Robbie Reyes / Ghost Rider portrait",
     "image_verified": true,
     "source_notes": [
       "Recurring in Agents of S.H.I.E.L.D. season 4; Gabriel Luna was announced for a Ghost Rider Disney+ series that was ultimately shelved."
@@ -3671,9 +3673,9 @@
     "debut_year": 2000,
     "summary": "An immensely powerful telekinetic and telepath who hosts the cosmic Phoenix Force. Her destructive Dark Phoenix persona is a recurring tragedy across the Fox films, culminating in Dark Phoenix (2019).",
     "image_url": "../assets/img/cat-jean-grey-xmen.jpg",
-    "image_source_url": "",
-    "image_source_name": "",
-    "image_alt": "Jean Grey portrait",
+    "image_source_url": "https://xmenmovies.fandom.com/wiki/Jean_Grey",
+    "image_source_name": "20th Century Fox / X-Men: The Last Stand",
+    "image_alt": "Famke Janssen as Jean Grey portrait",
     "image_verified": true,
     "source_notes": [
       "Played by Famke Janssen (adult) and Sophie Turner (young); the Phoenix arc adapts the classic comics storyline."
@@ -3890,10 +3892,10 @@
     "debut_title": "Ghost Rider (2007)",
     "debut_year": 2007,
     "summary": "A motorcycle stuntman who sells his soul to Mephistopheles to save his father, becoming the fiery Ghost Rider. He rides a flaming motorcycle and hunts the damned, later returning to defeat the Devil's son in Spirit of Vengeance.",
-    "image_url": "../assets/img/cat-johnny-blaze-gr.png",
-    "image_source_url": "https://en.wikipedia.org/wiki/Johnny%20Blaze%20Ghost%20Rider%20in%20Agents%20of%20S.H.I.E.L.D.png",
-    "image_source_name": "Wikimedia Commons",
-    "image_alt": "Johnny Blaze portrait",
+    "image_url": "../assets/img/cat-johnny-blaze-gr.jpg",
+    "image_source_url": "https://marvel.fandom.com/wiki/Johnathon_Blaze_(Earth-121347)",
+    "image_source_name": "Sony Pictures / Ghost Rider",
+    "image_alt": "Nicolas Cage as Johnny Blaze / Ghost Rider in leather jacket portrait",
     "image_verified": true,
     "source_notes": [
       "Played by Nicolas Cage in Ghost Rider (2007) and Ghost Rider: Spirit of Vengeance (2011)."
@@ -3998,10 +4000,10 @@
     "debut_title": "Fantastic Four (2005)",
     "debut_year": 2005,
     "summary": "Sue's impulsive younger brother who can engulf himself in flame, fly, and throw fireballs. He is the team's cocky hothead and resident flirt.",
-    "image_url": "../assets/img/cat-johnny-storm-ff.webp",
-    "image_source_url": "https://en.wikipedia.org/wiki/Human_Torch",
-    "image_source_name": "Wikipedia",
-    "image_alt": "Johnny Storm portrait",
+    "image_url": "../assets/img/cat-johnny-storm-ff.jpg",
+    "image_source_url": "https://marvel.fandom.com/wiki/Jonathan_Storm_(Earth-121698)",
+    "image_source_name": "20th Century Fox / Marvel Studios / Deadpool & Wolverine",
+    "image_alt": "Chris Evans as Johnny Storm / Human Torch in blue Fantastic Four suit portrait",
     "image_verified": true,
     "source_notes": [
       "Played by Chris Evans (2005) and Michael B. Jordan (2015); a variant of Johnny Storm also appears in Deadpool & Wolverine (2024)."
@@ -4211,10 +4213,10 @@
     "debut_title": "Kraven the Hunter (2023)",
     "debut_year": 2023,
     "summary": "A Russian aristocrat whose near-death encounter with a lion granted him enhanced strength and an animal connection. He hunts the villains who threaten his family, refusing to use guns against his prey.",
-    "image_url": "../assets/img/cat-kraven-hunter.webp",
-    "image_source_url": "https://en.wikipedia.org/wiki/Kraven_the_Hunter",
-    "image_source_name": "Wikipedia",
-    "image_alt": "Sergei Kravinoff portrait",
+    "image_url": "../assets/img/cat-kraven-hunter.jpg",
+    "image_source_url": "https://marvel.fandom.com/wiki/Kraven_the_Hunter_(film)",
+    "image_source_name": "Sony Pictures / Kraven the Hunter",
+    "image_alt": "Aaron Taylor-Johnson as Sergei Kravinoff / Kraven portrait",
     "image_verified": true,
     "source_notes": [
       "The SSU's anti-hero take on the classic Spider-Man villain."
@@ -4404,7 +4406,9 @@
     "image_url": "../assets/img/cat-luke-cage.jpg",
     "image_verified": true,
     "image_source": "Official on-screen character photo",
-    "image_alt": "Carl Lucas portrait"
+    "image_alt": "Mike Colter as Luke Cage portrait",
+    "image_source_url": "https://marvelcinematicuniverse.fandom.com/wiki/Luke_Cage",
+    "image_source_name": "Marvel Studios / Netflix / Luke Cage"
   },
   {
     "id": "madame-web",
@@ -4455,7 +4459,9 @@
     "image_url": "../assets/img/cat-madame-web.jpg",
     "image_verified": true,
     "image_source": "Official on-screen character photo",
-    "image_alt": "Cassandra Webb portrait"
+    "image_alt": "Dakota Johnson as Cassandra Webb in red jacket portrait",
+    "image_source_url": "https://marvel.fandom.com/wiki/Cassandra_Webb_(Earth-688B)",
+    "image_source_name": "Sony Pictures / Madame Web"
   },
   {
     "id": "magneto-erik",
@@ -4536,10 +4542,10 @@
     "debut_title": "X-Men (2000)",
     "debut_year": 2000,
     "summary": "A Holocaust survivor who controls magnetism and believes mutants must dominate rather than coexist. He oscillates between villain and ally of the X-Men across the Fox films.",
-    "image_url": "../assets/img/cat-magneto-xmen.webp",
-    "image_source_url": "https://en.wikipedia.org/wiki/Magneto%20%28film%20character%29",
-    "image_source_name": "Wikipedia",
-    "image_alt": "Erik Lehnsherr portrait",
+    "image_url": "../assets/img/cat-magneto-xmen.jpg",
+    "image_source_url": "https://xmenmovies.fandom.com/wiki/Magneto",
+    "image_source_name": "20th Century Fox / X-Men: First Class",
+    "image_alt": "Michael Fassbender as Erik Lehnsherr / Magneto portrait",
     "image_verified": true,
     "source_notes": [
       "Played by Ian McKellen and Michael Fassbender at different ages; sees Xavier as his friend and rival."
@@ -5302,9 +5308,9 @@
     "debut_year": 2008,
     "summary": "The blue teleporter",
     "image_url": "../assets/img/cat-nightcrawler-xmen.jpg",
-    "image_source_url": "",
-    "image_source_name": "",
-    "image_alt": "Kurt Wagner portrait",
+    "image_source_url": "https://xmenmovies.fandom.com/wiki/Nightcrawler",
+    "image_source_name": "20th Century Fox / X2: X-Men United",
+    "image_alt": "Kurt Wagner as Nightcrawler portrayed by Alan Cumming in X2",
     "image_verified": true,
     "source_notes": [
       "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
@@ -5800,9 +5806,9 @@
     "debut_year": 2008,
     "summary": "Leader of the Fantastic Four",
     "image_url": "../assets/img/cat-reed-richards.webp",
-    "image_source_url": "https://en.wikipedia.org/wiki/Mister_Fantastic",
-    "image_source_name": "Wikipedia",
-    "image_alt": "Reed Richards portrait",
+    "image_source_url": "https://marvelcinematicuniverse.fandom.com/wiki/Mister_Fantastic",
+    "image_source_name": "Marvel Studios / The Fantastic Four: First Steps",
+    "image_alt": "Pedro Pascal as Reed Richards / Mister Fantastic portrait",
     "image_verified": true,
     "source_notes": [
       "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
@@ -5858,9 +5864,9 @@
     "debut_year": 2005,
     "summary": "A brilliant scientist who gains the ability to stretch his body to incredible lengths and shapes. He leads the Fantastic Four and is the team's strategic genius.",
     "image_url": "../assets/img/cat-reed-richards-ff.webp",
-    "image_source_url": "https://en.wikipedia.org/wiki/Mister_Fantastic",
-    "image_source_name": "Wikipedia",
-    "image_alt": "Reed Richards portrait",
+    "image_source_url": "https://marvel.fandom.com/wiki/Reed_Richards_(Earth-121698)",
+    "image_source_name": "20th Century Fox / Fantastic Four",
+    "image_alt": "Ioan Gruffudd as Reed Richards / Mr. Fantastic portrait",
     "image_verified": true,
     "source_notes": [
       "Played by Ioan Gruffudd (2005) and Miles Teller (2015)."
@@ -6025,9 +6031,9 @@
     "debut_year": 2000,
     "summary": "A mutant who absorbs the powers, memories, and life-force of anyone she touches skin-to-skin, making human contact dangerous. She is a central early X-Men member.",
     "image_url": "../assets/img/cat-rogue-xmen.webp",
-    "image_source_url": "https://en.wikipedia.org/wiki/Anna%20Paquin%20Rogue.webp",
-    "image_source_name": "Wikimedia Commons",
-    "image_alt": "Marie D'Ancanto portrait",
+    "image_source_url": "https://xmenmovies.fandom.com/wiki/Rogue",
+    "image_source_name": "20th Century Fox / X-Men",
+    "image_alt": "Anna Paquin as Rogue with white hair streak portrait",
     "image_verified": true,
     "source_notes": [
       "Played by Anna Paquin in the original trilogy."
@@ -6135,9 +6141,9 @@
     "debut_year": 2000,
     "summary": "A feral, fanged mutant who shares Wolverine's healing factor and animal instincts, and serves as his lifelong rival. He appears in the first X-Men film and Wolverine's origin story.",
     "image_url": "../assets/img/cat-sabretooth-xmen.jpg",
-    "image_source_url": "",
-    "image_source_name": "",
-    "image_alt": "Victor Creed portrait",
+    "image_source_url": "https://xmenmovies.fandom.com/wiki/Sabretooth",
+    "image_source_name": "20th Century Fox / X-Men",
+    "image_alt": "Tyler Mane as Victor Creed / Sabretooth portrait",
     "image_verified": true,
     "source_notes": [
       "Played by Tyler Mane (X-Men 2000) and Liev Schreiber (X-Men Origins: Wolverine 2009)."
@@ -6733,9 +6739,9 @@
     "debut_year": 2002,
     "summary": "The shy, noble Peter Parker bitten by a genetically-enhanced spider in the Raimi trilogy. He fought the Green Goblin, Doctor Octopus and Venom, and crossed into the MCU during the multiversal breach of No Way Home, where he reunited with his alternate-universe counterparts.",
     "image_url": "../assets/img/cat-spidey-maguire.jpg",
-    "image_source_url": "https://en.wikipedia.org/wiki/Tobey%20Maguire%20as%20Peter%20Parker%20and%20Spider-Man.jpg",
-    "image_source_name": "Wikimedia Commons",
-    "image_alt": "Peter Parker portrait",
+    "image_source_url": "https://marvel.fandom.com/wiki/Peter_Parker_(Earth-96283)",
+    "image_source_name": "Sony Pictures / Spider-Man 3",
+    "image_alt": "Tobey Maguire as Peter Parker / Spider-Man portrait",
     "image_verified": true,
     "source_notes": [
       "The first big-screen Spider-Man; returns as a variant in Spider-Man: No Way Home (2021)."
@@ -6855,9 +6861,9 @@
     "debut_year": 2000,
     "summary": "A mutant able to control the weather, and one of the X-Men's most formidable core members across both the original and young-timeline teams.",
     "image_url": "../assets/img/cat-storm-xmen.jpg",
-    "image_source_url": "https://en.wikipedia.org/wiki/Storm%20%28Ororo%20Munroe%29.png",
-    "image_source_name": "Wikimedia Commons",
-    "image_alt": "Ororo Munroe in Storm uniform with white hair portrait",
+    "image_source_url": "https://xmenmovies.fandom.com/wiki/Storm",
+    "image_source_name": "20th Century Fox / X-Men: Days of Future Past",
+    "image_alt": "Halle Berry as Ororo Munroe / Storm portrait",
     "image_verified": true,
     "source_notes": [
       "Played by Halle Berry and Alexandra Shipp."
@@ -6911,9 +6917,9 @@
     "debut_year": 2008,
     "summary": "The Invisible Woman",
     "image_url": "../assets/img/cat-sue-storm.webp",
-    "image_source_url": "https://en.wikipedia.org/wiki/Invisible_Woman",
-    "image_source_name": "Wikipedia",
-    "image_alt": "Sue Storm portrait",
+    "image_source_url": "https://marvelcinematicuniverse.fandom.com/wiki/Invisible_Woman",
+    "image_source_name": "Marvel Studios / The Fantastic Four: First Steps",
+    "image_alt": "Vanessa Kirby as Sue Storm / Invisible Woman portrait",
     "image_verified": true,
     "source_notes": [
       "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
@@ -6968,9 +6974,9 @@
     "debut_year": 2005,
     "summary": "A scientist who can turn invisible and project protective force fields. She is Reed's partner and the team's emotional anchor.",
     "image_url": "../assets/img/cat-sue-storm-ff.webp",
-    "image_source_url": "https://en.wikipedia.org/wiki/Invisible_Woman",
-    "image_source_name": "Wikipedia",
-    "image_alt": "Susan Storm portrait",
+    "image_source_url": "https://marvel.fandom.com/wiki/Susan_Storm_(Earth-121698)",
+    "image_source_name": "20th Century Fox / Fantastic Four",
+    "image_alt": "Jessica Alba as Susan Storm / Invisible Woman portrait",
     "image_verified": true,
     "source_notes": [
       "Played by Jessica Alba (2005) and Kate Mara (2015)."
@@ -7193,9 +7199,9 @@
     "debut_year": 2015,
     "summary": "A black-market arms dealer who trafficked Vibranium and crossed Ultron in Age of Ultron. He aided Killmonger's plot against Wakanda before Killmonger shot him.",
     "image_url": "../assets/img/cat-ulysses-klaue.jpg",
-    "image_source_url": "https://en.wikipedia.org/wiki/Andy%20Serkis%20as%20Ulysses%20Klaue.jpg",
-    "image_source_name": "Wikimedia Commons",
-    "image_alt": "Ulysses Klaue portrait",
+    "image_source_url": "https://marvelcinematicuniverse.fandom.com/wiki/Ulysses_Klaue",
+    "image_source_name": "Marvel Studios / Black Panther",
+    "image_alt": "Andy Serkis as Ulysses Klaue portrait",
     "image_verified": true,
     "source_notes": [
       "Killed by Killmonger in Black Panther (2018)."
@@ -7703,9 +7709,9 @@
     "debut_year": 2017,
     "summary": "A young clone of Wolverine created as a weapon, inheriting his adamantium claws and healing factor. She is the emotional heart of Logan and carries on his legacy.",
     "image_url": "../assets/img/cat-x-23-xmen.webp",
-    "image_source_url": "https://en.wikipedia.org/wiki/X-23",
-    "image_source_name": "Wikipedia",
-    "image_alt": "Laura Kinney portrait",
+    "image_source_url": "https://marvelcinematicuniverse.fandom.com/wiki/X-23",
+    "image_source_name": "Marvel Studios / Deadpool & Wolverine",
+    "image_alt": "Dafne Keen as Laura Kinney / X-23 portrait",
     "image_verified": true,
     "source_notes": [
       "Played by Dafne Keen in Logan (2017)."

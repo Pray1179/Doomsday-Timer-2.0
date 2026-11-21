@@ -252,11 +252,16 @@ def _cat_card(r):
     if r.get("doomsday_cast_slug"):
         doom_badge = '<span class="cat-doom"><span class="cat-doom-bolt">⚡</span>Doomsday</span>'
 
+    doom_val = "1" if r.get("doomsday_cast_slug") else "0"
+    tags_val = " ".join(r.get("tags") or [])
+
     return f"""
 <a class="cat-card" href="./catalogue/{r['id']}.html"
    data-uni="{cu.esc(cont)}"
    data-team="{cu.esc('|'.join(r.get('team_or_affiliation') or []))}"
    data-type="{cu.esc(r.get('character_type', 'Hero'))}"
+   data-doomsday="{doom_val}"
+   data-tags="{cu.esc(tags_val)}"
    style="--ring:{cont_color}">
   <div class="cat-media">
     <img class="cat-emblem" src="../assets/img/cat-{r['id']}.svg"
@@ -377,6 +382,16 @@ def build_listing(records, cast_doc):
   <span>Fantastic Four: <strong>{ff}</strong></span>
 </div>"""
 
+    quick_pills_html = f"""<div class="cat-quick-pills" id="cat-quick-pills" role="tablist" aria-label="Character Groups">
+  <button type="button" class="cat-quick-pill active" data-quick="all">All ({total})</button>
+  <button type="button" class="cat-quick-pill" data-quick="doomsday">⚡ Doomsday ({confirmed})</button>
+  <button type="button" class="cat-quick-pill" data-quick="mcu">MCU ({mcu})</button>
+  <button type="button" class="cat-quick-pill" data-quick="xmen">X-Men ({xmen})</button>
+  <button type="button" class="cat-quick-pill" data-quick="ff">Fantastic Four ({ff})</button>
+  <button type="button" class="cat-quick-pill" data-quick="spidey">Spider-Verse ({spidey})</button>
+  <button type="button" class="cat-quick-pill" data-quick="legacy">Legacy ({legacy})</button>
+</div>"""
+
     # Grid cards — in the curated order (not alphabetical).
     grid = "\n".join(_cat_card(r) for r in ordered)
 
@@ -421,6 +436,7 @@ def build_listing(records, cast_doc):
   <p class="lede">Complete on-screen intelligence catalogue across Earth-616, Earth-828, the Fox X-Men continuity, Spider-Verse, and legacy timelines. 143 verified heroes and villains with active combat status and Doomsday deployment records.</p>
   {badge}
   <div class="cat-toolbar">
+    {quick_pills_html}
     <input id="catalogue-search" class="cmd-input" placeholder="Search name, alias, actor, team, summary…" autocomplete="off">
     {count_html}
     {filters_html}
@@ -434,7 +450,16 @@ def build_listing(records, cast_doc):
 </header>
 <main class="wrap wrap-wide"><div class="cat-grid" id="cat-grid">
 {grid}
-</div></main>
+</div>
+<div class="cat-pagination-bar" id="cat-pagination-bar">
+  <div class="cat-page-count" id="cat-page-count">Showing 1–24 of {total} characters</div>
+  <div class="cat-pagination" id="cat-pagination">
+    <button type="button" class="cat-page-btn" id="cat-page-prev" aria-label="Previous Page">◀ Prev</button>
+    <div class="cat-page-nums" id="cat-page-nums"></div>
+    <button type="button" class="cat-page-btn" id="cat-page-next" aria-label="Next Page">Next ▶</button>
+  </div>
+</div>
+</main>
 {_foot()}
 <script src="../assets/js/catalogue.js"></script>
 <script src="../assets/js/main.js"></script></body></html>"""

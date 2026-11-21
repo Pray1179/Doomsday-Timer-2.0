@@ -24,9 +24,9 @@
       "debut_year": 2002,
       "summary": "The shy, noble Peter Parker bitten by a genetically-enhanced spider in the Raimi trilogy. He fought the Green Goblin, Doctor Octopus and Venom, and crossed into the MCU during the multiversal breach of No Way Home, where he reunited with his alternate-universe counterparts.",
       "image_url": "../assets/img/cat-spidey-maguire.jpg",
-      "image_source_url": "https://en.wikipedia.org/wiki/Tobey%20Maguire%20as%20Peter%20Parker%20and%20Spider-Man.jpg",
-      "image_source_name": "Wikimedia Commons",
-      "image_alt": "Peter Parker portrait",
+      "image_source_url": "https://marvel.fandom.com/wiki/Peter_Parker_(Earth-96283)",
+      "image_source_name": "Sony Pictures / Spider-Man 3",
+      "image_alt": "Tobey Maguire as Peter Parker / Spider-Man portrait",
       "image_verified": true,
       "source_notes": [
         "The first big-screen Spider-Man; returns as a variant in Spider-Man: No Way Home (2021)."
@@ -241,10 +241,10 @@
       "debut_title": "Spider-Man 3 (2007)",
       "debut_year": 2007,
       "summary": "A rival photographer who bonded with the black alien symbiote that had briefly corrupted Spider-Man. The union created the monstrous Venom, who teamed with Sandman before being destroyed along with the symbiote.",
-      "image_url": "../assets/img/cat-eddie-brock-raimi.webp",
-      "image_source_url": "https://en.wikipedia.org/wiki/Venom_%28Sam_Raimi_film_series%29",
-      "image_source_name": "Wikipedia",
-      "image_alt": "Eddie Brock portrait",
+      "image_url": "../assets/img/cat-eddie-brock-raimi.jpg",
+      "image_source_url": "https://marvel.fandom.com/wiki/Edward_Brock_Jr._(Earth-96283)",
+      "image_source_name": "Sony Pictures / Spider-Man 3",
+      "image_alt": "Topher Grace as Eddie Brock / Venom portrait",
       "image_verified": true,
       "source_notes": [
         "The Raimi-universe Venom, separate from the Tom Hardy version."
@@ -395,10 +395,10 @@
       "debut_title": "The Amazing Spider-Man 2 (2014)",
       "debut_year": 2014,
       "summary": "An overlooked Oscorp electrical engineer who transformed into a being of pure electrical power after an accident, resenting the world and Spider-Man. A variant returned energy-starved in No Way Home.",
-      "image_url": "../assets/img/cat-electro-webb.webp",
-      "image_source_url": "https://en.wikipedia.org/wiki/Electro_%28Marvel_Comics%29",
-      "image_source_name": "Wikipedia",
-      "image_alt": "Max Dillon portrait",
+      "image_url": "../assets/img/cat-electro-webb.jpg",
+      "image_source_url": "https://marvel.fandom.com/wiki/Maxwell_Dillon_(Earth-120703)",
+      "image_source_name": "Sony Pictures / The Amazing Spider-Man 2",
+      "image_alt": "Jamie Foxx as Max Dillon / Electro with blue electricity portrait",
       "image_verified": true,
       "source_notes": [
         "Appears in No Way Home, seeking the Arc Reactor."
@@ -548,9 +548,9 @@
       "debut_year": 2021,
       "summary": "A serial killer and Eddie's estranged childhood acquaintance who bonded with the offspring of the Venom symbiote, becoming the sadistic red monster Carnage. He was destroyed alongside his symbiote.",
       "image_url": "../assets/img/cat-carnage-ssu.jpg",
-      "image_source_url": "https://en.wikipedia.org/wiki/Woody%20Harrelson%20as%20Cletus%20Kasady.jpg",
-      "image_source_name": "Wikimedia Commons",
-      "image_alt": "Cletus Kasady portrait",
+      "image_source_url": "https://marvel.fandom.com/wiki/Cletus_Kasady_(Earth-688B)",
+      "image_source_name": "Sony Pictures / Venom: Let There Be Carnage",
+      "image_alt": "Woody Harrelson as Cletus Kasady / Carnage portrait",
       "image_verified": true,
       "source_notes": [
         "Primary antagonist of Venom: Let There Be Carnage."
@@ -651,10 +651,10 @@
       "debut_title": "Kraven the Hunter (2023)",
       "debut_year": 2023,
       "summary": "A Russian aristocrat whose near-death encounter with a lion granted him enhanced strength and an animal connection. He hunts the villains who threaten his family, refusing to use guns against his prey.",
-      "image_url": "../assets/img/cat-kraven-hunter.webp",
-      "image_source_url": "https://en.wikipedia.org/wiki/Kraven_the_Hunter",
-      "image_source_name": "Wikipedia",
-      "image_alt": "Sergei Kravinoff portrait",
+      "image_url": "../assets/img/cat-kraven-hunter.jpg",
+      "image_source_url": "https://marvel.fandom.com/wiki/Kraven_the_Hunter_(film)",
+      "image_source_name": "Sony Pictures / Kraven the Hunter",
+      "image_alt": "Aaron Taylor-Johnson as Sergei Kravinoff / Kraven portrait",
       "image_verified": true,
       "source_notes": [
         "The SSU's anti-hero take on the classic Spider-Man villain."
@@ -729,7 +729,9 @@
       "image_url": "../assets/img/cat-madame-web.jpg",
       "image_verified": true,
       "image_source": "Official on-screen character photo",
-      "image_alt": "Cassandra Webb portrait"
+      "image_alt": "Dakota Johnson as Cassandra Webb in red jacket portrait",
+      "image_source_url": "https://marvel.fandom.com/wiki/Cassandra_Webb_(Earth-688B)",
+      "image_source_name": "Sony Pictures / Madame Web"
     }
   ]
 }

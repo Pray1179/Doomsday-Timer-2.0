@@ -143,10 +143,10 @@
       "debut_title": "X-Men (2000)",
       "debut_year": 2000,
       "summary": "A Holocaust survivor who controls magnetism and believes mutants must dominate rather than coexist. He oscillates between villain and ally of the X-Men across the Fox films.",
-      "image_url": "../assets/img/cat-magneto-xmen.webp",
-      "image_source_url": "https://en.wikipedia.org/wiki/Magneto%20%28film%20character%29",
-      "image_source_name": "Wikipedia",
-      "image_alt": "Erik Lehnsherr portrait",
+      "image_url": "../assets/img/cat-magneto-xmen.jpg",
+      "image_source_url": "https://xmenmovies.fandom.com/wiki/Magneto",
+      "image_source_name": "20th Century Fox / X-Men: First Class",
+      "image_alt": "Michael Fassbender as Erik Lehnsherr / Magneto portrait",
       "image_verified": true,
       "source_notes": [
         "Played by Ian McKellen and Michael Fassbender at different ages; sees Xavier as his friend and rival."
@@ -202,9 +202,9 @@
       "debut_year": 2000,
       "summary": "An immensely powerful telekinetic and telepath who hosts the cosmic Phoenix Force. Her destructive Dark Phoenix persona is a recurring tragedy across the Fox films, culminating in Dark Phoenix (2019).",
       "image_url": "../assets/img/cat-jean-grey-xmen.jpg",
-      "image_source_url": "",
-      "image_source_name": "",
-      "image_alt": "Jean Grey portrait",
+      "image_source_url": "https://xmenmovies.fandom.com/wiki/Jean_Grey",
+      "image_source_name": "20th Century Fox / X-Men: The Last Stand",
+      "image_alt": "Famke Janssen as Jean Grey portrait",
       "image_verified": true,
       "source_notes": [
         "Played by Famke Janssen (adult) and Sophie Turner (young); the Phoenix arc adapts the classic comics storyline."
@@ -260,9 +260,9 @@
       "debut_year": 2000,
       "summary": "A mutant able to control the weather, and one of the X-Men's most formidable core members across both the original and young-timeline teams.",
       "image_url": "../assets/img/cat-storm-xmen.jpg",
-      "image_source_url": "https://en.wikipedia.org/wiki/Storm%20%28Ororo%20Munroe%29.png",
-      "image_source_name": "Wikimedia Commons",
-      "image_alt": "Ororo Munroe in Storm uniform with white hair portrait",
+      "image_source_url": "https://xmenmovies.fandom.com/wiki/Storm",
+      "image_source_name": "20th Century Fox / X-Men: Days of Future Past",
+      "image_alt": "Halle Berry as Ororo Munroe / Storm portrait",
       "image_verified": true,
       "source_notes": [
         "Played by Halle Berry and Alexandra Shipp."
@@ -373,9 +373,9 @@
       "debut_year": 2000,
       "summary": "A mutant who absorbs the powers, memories, and life-force of anyone she touches skin-to-skin, making human contact dangerous. She is a central early X-Men member.",
       "image_url": "../assets/img/cat-rogue-xmen.webp",
-      "image_source_url": "https://en.wikipedia.org/wiki/Anna%20Paquin%20Rogue.webp",
-      "image_source_name": "Wikimedia Commons",
-      "image_alt": "Marie D'Ancanto portrait",
+      "image_source_url": "https://xmenmovies.fandom.com/wiki/Rogue",
+      "image_source_name": "20th Century Fox / X-Men",
+      "image_alt": "Anna Paquin as Rogue with white hair streak portrait",
       "image_verified": true,
       "source_notes": [
         "Played by Anna Paquin in the original trilogy."
@@ -480,9 +480,9 @@
       "debut_year": 2009,
       "summary": "A wisecracking, fourth-wall-breaking mercenary with a powerful healing factor. His meta, R-rated solo films became Fox's biggest Marvel successes, and he joins the MCU's wider multiverse alongside Wolverine in 2024.",
       "image_url": "../assets/img/cat-deadpool.webp",
-      "image_source_url": "https://en.wikipedia.org/wiki/Deadpool",
-      "image_source_name": "Wikipedia",
-      "image_alt": "Wade Wilson portrait",
+      "image_source_url": "https://xmenmovies.fandom.com/wiki/Deadpool",
+      "image_source_name": "20th Century Fox / Deadpool",
+      "image_alt": "Ryan Reynolds as Wade Wilson / Deadpool in costume portrait",
       "image_verified": true,
       "source_notes": [
         "Played by Ryan Reynolds; Deadpool & Wolverine (2024) is technically MCU-set but follows his Fox-era continuity."
@@ -519,7 +519,7 @@
       "name": "Piotr Rasputin",
       "alias": "Colossus",
       "aliases": [],
-      "portrayed_by": "Stefan Kapičić (voice)",
+      "portrayed_by": "Stefan Kapi\u010di\u0107 (voice)",
       "universe": "Earth-10005 / Fox",
       "continuity": "X-Men",
       "team_or_affiliation": [
@@ -541,7 +541,7 @@
       "image_alt": "Piotr Rasputin in organic steel Colossus form portrait",
       "image_verified": true,
       "source_notes": [
-        "Voiced by Stefan Kapičić in the Deadpool films."
+        "Voiced by Stefan Kapi\u010di\u0107 in the Deadpool films."
       ],
       "related_titles": [
         "X-Men 2 (2003)",
@@ -592,9 +592,9 @@
       "debut_year": 2017,
       "summary": "A young clone of Wolverine created as a weapon, inheriting his adamantium claws and healing factor. She is the emotional heart of Logan and carries on his legacy.",
       "image_url": "../assets/img/cat-x-23-xmen.webp",
-      "image_source_url": "https://en.wikipedia.org/wiki/X-23",
-      "image_source_name": "Wikipedia",
-      "image_alt": "Laura Kinney portrait",
+      "image_source_url": "https://marvelcinematicuniverse.fandom.com/wiki/X-23",
+      "image_source_name": "Marvel Studios / Deadpool & Wolverine",
+      "image_alt": "Dafne Keen as Laura Kinney / X-23 portrait",
       "image_verified": true,
       "source_notes": [
         "Played by Dafne Keen in Logan (2017)."
@@ -695,9 +695,9 @@
       "debut_year": 2000,
       "summary": "A feral, fanged mutant who shares Wolverine's healing factor and animal instincts, and serves as his lifelong rival. He appears in the first X-Men film and Wolverine's origin story.",
       "image_url": "../assets/img/cat-sabretooth-xmen.jpg",
-      "image_source_url": "",
-      "image_source_name": "",
-      "image_alt": "Victor Creed portrait",
+      "image_source_url": "https://xmenmovies.fandom.com/wiki/Sabretooth",
+      "image_source_name": "20th Century Fox / X-Men",
+      "image_alt": "Tyler Mane as Victor Creed / Sabretooth portrait",
       "image_verified": true,
       "source_notes": [
         "Played by Tyler Mane (X-Men 2000) and Liev Schreiber (X-Men Origins: Wolverine 2009)."
