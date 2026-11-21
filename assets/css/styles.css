@@ -424,11 +424,19 @@ section h2::after {
 .card .badge.villain { background: var(--accent-villain); }
 
 /* === INTEL DATABASE (homepage #explore) === */
+#explore {
+  max-width: min(96vw, 1560px);
+  width: 100%;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin: 0 auto;
+}
 .db-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1.15rem;
+  grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+  gap: 1rem;
   margin-top: 0.75rem;
+  width: 100%;
 }
 .db-card {
   --accent: var(--accent-villain);
@@ -479,9 +487,8 @@ section h2::after {
 .db-card.db-timeline  { --accent: #22d3ee; } /* Phase Six cyan */
 .db-card.db-watch     { --accent: var(--accent-xmen); }
 .db-card.db-stats     { --accent: var(--accent-wakandans); }
-@media (max-width: 1100px) { .db-grid { grid-template-columns: repeat(3, 1fr); } }
-@media (max-width: 768px) { .db-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 520px) { .db-grid { grid-template-columns: 1fr; } }
+@media (max-width: 860px) { .db-grid { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; } }
+@media (max-width: 580px) { .db-grid { grid-template-columns: 1fr !important; } }
 
 /* === CAST GRID === */
 .cast-grid {

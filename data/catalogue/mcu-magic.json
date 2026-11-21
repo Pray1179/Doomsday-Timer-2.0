@@ -263,7 +263,11 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_url": "../assets/img/cat-clea.jpg",
+      "image_verified": true,
+      "image_source": "Official on-screen character photo",
+      "image_alt": "Clea portrait"
     },
     {
       "id": "america-chavez",
@@ -451,7 +455,7 @@
       "image_url": "../assets/img/cat-wenwu.jpg",
       "image_source_url": "",
       "image_source_name": "",
-      "image_alt": "",
+      "image_alt": "Xu Wenwu portrait",
       "image_verified": true,
       "source_notes": [
         "The Mandarin reveal in Shang-Chi; killed by the Dweller-in-Darkness."
@@ -478,7 +482,7 @@
           "verified_at": "2026-08-30"
         }
       ],
-      "image_source": "Local verified production asset"
+      "image_source": "Official on-screen character photo"
     }
   ]
 }

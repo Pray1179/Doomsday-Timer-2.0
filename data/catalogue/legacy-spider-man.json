@@ -212,7 +212,11 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_url": "../assets/img/cat-sandman-raimi.jpg",
+      "image_verified": true,
+      "image_source": "Official on-screen character photo",
+      "image_alt": "Flint Marko portrait"
     },
     {
       "id": "eddie-brock-raimi",
@@ -363,7 +367,11 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_url": "../assets/img/cat-lizard-webb.jpg",
+      "image_verified": true,
+      "image_source": "Official on-screen character photo",
+      "image_alt": "Dr. Curt Connors portrait"
     },
     {
       "id": "electro-webb",
@@ -456,7 +464,8 @@
       ],
       "image_url": "../assets/img/cat-harry-osborn.webp",
       "image_verified": true,
-      "image_source": "Local verified production asset"
+      "image_source": "Local verified production asset",
+      "image_alt": "Harry Osborn portrait"
     },
     {
       "id": "venom-hardy",
@@ -713,7 +722,11 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_url": "../assets/img/cat-madame-web.jpg",
+      "image_verified": true,
+      "image_source": "Official on-screen character photo",
+      "image_alt": "Cassandra Webb portrait"
     }
   ]
 }

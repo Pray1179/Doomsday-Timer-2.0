@@ -114,7 +114,8 @@
       ],
       "image_url": "../assets/img/cat-wolverine-logan.png",
       "image_verified": true,
-      "image_source": "Local verified production asset"
+      "image_source": "Official on-screen character photo",
+      "image_alt": "Logan portrait"
     },
     {
       "id": "magneto-xmen",
@@ -199,11 +200,11 @@
       "debut_title": "X-Men (2000)",
       "debut_year": 2000,
       "summary": "An immensely powerful telekinetic and telepath who hosts the cosmic Phoenix Force. Her destructive Dark Phoenix persona is a recurring tragedy across the Fox films, culminating in Dark Phoenix (2019).",
-      "image_url": "",
+      "image_url": "../assets/img/cat-jean-grey-xmen.jpg",
       "image_source_url": "",
       "image_source_name": "",
-      "image_alt": "",
-      "image_verified": false,
+      "image_alt": "Jean Grey portrait",
+      "image_verified": true,
       "source_notes": [
         "Played by Famke Janssen (adult) and Sophie Turner (young); the Phoenix arc adapts the classic comics storyline."
       ],
@@ -230,7 +231,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_source": "Official on-screen character photo"
     },
     {
       "id": "storm-xmen",
@@ -443,7 +445,11 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_url": "../assets/img/cat-iceman-xmen.jpg",
+      "image_verified": true,
+      "image_source": "Official on-screen character photo",
+      "image_alt": "Bobby Drake portrait"
     },
     {
       "id": "deadpool",
@@ -683,11 +689,11 @@
       "debut_title": "X-Men (2000)",
       "debut_year": 2000,
       "summary": "A feral, fanged mutant who shares Wolverine's healing factor and animal instincts, and serves as his lifelong rival. He appears in the first X-Men film and Wolverine's origin story.",
-      "image_url": "",
+      "image_url": "../assets/img/cat-sabretooth-xmen.jpg",
       "image_source_url": "",
       "image_source_name": "",
-      "image_alt": "",
-      "image_verified": false,
+      "image_alt": "Victor Creed portrait",
+      "image_verified": true,
       "source_notes": [
         "Played by Tyler Mane (X-Men 2000) and Liev Schreiber (X-Men Origins: Wolverine 2009)."
       ],
@@ -712,7 +718,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_source": "Official on-screen character photo"
     },
     {
       "id": "juggernaut-xmen",

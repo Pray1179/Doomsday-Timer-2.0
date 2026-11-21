@@ -153,7 +153,11 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_url": "../assets/img/cat-deacon-frost.jpg",
+      "image_verified": true,
+      "image_source": "Official on-screen character photo",
+      "image_alt": "Deacon Frost portrait"
     },
     {
       "id": "frank-castle-2004",
@@ -199,7 +203,8 @@
       ],
       "image_url": "../assets/img/cat-frank-castle-punisher.jpg",
       "image_verified": true,
-      "image_source": "Local verified production asset"
+      "image_source": "Local verified production asset",
+      "image_alt": "Frank Castle portrait"
     },
     {
       "id": "frank-castle-warzone",
@@ -345,7 +350,11 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_url": "../assets/img/cat-blackheart-gr.jpg",
+      "image_verified": true,
+      "image_source": "Official on-screen character photo",
+      "image_alt": "Blackheart portrait"
     },
     {
       "id": "matt-murdock-2003",
@@ -396,7 +405,8 @@
       ],
       "image_url": "../assets/img/cat-matt-murdock-daredevil.jpg",
       "image_verified": true,
-      "image_source": "Local verified production asset"
+      "image_source": "Local verified production asset",
+      "image_alt": "Matt Murdock portrait"
     },
     {
       "id": "elektra-2003",
@@ -420,7 +430,7 @@
       "image_url": "../assets/img/cat-elektra-natchios.webp",
       "image_source_url": "",
       "image_source_name": "",
-      "image_alt": "",
+      "image_alt": "Elektra Natchios portrait",
       "image_verified": true,
       "source_notes": [
         "Played by Jennifer Garner in Daredevil (2003) and Elektra (2005)."
@@ -472,11 +482,11 @@
       "debut_title": "Daredevil (2003)",
       "debut_year": 2003,
       "summary": "A bald, psychopathic assassin who can turn virtually anything into a lethal projectile. He kills Elektra and is in turn killed by Daredevil.",
-      "image_url": "",
+      "image_url": "../assets/img/cat-bullseye-2003.jpg",
       "image_source_url": "",
       "image_source_name": "",
-      "image_alt": "",
-      "image_verified": false,
+      "image_alt": "Bullseye portrait",
+      "image_verified": true,
       "source_notes": [
         "Played by Colin Farrell in Daredevil (2003), a distinct variant from the Netflix Bullseye."
       ],
@@ -499,7 +509,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_source": "Official on-screen character photo"
     }
   ]
 }

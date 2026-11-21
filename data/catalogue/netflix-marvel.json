@@ -149,11 +149,11 @@
       "debut_title": "Daredevil (2015)",
       "debut_year": 2015,
       "summary": "A psychopathic FBI agent with impossibly precise aim who is manipulated by Kingpin into wearing a Daredevil suit and terrorizing Hell's Kitchen. He was rendered crippled but surgically repaired to become Bullseye.",
-      "image_url": "",
+      "image_url": "../assets/img/cat-benjamin-poindexter-bullseye.jpg",
       "image_source_url": "",
       "image_source_name": "",
-      "image_alt": "",
-      "image_verified": false,
+      "image_alt": "Benjamin Poindexter portrait",
+      "image_verified": true,
       "source_notes": [
         "Teased as Bullseye in the season 3 finale; returns in Daredevil: Born Again."
       ],
@@ -176,7 +176,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_source": "Official on-screen character photo"
     },
     {
       "id": "jessica-jones",
@@ -234,7 +235,8 @@
       ],
       "image_url": "../assets/img/cat-jessica-jones.jpg",
       "image_verified": true,
-      "image_source": "Local verified production asset"
+      "image_source": "Official on-screen character photo",
+      "image_alt": "Jessica Jones portrait"
     },
     {
       "id": "luke-cage",
@@ -296,7 +298,8 @@
       ],
       "image_url": "../assets/img/cat-luke-cage.jpg",
       "image_verified": true,
-      "image_source": "Local verified production asset"
+      "image_source": "Official on-screen character photo",
+      "image_alt": "Carl Lucas portrait"
     },
     {
       "id": "danny-rand-iron-fist",

@@ -383,7 +383,7 @@
       "image_url": "../assets/img/cat-yondu-udonta.jpg",
       "image_source_url": "",
       "image_source_name": "",
-      "image_alt": "",
+      "image_alt": "Yondu Udonta portrait",
       "image_verified": true,
       "source_notes": [
         "The 2014 Yondu who attacks the Guardians in the first film is the same character who later redeems himself and dies in Vol. 2."
@@ -412,7 +412,7 @@
           "verified_at": "2026-08-30"
         }
       ],
-      "image_source": "Local verified production asset"
+      "image_source": "Official on-screen character photo"
     },
     {
       "id": "ego-the-living-planet",
@@ -520,7 +520,11 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_url": "../assets/img/cat-ronan-the-accuser.jpg",
+      "image_verified": true,
+      "image_source": "Official on-screen character photo",
+      "image_alt": "Ronan portrait"
     },
     {
       "id": "high-evolutionary",
@@ -573,7 +577,8 @@
       ],
       "image_url": "../assets/img/cat-high-evolutionary.jpg",
       "image_verified": true,
-      "image_source": "Local verified production asset"
+      "image_source": "Official on-screen character photo",
+      "image_alt": "High Evolutionary portrait"
     },
     {
       "id": "adam-warlock",

@@ -398,7 +398,7 @@
     "image_url": "../assets/img/cat-ben-grimm.jpg",
     "image_source_url": "",
     "image_source_name": "",
-    "image_alt": "",
+    "image_alt": "Ben Grimm portrait",
     "image_verified": true,
     "source_notes": [
       "Played by Michael Chiklis (2005, practical suit) and Jamie Bell (2015, CGI)."
@@ -455,11 +455,11 @@
     "debut_title": "Daredevil (2015)",
     "debut_year": 2015,
     "summary": "A psychopathic FBI agent with impossibly precise aim who is manipulated by Kingpin into wearing a Daredevil suit and terrorizing Hell's Kitchen. He was rendered crippled but surgically repaired to become Bullseye.",
-    "image_url": "",
+    "image_url": "../assets/img/cat-benjamin-poindexter-bullseye.jpg",
     "image_source_url": "",
     "image_source_name": "",
-    "image_alt": "",
-    "image_verified": false,
+    "image_alt": "Benjamin Poindexter portrait",
+    "image_verified": true,
     "source_notes": [
       "Teased as Bullseye in the season 3 finale; returns in Daredevil: Born Again."
     ],
@@ -482,7 +482,8 @@
         "publisher": "Wikipedia",
         "verified_at": "2026-08-30"
       }
-    ]
+    ],
+    "image_source": "Official on-screen character photo"
   },
   {
     "id": "black-widow-natasha-romanoff",
@@ -587,7 +588,11 @@
         "publisher": "Wikipedia",
         "verified_at": "2026-08-30"
       }
-    ]
+    ],
+    "image_url": "../assets/img/cat-blackheart-gr.jpg",
+    "image_verified": true,
+    "image_source": "Official on-screen character photo",
+    "image_alt": "Blackheart portrait"
   },
   {
     "id": "blade",
@@ -726,11 +731,11 @@
     "debut_title": "Daredevil (2003)",
     "debut_year": 2003,
     "summary": "A bald, psychopathic assassin who can turn virtually anything into a lethal projectile. He kills Elektra and is in turn killed by Daredevil.",
-    "image_url": "",
+    "image_url": "../assets/img/cat-bullseye-2003.jpg",
     "image_source_url": "",
     "image_source_name": "",
-    "image_alt": "",
-    "image_verified": false,
+    "image_alt": "Bullseye portrait",
+    "image_verified": true,
     "source_notes": [
       "Played by Colin Farrell in Daredevil (2003), a distinct variant from the Netflix Bullseye."
     ],
@@ -753,7 +758,8 @@
         "publisher": "Wikipedia",
         "verified_at": "2026-08-30"
       }
-    ]
+    ],
+    "image_source": "Official on-screen character photo"
   },
   {
     "id": "cable-xmen",
@@ -831,7 +837,7 @@
     "image_url": "../assets/img/cat-captain-america-steve-rogers.jpg",
     "image_source_url": "",
     "image_source_name": "",
-    "image_alt": "",
+    "image_alt": "Steve Rogers portrait",
     "image_verified": true,
     "source_notes": [
       "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
@@ -862,7 +868,7 @@
         "verified_at": "2026-08-29"
       }
     ],
-    "image_source": "Local verified production asset"
+    "image_source": "Official on-screen character photo"
   },
   {
     "id": "carnage-ssu",
@@ -1129,7 +1135,11 @@
         "publisher": "Wikipedia",
         "verified_at": "2026-08-30"
       }
-    ]
+    ],
+    "image_url": "../assets/img/cat-clea.jpg",
+    "image_verified": true,
+    "image_source": "Official on-screen character photo",
+    "image_alt": "Clea portrait"
   },
   {
     "id": "colossus-xmen",
@@ -1457,7 +1467,11 @@
         "publisher": "Wikipedia",
         "verified_at": "2026-08-30"
       }
-    ]
+    ],
+    "image_url": "../assets/img/cat-darren-cross.jpg",
+    "image_verified": true,
+    "image_source": "Official on-screen character photo",
+    "image_alt": "Darren Cross portrait"
   },
   {
     "id": "deacon-frost",
@@ -1502,7 +1516,11 @@
         "publisher": "Wikipedia",
         "verified_at": "2026-08-30"
       }
-    ]
+    ],
+    "image_url": "../assets/img/cat-deacon-frost.jpg",
+    "image_verified": true,
+    "image_source": "Official on-screen character photo",
+    "image_alt": "Deacon Frost portrait"
   },
   {
     "id": "deadpool",
@@ -2131,7 +2149,7 @@
     "image_url": "../assets/img/cat-elektra-natchios.webp",
     "image_source_url": "",
     "image_source_name": "",
-    "image_alt": "",
+    "image_alt": "Elektra Natchios portrait",
     "image_verified": true,
     "source_notes": [
       "Played by Jennifer Garner in Daredevil (2003) and Elektra (2005)."
@@ -2210,7 +2228,8 @@
     ],
     "image_url": "../assets/img/cat-erik-killmonger.jpg",
     "image_verified": true,
-    "image_source": "Local verified production asset"
+    "image_source": "Official on-screen character photo",
+    "image_alt": "Erik Stevens portrait"
   },
   {
     "id": "frank-castle-2004",
@@ -2256,7 +2275,8 @@
     ],
     "image_url": "../assets/img/cat-frank-castle-punisher.jpg",
     "image_verified": true,
-    "image_source": "Local verified production asset"
+    "image_source": "Local verified production asset",
+    "image_alt": "Frank Castle portrait"
   },
   {
     "id": "frank-castle-punisher",
@@ -2661,11 +2681,11 @@
     "debut_title": "Eternals (2021)",
     "debut_year": 2021,
     "summary": "A powerful Eternal who forged cosmic-energy weapons and armor, and the devoted caretaker of Thena. He was killed by the Deviant Kro while protecting her.",
-    "image_url": "",
+    "image_url": "../assets/img/cat-gilgamesh.jpg",
     "image_source_url": "",
     "image_source_name": "",
-    "image_alt": "",
-    "image_verified": false,
+    "image_alt": "Gilgamesh portrait",
+    "image_verified": true,
     "source_notes": [
       "Killed by Kro in Eternals (2021)."
     ],
@@ -2690,7 +2710,8 @@
         "publisher": "Wikipedia",
         "verified_at": "2026-08-30"
       }
-    ]
+    ],
+    "image_source": "Official on-screen character photo"
   },
   {
     "id": "gorr-the-god-butcher",
@@ -2736,7 +2757,8 @@
     ],
     "image_url": "../assets/img/cat-gorr-the-god-butcher.jpg",
     "image_verified": true,
-    "image_source": "Local verified production asset"
+    "image_source": "Official on-screen character photo",
+    "image_alt": "Gorr portrait"
   },
   {
     "id": "grandmaster",
@@ -2886,7 +2908,8 @@
     ],
     "image_url": "../assets/img/cat-harry-osborn.webp",
     "image_verified": true,
-    "image_source": "Local verified production asset"
+    "image_source": "Local verified production asset",
+    "image_alt": "Harry Osborn portrait"
   },
   {
     "id": "groot",
@@ -3000,7 +3023,8 @@
     ],
     "image_url": "../assets/img/cat-hank-pym.jpg",
     "image_verified": true,
-    "image_source": "Local verified production asset"
+    "image_source": "Official on-screen character photo",
+    "image_alt": "Hank Pym portrait"
   },
   {
     "id": "hawkeye-clint-barton",
@@ -3223,7 +3247,8 @@
     ],
     "image_url": "../assets/img/cat-high-evolutionary.jpg",
     "image_verified": true,
-    "image_source": "Local verified production asset"
+    "image_source": "Official on-screen character photo",
+    "image_alt": "High Evolutionary portrait"
   },
   {
     "id": "hope-van-dyne",
@@ -3380,7 +3405,11 @@
         "publisher": "Wikipedia",
         "verified_at": "2026-08-30"
       }
-    ]
+    ],
+    "image_url": "../assets/img/cat-iceman-xmen.jpg",
+    "image_verified": true,
+    "image_source": "Official on-screen character photo",
+    "image_alt": "Bobby Drake portrait"
   },
   {
     "id": "ikaris",
@@ -3425,7 +3454,11 @@
         "publisher": "Wikipedia",
         "verified_at": "2026-08-30"
       }
-    ]
+    ],
+    "image_url": "../assets/img/cat-ikaris.jpg",
+    "image_verified": true,
+    "image_source": "Official on-screen character photo",
+    "image_alt": "Ikaris portrait"
   },
   {
     "id": "iron-man-tony-stark",
@@ -3628,11 +3661,11 @@
     "debut_title": "X-Men (2000)",
     "debut_year": 2000,
     "summary": "An immensely powerful telekinetic and telepath who hosts the cosmic Phoenix Force. Her destructive Dark Phoenix persona is a recurring tragedy across the Fox films, culminating in Dark Phoenix (2019).",
-    "image_url": "",
+    "image_url": "../assets/img/cat-jean-grey-xmen.jpg",
     "image_source_url": "",
     "image_source_name": "",
-    "image_alt": "",
-    "image_verified": false,
+    "image_alt": "Jean Grey portrait",
+    "image_verified": true,
     "source_notes": [
       "Played by Famke Janssen (adult) and Sophie Turner (young); the Phoenix arc adapts the classic comics storyline."
     ],
@@ -3659,7 +3692,8 @@
         "publisher": "Wikipedia",
         "verified_at": "2026-08-30"
       }
-    ]
+    ],
+    "image_source": "Official on-screen character photo"
   },
   {
     "id": "jessica-jones",
@@ -3717,7 +3751,8 @@
     ],
     "image_url": "../assets/img/cat-jessica-jones.jpg",
     "image_verified": true,
-    "image_source": "Local verified production asset"
+    "image_source": "Official on-screen character photo",
+    "image_alt": "Jessica Jones portrait"
   },
   {
     "id": "joaquin-torres-falcon",
@@ -4234,7 +4269,11 @@
         "publisher": "Wikipedia",
         "verified_at": "2026-08-30"
       }
-    ]
+    ],
+    "image_url": "../assets/img/cat-lizard-webb.jpg",
+    "image_verified": true,
+    "image_source": "Official on-screen character photo",
+    "image_alt": "Dr. Curt Connors portrait"
   },
   {
     "id": "loki",
@@ -4260,7 +4299,7 @@
     "image_url": "../assets/img/cat-loki.jpg",
     "image_source_url": "",
     "image_source_name": "",
-    "image_alt": "",
+    "image_alt": "Loki portrait",
     "image_verified": true,
     "source_notes": [
       "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
@@ -4290,7 +4329,7 @@
         "verified_at": "2026-08-29"
       }
     ],
-    "image_source": "Local verified production asset"
+    "image_source": "Official on-screen character photo"
   },
   {
     "id": "luke-cage",
@@ -4352,7 +4391,8 @@
     ],
     "image_url": "../assets/img/cat-luke-cage.jpg",
     "image_verified": true,
-    "image_source": "Local verified production asset"
+    "image_source": "Official on-screen character photo",
+    "image_alt": "Carl Lucas portrait"
   },
   {
     "id": "madame-web",
@@ -4399,7 +4439,11 @@
         "publisher": "Wikipedia",
         "verified_at": "2026-08-30"
       }
-    ]
+    ],
+    "image_url": "../assets/img/cat-madame-web.jpg",
+    "image_verified": true,
+    "image_source": "Official on-screen character photo",
+    "image_alt": "Cassandra Webb portrait"
   },
   {
     "id": "magneto-erik",
@@ -4560,7 +4604,11 @@
         "publisher": "Wikipedia",
         "verified_at": "2026-08-30"
       }
-    ]
+    ],
+    "image_url": "../assets/img/cat-makkari.jpg",
+    "image_verified": true,
+    "image_source": "Official on-screen character photo",
+    "image_alt": "Makkari portrait"
   },
   {
     "id": "mantis",
@@ -4725,7 +4773,8 @@
     ],
     "image_url": "../assets/img/cat-matt-murdock-daredevil.jpg",
     "image_verified": true,
-    "image_source": "Local verified production asset"
+    "image_source": "Local verified production asset",
+    "image_alt": "Matt Murdock portrait"
   },
   {
     "id": "matt-murdock-daredevil",
@@ -4815,7 +4864,7 @@
     "image_url": "../assets/img/cat-mbaku.jpg",
     "image_source_url": "",
     "image_source_name": "",
-    "image_alt": "",
+    "image_alt": "M'Baku portrait",
     "image_verified": true,
     "source_notes": [
       "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
@@ -4843,7 +4892,7 @@
         "verified_at": "2026-08-29"
       }
     ],
-    "image_source": "Local verified production asset"
+    "image_source": "Official on-screen character photo"
   },
   {
     "id": "morbius",
@@ -4966,11 +5015,11 @@
     "debut_title": "X-Men (2000; Fox continuity)",
     "debut_year": 2008,
     "summary": "The shape-shifting spy",
-    "image_url": "",
+    "image_url": "../assets/img/cat-mystique.jpg",
     "image_source_url": "",
     "image_source_name": "",
-    "image_alt": "",
-    "image_verified": false,
+    "image_alt": "Raven Darkhölme portrait",
+    "image_verified": true,
     "source_notes": [
       "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
     ],
@@ -4996,7 +5045,8 @@
         "publisher": "Wikipedia",
         "verified_at": "2026-08-29"
       }
-    ]
+    ],
+    "image_source": "Official on-screen character photo"
   },
   {
     "id": "nakia",
@@ -5241,7 +5291,7 @@
     "image_url": "../assets/img/cat-nightcrawler-xmen.jpg",
     "image_source_url": "",
     "image_source_name": "",
-    "image_alt": "",
+    "image_alt": "Kurt Wagner portrait",
     "image_verified": true,
     "source_notes": [
       "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
@@ -6039,7 +6089,11 @@
         "publisher": "Wikipedia",
         "verified_at": "2026-08-30"
       }
-    ]
+    ],
+    "image_url": "../assets/img/cat-ronan-the-accuser.jpg",
+    "image_verified": true,
+    "image_source": "Official on-screen character photo",
+    "image_alt": "Ronan portrait"
   },
   {
     "id": "sabretooth-xmen",
@@ -6063,11 +6117,11 @@
     "debut_title": "X-Men (2000)",
     "debut_year": 2000,
     "summary": "A feral, fanged mutant who shares Wolverine's healing factor and animal instincts, and serves as his lifelong rival. He appears in the first X-Men film and Wolverine's origin story.",
-    "image_url": "",
+    "image_url": "../assets/img/cat-sabretooth-xmen.jpg",
     "image_source_url": "",
     "image_source_name": "",
-    "image_alt": "",
-    "image_verified": false,
+    "image_alt": "Victor Creed portrait",
+    "image_verified": true,
     "source_notes": [
       "Played by Tyler Mane (X-Men 2000) and Liev Schreiber (X-Men Origins: Wolverine 2009)."
     ],
@@ -6092,7 +6146,8 @@
         "publisher": "Wikipedia",
         "verified_at": "2026-08-30"
       }
-    ]
+    ],
+    "image_source": "Official on-screen character photo"
   },
   {
     "id": "sam-wilson-captain-america",
@@ -6197,7 +6252,11 @@
         "publisher": "Wikipedia",
         "verified_at": "2026-08-30"
       }
-    ]
+    ],
+    "image_url": "../assets/img/cat-sandman-raimi.jpg",
+    "image_verified": true,
+    "image_source": "Official on-screen character photo",
+    "image_alt": "Flint Marko portrait"
   },
   {
     "id": "scarlet-witch-wanda-maximoff",
@@ -6411,7 +6470,11 @@
         "publisher": "Wikipedia",
         "verified_at": "2026-08-30"
       }
-    ]
+    ],
+    "image_url": "../assets/img/cat-sersi.jpg",
+    "image_verified": true,
+    "image_source": "Official on-screen character photo",
+    "image_alt": "Sersi portrait"
   },
   {
     "id": "shang-chi",
@@ -7027,7 +7090,11 @@
         "publisher": "Wikipedia",
         "verified_at": "2026-08-30"
       }
-    ]
+    ],
+    "image_url": "../assets/img/cat-thena.jpg",
+    "image_verified": true,
+    "image_source": "Official on-screen character photo",
+    "image_alt": "Thena portrait"
   },
   {
     "id": "thor",
@@ -7190,7 +7257,8 @@
     ],
     "image_url": "../assets/img/cat-valkyrie-brunnhilde.jpg",
     "image_verified": true,
-    "image_source": "Local verified production asset"
+    "image_source": "Official on-screen character photo",
+    "image_alt": "Brunnhilde portrait"
   },
   {
     "id": "venom-hardy",
@@ -7298,7 +7366,8 @@
     ],
     "image_url": "../assets/img/cat-vision.jpg",
     "image_verified": true,
-    "image_source": "Local verified production asset"
+    "image_source": "Local verified production asset",
+    "image_alt": "Vision portrait"
   },
   {
     "id": "war-machine-james-rhodes",
@@ -7385,7 +7454,7 @@
     "image_url": "../assets/img/cat-wenwu.jpg",
     "image_source_url": "",
     "image_source_name": "",
-    "image_alt": "",
+    "image_alt": "Xu Wenwu portrait",
     "image_verified": true,
     "source_notes": [
       "The Mandarin reveal in Shang-Chi; killed by the Dweller-in-Darkness."
@@ -7412,7 +7481,7 @@
         "verified_at": "2026-08-30"
       }
     ],
-    "image_source": "Local verified production asset"
+    "image_source": "Official on-screen character photo"
   },
   {
     "id": "wilson-fisk-kingpin",
@@ -7527,7 +7596,8 @@
     ],
     "image_url": "../assets/img/cat-wolverine-logan.png",
     "image_verified": true,
-    "image_source": "Local verified production asset"
+    "image_source": "Official on-screen character photo",
+    "image_alt": "Logan portrait"
   },
   {
     "id": "wong",
@@ -7721,7 +7791,7 @@
     "image_url": "../assets/img/cat-yondu-udonta.jpg",
     "image_source_url": "",
     "image_source_name": "",
-    "image_alt": "",
+    "image_alt": "Yondu Udonta portrait",
     "image_verified": true,
     "source_notes": [
       "The 2014 Yondu who attacks the Guardians in the first film is the same character who later redeems himself and dies in Vol. 2."
@@ -7750,6 +7820,6 @@
         "verified_at": "2026-08-30"
       }
     ],
-    "image_source": "Local verified production asset"
+    "image_source": "Official on-screen character photo"
   }
 ]

@@ -30,7 +30,7 @@ SITE = "https://doomsdayhub.example"
 
 NAV_ITEMS = [
     ("characters", "Characters", "characters.html"),
-    ("futures", "14M Futures", "futures.html"),
+    ("futures", "Eye of Agamotto", "futures.html"),
     ("watch-guide", "Watch Guide", "watch-guide.html"),
     ("timeline", "Timeline", "timeline.html"),
     ("stats", "Stats", "stats.html"),
@@ -411,8 +411,12 @@ def build_listing(records, cast_doc):
 <body>
 {_site_nav("characters")}
 <header class="hero char-hero">
+  <div class="hero-header-top">
+    <span class="hero-badge"><span class="hero-spark"></span> ARCHIVE DOSSIER // ON-SCREEN MULTIVERSE</span>
+  </div>
   <h1>All Characters</h1>
-  <p class="lede">The on-screen Marvel character catalogue — MCU, X-Men, Fantastic Four, Spider-Verse, legacy multiverse.</p>
+  <p class="hero-quote">&ldquo;There was an idea, to bring together a group of remarkable people, to see if we could become something more.&rdquo; <span class="quote-author">&mdash; Nick Fury</span></p>
+  <p class="lede">Complete on-screen intelligence catalogue across Earth-616, Earth-828, the Fox X-Men continuity, Spider-Verse, and legacy timelines. 143 verified heroes and villains with active combat status and Doomsday deployment records.</p>
   {badge}
   <div class="cat-toolbar">
     <input id="catalogue-search" class="cmd-input" placeholder="Search name, alias, actor, team, summary…" autocomplete="off">

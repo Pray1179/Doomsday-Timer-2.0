@@ -232,7 +232,8 @@
       ],
       "image_url": "../assets/img/cat-valkyrie-brunnhilde.jpg",
       "image_verified": true,
-      "image_source": "Local verified production asset"
+      "image_source": "Official on-screen character photo",
+      "image_alt": "Brunnhilde portrait"
     },
     {
       "id": "hela",
@@ -388,7 +389,8 @@
       ],
       "image_url": "../assets/img/cat-gorr-the-god-butcher.jpg",
       "image_verified": true,
-      "image_source": "Local verified production asset"
+      "image_source": "Official on-screen character photo",
+      "image_alt": "Gorr portrait"
     },
     {
       "id": "grandmaster",

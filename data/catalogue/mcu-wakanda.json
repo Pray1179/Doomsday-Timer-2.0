@@ -283,7 +283,8 @@
       ],
       "image_url": "../assets/img/cat-erik-killmonger.jpg",
       "image_verified": true,
-      "image_source": "Local verified production asset"
+      "image_source": "Official on-screen character photo",
+      "image_alt": "Erik Stevens portrait"
     },
     {
       "id": "riri-williams",

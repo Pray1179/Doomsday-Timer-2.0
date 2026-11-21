@@ -185,7 +185,7 @@
       "image_url": "../assets/img/cat-captain-america-steve-rogers.jpg",
       "image_source_url": "",
       "image_source_name": "",
-      "image_alt": "",
+      "image_alt": "Steve Rogers portrait",
       "image_verified": true,
       "source_notes": [
         "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
@@ -216,7 +216,7 @@
           "verified_at": "2026-08-29"
         }
       ],
-      "image_source": "Local verified production asset"
+      "image_source": "Official on-screen character photo"
     },
     {
       "id": "cassie-lang",
@@ -662,7 +662,7 @@
       "image_url": "../assets/img/cat-loki.jpg",
       "image_source_url": "",
       "image_source_name": "",
-      "image_alt": "",
+      "image_alt": "Loki portrait",
       "image_verified": true,
       "source_notes": [
         "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
@@ -692,7 +692,7 @@
           "verified_at": "2026-08-29"
         }
       ],
-      "image_source": "Local verified production asset"
+      "image_source": "Official on-screen character photo"
     },
     {
       "id": "magneto-erik",
@@ -771,7 +771,7 @@
       "image_url": "../assets/img/cat-mbaku.jpg",
       "image_source_url": "",
       "image_source_name": "",
-      "image_alt": "",
+      "image_alt": "M'Baku portrait",
       "image_verified": true,
       "source_notes": [
         "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
@@ -799,7 +799,7 @@
           "verified_at": "2026-08-29"
         }
       ],
-      "image_source": "Local verified production asset"
+      "image_source": "Official on-screen character photo"
     },
     {
       "id": "mystique",
@@ -822,11 +822,11 @@
       "debut_title": "X-Men (2000; Fox continuity)",
       "debut_year": 2008,
       "summary": "The shape-shifting spy",
-      "image_url": "",
+      "image_url": "../assets/img/cat-mystique.jpg",
       "image_source_url": "",
       "image_source_name": "",
-      "image_alt": "",
-      "image_verified": false,
+      "image_alt": "Raven Darkhölme portrait",
+      "image_verified": true,
       "source_notes": [
         "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
       ],
@@ -852,7 +852,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-29"
         }
-      ]
+      ],
+      "image_source": "Official on-screen character photo"
     },
     {
       "id": "namor",
@@ -980,7 +981,7 @@
       "image_url": "../assets/img/cat-nightcrawler-xmen.jpg",
       "image_source_url": "",
       "image_source_name": "",
-      "image_alt": "",
+      "image_alt": "Kurt Wagner portrait",
       "image_verified": true,
       "source_notes": [
         "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"

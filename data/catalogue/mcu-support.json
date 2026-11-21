@@ -159,7 +159,8 @@
       ],
       "image_url": "../assets/img/cat-hank-pym.jpg",
       "image_verified": true,
-      "image_source": "Local verified production asset"
+      "image_source": "Official on-screen character photo",
+      "image_alt": "Hank Pym portrait"
     },
     {
       "id": "janet-van-dyne",
@@ -311,7 +312,11 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_url": "../assets/img/cat-darren-cross.jpg",
+      "image_verified": true,
+      "image_source": "Official on-screen character photo",
+      "image_alt": "Darren Cross portrait"
     }
   ]
 }

@@ -377,7 +377,7 @@
   "announced": [
     {
       "title": "Avengers: Doomsday",
-      "expected_date": "2026-12-18",
+      "expected_date": "2026-12-17",
       "phase": "Phase Six",
       "format": "Film",
       "blurb": "Worlds collide as the Avengers, Fantastic Four and X-Men face Doctor Doom. PREMIERE OF THIS HUB — unreleased at snapshot.",
@@ -802,7 +802,7 @@
         "how": "Sacrificed himself with the Infinity Stones in Avengers: Endgame.",
         "appears_in": "Iron Man (2008) → Endgame (2019)",
         "catalogue_id": "iron-man-tony-stark",
-        "image_url": "https://upload.wikimedia.org/wikipedia/en/f/f2/Robert_Downey_Jr._as_Tony_Stark_in_Avengers_Infinity_War.jpg"
+        "image_url": "../assets/img/cat-iron-man-tony-stark.jpg"
       },
       {
         "name": "Natasha Romanoff / Black Widow",
@@ -812,7 +812,7 @@
         "how": "Gave her life on Vormir to obtain the Soul Stone in Avengers: Endgame.",
         "appears_in": "Iron Man 2 (2010) → Endgame (2019)",
         "catalogue_id": "black-widow-natasha-romanoff",
-        "image_url": "https://upload.wikimedia.org/wikipedia/en/f/f6/Scarlett_Johansson_as_Black_Widow.jpg"
+        "image_url": "../assets/img/cat-black-widow-natasha-romanoff.jpg"
       },
       {
         "name": "T'Challa / Black Panther",
@@ -822,7 +822,7 @@
         "how": "Died before Black Panther: Wakanda Forever, which honors his legacy.",
         "appears_in": "Captain America: Civil War (2016) → Wakanda Forever (2022)",
         "catalogue_id": "tchalla",
-        "image_url": "https://upload.wikimedia.org/wikipedia/en/1/1a/Chadwick_Boseman_as_T%27Challa.jpg"
+        "image_url": "../assets/img/cat-tchalla.jpg"
       },
       {
         "name": "Pietro Maximoff / Quicksilver",
@@ -832,7 +832,7 @@
         "how": "Killed defending Clint in Avengers: Age of Ultron.",
         "appears_in": "Avengers: Age of Ultron (2015)",
         "catalogue_id": "quicksilver-maximoff-xmen",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Aaron_Taylor-Johnson_at_82nd_Venice_International_Film_Festival-1_%28cropped%29.jpg/440px-Aaron_Taylor-Johnson_at_82nd_Venice_International_Film_Festival-1_%28cropped%29.jpg"
+        "image_url": "../assets/img/cat-quicksilver-maximoff-xmen.png"
       },
       {
         "name": "Vision",
@@ -842,7 +842,7 @@
         "how": "His original body was destroyed by Thanos; White Vision survives in a different state.",
         "appears_in": "Age of Ultron (2015) → WandaVision (2021)",
         "catalogue_id": "vision",
-        "image_url": "https://upload.wikimedia.org/wikipedia/en/f/fc/Paul_Bettany_as_Vision.jpg"
+        "image_url": "../assets/img/cat-vision.jpg"
       },
       {
         "name": "Heimdall",
@@ -852,7 +852,7 @@
         "how": "Killed by Thanos in the opening of Avengers: Infinity War.",
         "appears_in": "Thor (2011) → Infinity War (2018)",
         "catalogue_id": "heimdall",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Idris_Elba_in_2024_%28cropped%29.jpg/500px-Idris_Elba_in_2024_%28cropped%29.jpg"
+        "image_url": "../assets/img/cat-heimdall.jpg"
       },
       {
         "name": "Loki (main timeline)",
@@ -862,7 +862,7 @@
         "how": "Killed by Thanos in Avengers: Infinity War. A 2012 variant lives on with the TVA.",
         "appears_in": "Thor (2011) → Infinity War (2018); Loki S1–S2",
         "catalogue_id": "loki",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Tom_Hiddleston_by_Gage_Skidmore.jpg/500px-Tom_Hiddleston_by_Gage_Skidmore.jpg"
+        "image_url": "../assets/img/cat-loki.jpg"
       },
       {
         "name": "Gamora (main 2018)",
@@ -872,7 +872,7 @@
         "how": "Sacrificed by Thanos for the Soul Stone. A 2014 variant was displaced into the present.",
         "appears_in": "Guardians (2014) → Infinity War (2018); Vol. 3",
         "catalogue_id": "gamora",
-        "image_url": "https://upload.wikimedia.org/wikipedia/en/5/54/Zoe_Saldana_as_Gamora.jpeg"
+        "image_url": "../assets/img/cat-gamora.webp"
       }
     ],
     "guardians_allies": [
@@ -884,7 +884,7 @@
         "how": "Gave his life to save Peter in Guardians of the Galaxy Vol. 2.",
         "appears_in": "Guardians 1–2 (2014–2017)",
         "catalogue_id": "yondu-udonta",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Michael_Rooker_by_Gage_Skidmore_2.jpg/500px-Michael_Rooker_by_Gage_Skidmore_2.jpg"
+        "image_url": "../assets/img/cat-yondu-udonta.jpg"
       },
       {
         "name": "Lylla",
@@ -893,7 +893,8 @@
         "class": "dead",
         "how": "Killed in the High Evolutionary's lab, seen in Guardians of the Galaxy Vol. 3.",
         "appears_in": "Guardians Vol. 3 (2023)",
-        "catalogue_id": "lylla"
+        "catalogue_id": "lylla",
+        "image_url": "../assets/img/cat-lylla.png"
       },
       {
         "name": "Teefs",
@@ -902,7 +903,8 @@
         "class": "dead",
         "how": "Killed in the High Evolutionary's lab, seen in Guardians of the Galaxy Vol. 3.",
         "appears_in": "Guardians Vol. 3 (2023)",
-        "catalogue_id": "teefs"
+        "catalogue_id": "teefs",
+        "image_url": "../assets/img/cat-teefs.jpg"
       },
       {
         "name": "Floor",
@@ -911,7 +913,8 @@
         "class": "dead",
         "how": "Killed in the High Evolutionary's lab, seen in Guardians of the Galaxy Vol. 3.",
         "appears_in": "Guardians Vol. 3 (2023)",
-        "catalogue_id": "floor"
+        "catalogue_id": "floor",
+        "image_url": "../assets/img/cat-floor.png"
       }
     ],
     "world": [
@@ -923,7 +926,7 @@
         "how": "Died of her battle with cancer in Thor: Love and Thunder.",
         "appears_in": "Thor (2011) → Love and Thunder (2022)",
         "catalogue_id": "jane-foster-mighty-thor",
-        "image_url": "https://upload.wikimedia.org/wikipedia/en/e/ed/Jane_Foster_as_Mighty_Thor.jpg"
+        "image_url": "../assets/img/cat-jane-foster-mighty-thor.jpg"
       },
       {
         "name": "Queen Ramonda",
@@ -933,7 +936,7 @@
         "how": "Drowned during the Wakanda–Talokan war in Wakanda Forever.",
         "appears_in": "Black Panther (2018) → Wakanda Forever (2022)",
         "catalogue_id": "ramonda",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Angela_Bassett_at_PaleyFest_2014_-_13491748704.jpg/500px-Angela_Bassett_at_PaleyFest_2014_-_13491748704.jpg"
+        "image_url": "../assets/img/cat-ramonda.jpg"
       },
       {
         "name": "Maria Hill",
@@ -943,7 +946,7 @@
         "how": "Killed in Secret Invasion.",
         "appears_in": "The Avengers (2012) → Secret Invasion (2023)",
         "catalogue_id": "maria-hill",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Cobie_Smulders_by_Gage_Skidmore_3.jpg/500px-Cobie_Smulders_by_Gage_Skidmore_3.jpg"
+        "image_url": "../assets/img/cat-maria-hill.jpg"
       },
       {
         "name": "Talos",
@@ -953,7 +956,7 @@
         "how": "Killed in Secret Invasion.",
         "appears_in": "Captain Marvel (2019) → Secret Invasion (2023)",
         "catalogue_id": "talos-skrull",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Ben_Mendelsohn_by_Gage_Skidmore.jpg/500px-Ben_Mendelsohn_by_Gage_Skidmore.jpg"
+        "image_url": "../assets/img/cat-talos-skrull.jpg"
       }
     ]
   },

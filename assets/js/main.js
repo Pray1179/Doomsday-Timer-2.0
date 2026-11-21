@@ -846,77 +846,27 @@
       } catch (err) {}
     };
 
-    // Background Ambient Score (MP3 with Smooth 3s Fade-Out Loop + Synth Drone Fallback)
+    // Background Ambient Score (Direct Loop without slow fade delay)
     const TARGET_VOLUME = 0.35;
-    const FADE_OUT_SEC = 3.0; // 3 seconds fade-out before ending
-    const FADE_IN_SEC = 2.5;  // 2.5 seconds smooth fade-in on start/loop
-    let ambientFadeRaf = null;
-
-    const applyAmbientVolumeFade = () => {
-      if (!ambientAudio || ambientAudio.paused) return;
-
-      const dur = ambientAudio.duration;
-      const cur = ambientAudio.currentTime;
-
-      if (dur && !isNaN(dur) && dur > FADE_OUT_SEC + 1.0) {
-        let factor = 1.0;
-
-        // Fade-out phase: last 3 seconds of the track
-        if (cur > dur - FADE_OUT_SEC) {
-          const remaining = Math.max(0, dur - cur);
-          factor = remaining / FADE_OUT_SEC; // 1.0 -> 0.0
-        }
-        // Fade-in phase: first 2.5 seconds of the track
-        else if (cur < FADE_IN_SEC) {
-          factor = Math.max(0.001, cur / FADE_IN_SEC); // 0.0 -> 1.0
-        }
-
-        ambientAudio.volume = Math.max(0, Math.min(TARGET_VOLUME, TARGET_VOLUME * factor));
-      }
-    };
-
-    const monitorAmbientLoopFade = () => {
-      applyAmbientVolumeFade();
-      if (ambientAudio && !ambientAudio.paused) {
-        ambientFadeRaf = requestAnimationFrame(monitorAmbientLoopFade);
-      }
-    };
 
     const startAmbientTheme = () => {
       if (!ambientAudio) {
         ambientAudio = new Audio(`${prefix}assets/audio/ambient-theme.mp3`);
         ambientAudio.loop = true;
-        ambientAudio.volume = 0.001; // Start from 0 to smoothly fade in
-        ambientAudio.addEventListener('timeupdate', applyAmbientVolumeFade);
+        ambientAudio.volume = TARGET_VOLUME;
       }
 
-      ambientAudio.play().then(() => {
-        if (ambientFadeRaf) cancelAnimationFrame(ambientFadeRaf);
-        ambientFadeRaf = requestAnimationFrame(monitorAmbientLoopFade);
-      }).catch(() => {
+      ambientAudio.volume = TARGET_VOLUME;
+      ambientAudio.play().catch(() => {
         // Fallback to atmospheric dark orchestral drone
         startSynthDrone();
       });
     };
 
     const stopAmbientTheme = () => {
-      if (ambientFadeRaf) {
-        cancelAnimationFrame(ambientFadeRaf);
-        ambientFadeRaf = null;
-      }
       if (ambientAudio) {
-        // Smooth quick fade out on user toggle off
-        const fadeOutStep = () => {
-          if (ambientAudio.volume > 0.03) {
-            ambientAudio.volume = Math.max(0, ambientAudio.volume - 0.05);
-            setTimeout(fadeOutStep, 40);
-          } else {
-            ambientAudio.pause();
-            ambientAudio.currentTime = 0;
-            ambientAudio.volume = 0.001;
-          }
-        };
-        fadeOutStep();
+        ambientAudio.pause();
+        ambientAudio.currentTime = 0;
       }
       stopSynthDrone();
     };

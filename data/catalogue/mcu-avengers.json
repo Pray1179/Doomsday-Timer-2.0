@@ -288,7 +288,8 @@
       ],
       "image_url": "../assets/img/cat-vision.jpg",
       "image_verified": true,
-      "image_source": "Local verified production asset"
+      "image_source": "Local verified production asset",
+      "image_alt": "Vision portrait"
     },
     {
       "id": "war-machine-james-rhodes",

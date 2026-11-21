@@ -90,6 +90,8 @@ def _tl_item(m, side, released=True, href=None, num=None):
     num_span = f'<span class="tl-num">{num:02d}</span>' if num else '<span class="tl-num">—</span>'
     badge = "" if released else '<span class="badge upcoming">ANNOUNCED</span>'
     date_lbl = fmt_date(m["release_date"]) if released else fmt_date(m.get("expected_date", ""))
+    if m["title"] == "Avengers: Doomsday":
+        date_lbl = "Dec 17, 2026 (12:01 AM)"
     # Status node: solid (●) for released, hollow (○) for announced — placed on
     # the center rail via CSS (.tl-node at left:50%, transformX(-50%)). Shape
     # encodes state first; color is the phase accent for released, amber for
@@ -253,8 +255,11 @@ def build_timeline(cast_doc):
     html = (ex.page_head("Timeline", "Full MCU release timeline, 2008 to now.",
                          "/explore/timeline.html")
             + "<body>" + ex.site_nav("timeline")
-            + f'<header class="hero char-hero"><h1>Timeline</h1>'
-            + f'<p class="lede">The Marvel Cinematic Universe in release order — {len(films)} films from Iron Man (2008) to now, plus the announced multiversal double-bill.</p></header>'
+            + '<header class="hero char-hero">'
+            + '<div class="hero-header-top"><span class="hero-badge"><span class="hero-spark"></span> CHRONOLOGICAL RAIL // 2008 &mdash; 2027</span></div>'
+            + '<h1>MCU Timeline</h1>'
+            + '<p class="hero-quote">&ldquo;The timeline is branching... every single second. What we do right now echoes through eternity.&rdquo; <span class="quote-author">&mdash; Loki</span></p>'
+            + '<p class="lede">The definitive theatrical release and narrative progression of the Marvel Cinematic Universe, charting Phase One through Phase Six into the imminent Multiversal Incursion of Avengers: Doomsday.</p></header>'
             + '<main class="wrap wrap-wide">'
 
             + f'<section><h2>Release Timeline <span class="count">({rail_count})</span></h2>'
@@ -471,8 +476,11 @@ def build_watch_guide(cast_doc):
     html = (ex.page_head("Watch Guide", "Three routes to get ready for Doomsday.",
                          "/explore/watch-guide.html")
             + "<body>" + ex.site_nav("watch-guide")
-            + '<header class="hero char-hero"><h1>Watch Guide</h1>'
-            + '<p class="lede">Three routes — pick your depth. Everything collapses so you never face a wall of content.</p></header>'
+            + '<header class="hero char-hero">'
+            + '<div class="hero-header-top"><span class="hero-badge"><span class="hero-spark"></span> MISSION PROTOCOL // PREP MARATHON</span></div>'
+            + '<h1>Watch Guide</h1>'
+            + '<p class="hero-quote">&ldquo;Even if there\'s a small chance... we owe this to everyone who\'s not in this room to try.&rdquo; <span class="quote-author">&mdash; Natasha Romanoff</span></p>'
+            + '<p class="lede">Curated viewing paths for the multiversal war. Follow the essential collision route, character-specific paths, or complete chronological marathon ahead of December 17, 2026 (12:01 AM).</p></header>'
             + '<main class="wrap wrap-wide">'
             + '<section class="card wl-progress-card" id="wl-progress-card">'
             + '  <!-- COLLAPSED MINI BAR (Shown when collapsed) -->'
@@ -633,8 +641,11 @@ def build_stats(cast_doc):
     return (ex.page_head("Stats", "Full on-screen character catalogue, derived Avengers counts and roster history.",
                          "/explore/stats.html", jsonld)
             + "<body>" + ex.site_nav("stats")
-            + f'<header class="hero char-hero"><h1>Stats</h1>'
-            + f'<p class="lede">{total_cat} on-screen characters catalogued · {total_cast} confirmed Doomsday cast.</p></header>'
+            + '<header class="hero char-hero">'
+            + '<div class="hero-header-top"><span class="hero-badge"><span class="hero-spark"></span> NERD METRICS // TACTICAL INTELLIGENCE</span></div>'
+            + '<h1>Stats</h1>'
+            + '<p class="hero-quote">&ldquo;I am inevitable.&rdquo; <span class="quote-author">&mdash; Thanos</span></p>'
+            + f'<p class="lede">Deep data analytics and faction breakdown across the multiverse. Census of {total_cat} verified characters and {total_cast} confirmed Doomsday participants behind the war.</p></header>'
             + '<main class="wrap wrap-wide">'
 
             # ---- Derived counts ---- #
@@ -685,9 +696,10 @@ def _mem_local_img(cid):
     """Return relative path to local catalogue photo if it exists, else None."""
     if not cid:
         return None
-    img = ROOT / "assets" / "img" / f"cat-{cid}.jpg"
-    if img.exists():
-        return f"../assets/img/cat-{cid}.jpg"
+    for ext in [".jpg", ".webp", ".png", ".jpeg"]:
+        img = ROOT / "assets" / "img" / f"cat-{cid}{ext}"
+        if img.exists():
+            return f"../assets/img/cat-{cid}{ext}"
     return None
 
 
@@ -741,8 +753,11 @@ def build_memorial_page():
     return (ex.page_head("Memorial", "Remembering the heroes lost across the MCU.",
                          "/explore/memorial.html")
             + "<body>" + ex.site_nav("memorial")
-            + '<header class="hero char-hero mem-hero"><h1>Memorial</h1>'
-            + f'<p class="lede">In memory of the fallen. {E_(mem["intro"])}</p></header>'
+            + '<header class="hero char-hero mem-hero">'
+            + '<div class="hero-header-top"><span class="hero-badge"><span class="hero-spark"></span> IN MEMORIAM // FALLEN CHAMPIONS</span></div>'
+            + '<h1>Memorial</h1>'
+            + '<p class="hero-quote">&ldquo;Part of the journey is the end.&rdquo; <span class="quote-author">&mdash; Tony Stark</span></p>'
+            + f'<p class="lede">Honoring the heroes who gave everything across the Infinity and Multiverse eras. Every monument marks a confirmed on-screen sacrifice. May their legacy endure across infinite timelines.</p></header>'
             + "<main class=\"wrap wrap-wide\">"
             + '<section><h2>Original Avengers &amp; Core Fallen</h2>'
             + f'<div class="mem-grid">{featured}</div></section>'

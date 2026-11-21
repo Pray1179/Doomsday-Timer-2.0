@@ -121,7 +121,7 @@ def page_head(title, desc, canonical, extra_jsonld=""):
 def site_nav(active):
     items = [
         ("characters", "Characters", "characters.html"),
-        ("futures", "14M Futures", "futures.html"),
+        ("futures", "Eye of Agamotto", "futures.html"),
         ("watch-guide", "Watch Guide", "watch-guide.html"),
         ("timeline", "Timeline", "timeline.html"),
         ("stats", "Stats", "stats.html"),

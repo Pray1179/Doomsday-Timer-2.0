@@ -50,7 +50,11 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_url": "../assets/img/cat-sersi.jpg",
+      "image_verified": true,
+      "image_source": "Official on-screen character photo",
+      "image_alt": "Sersi portrait"
     },
     {
       "id": "ikaris",
@@ -95,7 +99,11 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_url": "../assets/img/cat-ikaris.jpg",
+      "image_verified": true,
+      "image_source": "Official on-screen character photo",
+      "image_alt": "Ikaris portrait"
     },
     {
       "id": "thena",
@@ -142,7 +150,11 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_url": "../assets/img/cat-thena.jpg",
+      "image_verified": true,
+      "image_source": "Official on-screen character photo",
+      "image_alt": "Thena portrait"
     },
     {
       "id": "kingo",
@@ -243,7 +255,11 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_url": "../assets/img/cat-makkari.jpg",
+      "image_verified": true,
+      "image_source": "Official on-screen character photo",
+      "image_alt": "Makkari portrait"
     },
     {
       "id": "druig",
@@ -320,11 +336,11 @@
       "debut_title": "Eternals (2021)",
       "debut_year": 2021,
       "summary": "A powerful Eternal who forged cosmic-energy weapons and armor, and the devoted caretaker of Thena. He was killed by the Deviant Kro while protecting her.",
-      "image_url": "",
+      "image_url": "../assets/img/cat-gilgamesh.jpg",
       "image_source_url": "",
       "image_source_name": "",
-      "image_alt": "",
-      "image_verified": false,
+      "image_alt": "Gilgamesh portrait",
+      "image_verified": true,
       "source_notes": [
         "Killed by Kro in Eternals (2021)."
       ],
@@ -349,7 +365,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_source": "Official on-screen character photo"
     }
   ]
 }
