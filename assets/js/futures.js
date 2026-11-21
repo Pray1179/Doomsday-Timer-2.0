@@ -1,7 +1,7 @@
 /**
  * Avengers: Doomsday — 14,000,605 Futures Simulator Engine
  * Client-side battle simulation, team builder, preset loader,
- * and multi-provider AI integration (NVIDIA NIM, Groq, Gemini, OpenRouter).
+ * and multi-provider AI integration with dynamic model discovery.
  */
 (function() {
   'use strict';
@@ -11,7 +11,8 @@
   let presets = [];
   let selectedChampions = [];
   let apiKey = localStorage.getItem('time_stone_api_key') || '';
-  let apiProvider = localStorage.getItem('time_stone_provider') || 'groq';
+  let apiProvider = localStorage.getItem('time_stone_provider') || 'gemini';
+  let selectedModel = localStorage.getItem('time_stone_model') || '';
 
   // Elements
   const searchInput = document.getElementById('champ-search-input');
@@ -46,6 +47,9 @@
   const toggleKeyVisBtn = document.getElementById('toggle-key-visibility');
   const aiProviderSelect = document.getElementById('ai-provider-select');
   const aiKeyInput = document.getElementById('ai-key-input');
+  const aiModelSelect = document.getElementById('ai-model-select');
+  const fetchModelsBtn = document.getElementById('fetch-models-btn');
+  const aiCustomModelInput = document.getElementById('ai-custom-model-input');
   const keyIndicator = document.getElementById('key-indicator');
   const keyLabel = document.getElementById('key-label');
 
@@ -65,11 +69,12 @@
   function updateKeyIndicator() {
     if (apiKey) {
       keyIndicator.classList.add('active');
+      const modelLabel = selectedModel ? ` (${selectedModel.replace(/^models\//, '')})` : '';
       const names = {
-        groq: 'AI: Groq Llama 3.3 (Active)',
-        gemini: 'AI: Google Gemini (Active)',
-        nvidia: 'AI: NVIDIA NIM (Active)',
-        openrouter: 'AI: OpenRouter (Active)'
+        gemini: `AI: Gemini${modelLabel}`,
+        groq: `AI: Groq Llama${modelLabel}`,
+        nvidia: `AI: NVIDIA NIM${modelLabel}`,
+        openrouter: `AI: OpenRouter${modelLabel}`
       };
       keyLabel.textContent = names[apiProvider] || 'AI Active';
     } else {
@@ -274,6 +279,115 @@
     };
   }
 
+  // Fetch available models from account API
+  async function fetchAvailableModels(provider, key) {
+    const cleanKey = (key || '').trim();
+    if (!cleanKey) {
+      testKeyResult.style.display = 'block';
+      testKeyResult.style.color = '#e63946';
+      testKeyResult.textContent = '❌ Please enter an API key first.';
+      return [];
+    }
+
+    testKeyResult.style.display = 'block';
+    testKeyResult.style.color = '#a3e6b8';
+    testKeyResult.textContent = '⏳ Querying available models from API...';
+
+    if (provider === 'gemini') {
+      try {
+        const endpoints = [
+          `https://generativelanguage.googleapis.com/v1beta/models?key=${encodeURIComponent(cleanKey)}`,
+          `https://generativelanguage.googleapis.com/v1/models?key=${encodeURIComponent(cleanKey)}`
+        ];
+        let models = [];
+        let lastErrTxt = '';
+        for (const ep of endpoints) {
+          try {
+            const res = await fetch(ep, {
+              headers: { 'x-goog-api-key': cleanKey }
+            });
+            if (res.ok) {
+              const data = await res.json();
+              if (data.models && data.models.length > 0) {
+                models = data.models;
+                break;
+              }
+            } else {
+              const txt = await res.text();
+              try {
+                const j = JSON.parse(txt);
+                lastErrTxt = j?.error?.message || txt;
+              } catch(_) {
+                lastErrTxt = txt;
+              }
+            }
+          } catch(e) {
+            lastErrTxt = e.message;
+          }
+        }
+
+        if (models.length > 0) {
+          aiModelSelect.innerHTML = '<option value="">-- Choose from your account\'s models --</option>';
+          const genModels = models.filter(m => (m.supportedGenerationMethods || []).includes('generateContent'));
+          const displayList = genModels.length > 0 ? genModels : models;
+
+          displayList.forEach(m => {
+            const opt = document.createElement('option');
+            const shortName = m.name.replace(/^models\//, '');
+            opt.value = shortName;
+            opt.textContent = `${m.displayName || shortName} (${shortName})`;
+            aiModelSelect.appendChild(opt);
+          });
+
+          // Preselect first or saved model
+          if (selectedModel) {
+            aiModelSelect.value = selectedModel.replace(/^models\//, '');
+            aiCustomModelInput.value = selectedModel;
+          } else if (displayList[0]) {
+            const firstShort = displayList[0].name.replace(/^models\//, '');
+            aiModelSelect.value = firstShort;
+            aiCustomModelInput.value = firstShort;
+          }
+
+          testKeyResult.style.color = '#00cc55';
+          testKeyResult.innerHTML = `✅ Successfully detected <strong>${displayList.length} models</strong>! Pick from the dropdown or type your model below.`;
+          return displayList;
+        } else {
+          testKeyResult.style.color = '#f59e0b';
+          testKeyResult.innerHTML = `⚠️ Could not auto-list models${lastErrTxt ? ': ' + lastErrTxt.slice(0, 100) : ''}. You can type your model name directly below (e.g. <code>gemini-2.0-flash</code>, <code>gemini-1.5-flash</code>, <code>gemini-4-hydrogen</code>).`;
+        }
+      } catch (err) {
+        testKeyResult.style.color = '#e63946';
+        testKeyResult.textContent = `❌ Model query failed: ${err.message}. You can still type your model name manually.`;
+      }
+    } else if (provider === 'groq') {
+      try {
+        const res = await fetch('https://api.groq.com/openai/v1/models', {
+          headers: { 'Authorization': `Bearer ${cleanKey}` }
+        });
+        if (res.ok) {
+          const data = await res.json();
+          aiModelSelect.innerHTML = '<option value="">-- Choose from Groq models --</option>';
+          (data.data || []).forEach(m => {
+            const opt = document.createElement('option');
+            opt.value = m.id;
+            opt.textContent = m.id;
+            aiModelSelect.appendChild(opt);
+          });
+          testKeyResult.style.color = '#00cc55';
+          testKeyResult.innerHTML = `✅ Successfully fetched Groq models! Select from the dropdown.`;
+        }
+      } catch(err) {
+        testKeyResult.style.color = '#e63946';
+        testKeyResult.textContent = `❌ Groq query error: ${err.message}`;
+      }
+    } else {
+      testKeyResult.style.color = '#a3e6b8';
+      testKeyResult.textContent = `Type your model identifier in the custom model field below.`;
+    }
+    return [];
+  }
+
   // Call Google Gemini API with smart model discovery & dual auth
   async function callGeminiApi(cleanKey, prompt) {
     const payload = JSON.stringify({
@@ -284,43 +398,32 @@
       }
     });
 
-    // 1. Try to discover available models dynamically
-    let discoveredModel = null;
-    try {
-      const listUrl = `https://generativelanguage.googleapis.com/v1beta/models?key=${encodeURIComponent(cleanKey)}`;
-      const listRes = await fetch(listUrl, {
-        headers: { 'x-goog-api-key': cleanKey }
-      });
-      if (listRes.ok) {
-        const listData = await listRes.json();
-        const models = listData.models || [];
-        const match = models.find(m => 
-          (m.supportedGenerationMethods || []).includes('generateContent') &&
-          /flash|pro|gemini/i.test(m.name)
-        );
-        if (match) {
-          discoveredModel = match.name; // e.g. "models/gemini-2.0-flash" or "models/gemini-1.5-flash"
-        }
-      }
-    } catch (e) {
-      console.warn('Could not auto-list Gemini models:', e);
-    }
+    // Check user-specified custom model first
+    const userModel = (aiCustomModelInput && aiCustomModelInput.value ? aiCustomModelInput.value.trim() : '')
+      || (aiModelSelect && aiModelSelect.value ? aiModelSelect.value.trim() : '')
+      || (selectedModel || '').trim();
 
-    // Candidate models in priority order
-    const modelCandidates = discoveredModel ? [discoveredModel] : [
-      'models/gemini-2.0-flash',
-      'models/gemini-1.5-flash',
-      'models/gemini-1.5-flash-latest',
-      'models/gemini-2.0-flash-exp',
-      'models/gemini-1.5-pro',
-      'models/gemini-pro'
-    ];
+    // Candidate models in priority order: user's chosen model first!
+    const modelCandidates = [];
+    if (userModel) {
+      modelCandidates.push(userModel);
+    }
+    // High-availability model fallbacks
+    [
+      'gemini-2.0-flash',
+      'gemini-2.0-flash-exp',
+      'gemini-1.5-flash',
+      'gemini-1.5-flash-latest',
+      'gemini-1.5-pro',
+      'gemini-pro'
+    ].forEach(m => {
+      if (!modelCandidates.includes(m)) modelCandidates.push(m);
+    });
 
     let lastError = null;
 
-    for (const modelPath of modelCandidates) {
-      const cleanPath = modelPath.startsWith('models/') ? modelPath : `models/${modelPath}`;
-      // Test both v1beta and v1
+    for (const rawModel of modelCandidates) {
+      const cleanPath = rawModel.startsWith('models/') ? rawModel : `models/${rawModel}`;
       const endpoints = [
         `https://generativelanguage.googleapis.com/v1beta/${cleanPath}:generateContent`,
         `https://generativelanguage.googleapis.com/v1/${cleanPath}:generateContent`
@@ -349,7 +452,7 @@
           const errMsg = errJson?.error?.message || errText.slice(0, 140);
 
           if (res.status === 404) {
-            lastError = new Error(`HTTP 404 on ${cleanPath}`);
+            lastError = new Error(`HTTP 404 on ${cleanPath}: ${errMsg}`);
             continue; // Try next endpoint or model
           }
 
@@ -365,7 +468,7 @@
       }
     }
 
-    throw lastError || new Error('All Gemini model endpoints returned 404. Please verify the key has Generative Language API enabled in Google Cloud/AI Studio.');
+    throw lastError || new Error('All Gemini model endpoints returned 404. Please check the model name.');
   }
 
   // Dispatch AI Model API Call
@@ -377,8 +480,14 @@
       throw new Error('Please enter an API key.');
     }
 
-    if (provider === 'groq') {
-      // Groq officially supports browser CORS with Access-Control-Allow-Origin: *
+    if (provider === 'gemini') {
+      return await callGeminiApi(cleanKey, prompt);
+    }
+    else if (provider === 'groq') {
+      const model = (aiCustomModelInput && aiCustomModelInput.value ? aiCustomModelInput.value.trim() : '')
+        || (aiModelSelect && aiModelSelect.value ? aiModelSelect.value.trim() : '')
+        || 'llama-3.3-70b-versatile';
+
       const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
         method: 'POST',
         headers: {
@@ -386,7 +495,7 @@
           'Authorization': `Bearer ${cleanKey}`
         },
         body: JSON.stringify({
-          model: 'llama-3.3-70b-versatile',
+          model: model,
           messages: [{ role: 'user', content: prompt }],
           temperature: 0.7,
           max_tokens: 1024
@@ -400,11 +509,7 @@
       const data = await res.json();
       return data.choices?.[0]?.message?.content || '';
     }
-    else if (provider === 'gemini') {
-      return await callGeminiApi(cleanKey, prompt);
-    }
     else if (provider === 'nvidia') {
-      // Use local proxy if running locally to bypass CORS
       const endpoint = isLocalhost ? '/api/nvidia-proxy' : 'https://integrate.api.nvidia.com/v1/chat/completions';
       try {
         const res = await fetch(endpoint, {
@@ -440,6 +545,9 @@
     } 
     else {
       // OpenRouter supports browser CORS
+      const model = (aiCustomModelInput && aiCustomModelInput.value ? aiCustomModelInput.value.trim() : '')
+        || 'meta-llama/llama-3.1-70b-instruct';
+
       const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
         method: 'POST',
         headers: {
@@ -447,7 +555,7 @@
           'Authorization': `Bearer ${cleanKey}`
         },
         body: JSON.stringify({
-          model: 'meta-llama/llama-3.1-70b-instruct',
+          model: model,
           messages: [{ role: 'user', content: prompt }],
           temperature: 0.7,
           max_tokens: 1024
@@ -525,12 +633,13 @@ Keep the tone dark, thrilling, grounded in Marvel lore, and worthy of a Russo Br
 
     aiActiveBadge.style.display = 'inline-flex';
     const providerNames = {
+      gemini: 'Google Gemini',
       groq: 'Groq (Llama 3.3 70B)',
-      gemini: 'Google Gemini (Flash / Pro)',
       nvidia: 'NVIDIA NIM (Llama 3.1 70B)',
       openrouter: 'OpenRouter (Llama 3.1 70B)'
     };
-    aiProviderLabel.textContent = `${providerNames[apiProvider] || 'AI Model'} Active`;
+    const modelTag = selectedModel ? ` [${selectedModel.replace(/^models\//, '')}]` : '';
+    aiProviderLabel.textContent = `${providerNames[apiProvider] || 'AI Model'}${modelTag} Active`;
 
     resultOdds.textContent = "1 IN 14,000,605";
     resultOddsPct.textContent = "0.0000071% VICTORY PROBABILITY";
@@ -628,11 +737,15 @@ Keep the tone dark, thrilling, grounded in Marvel lore, and worthy of a Russo Br
     try {
       const pingPrompt = "Respond with exactly the single word 'ACTIVE'.";
       const res = await callModelApi(provider, key, pingPrompt);
+      const usedModel = (aiCustomModelInput && aiCustomModelInput.value ? aiCustomModelInput.value.trim() : '')
+        || (aiModelSelect && aiModelSelect.value ? aiModelSelect.value.trim() : '')
+        || selectedModel;
+
       testKeyResult.style.color = '#00cc55';
-      testKeyResult.textContent = `✅ Connected successfully! Model response: "${res.trim().slice(0, 40)}"`;
+      testKeyResult.innerHTML = `✅ <strong>Connected successfully!</strong><br>Model verified: <code>${usedModel || 'default'}</code><br>Response: "${res.trim().slice(0, 40)}"`;
     } catch (err) {
       testKeyResult.style.color = '#e63946';
-      testKeyResult.innerHTML = `❌ Connection failed: ${err.message}`;
+      testKeyResult.innerHTML = `❌ Connection failed: ${err.message}<br><small>Tip: Try clicking <strong>Fetch Models 🔄</strong> above to load the exact models your key has access to.</small>`;
     }
   }
 
@@ -682,6 +795,7 @@ Keep the tone dark, thrilling, grounded in Marvel lore, and worthy of a Russo Br
     openModalBtn.addEventListener('click', () => {
       aiKeyInput.value = apiKey;
       aiProviderSelect.value = apiProvider;
+      aiCustomModelInput.value = selectedModel;
       testKeyResult.style.display = 'none';
       apiModal.style.display = 'flex';
     });
@@ -700,6 +814,36 @@ Keep the tone dark, thrilling, grounded in Marvel lore, and worthy of a Russo Br
       });
     }
 
+    if (aiProviderSelect) {
+      aiProviderSelect.addEventListener('change', () => {
+        const prov = aiProviderSelect.value;
+        if (prov === 'gemini') {
+          aiCustomModelInput.placeholder = 'e.g. gemini-2.0-flash, gemini-1.5-flash, gemini-4-hydrogen...';
+        } else if (prov === 'groq') {
+          aiCustomModelInput.placeholder = 'e.g. llama-3.3-70b-versatile, llama-3.1-8b-instant...';
+        } else if (prov === 'nvidia') {
+          aiCustomModelInput.placeholder = 'e.g. meta/llama-3.1-70b-instruct...';
+        } else {
+          aiCustomModelInput.placeholder = 'e.g. meta-llama/llama-3.1-70b-instruct...';
+        }
+        testKeyResult.style.display = 'none';
+      });
+    }
+
+    if (fetchModelsBtn) {
+      fetchModelsBtn.addEventListener('click', () => {
+        fetchAvailableModels(aiProviderSelect.value, aiKeyInput.value);
+      });
+    }
+
+    if (aiModelSelect) {
+      aiModelSelect.addEventListener('change', () => {
+        if (aiModelSelect.value) {
+          aiCustomModelInput.value = aiModelSelect.value;
+        }
+      });
+    }
+
     if (testKeyBtn) {
       testKeyBtn.addEventListener('click', testKeyConnection);
     }
@@ -707,17 +851,25 @@ Keep the tone dark, thrilling, grounded in Marvel lore, and worthy of a Russo Br
     saveKeyBtn.addEventListener('click', () => {
       apiKey = (aiKeyInput.value || '').trim();
       apiProvider = aiProviderSelect.value;
+      selectedModel = (aiCustomModelInput.value || aiModelSelect.value || '').trim();
+
       localStorage.setItem('time_stone_api_key', apiKey);
       localStorage.setItem('time_stone_provider', apiProvider);
+      localStorage.setItem('time_stone_model', selectedModel);
+
       updateKeyIndicator();
       apiModal.style.display = 'none';
-      alert('Time Stone AI Key configured. Simulations will now generate live AI battle chronologies.');
+      alert(`Time Stone AI configured with ${apiProvider} (${selectedModel || 'auto'}). Simulations will now stream live AI battle reports.`);
     });
 
     clearKeyBtn.addEventListener('click', () => {
       apiKey = '';
+      selectedModel = '';
       localStorage.removeItem('time_stone_api_key');
+      localStorage.removeItem('time_stone_model');
       aiKeyInput.value = '';
+      aiCustomModelInput.value = '';
+      aiModelSelect.innerHTML = '<option value="">-- Click \'Fetch Models\' to load your account\'s models --</option>';
       testKeyResult.style.display = 'none';
       updateKeyIndicator();
       apiModal.style.display = 'none';

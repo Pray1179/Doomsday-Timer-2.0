@@ -397,11 +397,25 @@ def build_futures_page():
         </p>
       </div>
 
+      <div class="form-group" id="model-select-group">
+        <label for="ai-model-select">Selected Model (Auto-detect or Custom):</label>
+        <div style="display:flex;gap:0.5rem;margin-bottom:0.4rem;">
+          <select id="ai-model-select" class="cmd-input" style="flex:1;">
+            <option value="">-- Click 'Fetch Models' to load your account's models --</option>
+          </select>
+          <button id="fetch-models-btn" class="btn btn-sm btn-outline" type="button" title="Fetch all models available for your key">Fetch Models 🔄</button>
+        </div>
+        <div style="display:flex;gap:0.5rem;">
+          <input id="ai-custom-model-input" type="text" class="cmd-input" placeholder="Or enter exact model name (e.g. gemini-2.0-flash, gemini-4-hydrogen, gemini-3.8-flash)..." style="flex:1;">
+        </div>
+        <p class="hint-text">Choose from your account's detected models, or type any model identifier shown on your Google AI Studio quickstart.</p>
+      </div>
+
       <div id="test-key-result" class="test-key-result" style="display:none;margin-bottom:1rem;"></div>
 
       <div class="modal-actions">
         <button id="test-key-btn" class="btn btn-secondary" type="button">Test Connection</button>
-        <button id="save-key-btn" class="btn btn-primary" type="button">Save Key</button>
+        <button id="save-key-btn" class="btn btn-primary" type="button">Save Settings</button>
         <button id="clear-key-btn" class="btn btn-secondary" type="button">Remove Key</button>
       </div>
 
