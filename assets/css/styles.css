@@ -92,12 +92,13 @@ p, .lede, .char-hero .lede, .card p, .muted, .verified,
 }
 .nav.hidden { transform: translateY(-100%); }
 .nav-inner {
-  max-width: 1200px;
+  max-width: min(96vw, 1560px);
   margin: 0 auto;
-  padding: 0.75rem 2rem;
+  padding: 0.75rem clamp(1rem, 2vw, 2rem);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1.5rem;
 }
 .brand {
   display: flex;
@@ -108,6 +109,7 @@ p, .lede, .char-hero .lede, .card p, .muted, .verified,
   color: var(--text);
   text-decoration: none;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 .brand .av {
   font-family: var(--font-display);
@@ -132,23 +134,41 @@ p, .lede, .char-hero .lede, .card p, .muted, .verified,
 }
 .nav ul {
   display: flex;
-  gap: 2rem;
+  align-items: center;
+  gap: clamp(0.75rem, 1.4vw, 1.75rem);
   list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: nowrap;
+}
+.nav ul li {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 .nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  white-space: nowrap;
   color: var(--text-muted);
   text-decoration: none;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   transition: color 0.2s;
+  line-height: 1;
 }
 .nav a:hover { color: var(--text); }
+.nav a.active { color: var(--accent); }
 
 /* Per-page mini logo inside each nav link (used everywhere, sized to the text) */
 .nav-icon {
-  width: 0.8em;
-  height: 0.8em;
+  width: 0.9em;
+  height: 0.9em;
   flex-shrink: 0;
-  stroke-width: 1.5;
+  stroke-width: 1.6;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 /* Hamburger button (mobile only — display:flex in @media) */
@@ -2054,11 +2074,31 @@ ul.watch li { padding: 0.3rem 0.55rem; border-bottom: 1px solid rgba(255,255,255
 .count-sum strong { color: var(--text); font-family: var(--font-ui); font-variant-numeric: tabular-nums; }
 
 /* Doomsday-30 badge */
-.badge-doomsday { margin: 1.6rem auto 0; max-width: 640px; padding: 0.7rem 1rem;
-  border: 1px solid #c8b33a; border-radius: 12px; font-size: 0.85rem; color: #f2ead0;
-  display: flex; gap: 0.6rem; align-items: center; justify-content: center; background: rgba(200, 179, 58, 0.08); }
+.badge-doomsday {
+  margin: 1.6rem auto 0;
+  max-width: 780px;
+  padding: 0.75rem 1.25rem;
+  border: 1px solid rgba(200, 179, 58, 0.45);
+  border-radius: 12px;
+  font-size: 0.85rem;
+  color: #f2ead0;
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: flex-start;
+  background: rgba(200, 179, 58, 0.08);
+  text-align: left;
+}
+.badge-doomsday-text {
+  flex: 1;
+  line-height: 1.5;
+}
 .badge-doomsday a { color: #ffe9a3; text-decoration: underline; }
-.badge-icon { filter: drop-shadow(0 0 6px rgba(200, 179, 58, 0.6)); }
+.badge-icon {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  filter: drop-shadow(0 0 6px rgba(200, 179, 58, 0.6));
+}
 
 /* Compact filter toolbar + dropdown (collapses the three pill groups) */
 .cat-toolbar { margin-top: 1.5rem; display: flex; flex-direction: column; gap: 1.1rem; align-items: stretch; }
@@ -2289,6 +2329,8 @@ a.pnav:hover { color: var(--accent-villain); }
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
+  white-space: nowrap;
+  flex-shrink: 0;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(var(--accent-rgb), 0.35);
   color: var(--text);

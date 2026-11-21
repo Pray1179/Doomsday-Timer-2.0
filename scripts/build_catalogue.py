@@ -383,8 +383,10 @@ def build_listing(records, cast_doc):
     # Doomsday 30 badge (cross-link note at top)
     badge = """<div class="badge-doomsday">
   <span class="badge-icon">⚡</span>
-  <strong>30 confirmed Doomsday cast</strong> — characters with a "<em>Confirmed for Doomsday</em>" badge
-  cross-link to their cast pages. The 30-member Doomsday roster stays intact; this catalogue adds the wider on-screen universe.
+  <div class="badge-doomsday-text">
+    <strong>30 confirmed Doomsday cast</strong> &mdash; characters with a &ldquo;<em>Confirmed for Doomsday</em>&rdquo; badge
+    cross-link to their cast pages. The 30-member Doomsday roster stays intact; this catalogue adds the wider on-screen universe.
+  </div>
 </div>"""
 
     jsonld = json.dumps({
