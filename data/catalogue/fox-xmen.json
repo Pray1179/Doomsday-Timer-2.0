@@ -24,10 +24,10 @@
       "debut_title": "X-Men (2000)",
       "debut_year": 2000,
       "summary": "The telepathic founder and leader of the X-Men who dreams of peaceful mutant-human coexistence. In the 2024 film Deadpool & Wolverine he abdicated his Earth-10005 Xavier's School responsibilities to the X-Men at large.",
-      "image_url": "../assets/img/cat-charles-xavier-xmen.webp",
+      "image_url": "../assets/img/cat-charles-xavier-xmen.jpg",
       "image_source_url": "https://doomsdayhub.example",
       "image_source_name": "Fan site archive",
-      "image_alt": "Charles Xavier portrait",
+      "image_alt": "Charles Xavier as Professor X portrait",
       "image_verified": true,
       "source_notes": [
         "Played by Patrick Stewart in the original timeline and James McAvoy in the young-timeline prequels; appears in Doctor Strange in the Multiverse of Madness (2022)."
@@ -57,7 +57,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_source": "20th Century Fox / X-Men"
     },
     {
       "id": "wolverine-logan",
@@ -258,10 +259,10 @@
       "debut_title": "X-Men (2000)",
       "debut_year": 2000,
       "summary": "A mutant able to control the weather, and one of the X-Men's most formidable core members across both the original and young-timeline teams.",
-      "image_url": "../assets/img/cat-storm-xmen.png",
+      "image_url": "../assets/img/cat-storm-xmen.jpg",
       "image_source_url": "https://en.wikipedia.org/wiki/Storm%20%28Ororo%20Munroe%29.png",
       "image_source_name": "Wikimedia Commons",
-      "image_alt": "Ororo Munroe portrait",
+      "image_alt": "Ororo Munroe in Storm uniform with white hair portrait",
       "image_verified": true,
       "source_notes": [
         "Played by Halle Berry and Alexandra Shipp."
@@ -289,7 +290,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_source": "20th Century Fox / X-Men: Days of Future Past"
     },
     {
       "id": "cyclops-xmen",
@@ -315,10 +317,10 @@
       "debut_title": "X-Men (2000)",
       "debut_year": 2000,
       "summary": "The disciplined field leader of the X-Men whose eyes emit powerful energy beams he controls with a visor. He is Jean Grey's longtime partner.",
-      "image_url": "../assets/img/cat-cyclops-xmen.png",
+      "image_url": "../assets/img/cat-cyclops-xmen.jpg",
       "image_source_url": "https://en.wikipedia.org/wiki/Cyclops%20%28Scott%20Summers%20circa%202019%29.png",
       "image_source_name": "Wikimedia Commons",
-      "image_alt": "Scott Summers portrait",
+      "image_alt": "Scott Summers in X-Men uniform and ruby-quartz visor portrait",
       "image_verified": true,
       "source_notes": [
         "Played by James Marsden and Tye Sheridan."
@@ -346,7 +348,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_source": "20th Century Fox / X-Men"
     },
     {
       "id": "rogue-xmen",
@@ -535,7 +538,7 @@
       "image_url": "../assets/img/cat-colossus-xmen.jpg",
       "image_source_url": "https://en.wikipedia.org/wiki/Piotr%20Rasputin",
       "image_source_name": "Wikipedia",
-      "image_alt": "Marvel Comics character",
+      "image_alt": "Piotr Rasputin in organic steel Colossus form portrait",
       "image_verified": true,
       "source_notes": [
         "Voiced by Stefan Kapičić in the Deadpool films."
@@ -561,7 +564,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_source": "20th Century Fox / X-Men: Days of Future Past"
     },
     {
       "id": "x-23-xmen",
@@ -641,7 +645,7 @@
       "image_url": "../assets/img/cat-cable-xmen.jpg",
       "image_source_url": "https://en.wikipedia.org/wiki/Josh%20Brolin%20as%20Thanos.jpeg",
       "image_source_name": "Wikimedia Commons",
-      "image_alt": "Nathan Summers portrait",
+      "image_alt": "Nathan Summers as Cable in battle gear portrait",
       "image_verified": true,
       "source_notes": [
         "Played by Josh Brolin in Deadpool 2 (2018)."
@@ -665,7 +669,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_source": "20th Century Fox / Deadpool 2"
     },
     {
       "id": "sabretooth-xmen",
@@ -743,10 +748,10 @@
       "debut_title": "X-Men: The Last Stand (2006)",
       "debut_year": 2006,
       "summary": "An unstoppable armored powerhouse, Charles Xavier's stepbrother, who rampages through his foes' ranks. He appears in The Last Stand and as a CGI prison-cell monster in Deadpool 2.",
-      "image_url": "../assets/img/cat-juggernaut-xmen.png",
+      "image_url": "../assets/img/cat-juggernaut-xmen.jpg",
       "image_source_url": "https://en.wikipedia.org/wiki/Cain%20Marko",
       "image_source_name": "Wikipedia",
-      "image_alt": "Marvel Comics character",
+      "image_alt": "Cain Marko in Juggernaut dome helmet portrait",
       "image_verified": true,
       "source_notes": [
         "Played by Vinnie Jones (2006) and voiced by Ryan Reynolds in Deadpool 2 (2018)."
@@ -770,7 +775,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_source": "20th Century Fox / X-Men: The Last Stand"
     },
     {
       "id": "apocalypse-xmen",
@@ -799,7 +805,7 @@
       "image_url": "../assets/img/cat-apocalypse-xmen.jpg",
       "image_source_url": "https://en.wikipedia.org/wiki/Oscar%20Isaac%20as%20Moon%20Knight.jpg",
       "image_source_name": "Wikimedia Commons",
-      "image_alt": "En Sabah Nur portrait",
+      "image_alt": "En Sabah Nur in Apocalypse armor portrait",
       "image_verified": true,
       "source_notes": [
         "Played by Oscar Isaac in X-Men: Apocalypse (2016)."
@@ -823,7 +829,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_source": "20th Century Fox / X-Men: Apocalypse"
     },
     {
       "id": "quicksilver-maximoff-xmen",
@@ -847,10 +854,10 @@
       "debut_title": "X-Men: Days of Future Past (2014)",
       "debut_year": 2014,
       "summary": "A superfast mutant with a wisecracking streak whose famous slow-motion rescue sequences defined the young-timeline films. A variant of him appears in the MCU series WandaVision.",
-      "image_url": "../assets/img/cat-quicksilver-maximoff-xmen.png",
+      "image_url": "../assets/img/cat-quicksilver-maximoff-xmen.jpg",
       "image_source_url": "https://en.wikipedia.org/wiki/Quicksilver%20%28Pietro%20Maximoff%29.png",
       "image_source_name": "Wikimedia Commons",
-      "image_alt": "Pietro Maximoff portrait",
+      "image_alt": "Peter Maximoff in silver jacket and goggles portrait",
       "image_verified": true,
       "source_notes": [
         "Played by Evan Peters; distinct from the MCU's own Pietro also played by Aaron Taylor-Johnson."
@@ -876,7 +883,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_source": "20th Century Fox / X-Men: Days of Future Past"
     }
   ]
 }

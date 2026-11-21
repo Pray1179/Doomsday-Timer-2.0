@@ -318,7 +318,7 @@
       "image_url": "../assets/img/cat-war-machine-james-rhodes.jpg",
       "image_source_url": "https://en.wikipedia.org/wiki/Terrence%20Howard%20and%20Don%20Cheadle%20as%20James%20Rhodes.jpg",
       "image_source_name": "Wikimedia Commons",
-      "image_alt": "James Rhodes portrait",
+      "image_alt": "James Rhodes in War Machine armor portrait",
       "image_verified": true,
       "source_notes": [
         "First portrayed by Terrence Howard in Iron Man (2008), then Don Cheadle from Iron Man 2 onward."
@@ -347,7 +347,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-29"
         }
-      ]
+      ],
+      "image_source": "Marvel Studios / Captain America: Civil War"
     },
     {
       "id": "hulk-bruce-banner",
@@ -375,7 +376,7 @@
       "image_url": "../assets/img/cat-hulk-bruce-banner.jpg",
       "image_source_url": "https://en.wikipedia.org/wiki/Edward%20Norton%20and%20Mark%20Ruffalo%20as%20Bruce%20Banner%20Hulk.jpg",
       "image_source_name": "Wikimedia Commons",
-      "image_alt": "Bruce Banner portrait",
+      "image_alt": "Bruce Banner as Smart Hulk in Avengers uniform portrait",
       "image_verified": true,
       "source_notes": [
         "Single-cast origins: Edward Norton in The Incredible Hulk (2008) as separate continuity of the role; Mark Ruffalo assumed the part from The Avengers (2012)."
@@ -403,7 +404,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-29"
         }
-      ]
+      ],
+      "image_source": "Marvel Studios / Avengers: Endgame"
     },
     {
       "id": "nick-fury",

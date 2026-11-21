@@ -142,7 +142,7 @@
       "image_url": "../assets/img/cat-doctor-octopus-raimi.jpg",
       "image_source_url": "https://en.wikipedia.org/wiki/Sint-Pieters-Kapelle%20Herne%20Altaarschilderij%20Otto%20Van%20Veen%201425.jpg",
       "image_source_name": "Wikimedia Commons",
-      "image_alt": "Otto Octavius portrait",
+      "image_alt": "Otto Octavius with mechanical tentacles portrait",
       "image_verified": true,
       "source_notes": [
         "Redemptive antagonist of Spider-Man 2 (2004); variant appears in No Way Home."
@@ -166,7 +166,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_source": "Sony Pictures / Marvel Studios / Spider-Man: No Way Home"
     },
     {
       "id": "sandman-raimi",
@@ -292,10 +293,10 @@
       "debut_title": "The Amazing Spider-Man (2012)",
       "debut_year": 2012,
       "summary": "The quip-heavy, skateboarding Peter Parker of the Webb duology, orphaned and seeking the truth about his parents. He lost Gwen Stacy and blamed himself, then redeemed himself by saving Michelle in No Way Home.",
-      "image_url": "../assets/img/cat-spidey-garfield.webp",
+      "image_url": "../assets/img/cat-spidey-garfield.jpg",
       "image_source_url": "https://doomsdayhub.example",
       "image_source_name": "Fan site archive",
-      "image_alt": "Peter Parker portrait",
+      "image_alt": "Peter Parker as Spider-Man portrait",
       "image_verified": true,
       "source_notes": [
         "Returns for redemption arc in Spider-Man: No Way Home (2021)."
@@ -324,7 +325,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_source": "Sony Pictures / Marvel Studios / Spider-Man: No Way Home"
     },
     {
       "id": "lizard-webb",
@@ -462,10 +464,10 @@
           "verified_at": "2026-08-30"
         }
       ],
-      "image_url": "../assets/img/cat-harry-osborn.webp",
+      "image_url": "../assets/img/cat-green-goblin-webb.jpg",
       "image_verified": true,
-      "image_source": "Local verified production asset",
-      "image_alt": "Harry Osborn portrait"
+      "image_source": "Sony Pictures / Columbia Pictures / The Amazing Spider-Man 2",
+      "image_alt": "Harry Osborn as Green Goblin in exo-suit portrait"
     },
     {
       "id": "venom-hardy",
@@ -601,7 +603,7 @@
       "image_url": "../assets/img/cat-morbius.jpg",
       "image_source_url": "https://en.wikipedia.org/wiki/Morbius%20The%20Living%20Vampire.jpg",
       "image_source_name": "Wikimedia Commons",
-      "image_alt": "Sony's Marvel Universe",
+      "image_alt": "Dr. Michael Morbius as the living vampire portrait",
       "image_verified": true,
       "source_notes": [
         "The Living Vampire of the SSU; frog-meme beloved in pop culture."
@@ -624,7 +626,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_source": "Sony Pictures / Columbia Pictures / Morbius"
     },
     {
       "id": "kraven-hunter",

@@ -201,10 +201,10 @@
           "verified_at": "2026-08-30"
         }
       ],
-      "image_url": "../assets/img/cat-frank-castle-punisher.jpg",
+      "image_url": "../assets/img/cat-frank-castle-2004.jpg",
       "image_verified": true,
-      "image_source": "Local verified production asset",
-      "image_alt": "Frank Castle portrait"
+      "image_source": "Lionsgate / Artisan / The Punisher (2004)",
+      "image_alt": "Frank Castle in Punisher skull shirt portrait"
     },
     {
       "id": "frank-castle-warzone",
@@ -403,10 +403,10 @@
           "verified_at": "2026-08-30"
         }
       ],
-      "image_url": "../assets/img/cat-matt-murdock-daredevil.jpg",
+      "image_url": "../assets/img/cat-matt-murdock-2003.jpg",
       "image_verified": true,
-      "image_source": "Local verified production asset",
-      "image_alt": "Matt Murdock portrait"
+      "image_source": "20th Century Fox / Daredevil (2003)",
+      "image_alt": "Matt Murdock in crimson Daredevil leather suit portrait"
     },
     {
       "id": "elektra-2003",

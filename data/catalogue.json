@@ -240,7 +240,7 @@
     "image_url": "../assets/img/cat-apocalypse-xmen.jpg",
     "image_source_url": "https://en.wikipedia.org/wiki/Oscar%20Isaac%20as%20Moon%20Knight.jpg",
     "image_source_name": "Wikimedia Commons",
-    "image_alt": "En Sabah Nur portrait",
+    "image_alt": "En Sabah Nur in Apocalypse armor portrait",
     "image_verified": true,
     "source_notes": [
       "Played by Oscar Isaac in X-Men: Apocalypse (2016)."
@@ -264,7 +264,8 @@
         "publisher": "Wikipedia",
         "verified_at": "2026-08-30"
       }
-    ]
+    ],
+    "image_source": "20th Century Fox / X-Men: Apocalypse"
   },
   {
     "id": "beast-hank-mccoy",
@@ -340,7 +341,7 @@
     "image_url": "../assets/img/cat-ben-grimm.jpg",
     "image_source_url": "https://en.wikipedia.org/wiki/Ebon%20Moss-Bachrach%20as%20Micro.jpeg",
     "image_source_name": "Wikimedia Commons",
-    "image_alt": "Ben Grimm portrait",
+    "image_alt": "Ben Grimm as The Thing in Fantastic Four uniform portrait",
     "image_verified": true,
     "source_notes": [
       "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
@@ -368,7 +369,7 @@
         "verified_at": "2026-08-29"
       }
     ],
-    "image_source": "Local verified production asset"
+    "image_source": "Marvel Studios / The Fantastic Four: First Steps"
   },
   {
     "id": "ben-grimm-ff",
@@ -678,7 +679,7 @@
     "image_url": "../assets/img/cat-bucky-barnes-winter-soldier.jpg",
     "image_source_url": "https://en.wikipedia.org/wiki/Sebastian%20Stan%20as%20Bucky%20Barnes.jpg",
     "image_source_name": "Wikimedia Commons",
-    "image_alt": "Promotional image of Sebastian Stan as Bucky Barnes in the Marvel Studios film, Captain America: The Winter Soldier.",
+    "image_alt": "Bucky Barnes in Winter Soldier tactical armor portrait",
     "image_verified": true,
     "source_notes": [
       "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
@@ -707,7 +708,8 @@
         "publisher": "Wikipedia",
         "verified_at": "2026-08-29"
       }
-    ]
+    ],
+    "image_source": "Marvel Studios / Captain America: The Winter Soldier"
   },
   {
     "id": "bullseye-2003",
@@ -786,7 +788,7 @@
     "image_url": "../assets/img/cat-cable-xmen.jpg",
     "image_source_url": "https://en.wikipedia.org/wiki/Josh%20Brolin%20as%20Thanos.jpeg",
     "image_source_name": "Wikimedia Commons",
-    "image_alt": "Nathan Summers portrait",
+    "image_alt": "Nathan Summers as Cable in battle gear portrait",
     "image_verified": true,
     "source_notes": [
       "Played by Josh Brolin in Deadpool 2 (2018)."
@@ -810,7 +812,8 @@
         "publisher": "Wikipedia",
         "verified_at": "2026-08-30"
       }
-    ]
+    ],
+    "image_source": "20th Century Fox / Deadpool 2"
   },
   {
     "id": "captain-america-steve-rogers",
@@ -837,7 +840,7 @@
     "image_url": "../assets/img/cat-captain-america-steve-rogers.jpg",
     "image_source_url": "",
     "image_source_name": "",
-    "image_alt": "Steve Rogers portrait",
+    "image_alt": "Steve Rogers in Captain America suit portrait",
     "image_verified": true,
     "source_notes": [
       "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
@@ -868,7 +871,7 @@
         "verified_at": "2026-08-29"
       }
     ],
-    "image_source": "Official on-screen character photo"
+    "image_source": "Marvel Studios / The Avengers"
   },
   {
     "id": "carnage-ssu",
@@ -1010,7 +1013,7 @@
     "image_url": "../assets/img/cat-cassie-lang.jpg",
     "image_source_url": "https://en.wikipedia.org/wiki/Kathryn%20Newton%20during%20an%20interview%2C%20February%202023.jpg",
     "image_source_name": "Wikimedia Commons",
-    "image_alt": "Kathryn Newton during an interview for Ant-Man and The Wasp: Quantamania in February 2023",
+    "image_alt": "Cassie Lang in Stature quantum suit portrait",
     "image_verified": true,
     "source_notes": [
       "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
@@ -1036,7 +1039,7 @@
         "verified_at": "2026-08-29"
       }
     ],
-    "image_source": "Local verified production asset"
+    "image_source": "Marvel Studios / Ant-Man and the Wasp: Quantumania"
   },
   {
     "id": "charles-xavier-xmen",
@@ -1062,10 +1065,10 @@
     "debut_title": "X-Men (2000)",
     "debut_year": 2000,
     "summary": "The telepathic founder and leader of the X-Men who dreams of peaceful mutant-human coexistence. In the 2024 film Deadpool & Wolverine he abdicated his Earth-10005 Xavier's School responsibilities to the X-Men at large.",
-    "image_url": "../assets/img/cat-charles-xavier-xmen.webp",
+    "image_url": "../assets/img/cat-charles-xavier-xmen.jpg",
     "image_source_url": "https://doomsdayhub.example",
     "image_source_name": "Fan site archive",
-    "image_alt": "Charles Xavier portrait",
+    "image_alt": "Charles Xavier as Professor X portrait",
     "image_verified": true,
     "source_notes": [
       "Played by Patrick Stewart in the original timeline and James McAvoy in the young-timeline prequels; appears in Doctor Strange in the Multiverse of Madness (2022)."
@@ -1095,7 +1098,8 @@
         "publisher": "Wikipedia",
         "verified_at": "2026-08-30"
       }
-    ]
+    ],
+    "image_source": "20th Century Fox / X-Men"
   },
   {
     "id": "clea",
@@ -1165,7 +1169,7 @@
     "image_url": "../assets/img/cat-colossus-xmen.jpg",
     "image_source_url": "https://en.wikipedia.org/wiki/Piotr%20Rasputin",
     "image_source_name": "Wikipedia",
-    "image_alt": "Marvel Comics character",
+    "image_alt": "Piotr Rasputin in organic steel Colossus form portrait",
     "image_verified": true,
     "source_notes": [
       "Voiced by Stefan Kapičić in the Deadpool films."
@@ -1191,7 +1195,8 @@
         "publisher": "Wikipedia",
         "verified_at": "2026-08-30"
       }
-    ]
+    ],
+    "image_source": "20th Century Fox / X-Men: Days of Future Past"
   },
   {
     "id": "cyclops-scott-summers",
@@ -1271,10 +1276,10 @@
     "debut_title": "X-Men (2000)",
     "debut_year": 2000,
     "summary": "The disciplined field leader of the X-Men whose eyes emit powerful energy beams he controls with a visor. He is Jean Grey's longtime partner.",
-    "image_url": "../assets/img/cat-cyclops-xmen.png",
+    "image_url": "../assets/img/cat-cyclops-xmen.jpg",
     "image_source_url": "https://en.wikipedia.org/wiki/Cyclops%20%28Scott%20Summers%20circa%202019%29.png",
     "image_source_name": "Wikimedia Commons",
-    "image_alt": "Scott Summers portrait",
+    "image_alt": "Scott Summers in X-Men uniform and ruby-quartz visor portrait",
     "image_verified": true,
     "source_notes": [
       "Played by James Marsden and Tye Sheridan."
@@ -1302,7 +1307,8 @@
         "publisher": "Wikipedia",
         "verified_at": "2026-08-30"
       }
-    ]
+    ],
+    "image_source": "20th Century Fox / X-Men"
   },
   {
     "id": "daisy-johnson-quake",
@@ -1661,7 +1667,7 @@
     "image_url": "../assets/img/cat-doctor-doom-ff.jpg",
     "image_source_url": "https://en.wikipedia.org/wiki/Riff%20funeral%20doom.ogg",
     "image_source_name": "Wikimedia Commons",
-    "image_alt": "Nu riff di funeral doom di circa 30 sicunni.",
+    "image_alt": "Victor von Doom in metal mask and green cloak portrait",
     "image_verified": true,
     "source_notes": [
       "Played by Julian McMahon (2005) and Toby Kebbell (2015). The character is slated to appear as the central antagonist of Avengers: Doomsday (2026)."
@@ -1688,7 +1694,7 @@
         "verified_at": "2026-08-30"
       }
     ],
-    "image_source": "Local verified production asset"
+    "image_source": "20th Century Fox / Fantastic Four (2005)"
   },
   {
     "id": "doctor-octopus-raimi",
@@ -1717,7 +1723,7 @@
     "image_url": "../assets/img/cat-doctor-octopus-raimi.jpg",
     "image_source_url": "https://en.wikipedia.org/wiki/Sint-Pieters-Kapelle%20Herne%20Altaarschilderij%20Otto%20Van%20Veen%201425.jpg",
     "image_source_name": "Wikimedia Commons",
-    "image_alt": "Otto Octavius portrait",
+    "image_alt": "Otto Octavius with mechanical tentacles portrait",
     "image_verified": true,
     "source_notes": [
       "Redemptive antagonist of Spider-Man 2 (2004); variant appears in No Way Home."
@@ -1741,7 +1747,8 @@
         "publisher": "Wikipedia",
         "verified_at": "2026-08-30"
       }
-    ]
+    ],
+    "image_source": "Sony Pictures / Marvel Studios / Spider-Man: No Way Home"
   },
   {
     "id": "doctor-strange",
@@ -2273,10 +2280,10 @@
         "verified_at": "2026-08-30"
       }
     ],
-    "image_url": "../assets/img/cat-frank-castle-punisher.jpg",
+    "image_url": "../assets/img/cat-frank-castle-2004.jpg",
     "image_verified": true,
-    "image_source": "Local verified production asset",
-    "image_alt": "Frank Castle portrait"
+    "image_source": "Lionsgate / Artisan / The Punisher (2004)",
+    "image_alt": "Frank Castle in Punisher skull shirt portrait"
   },
   {
     "id": "frank-castle-punisher",
@@ -2577,7 +2584,7 @@
     "image_url": "../assets/img/cat-ghost-ava-starr.jpg",
     "image_source_url": "https://en.wikipedia.org/wiki/Hannah%20John-Kamen%20Comic-Con%202024.jpg",
     "image_source_name": "Wikimedia Commons",
-    "image_alt": "Alex Montiel entrevistando a Hannah John-Kamen y a Jake Schreier en la Comic-Con de San Diego 2024",
+    "image_alt": "Ava Starr in Ghost quantum phasing suit portrait",
     "image_verified": true,
     "source_notes": [
       "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
@@ -2601,7 +2608,7 @@
         "verified_at": "2026-08-29"
       }
     ],
-    "image_source": "Local verified production asset"
+    "image_source": "Marvel Studios / Ant-Man and the Wasp"
   },
   {
     "id": "ghost-rider-robbie",
@@ -2783,7 +2790,7 @@
     "image_url": "../assets/img/cat-grandmaster.jpg",
     "image_source_url": "https://en.wikipedia.org/wiki/Grandmaster%20Ben%20%26%20Fab%205%20Finger.jpg",
     "image_source_name": "Wikimedia Commons",
-    "image_alt": "Grandmaster portrait",
+    "image_alt": "The Grandmaster in Sakaaran gold robes portrait",
     "image_verified": true,
     "source_notes": [
       "Cameo in the Knowhere post-credits scene of Thor 3's predecessor adjacent material."
@@ -2809,7 +2816,8 @@
         "publisher": "Wikipedia",
         "verified_at": "2026-08-30"
       }
-    ]
+    ],
+    "image_source": "Marvel Studios / Thor: Ragnarok"
   },
   {
     "id": "green-goblin-raimi",
@@ -2906,10 +2914,10 @@
         "verified_at": "2026-08-30"
       }
     ],
-    "image_url": "../assets/img/cat-harry-osborn.webp",
+    "image_url": "../assets/img/cat-green-goblin-webb.jpg",
     "image_verified": true,
-    "image_source": "Local verified production asset",
-    "image_alt": "Harry Osborn portrait"
+    "image_source": "Sony Pictures / Columbia Pictures / The Amazing Spider-Man 2",
+    "image_alt": "Harry Osborn as Green Goblin in exo-suit portrait"
   },
   {
     "id": "groot",
@@ -3331,7 +3339,7 @@
     "image_url": "../assets/img/cat-hulk-bruce-banner.jpg",
     "image_source_url": "https://en.wikipedia.org/wiki/Edward%20Norton%20and%20Mark%20Ruffalo%20as%20Bruce%20Banner%20Hulk.jpg",
     "image_source_name": "Wikimedia Commons",
-    "image_alt": "Bruce Banner portrait",
+    "image_alt": "Bruce Banner as Smart Hulk in Avengers uniform portrait",
     "image_verified": true,
     "source_notes": [
       "Single-cast origins: Edward Norton in The Incredible Hulk (2008) as separate continuity of the role; Mark Ruffalo assumed the part from The Avengers (2012)."
@@ -3359,7 +3367,8 @@
         "publisher": "Wikipedia",
         "verified_at": "2026-08-29"
       }
-    ]
+    ],
+    "image_source": "Marvel Studios / Avengers: Endgame"
   },
   {
     "id": "iceman-xmen",
@@ -3779,7 +3788,7 @@
     "image_url": "../assets/img/cat-joaquin-torres-falcon.jpg",
     "image_source_url": "https://en.wikipedia.org/wiki/Joaqu%C3%ADn%20Torres%20Garc%C3%ADa%20-%20Autorretrato%20%281946%29.jpg",
     "image_source_name": "Wikimedia Commons",
-    "image_alt": "Joaquin Torres portrait",
+    "image_alt": "Joaquin Torres in Falcon flight armor portrait",
     "image_verified": true,
     "source_notes": [
       "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
@@ -3803,7 +3812,7 @@
         "verified_at": "2026-08-29"
       }
     ],
-    "image_source": "Local verified production asset"
+    "image_source": "Marvel Studios / Captain America: Brave New World"
   },
   {
     "id": "john-walker-us-agent",
@@ -3831,7 +3840,7 @@
     "image_url": "../assets/img/cat-john-walker-us-agent.jpg",
     "image_source_url": "https://en.wikipedia.org/wiki/Johnnie%20Walker%20Splash.JPG",
     "image_source_name": "Wikimedia Commons",
-    "image_alt": "Chronophotograph at high speed. Johnnie Walker splash without any montage! Glass was glued to an inclined plane, which was dropped to create the splash",
+    "image_alt": "John Walker in U.S. Agent tactical uniform portrait",
     "image_verified": true,
     "source_notes": [
       "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
@@ -3857,7 +3866,7 @@
         "verified_at": "2026-08-29"
       }
     ],
-    "image_source": "Local verified production asset"
+    "image_source": "Marvel Studios / The Falcon and the Winter Soldier"
   },
   {
     "id": "johnny-blaze-gr",
@@ -3933,10 +3942,10 @@
     "debut_title": "The Fantastic Four: First Steps (2025)",
     "debut_year": 2008,
     "summary": "The Human Torch",
-    "image_url": "../assets/img/cat-johnny-storm.png",
+    "image_url": "../assets/img/cat-johnny-storm.jpg",
     "image_source_url": "https://en.wikipedia.org/wiki/Human%20Torch%20%28Johnny%20Storm%29.png",
     "image_source_name": "Wikimedia Commons",
-    "image_alt": "Artwork for the cover of Fantastic Four vol. 4, 645 (April 2015 Marvel Comics) Art by Michael Komarck (Variant cover art)",
+    "image_alt": "Johnny Storm in Fantastic Four uniform portrait",
     "image_verified": true,
     "source_notes": [
       "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
@@ -3963,7 +3972,7 @@
         "verified_at": "2026-08-29"
       }
     ],
-    "image_source": "Local verified production asset"
+    "image_source": "Marvel Studios / The Fantastic Four: First Steps"
   },
   {
     "id": "johnny-storm-ff",
@@ -4045,10 +4054,10 @@
     "debut_title": "X-Men: The Last Stand (2006)",
     "debut_year": 2006,
     "summary": "An unstoppable armored powerhouse, Charles Xavier's stepbrother, who rampages through his foes' ranks. He appears in The Last Stand and as a CGI prison-cell monster in Deadpool 2.",
-    "image_url": "../assets/img/cat-juggernaut-xmen.png",
+    "image_url": "../assets/img/cat-juggernaut-xmen.jpg",
     "image_source_url": "https://en.wikipedia.org/wiki/Cain%20Marko",
     "image_source_name": "Wikipedia",
-    "image_alt": "Marvel Comics character",
+    "image_alt": "Cain Marko in Juggernaut dome helmet portrait",
     "image_verified": true,
     "source_notes": [
       "Played by Vinnie Jones (2006) and voiced by Ryan Reynolds in Deadpool 2 (2018)."
@@ -4072,7 +4081,8 @@
         "publisher": "Wikipedia",
         "verified_at": "2026-08-30"
       }
-    ]
+    ],
+    "image_source": "20th Century Fox / X-Men: The Last Stand"
   },
   {
     "id": "kaecilius",
@@ -4098,7 +4108,7 @@
     "image_url": "../assets/img/cat-kaecilius.jpg",
     "image_source_url": "https://en.wikipedia.org/wiki/Kaecilius%20%28Earth-616%29%20from%20Valkyrie%20Jane%20Foster%20Vol%201%204%20001.jpg",
     "image_source_name": "Wikimedia Commons",
-    "image_alt": "Kaecilius portrait",
+    "image_alt": "Kaecilius in zealot robes with cracked eye markings portrait",
     "image_verified": true,
     "source_notes": [
       "Primary antagonist of Doctor Strange (2016)."
@@ -4123,7 +4133,8 @@
         "publisher": "Wikipedia",
         "verified_at": "2026-08-30"
       }
-    ]
+    ],
+    "image_source": "Marvel Studios / Doctor Strange"
   },
   {
     "id": "kingo",
@@ -4151,7 +4162,7 @@
     "image_url": "../assets/img/cat-kingo.jpg",
     "image_source_url": "https://en.wikipedia.org/wiki/Kingo%20Mkubwa.jpg",
     "image_source_name": "Wikimedia Commons",
-    "image_alt": "\"KINGO MKUBWA, CHIEF OF MROGORO.\"",
+    "image_alt": "Kingo in Eternal celestial armor portrait",
     "image_verified": true,
     "source_notes": [
       "Comic-relief Eternal who wrestles with the moral choice."
@@ -4175,7 +4186,8 @@
         "publisher": "Wikipedia",
         "verified_at": "2026-08-30"
       }
-    ]
+    ],
+    "image_source": "Marvel Studios / Eternals"
   },
   {
     "id": "kraven-hunter",
@@ -4469,7 +4481,7 @@
     "image_url": "../assets/img/cat-magneto-erik.jpg",
     "image_source_url": "https://en.wikipedia.org/wiki/Erik%20Lehnsherr",
     "image_source_name": "Wikipedia",
-    "image_alt": "Marvel Comics character",
+    "image_alt": "Erik Lehnsherr in Magneto helmet portrait",
     "image_verified": true,
     "source_notes": [
       "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
@@ -4497,7 +4509,7 @@
         "verified_at": "2026-08-29"
       }
     ],
-    "image_source": "Local verified production asset"
+    "image_source": "20th Century Fox / X-Men: First Class"
   },
   {
     "id": "magneto-xmen",
@@ -4771,10 +4783,10 @@
         "verified_at": "2026-08-30"
       }
     ],
-    "image_url": "../assets/img/cat-matt-murdock-daredevil.jpg",
+    "image_url": "../assets/img/cat-matt-murdock-2003.jpg",
     "image_verified": true,
-    "image_source": "Local verified production asset",
-    "image_alt": "Matt Murdock portrait"
+    "image_source": "20th Century Fox / Daredevil (2003)",
+    "image_alt": "Matt Murdock in crimson Daredevil leather suit portrait"
   },
   {
     "id": "matt-murdock-daredevil",
@@ -4919,7 +4931,7 @@
     "image_url": "../assets/img/cat-morbius.jpg",
     "image_source_url": "https://en.wikipedia.org/wiki/Morbius%20The%20Living%20Vampire.jpg",
     "image_source_name": "Wikimedia Commons",
-    "image_alt": "Sony's Marvel Universe",
+    "image_alt": "Dr. Michael Morbius as the living vampire portrait",
     "image_verified": true,
     "source_notes": [
       "The Living Vampire of the SSU; frog-meme beloved in pop culture."
@@ -4942,7 +4954,8 @@
         "publisher": "Wikipedia",
         "verified_at": "2026-08-30"
       }
-    ]
+    ],
+    "image_source": "Sony Pictures / Columbia Pictures / Morbius"
   },
   {
     "id": "mordo",
@@ -5127,7 +5140,7 @@
     "image_url": "../assets/img/cat-namor.jpg",
     "image_source_url": "https://en.wikipedia.org/wiki/Guillermo%20Namor%20Kong.jpg",
     "image_source_name": "Wikimedia Commons",
-    "image_alt": "Guillermo Namor Kong, membre de l'Assemblée constituante chilienne.",
+    "image_alt": "Namor in Talokan ceremonial armor portrait",
     "image_verified": true,
     "source_notes": [
       "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
@@ -5153,7 +5166,7 @@
         "verified_at": "2026-08-29"
       }
     ],
-    "image_source": "Local verified production asset"
+    "image_source": "Marvel Studios / Black Panther: Wakanda Forever"
   },
   {
     "id": "namora",
@@ -5178,7 +5191,7 @@
     "image_url": "../assets/img/cat-namora.jpg",
     "image_source_url": "https://en.wikipedia.org/wiki/Retrato%20Fernando%20Namora.jpg",
     "image_source_name": "Wikimedia Commons",
-    "image_alt": "portrait of Fernando Namora, portuguese writer (1919-1989)",
+    "image_alt": "Namora in Talokan battle armor portrait",
     "image_verified": true,
     "source_notes": [
       "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
@@ -5204,7 +5217,7 @@
         "verified_at": "2026-08-29"
       }
     ],
-    "image_source": "Local verified production asset"
+    "image_source": "Marvel Studios / Black Panther: Wakanda Forever"
   },
   {
     "id": "nick-fury",
@@ -5401,7 +5414,7 @@
     "image_url": "../assets/img/cat-okoye.jpg",
     "image_source_url": "https://en.wikipedia.org/wiki/Ngozi%20Franca%20Okoye.jpg",
     "image_source_name": "Wikimedia Commons",
-    "image_alt": "Dr Ngozi Franca Okoye, Nigerian Biochemist, Professor(Associate)",
+    "image_alt": "General Okoye in Dora Milaje armor portrait",
     "image_verified": true,
     "source_notes": [
       "One of Wakanda's most prominent warriors in Black Panther films and Endgame."
@@ -5432,7 +5445,8 @@
         "publisher": "Wikipedia",
         "verified_at": "2026-08-30"
       }
-    ]
+    ],
+    "image_source": "Marvel Studios / Black Panther: Wakanda Forever"
   },
   {
     "id": "peggy-carter",
@@ -5623,10 +5637,10 @@
     "debut_title": "X-Men: Days of Future Past (2014)",
     "debut_year": 2014,
     "summary": "A superfast mutant with a wisecracking streak whose famous slow-motion rescue sequences defined the young-timeline films. A variant of him appears in the MCU series WandaVision.",
-    "image_url": "../assets/img/cat-quicksilver-maximoff-xmen.png",
+    "image_url": "../assets/img/cat-quicksilver-maximoff-xmen.jpg",
     "image_source_url": "https://en.wikipedia.org/wiki/Quicksilver%20%28Pietro%20Maximoff%29.png",
     "image_source_name": "Wikimedia Commons",
-    "image_alt": "Pietro Maximoff portrait",
+    "image_alt": "Peter Maximoff in silver jacket and goggles portrait",
     "image_verified": true,
     "source_notes": [
       "Played by Evan Peters; distinct from the MCU's own Pietro also played by Aaron Taylor-Johnson."
@@ -5652,7 +5666,8 @@
         "publisher": "Wikipedia",
         "verified_at": "2026-08-30"
       }
-    ]
+    ],
+    "image_source": "20th Century Fox / X-Men: Days of Future Past"
   },
   {
     "id": "ramonda",
@@ -5679,7 +5694,7 @@
     "image_url": "../assets/img/cat-ramonda.jpg",
     "image_source_url": "https://en.wikipedia.org/wiki/Ramonda%20myconi%20-%20Felsenteller.jpg",
     "image_source_name": "Wikimedia Commons",
-    "image_alt": "Ramonda myconi",
+    "image_alt": "Queen Ramonda in Wakandan royal regalia portrait",
     "image_verified": true,
     "source_notes": [
       "A triumphant Angela Bassett portrayal; dies in Wakanda Forever."
@@ -5708,7 +5723,8 @@
         "publisher": "Wikipedia",
         "verified_at": "2026-08-30"
       }
-    ]
+    ],
+    "image_source": "Marvel Studios / Black Panther: Wakanda Forever"
   },
   {
     "id": "red-guardian",
@@ -5736,7 +5752,7 @@
     "image_url": "../assets/img/cat-red-guardian.jpg",
     "image_source_url": "https://en.wikipedia.org/wiki/Florence%20Pugh%20%26%20David%20Harbour%202025%2002.jpg",
     "image_source_name": "Wikimedia Commons",
-    "image_alt": "Florence Pugh &amp; David Harbour in an interview with Escorpión Dorado in 2025  (2:00)",
+    "image_alt": "Alexei Shostakov in Red Guardian uniform portrait",
     "image_verified": true,
     "source_notes": [
       "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
@@ -5759,7 +5775,7 @@
         "verified_at": "2026-08-29"
       }
     ],
-    "image_source": "Local verified production asset"
+    "image_source": "Marvel Studios / Black Widow"
   },
   {
     "id": "reed-richards",
@@ -5900,7 +5916,7 @@
     "image_url": "../assets/img/cat-riri-williams.jpg",
     "image_source_url": "https://en.wikipedia.org/wiki/Riri%20Williams",
     "image_source_name": "Wikipedia",
-    "image_alt": "Comic book superhero",
+    "image_alt": "Riri Williams in Ironheart Mark II armor portrait",
     "image_verified": true,
     "source_notes": [
       "Featured in Ironheart (Disney+); debut in Wakanda Forever."
@@ -5926,7 +5942,8 @@
         "publisher": "Wikipedia",
         "verified_at": "2026-08-30"
       }
-    ]
+    ],
+    "image_source": "Marvel Studios / Black Panther: Wakanda Forever"
   },
   {
     "id": "rocket",
@@ -6339,7 +6356,7 @@
     "image_url": "../assets/img/cat-scott-lang-ant-man.jpg",
     "image_source_url": "https://en.wikipedia.org/wiki/Paul%20Rudd%20%28cropped%29.jpg",
     "image_source_name": "Wikimedia Commons",
-    "image_alt": "www.redcarpetreportv.com\nMingle Media TV and our Red Carpet Report team were on hand for Marvel’s \"Ant-Man” World Premiere at the Dolby Theatre in Hollywood.\nGet the Story from the Red Carpet Report Team, follow us on Twitter and Facebook at:\ntwitter.com/TheRedCarpetTV\nwww.facebook.com/RedCarpetReportTV\nwww.youtube.com/MingleMediaTVNetwork\nwww.tsu.co/RedCarpetReport\nAbout Ant-Man\nThe next evolution of the Marvel Cinematic Universe brings a founding member of The Avengers to the big screen for the first time with Marvel Studios’ “Ant-Man.” Armed with the astonishing ability to shrink in scale but increase in strength, master thief Scott Lang must embrace his inner-hero and help his mentor, Dr. Hank Pym, protect the secret behind his spectacular Ant-Man suit from a new generation of towering threats. Against seemingly insurmountable obstacles, Pym and Lang must plan and pull off a heist that will save the world. \nMarvel’s “Ant-Man” stars Paul Rudd as Scott Lang aka Ant-Man, Evangeline Lilly as Hope Van Dyne, Corey Stoll as Darren Cross aka Yellowjacket, Bobby Cannavale as Paxton, Michael Peña as Luis, Judy Greer as Maggie, Tip “Ti” Harris as Dave, David Dastmalchian as Kurt, Wood Harris as Gale, Jordi Mollà as Castillo and Michael Douglas as Hank Pym.\nFollow Marvel on Twitter: twitter.com/marvel\nLike Marvel on FaceBook: www.facebook.com/Marvel\nFor even more Marvel Comics news follow at\nTumblr: marvelentertainment.tumblr.com/\nInstagram: instagram.com/marvel\nGoogle+: plus.google.com/+marvel/\nPintrest: pinterest.com/marvelofficial/\nFor more of Mingle Media TV’s Red Carpet Report coverage, please visit our website and follow us on Twitter and Facebook here:\nwww.facebook.com/minglemediatvnetwork\nwww.flickr.com/MingleMediaTVNetwork\n\nwww.twitter.com/minglemediatv",
+    "image_alt": "Scott Lang in Ant-Man suit portrait",
     "image_verified": true,
     "source_notes": [
       "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
@@ -6369,7 +6386,7 @@
         "verified_at": "2026-08-29"
       }
     ],
-    "image_source": "Local verified production asset"
+    "image_source": "Marvel Studios / Ant-Man"
   },
   {
     "id": "sentry-bob-reynolds",
@@ -6397,7 +6414,7 @@
     "image_url": "../assets/img/cat-sentry-bob-reynolds.jpg",
     "image_source_url": "https://en.wikipedia.org/wiki/Bob-reynolds%20DSC08759.jpg",
     "image_source_name": "Wikimedia Commons",
-    "image_alt": "Bob Reynolds playing with Snarky Puppy in Aarhus (Denmark 2019)",
+    "image_alt": "Bob Reynolds in Sentry suit portrait",
     "image_verified": true,
     "source_notes": [
       "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
@@ -6418,7 +6435,7 @@
         "verified_at": "2026-08-29"
       }
     ],
-    "image_source": "Local verified production asset"
+    "image_source": "Marvel Studios / Thunderbolts*"
   },
   {
     "id": "sersi",
@@ -6605,10 +6622,10 @@
     "debut_title": "Fantastic Four: Rise of the Silver Surfer (2007)",
     "debut_year": 2007,
     "summary": "A cosmic herald bonded to a silver surfboard who scouts worlds for Galactus. He rebels against his master after connecting with humanity in Rise of the Silver Surfer.",
-    "image_url": "../assets/img/cat-silver-surfer-ff.png",
+    "image_url": "../assets/img/cat-silver-surfer-ff.jpg",
     "image_source_url": "https://en.wikipedia.org/wiki/Norrin%20Radd",
     "image_source_name": "Wikipedia",
-    "image_alt": "Marvel Comics character",
+    "image_alt": "Norrin Radd as the Silver Surfer on his cosmic surfboard portrait",
     "image_verified": true,
     "source_notes": [
       "Portrayed by Doug Jones (physical) and voiced by Laurence Fishburne in Rise of the Silver Surfer (2007)."
@@ -6632,7 +6649,8 @@
         "publisher": "Wikipedia",
         "verified_at": "2026-08-30"
       }
-    ]
+    ],
+    "image_source": "20th Century Fox / Fantastic Four: Rise of the Silver Surfer"
   },
   {
     "id": "spidey-garfield",
@@ -6656,10 +6674,10 @@
     "debut_title": "The Amazing Spider-Man (2012)",
     "debut_year": 2012,
     "summary": "The quip-heavy, skateboarding Peter Parker of the Webb duology, orphaned and seeking the truth about his parents. He lost Gwen Stacy and blamed himself, then redeemed himself by saving Michelle in No Way Home.",
-    "image_url": "../assets/img/cat-spidey-garfield.webp",
+    "image_url": "../assets/img/cat-spidey-garfield.jpg",
     "image_source_url": "https://doomsdayhub.example",
     "image_source_name": "Fan site archive",
-    "image_alt": "Peter Parker portrait",
+    "image_alt": "Peter Parker as Spider-Man portrait",
     "image_verified": true,
     "source_notes": [
       "Returns for redemption arc in Spider-Man: No Way Home (2021)."
@@ -6688,7 +6706,8 @@
         "publisher": "Wikipedia",
         "verified_at": "2026-08-30"
       }
-    ]
+    ],
+    "image_source": "Sony Pictures / Marvel Studios / Spider-Man: No Way Home"
   },
   {
     "id": "spidey-maguire",
@@ -6835,10 +6854,10 @@
     "debut_title": "X-Men (2000)",
     "debut_year": 2000,
     "summary": "A mutant able to control the weather, and one of the X-Men's most formidable core members across both the original and young-timeline teams.",
-    "image_url": "../assets/img/cat-storm-xmen.png",
+    "image_url": "../assets/img/cat-storm-xmen.jpg",
     "image_source_url": "https://en.wikipedia.org/wiki/Storm%20%28Ororo%20Munroe%29.png",
     "image_source_name": "Wikimedia Commons",
-    "image_alt": "Ororo Munroe portrait",
+    "image_alt": "Ororo Munroe in Storm uniform with white hair portrait",
     "image_verified": true,
     "source_notes": [
       "Played by Halle Berry and Alexandra Shipp."
@@ -6866,7 +6885,8 @@
         "publisher": "Wikipedia",
         "verified_at": "2026-08-30"
       }
-    ]
+    ],
+    "image_source": "20th Century Fox / X-Men: Days of Future Past"
   },
   {
     "id": "sue-storm",
@@ -7396,7 +7416,7 @@
     "image_url": "../assets/img/cat-war-machine-james-rhodes.jpg",
     "image_source_url": "https://en.wikipedia.org/wiki/Terrence%20Howard%20and%20Don%20Cheadle%20as%20James%20Rhodes.jpg",
     "image_source_name": "Wikimedia Commons",
-    "image_alt": "James Rhodes portrait",
+    "image_alt": "James Rhodes in War Machine armor portrait",
     "image_verified": true,
     "source_notes": [
       "First portrayed by Terrence Howard in Iron Man (2008), then Don Cheadle from Iron Man 2 onward."
@@ -7425,7 +7445,8 @@
         "publisher": "Wikipedia",
         "verified_at": "2026-08-29"
       }
-    ]
+    ],
+    "image_source": "Marvel Studios / Captain America: Civil War"
   },
   {
     "id": "wenwu",

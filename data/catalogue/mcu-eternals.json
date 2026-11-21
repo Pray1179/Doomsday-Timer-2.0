@@ -182,7 +182,7 @@
       "image_url": "../assets/img/cat-kingo.jpg",
       "image_source_url": "https://en.wikipedia.org/wiki/Kingo%20Mkubwa.jpg",
       "image_source_name": "Wikimedia Commons",
-      "image_alt": "\"KINGO MKUBWA, CHIEF OF MROGORO.\"",
+      "image_alt": "Kingo in Eternal celestial armor portrait",
       "image_verified": true,
       "source_notes": [
         "Comic-relief Eternal who wrestles with the moral choice."
@@ -206,7 +206,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_source": "Marvel Studios / Eternals"
     },
     {
       "id": "makkari",

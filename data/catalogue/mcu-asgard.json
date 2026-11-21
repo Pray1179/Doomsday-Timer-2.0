@@ -415,7 +415,7 @@
       "image_url": "../assets/img/cat-grandmaster.jpg",
       "image_source_url": "https://en.wikipedia.org/wiki/Grandmaster%20Ben%20%26%20Fab%205%20Finger.jpg",
       "image_source_name": "Wikimedia Commons",
-      "image_alt": "Grandmaster portrait",
+      "image_alt": "The Grandmaster in Sakaaran gold robes portrait",
       "image_verified": true,
       "source_notes": [
         "Cameo in the Knowhere post-credits scene of Thor 3's predecessor adjacent material."
@@ -441,7 +441,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_source": "Marvel Studios / Thor: Ragnarok"
     }
   ]
 }

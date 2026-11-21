@@ -89,7 +89,7 @@
       "image_url": "../assets/img/cat-okoye.jpg",
       "image_source_url": "https://en.wikipedia.org/wiki/Ngozi%20Franca%20Okoye.jpg",
       "image_source_name": "Wikimedia Commons",
-      "image_alt": "Dr Ngozi Franca Okoye, Nigerian Biochemist, Professor(Associate)",
+      "image_alt": "General Okoye in Dora Milaje armor portrait",
       "image_verified": true,
       "source_notes": [
         "One of Wakanda's most prominent warriors in Black Panther films and Endgame."
@@ -120,7 +120,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_source": "Marvel Studios / Black Panther: Wakanda Forever"
     },
     {
       "id": "nakia",
@@ -203,7 +204,7 @@
       "image_url": "../assets/img/cat-ramonda.jpg",
       "image_source_url": "https://en.wikipedia.org/wiki/Ramonda%20myconi%20-%20Felsenteller.jpg",
       "image_source_name": "Wikimedia Commons",
-      "image_alt": "Ramonda myconi",
+      "image_alt": "Queen Ramonda in Wakandan royal regalia portrait",
       "image_verified": true,
       "source_notes": [
         "A triumphant Angela Bassett portrayal; dies in Wakanda Forever."
@@ -232,7 +233,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_source": "Marvel Studios / Black Panther: Wakanda Forever"
     },
     {
       "id": "erik-killmonger",
@@ -310,7 +312,7 @@
       "image_url": "../assets/img/cat-riri-williams.jpg",
       "image_source_url": "https://en.wikipedia.org/wiki/Riri%20Williams",
       "image_source_name": "Wikipedia",
-      "image_alt": "Comic book superhero",
+      "image_alt": "Riri Williams in Ironheart Mark II armor portrait",
       "image_verified": true,
       "source_notes": [
         "Featured in Ironheart (Disney+); debut in Wakanda Forever."
@@ -336,7 +338,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_source": "Marvel Studios / Black Panther: Wakanda Forever"
     },
     {
       "id": "ulysses-klaue",

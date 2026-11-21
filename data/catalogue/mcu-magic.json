@@ -348,7 +348,7 @@
       "image_url": "../assets/img/cat-kaecilius.jpg",
       "image_source_url": "https://en.wikipedia.org/wiki/Kaecilius%20%28Earth-616%29%20from%20Valkyrie%20Jane%20Foster%20Vol%201%204%20001.jpg",
       "image_source_name": "Wikimedia Commons",
-      "image_alt": "Kaecilius portrait",
+      "image_alt": "Kaecilius in zealot robes with cracked eye markings portrait",
       "image_verified": true,
       "source_notes": [
         "Primary antagonist of Doctor Strange (2016)."
@@ -373,7 +373,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_source": "Marvel Studios / Doctor Strange"
     },
     {
       "id": "dormammu",
