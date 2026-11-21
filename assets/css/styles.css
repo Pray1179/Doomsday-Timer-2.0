@@ -112,14 +112,15 @@ p, .lede, .char-hero .lede, .card p, .muted, .verified,
 .brand .av {
   font-family: var(--font-display);
   font-weight: 400;
-  font-size: 1.3rem;
-  letter-spacing: 0.04em;
+  font-size: 1.35rem;
+  letter-spacing: 0.05em;
   color: #fff;
-  text-shadow: 0 0 18px var(--glow);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
 }
 .brand .sep {
-  color: var(--text-muted);
+  color: rgba(255, 255, 255, 0.4);
   font-size: 1.1rem;
+  margin: 0 0.15rem;
 }
 .brand .dd {
   font-family: var(--font-ui);
@@ -127,6 +128,7 @@ p, .lede, .char-hero .lede, .card p, .muted, .verified,
   letter-spacing: 0.22em;
   font-size: 1rem;
   color: var(--accent);
+  text-shadow: 0 0 6px rgba(0, 204, 85, 0.25);
 }
 .nav ul {
   display: flex;
@@ -194,7 +196,7 @@ p, .lede, .char-hero .lede, .card p, .muted, .verified,
      keeps the white title legible plus an accent-tinted radial glow on top so
      the whole scene re-tints when a faction theme is chosen. */
   background:
-    radial-gradient(ellipse at 50% 0%, rgba(var(--accent-rgb),0.22) 0%, transparent 55%),
+    radial-gradient(ellipse at 50% 0%, rgba(var(--accent-rgb),0.05) 0%, transparent 50%),
     linear-gradient(rgba(2,8,4,0.10) 0%, rgba(2,8,4,0.28) 100%),
     var(--bg);
 }
@@ -235,17 +237,12 @@ p, .lede, .char-hero .lede, .card p, .muted, .verified,
 .hero h1 {
   font-size: clamp(2.5rem, 8vw, 5rem);
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.08em;
   margin-bottom: 0.5rem;
-  background: linear-gradient(135deg, #fff 0%, var(--accent) 50%, #fff 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: glow-pulse 4s ease-in-out infinite;
-}
-@keyframes glow-pulse {
-  0%, 100% { filter: drop-shadow(0 0 20px var(--glow)); }
-  50% { filter: drop-shadow(0 0 40px var(--glow)); }
+  color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
+  filter: none;
+  animation: none;
 }
 .hero .subtitle {
   font-size: 1.25rem;
@@ -1181,37 +1178,35 @@ body.reduce-motion .page-veil { transition: none; }
   font-family: var(--font-display);
   font-size: clamp(3.5rem, 15vw, 11rem);
   line-height: 0.9;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.05em;
   margin: 0;
   color: #ffffff;
   -webkit-text-fill-color: #ffffff;
-  text-shadow: 0 0 32px rgba(var(--accent-rgb), 0.45);
+  text-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.9),
+    0 6px 20px rgba(0, 0, 0, 0.8),
+    0 0 10px rgba(0, 204, 85, 0.16);
   position: relative;
+  filter: none !important;
+  animation: none !important;
 }
-/* faint scanline wash behind the giant title */
+/* Disable rectangular scanline wash that caused blurred green box */
 .hero h1::after, .char-hero h1::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background: repeating-linear-gradient(
-    0deg,
-    rgba(0, 204, 85, 0.05) 0px,
-    rgba(0, 204, 85, 0.05) 1px,
-    transparent 1px,
-    transparent 4px);
-  mix-blend-mode: screen;
-  -webkit-text-fill-color: transparent;
+  display: none !important;
+  content: none !important;
 }
 .hero .subtitle, .char-hero .lede {
   font-family: var(--font-ui);
-  letter-spacing: 0.32em;
+  letter-spacing: 0.38em;
   text-transform: uppercase;
   font-size: clamp(1rem, 2.4vw, 1.6rem);
-  margin-top: 1rem;
+  margin-top: 1.25rem;
 }
 .hero .subtitle {
   color: #ffffff;
+  text-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.9),
+    0 0 8px rgba(0, 204, 85, 0.22);
 }
 .char-hero .lede {
   color: var(--accent-villain);

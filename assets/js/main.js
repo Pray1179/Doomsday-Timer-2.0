@@ -4,7 +4,7 @@
   'use strict';
 
   // === CONFIG ===
-  const RELEASE_DATE = new Date('2026-12-18T00:00:00-08:00'); // PST midnight
+  const RELEASE_DATE = new Date('2026-12-17T00:01:00'); // Dec 17, 2026 at 12:01 AM
   const UNITS = ['Avengers', 'X-Men', 'Fantastic Four', 'Wakandans', 'New Avengers', 'Villain'];
 
   // Per-faction quote pools (homepage). Picking a side rotates THAT side's
