@@ -1,7 +1,7 @@
 /**
  * Avengers: Doomsday — 14,000,605 Futures Simulator Engine
  * Client-side battle simulation, team builder, preset loader,
- * and optional NVIDIA NIM / Gemini API streaming integration.
+ * and multi-provider AI integration (NVIDIA NIM via local proxy, Groq, Gemini, OpenRouter).
  */
 (function() {
   'use strict';
@@ -41,6 +41,9 @@
   const apiModal = document.getElementById('api-modal');
   const saveKeyBtn = document.getElementById('save-key-btn');
   const clearKeyBtn = document.getElementById('clear-key-btn');
+  const testKeyBtn = document.getElementById('test-key-btn');
+  const testKeyResult = document.getElementById('test-key-result');
+  const toggleKeyVisBtn = document.getElementById('toggle-key-visibility');
   const aiProviderSelect = document.getElementById('ai-provider-select');
   const aiKeyInput = document.getElementById('ai-key-input');
   const keyIndicator = document.getElementById('key-indicator');
@@ -62,7 +65,13 @@
   function updateKeyIndicator() {
     if (apiKey) {
       keyIndicator.classList.add('active');
-      keyLabel.textContent = apiProvider === 'nvidia' ? 'AI: NVIDIA NIM (Active)' : 'AI: Gemini (Active)';
+      const names = {
+        nvidia: 'AI: NVIDIA NIM (Active)',
+        groq: 'AI: Groq Llama 3.3 (Active)',
+        gemini: 'AI: Google Gemini (Active)',
+        openrouter: 'AI: OpenRouter (Active)'
+      };
+      keyLabel.textContent = names[apiProvider] || 'AI Active';
     } else {
       keyIndicator.classList.remove('active');
       keyLabel.textContent = 'Connect AI Key (Optional)';
@@ -121,7 +130,6 @@
     renderTeamDeck();
     searchDropdown.style.display = 'none';
     searchInput.value = '';
-    // Audio tick
     if (window.playSfx) window.playSfx('click');
   }
 
@@ -228,10 +236,9 @@
 
   // Procedural Generator for Custom Squads
   function generateCustomOutcome(squad) {
-    const names = squad.map(c => c.name).join(', ');
-    const count = squad.length;
+    const leadChamp = squad[0].name;
+    const secondChamp = squad[1] ? squad[1].name : squad[0].name;
 
-    // Has magic or cosmic?
     const hasMagic = squad.some(c => (c.tags || []).includes('magic') || /strange|wanda|loki|wong/i.test(c.id));
     const hasCosmic = squad.some(c => /thor|surfer|carol|marvel|adam/i.test(c.id));
     const hasTech = squad.some(c => /stark|iron|richards|pym|shuri/i.test(c.id));
@@ -251,9 +258,6 @@
 
     threatItems.push(`<div><strong>Direct Engagement:</strong> God Emperor Doom anticipates physical strikes; his armor converts kinetic shockwaves into raw plasma bolts.</div>`);
 
-    const leadChamp = squad[0].name;
-    const secondChamp = squad[1] ? squad[1].name : squad[0].name;
-
     const fatal = `Timeline #14,000,604 — ${leadChamp} coordinates an aggressive assault breaching the perimeter of Doom's Citadel. ${secondChamp} provides critical covering fire, momentarily cracking Doom's armor visor. However, Doom detonates an internal temporal stasis mine. The shockwave freezes the squad in a recursive time dilation pocket while Doom recharges his primary reality loom. Outcome: Complete temporal erasure.`;
 
     const victory = `Timeline #14,000,605 — Rather than targeting Victor von Doom directly, the squad focuses on his dimensional anchor relays. ${secondChamp} executes a coordinated thermal overload, forcing Doom to vent his mystic capacitors. In the exact 2.1-second refractory window, ${leadChamp} severs the multiversal leyline feed. Deprived of multiversal siphon energy, God Emperor Doom's throne collapses, freeing the branched timelines.`;
@@ -270,82 +274,199 @@
     };
   }
 
-  // Live AI Stream using NVIDIA NIM or Gemini
+  // Dispatch AI Model API Call
+  async function callModelApi(provider, key, prompt) {
+    const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+
+    if (provider === 'nvidia') {
+      // Use local proxy if running locally to bypass CORS
+      const endpoint = isLocalhost ? '/api/nvidia-proxy' : 'https://integrate.api.nvidia.com/v1/chat/completions';
+      const res = await fetch(endpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${key}`
+        },
+        body: JSON.stringify({
+          model: 'meta/llama-3.1-70b-instruct',
+          messages: [{ role: 'user', content: prompt }],
+          temperature: 0.7,
+          max_tokens: 1024
+        })
+      });
+
+      if (!res.ok) {
+        const errText = await res.text();
+        throw new Error(`NVIDIA NIM HTTP ${res.status}: ${errText.slice(0, 150)}`);
+      }
+      const data = await res.json();
+      return data.choices?.[0]?.message?.content || '';
+    } 
+    else if (provider === 'groq') {
+      // Groq officially supports browser CORS with Access-Control-Allow-Origin: *
+      const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${key}`
+        },
+        body: JSON.stringify({
+          model: 'llama-3.3-70b-versatile',
+          messages: [{ role: 'user', content: prompt }],
+          temperature: 0.7,
+          max_tokens: 1024
+        })
+      });
+
+      if (!res.ok) {
+        const errText = await res.text();
+        throw new Error(`Groq HTTP ${res.status}: ${errText.slice(0, 150)}`);
+      }
+      const data = await res.json();
+      return data.choices?.[0]?.message?.content || '';
+    }
+    else if (provider === 'openrouter') {
+      // OpenRouter supports browser CORS
+      const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${key}`
+        },
+        body: JSON.stringify({
+          model: 'meta-llama/llama-3.1-70b-instruct',
+          messages: [{ role: 'user', content: prompt }],
+          temperature: 0.7,
+          max_tokens: 1024
+        })
+      });
+
+      if (!res.ok) {
+        const errText = await res.text();
+        throw new Error(`OpenRouter HTTP ${res.status}: ${errText.slice(0, 150)}`);
+      }
+      const data = await res.json();
+      return data.choices?.[0]?.message?.content || '';
+    }
+    else {
+      // Google Gemini supports browser CORS natively
+      const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${key}`;
+      const res = await fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          contents: [{ parts: [{ text: prompt }] }]
+        })
+      });
+
+      if (!res.ok) {
+        const errText = await res.text();
+        throw new Error(`Gemini HTTP ${res.status}: ${errText.slice(0, 150)}`);
+      }
+      const data = await res.json();
+      return data.candidates?.[0]?.content?.parts?.[0]?.text || '';
+    }
+  }
+
+  // Parse structured AI response into sections
+  function parseAiResponse(raw) {
+    let threatText = '';
+    let fatalText = '';
+    let victoryText = '';
+    let divText = '';
+
+    const lines = raw.split('\n');
+    let currentSec = 0;
+
+    for (let line of lines) {
+      const lower = line.toLowerCase();
+      if (lower.includes('threat analysis') || lower.includes('tactical threat')) {
+        currentSec = 1;
+        continue;
+      } else if (lower.includes('14,000,604') || lower.includes('fatal near-victory') || lower.includes('near-victory')) {
+        currentSec = 2;
+        continue;
+      } else if (lower.includes('14,000,605') || lower.includes('sole victory') || lower.includes('victory path')) {
+        currentSec = 3;
+        continue;
+      } else if (lower.includes('divergence point') || lower.includes('critical divergence')) {
+        currentSec = 4;
+        continue;
+      }
+
+      if (currentSec === 1) threatText += line + '\n';
+      else if (currentSec === 2) fatalText += line + '\n';
+      else if (currentSec === 3) victoryText += line + '\n';
+      else if (currentSec === 4) divText += line + '\n';
+    }
+
+    // Fallbacks if formatting differed
+    if (!fatalText.trim() && !victoryText.trim()) {
+      const half = Math.floor(raw.length / 2);
+      fatalText = raw.slice(0, half);
+      victoryText = raw.slice(half);
+      threatText = "Tactical simulation synthesized by Time Stone AI neural engine.";
+      divText = "Critical Divergence Point: Exact temporal synchronization required at primary catalyst conduit.";
+    }
+
+    return {
+      threat: threatText.trim() || "Multiversal Leyline Siphon: Doom establishes astral supremacy.",
+      fatal: fatalText.trim() || raw.slice(0, 500),
+      victory: victoryText.trim() || raw.slice(500, 1200),
+      divergence: divText.trim() || "T-minus 00:01:24: Strict execution sequence required on Doom's secondary heat baffles."
+    };
+  }
+
+  // Live AI Stream Execution
   async function runAiStream(squad) {
     const names = squad.map(c => `${c.name} (${c.alias || c.unit})`).join(', ');
-    const systemPrompt = `You are Doctor Strange peering through the Time Stone across 14,000,605 alternate futures of the Multiversal War against Victor von Doom (Avengers: Doomsday).
-Analyze this strike team: ${names}.
-Provide an epic, serious, cinematic report with four clear sections:
-1) TACTICAL THREAT ANALYSIS: Doom's counters to this specific squad.
-2) TIMELINE #14,000,604 (THE TRAGIC NEAR-VICTORY): How they push Doom to the brink before a fatal tactical error.
-3) TIMELINE #14,000,605 (THE SOLE VICTORY CONFLUENCE): The exact sequence of sacrifices, timing, and reality breaches needed to overcome God Emperor Doom.
+    const systemPrompt = `You are Doctor Strange peering through the Eye of Agamotto across 14,000,605 alternate futures of the Multiversal War against Victor von Doom (Avengers: Doomsday).
+Analyze this assembled Strike Team: ${names}.
+Provide a vivid, serious, cinematic report with four clearly labeled sections:
+1) TACTICAL THREAT ANALYSIS: Specific Doom defensive countermeasures and siphon wards against this team's powers.
+2) TIMELINE #14,000,604 (THE TRAGIC NEAR-VICTORY): Detailed narrative of how they push Doom to the brink before a fatal trap destroys them.
+3) TIMELINE #14,000,605 (THE SOLE VICTORY CONFLUENCE): The exact sequence of moves, sacrifices, and reality breaches needed to overcome God Emperor Doom.
 4) CRITICAL DIVERGENCE POINT: The exact microsecond decision that decides victory.
 Keep the tone dark, thrilling, grounded in Marvel lore, and worthy of a Russo Brothers cinematic climax.`;
 
     aiActiveBadge.style.display = 'inline-flex';
-    aiProviderLabel.textContent = apiProvider === 'nvidia' 
-      ? 'NVIDIA NIM Streaming Inference (Llama 3.1 70B) Active' 
-      : 'Google Gemini Streaming Inference Active';
+    const providerNames = {
+      nvidia: 'NVIDIA NIM (Llama 3.1 70B)',
+      groq: 'Groq (Llama 3.3 70B)',
+      gemini: 'Google Gemini 1.5 Flash',
+      openrouter: 'OpenRouter (Llama 3.1 70B)'
+    };
+    aiProviderLabel.textContent = `${providerNames[apiProvider] || 'AI Model'} Active`;
 
-    resultFatalNarrative.innerHTML = '<span class="streaming-text">Connecting to Temporal Archive...</span>';
+    resultOdds.textContent = "1 IN 14,000,605";
+    resultOddsPct.textContent = "0.0000071% VICTORY PROBABILITY";
+    resultFatalNarrative.innerHTML = '<span class="streaming-text">Connecting to Multiversal Neural Matrix...</span>';
     resultVictoryNarrative.innerHTML = '<span class="streaming-text">Streaming timeline vectors...</span>';
     resultThreatMatrix.innerHTML = '<div class="streaming-text">Analyzing Doom defensive matrix...</div>';
+    resultDivergenceText.textContent = "Calculating timeline branch...";
 
     try {
-      if (apiProvider === 'nvidia') {
-        const response = await fetch('https://integrate.api.nvidia.com/v1/chat/completions', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${apiKey}`
-          },
-          body: JSON.stringify({
-            model: 'meta/llama-3.1-70b-instruct',
-            messages: [{ role: 'user', content: systemPrompt }],
-            temperature: 0.7,
-            max_tokens: 1024,
-            stream: false
-          })
-        });
+      const text = await callModelApi(apiProvider, apiKey, systemPrompt);
+      const parsed = parseAiResponse(text);
 
-        if (!response.ok) {
-          throw new Error(`NVIDIA NIM returned HTTP ${response.status}`);
-        }
-        const data = await response.json();
-        const content = data.choices && data.choices[0] && data.choices[0].message ? data.choices[0].message.content : '';
-        renderAiOutput(content);
-      } else {
-        // Google Gemini
-        const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
-        const response = await fetch(url, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            contents: [{ parts: [{ text: systemPrompt }] }]
-          })
-        });
-        if (!response.ok) {
-          throw new Error(`Gemini API returned HTTP ${response.status}`);
-        }
-        const data = await response.json();
-        const content = data.candidates?.[0]?.content?.parts?.[0]?.text || '';
-        renderAiOutput(content);
-      }
+      resultThreatMatrix.innerHTML = `<div><strong>Neural Analysis:</strong> ${parsed.threat.replace(/\n/g, '<br>')}</div>`;
+      resultFatalNarrative.textContent = parsed.fatal;
+      resultVictoryNarrative.textContent = parsed.victory;
+      resultDivergenceText.textContent = parsed.divergence;
     } catch (err) {
       console.error('AI streaming error, falling back to local simulation:', err);
       aiActiveBadge.style.display = 'none';
-      alert(`AI API connection notice: ${err.message}. Falling back to high-fidelity built-in temporal archive.`);
+
+      let msg = err.message || '';
+      if (msg.includes('Failed to fetch') && apiProvider === 'nvidia') {
+        alert("CORS Notice: NVIDIA's cloud servers block direct browser calls. Please run 'python3 scripts/serve.py' locally (which provides our automatic local proxy), or select Groq / Google Gemini in the AI settings modal for 1-click browser access!");
+      } else {
+        alert(`AI API notice: ${err.message}. Falling back to high-fidelity built-in temporal archive.`);
+      }
+
       const outcome = generateCustomOutcome(squad);
       renderOutcome(outcome);
     }
-  }
-
-  // Parse and display AI output
-  function renderAiOutput(text) {
-    resultThreatMatrix.innerHTML = `<div><strong>Neural Analysis:</strong> ${text.slice(0, 300).replace(/\n/g, '<br>')}...</div>`;
-    resultFatalNarrative.textContent = text.slice(300, 800) || text;
-    resultVictoryNarrative.textContent = text.slice(800, 1400) || text;
-    resultDivergenceText.textContent = text.slice(1400) || "T-minus 00:01:24: Precision timing required on the secondary reactor siphon.";
   }
 
   // Render Outcome to Dossier
@@ -370,19 +491,16 @@ Keep the tone dark, thrilling, grounded in Marvel lore, and worthy of a Russo Br
   function handleSimulation() {
     if (selectedChampions.length === 0) return;
 
-    // Trigger audio hit
     if (window.playTrailerImpact) {
       window.playTrailerImpact();
     } else if (window.playSfx) {
       window.playSfx('click');
     }
 
-    // Scroll to chamber and display
     simResults.style.display = 'none';
     simChamber.style.display = 'flex';
     simChamber.scrollIntoView({ behavior: 'smooth' });
 
-    // Roll counter
     rollCounter(14000605, 1800, () => {
       simChamber.style.display = 'none';
       simResults.style.display = 'block';
@@ -401,20 +519,48 @@ Keep the tone dark, thrilling, grounded in Marvel lore, and worthy of a Russo Br
     });
   }
 
+  // Test Key Connection in Modal
+  async function testKeyConnection() {
+    const key = (aiKeyInput.value || '').trim();
+    const provider = aiProviderSelect.value;
+
+    if (!key) {
+      testKeyResult.style.display = 'block';
+      testKeyResult.style.color = '#e63946';
+      testKeyResult.textContent = '❌ Please enter an API key first.';
+      return;
+    }
+
+    testKeyResult.style.display = 'block';
+    testKeyResult.style.color = '#a3e6b8';
+    testKeyResult.textContent = '⏳ Testing connection to AI endpoint...';
+
+    try {
+      const pingPrompt = "Respond with exactly the single word 'ACTIVE'.";
+      const res = await callModelApi(provider, key, pingPrompt);
+      testKeyResult.style.color = '#00cc55';
+      testKeyResult.textContent = `✅ Connected successfully! Model verified response: "${res.trim().slice(0, 30)}"`;
+    } catch (err) {
+      testKeyResult.style.color = '#e63946';
+      if (err.message.includes('Failed to fetch') && provider === 'nvidia') {
+        testKeyResult.innerHTML = `❌ Browser CORS block: NVIDIA's cloud does not allow direct browser calls.<br>👉 <strong>Fix:</strong> Run <code>python3 scripts/serve.py</code> locally, or switch provider above to <strong>Groq</strong> (runs the same Llama 3.1 70B with browser CORS) or <strong>Gemini</strong>!`;
+      } else {
+        testKeyResult.textContent = `❌ Connection failed: ${err.message}`;
+      }
+    }
+  }
+
   // Event Listeners
   function attachEvents() {
-    // Search input
     searchInput.addEventListener('input', handleSearch);
     searchInput.addEventListener('focus', handleSearch);
 
-    // Close dropdown on outside click
     document.addEventListener('click', (e) => {
       if (!searchInput.contains(e.target) && !searchDropdown.contains(e.target)) {
         searchDropdown.style.display = 'none';
       }
     });
 
-    // Remove slot click
     teamDeck.addEventListener('click', (e) => {
       const btn = e.target.closest('.slot-remove');
       if (btn) {
@@ -423,7 +569,6 @@ Keep the tone dark, thrilling, grounded in Marvel lore, and worthy of a Russo Br
       }
     });
 
-    // Clear team
     clearBtn.addEventListener('click', () => {
       selectedChampions = [];
       renderTeamDeck();
@@ -432,7 +577,6 @@ Keep the tone dark, thrilling, grounded in Marvel lore, and worthy of a Russo Br
       if (window.playSfx) window.playSfx('click');
     });
 
-    // Preset buttons
     document.querySelectorAll('.preset-btn').forEach(btn => {
       btn.addEventListener('click', (e) => {
         e.stopPropagation();
@@ -446,13 +590,13 @@ Keep the tone dark, thrilling, grounded in Marvel lore, and worthy of a Russo Br
       });
     });
 
-    // Simulate button
     simBtn.addEventListener('click', handleSimulation);
 
     // Modal events
     openModalBtn.addEventListener('click', () => {
       aiKeyInput.value = apiKey;
       aiProviderSelect.value = apiProvider;
+      testKeyResult.style.display = 'none';
       apiModal.style.display = 'flex';
     });
 
@@ -463,6 +607,16 @@ Keep the tone dark, thrilling, grounded in Marvel lore, and worthy of a Russo Br
     apiModal.addEventListener('click', (e) => {
       if (e.target === apiModal) apiModal.style.display = 'none';
     });
+
+    if (toggleKeyVisBtn) {
+      toggleKeyVisBtn.addEventListener('click', () => {
+        aiKeyInput.type = aiKeyInput.type === 'password' ? 'text' : 'password';
+      });
+    }
+
+    if (testKeyBtn) {
+      testKeyBtn.addEventListener('click', testKeyConnection);
+    }
 
     saveKeyBtn.addEventListener('click', () => {
       apiKey = (aiKeyInput.value || '').trim();
@@ -478,6 +632,7 @@ Keep the tone dark, thrilling, grounded in Marvel lore, and worthy of a Russo Br
       apiKey = '';
       localStorage.removeItem('time_stone_api_key');
       aiKeyInput.value = '';
+      testKeyResult.style.display = 'none';
       updateKeyIndicator();
       apiModal.style.display = 'none';
       alert('Time Stone AI Key removed. The simulator will use built-in canonical timelines.');

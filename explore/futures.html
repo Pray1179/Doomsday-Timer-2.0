@@ -235,27 +235,41 @@
       <button id="close-api-modal" class="modal-close" type="button" aria-label="Close dialog">&times;</button>
     </div>
     <div class="modal-body">
-      <p class="muted" style="margin-bottom:1rem;font-size:0.9rem;">
-        Upgrade the simulator with live AI battle predictions! Connect your free <strong>NVIDIA NIM</strong> or <strong>Google Gemini</strong> API key. Your key is stored strictly in your browser's <code>localStorage</code> and never shared.
+      <p class="muted" style="margin-bottom:1rem;font-size:0.88rem;line-height:1.5;">
+        Upgrade the simulator with live AI battle chronologies! Your API key is stored strictly in your browser's <code>localStorage</code> and never shared.
       </p>
 
       <div class="form-group">
         <label for="ai-provider-select">Select AI Model Provider:</label>
         <select id="ai-provider-select" class="cmd-input">
-          <option value="nvidia">NVIDIA NIM (meta/llama-3.1-70b-instruct) — Free 1K calls</option>
-          <option value="gemini">Google Gemini (gemini-1.5-flash) — Free tier</option>
+          <option value="nvidia">NVIDIA NIM (meta/llama-3.1-70b-instruct) — Via local proxy or build.nvidia.com</option>
+          <option value="groq">Groq (Llama 3.3 / 3.1 70B) — Free, 500 tok/s, Instant Browser CORS</option>
+          <option value="gemini">Google Gemini (gemini-1.5-flash) — Free, Instant Browser CORS</option>
+          <option value="openrouter">OpenRouter (Llama 3.1 70B) — Free / Bring Your Own Key</option>
         </select>
       </div>
 
       <div class="form-group">
         <label for="ai-key-input">Enter API Key:</label>
-        <input id="ai-key-input" type="password" class="cmd-input" placeholder="nvapi-... or AIza..." autocomplete="off">
-        <p class="hint-text">Get a free NVIDIA key at <a href="https://build.nvidia.com" target="_blank" rel="noopener">build.nvidia.com</a> or Gemini key at <a href="https://aistudio.google.com" target="_blank" rel="noopener">aistudio.google.com</a>.</p>
+        <div style="display:flex;gap:0.5rem;">
+          <input id="ai-key-input" type="password" class="cmd-input" placeholder="Paste your API key here..." autocomplete="off" style="flex:1;">
+          <button id="toggle-key-visibility" class="btn btn-sm btn-secondary" type="button" title="Show/Hide Key">👁️</button>
+        </div>
+        <p class="hint-text" id="provider-hint">
+          Get a free key: <a id="provider-link" href="https://build.nvidia.com" target="_blank" rel="noopener">build.nvidia.com</a> (NVIDIA) &bull; <a href="https://console.groq.com" target="_blank" rel="noopener">console.groq.com</a> (Groq) &bull; <a href="https://aistudio.google.com" target="_blank" rel="noopener">aistudio.google.com</a> (Gemini).
+        </p>
       </div>
 
+      <div id="test-key-result" class="test-key-result" style="display:none;margin-bottom:1rem;"></div>
+
       <div class="modal-actions">
+        <button id="test-key-btn" class="btn btn-secondary" type="button">Test Connection</button>
         <button id="save-key-btn" class="btn btn-primary" type="button">Save Key</button>
         <button id="clear-key-btn" class="btn btn-secondary" type="button">Remove Key</button>
+      </div>
+
+      <div class="local-proxy-tip" id="local-proxy-tip" style="margin-top:1.25rem;padding:0.75rem;background:rgba(0,204,85,0.08);border:1px solid rgba(0,204,85,0.25);border-radius:8px;font-size:0.78rem;color:#a3e6b8;">
+        💡 <strong>Tip for NVIDIA NIM keys:</strong> NVIDIA's cloud servers do not allow direct browser-to-server CORS. When testing locally, run <code>python3 scripts/serve.py</code> (which provides our automatic local proxy). For 1-click browser access without a proxy, select <strong>Groq</strong> (runs the same Llama-3.1 70B) or <strong>Google Gemini</strong>!
       </div>
     </div>
   </div>
