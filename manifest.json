@@ -1,0 +1,17 @@
+{
+  "name": "Avengers: Doomsday — The End Approaches",
+  "short_name": "Doomsday 2.0",
+  "description": "Fan hub and countdown to Avengers: Doomsday (Dec 18, 2026). Explore characters, multiverse intel, watchlist, and timeline.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#020804",
+  "theme_color": "#00cc55",
+  "icons": [
+    {
+      "src": "assets/img/cat-doctor-doom.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

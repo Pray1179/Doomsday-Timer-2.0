@@ -18,7 +18,7 @@ PAGES = ROOT / "pages"
 ASSETS = ROOT / "assets"
 
 GENERATED = [
-    "characters.html", "watch-guide.html", "timeline.html",
+    "characters.html", "futures.html", "watch-guide.html", "timeline.html",
     "stats.html", "memorial.html",
 ]
 ROOT_META = ["sitemap.xml", "robots.txt", "404.html"]

@@ -30,6 +30,7 @@ SITE = "https://doomsdayhub.example"
 
 NAV_ITEMS = [
     ("characters", "Characters", "characters.html"),
+    ("futures", "14M Futures", "futures.html"),
     ("watch-guide", "Watch Guide", "watch-guide.html"),
     ("timeline", "Timeline", "timeline.html"),
     ("stats", "Stats", "stats.html"),
@@ -44,7 +45,7 @@ def _site_nav(active, prefix=""):
         for key, label, href in NAV_ITEMS)
     return (f'<nav class="nav"><div class="nav-inner"><a class="brand" href="{prefix}../index.html">'
             '<span class="av">AVENGERS</span><span class="sep">:</span><span class="dd">DOOMSDAY</span></a>'
-            f'<ul>{lis}</ul></div></nav>')
+            f'<ul>{lis}<li><button class="audio-toggle-btn" id="audio-toggle" type="button" aria-label="Toggle UI Audio" title="Toggle UI Audio"><span id="audio-icon">🔇</span> <span id="audio-label">FX OFF</span></button></li></ul></div></nav>')
 
 
 def _foot(prefix=""):
@@ -403,10 +404,6 @@ def build_listing(records, cast_doc):
 <meta property="og:url" content="{SITE}/explore/characters.html">
 <link rel="canonical" href="{SITE}/explore/characters.html">
 <link rel="stylesheet" href="../assets/css/styles.css?v=cards-rewrite-20260901b">
-<style>
-/* CACHE-PROOF: character grid base only — card styling lives in styles.css */
-.cat-grid{{display:grid!important;grid-template-columns:repeat(auto-fill,minmax(184px,1fr))!important;gap:1.25rem!important;align-items:start!important}}
-</style>
 <script type="application/ld+json">{jsonld}</script>
 </head>"""
 
@@ -421,9 +418,15 @@ def build_listing(records, cast_doc):
     <input id="catalogue-search" class="cmd-input" placeholder="Search name, alias, actor, team, summary…" autocomplete="off">
     {count_html}
     {filters_html}
+    <div class="density-group" id="density-group" role="group" aria-label="Grid Density">
+      <span class="density-title">Grid View:</span>
+      <button type="button" class="density-btn" data-density="dense" title="Compact (More characters per row)">Compact</button>
+      <button type="button" class="density-btn active" data-density="standard" title="Standard (5-6 per row on laptop)">Standard</button>
+      <button type="button" class="density-btn" data-density="comfortable" title="Comfortable (Larger portraits)">Comfortable</button>
+    </div>
   </div>
 </header>
-<main class="wrap"><div class="cat-grid" id="cat-grid">
+<main class="wrap wrap-wide"><div class="cat-grid" id="cat-grid">
 {grid}
 </div></main>
 {_foot()}

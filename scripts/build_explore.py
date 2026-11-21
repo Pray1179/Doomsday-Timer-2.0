@@ -121,6 +121,7 @@ def page_head(title, desc, canonical, extra_jsonld=""):
 def site_nav(active):
     items = [
         ("characters", "Characters", "characters.html"),
+        ("futures", "14M Futures", "futures.html"),
         ("watch-guide", "Watch Guide", "watch-guide.html"),
         ("timeline", "Timeline", "timeline.html"),
         ("stats", "Stats", "stats.html"),
@@ -131,7 +132,7 @@ def site_nav(active):
         for key, label, href in items)
     return ('<nav class="nav"><div class="nav-inner"><a class="brand" href="../index.html">'
             '<span class="av">AVENGERS</span><span class="sep">:</span><span class="dd">DOOMSDAY</span></a>'
-            f'<ul>{lis}</ul></div></nav>')
+            f'<ul>{lis}<li><button class="audio-toggle-btn" id="audio-toggle" type="button" aria-label="Toggle UI Audio" title="Toggle UI Audio"><span id="audio-icon">🔇</span> <span id="audio-label">FX OFF</span></button></li></ul></div></nav>')
 
 
 def foot():
@@ -366,6 +367,8 @@ def build_all():
     # full character catalogue (the 30-confirmed badge is preserved in it).
     import build_catalogue
     build_catalogue.build_all()
+    import build_futures
+    build_futures.build_all()
 
 
 if __name__ == "__main__":

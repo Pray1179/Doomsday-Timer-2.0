@@ -11,6 +11,8 @@
 <meta property="og:image" content="https://cdn.marvel.com/content/2x/avengersdoomsday_lob_mas_dsk_03.webp">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://doomsdayhub.example/">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#020804">
 <link rel="stylesheet" href="assets/css/styles.css?v=cards-rewrite-20260901b">
 <style>
 /* ===== CACHE-PROOF: hero background (inline overrides any stale external CSS) ===== */
@@ -61,9 +63,11 @@
 <a class="brand" href="index.html"><span class="av">AVENGERS</span><span class="sep">:</span><span class="dd">DOOMSDAY</span></a>
 <ul>
 <li><a href="explore/characters.html">Characters</a></li>
+<li><a href="explore/futures.html">14M Futures</a></li>
 <li><a href="explore/watch-guide.html">Watch Guide</a></li>
 <li><a href="#trailer">Trailer</a></li>
 <li><a href="#explore">Explore</a></li>
+<li><button class="audio-toggle-btn" id="audio-toggle" type="button" aria-label="Toggle UI Audio" title="Toggle UI Audio"><span id="audio-icon">🔇</span> <span id="audio-label">FX OFF</span></button></li>
 </ul>
 </div></nav>
 
@@ -74,6 +78,27 @@
 
   <div class="countdown" aria-label="Countdown to Dec 18, 2026">
     <!-- JS injects D:H:M:S here -->
+  </div>
+
+  <!-- Incursion Threat Level Meter -->
+  <div class="incursion-gauge-wrap" id="incursion-gauge-wrap" role="region" aria-label="Multiverse Incursion Proximity">
+    <div class="incursion-radar" aria-hidden="true">
+      <div class="radar-sweep"></div>
+      <div class="radar-ring r1"></div>
+      <div class="radar-ring r2"></div>
+      <div class="radar-center"></div>
+    </div>
+    <div class="incursion-meta">
+      <div class="incursion-tag"><span class="pulse-dot"></span>MULTIVERSE INCURSION MONITOR</div>
+      <div class="incursion-metric">
+        <span class="incursion-num" id="incursion-num">--%</span>
+        <span class="incursion-label">COLLISION PROXIMITY</span>
+      </div>
+      <div class="incursion-bar-track">
+        <div class="incursion-bar-fill" id="incursion-bar-fill"></div>
+      </div>
+      <span class="incursion-status" id="incursion-status">ESTABLISHING TIMELINE VECTOR</span>
+    </div>
   </div>
 
   <div class="quote" aria-live="polite">
@@ -112,6 +137,17 @@
     <button class="faction-btn newavengers" data-faction="New Avengers">New Avengers</button>
     <button class="faction-btn villain" data-faction="Villain">DOOM</button>
   </div>
+
+  <!-- Faction War Standings -->
+  <div class="faction-standings" id="faction-standings">
+    <div class="fs-header">
+      <span class="fs-badge">MULTIVERSE WAR POLL</span>
+      <span class="fs-total" id="fs-total">Live Community Standings</span>
+    </div>
+    <div class="fs-list" id="fs-list">
+      <!-- Injected by main.js -->
+    </div>
+  </div>
 </section>
 
 <section id="trailer">
@@ -147,6 +183,12 @@
 <section id="explore">
   <h2>Intel Database</h2>
   <div class="db-grid">
+    <a class="db-card db-futures" href="explore/futures.html" style="border-color: rgba(0, 204, 85, 0.45); background: linear-gradient(145deg, rgba(0, 204, 85, 0.08) 0%, rgba(10, 20, 15, 0.6) 100%);">
+      <span class="db-eyebrow" style="color: #00cc55;">Battle Simulator · 14,000,605 Timelines</span>
+      <h3>14M Futures Engine</h3>
+      <p>Doctor Strange's time-inspection matrix. Assemble strike teams against Victor von Doom, test survival odds, or connect NVIDIA NIM AI for live battle chronologies.</p>
+      <span class="db-go" style="color: #00cc55;">Initiate Jump <span class="arr">→</span></span>
+    </a>
     <a class="db-card db-characters" href="explore/characters.html">
       <span class="db-eyebrow">Catalogue · on-screen records · 30 confirmed</span>
       <h3>All Characters</h3>

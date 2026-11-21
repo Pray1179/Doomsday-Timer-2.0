@@ -283,62 +283,6 @@
       ]
     },
     {
-      "id": "everett-ross",
-      "name": "Everett K. Ross",
-      "alias": "Agent Pratt",
-      "aliases": [
-        "Everett Ross"
-      ],
-      "portrayed_by": "Martin Freeman",
-      "universe": "Earth-616 / MCU",
-      "continuity": "MCU",
-      "team_or_affiliation": [
-        "CIA",
-        "U.S. Government"
-      ],
-      "character_type": "Team-support",
-      "tags": [
-        "mcu",
-        "wakanda",
-        "government"
-      ],
-      "status": "Active",
-      "debut_title": "Captain America: Civil War (2016)",
-      "debut_year": 2016,
-      "summary": "A CIA deputy task force commander who partners with Wakanda across films, later arrested and rescued by Everett and Okoye in Wakanda Forever.",
-      "image_url": "../assets/img/cat-everett-ross.jpg",
-      "image_source_url": "https://en.wikipedia.org/wiki/Martin%20Freeman%20as%20Everett%20K.%20Ross%20in%20Black%20Panther%20poster.jpeg",
-      "image_source_name": "Wikimedia Commons",
-      "image_alt": "Everett K. Ross portrait",
-      "image_verified": true,
-      "source_notes": [
-        "Appears in Civil War, Black Panther, Infinity War, and Wakanda Forever."
-      ],
-      "related_titles": [
-        "Captain America: Civil War (2016)",
-        "Black Panther (2018)",
-        "Black Panther: Wakanda Forever (2022)"
-      ],
-      "allies": [
-        "tchalla",
-        "okoye",
-        "shuri-black-panther"
-      ],
-      "enemies": [
-        "killmonger"
-      ],
-      "verified": true,
-      "notes": "",
-      "doomsday_cast_slug": null,
-      "sources": [
-        {
-          "url": "https://en.wikipedia.org/wiki/Everett_K._Ross",
-          "publisher": "Wikipedia",
-          "verified_at": "2026-08-30"
-        }
-      ]
-    },
-    {
       "id": "riri-williams",
       "name": "Riri Williams",
       "alias": "Ironheart",
@@ -391,59 +335,6 @@
       ]
     },
     {
-      "id": "ayo",
-      "name": "Ayo",
-      "alias": "Ayo",
-      "aliases": [
-        "Dora Milaje lieutenant"
-      ],
-      "portrayed_by": "Florence Kasumba",
-      "universe": "Earth-616 / MCU",
-      "continuity": "MCU",
-      "team_or_affiliation": [
-        "Wakandans",
-        "Dora Milaje"
-      ],
-      "character_type": "Hero",
-      "tags": [
-        "mcu",
-        "wakanda",
-        "dora-milaje"
-      ],
-      "status": "Active",
-      "debut_title": "Captain America: Civil War (2016)",
-      "debut_year": 2016,
-      "summary": "A senior Dora Milaje warrior who became leader of the Dora Milaje in Wakanda Forever after Okoye's dismissal.",
-      "source_notes": [
-        "Florence Kasumba's recurring Dora Milaje warrior."
-      ],
-      "related_titles": [
-        "Captain America: Civil War (2016)",
-        "Black Panther (2018)",
-        "Black Panther: Wakanda Forever (2022)"
-      ],
-      "allies": [
-        "okoye",
-        "tchalla",
-        "shuri-black-panther",
-        "mbaku"
-      ],
-      "enemies": [
-        "killmonger",
-        "namor"
-      ],
-      "verified": true,
-      "notes": "",
-      "doomsday_cast_slug": null,
-      "sources": [
-        {
-          "url": "https://en.wikipedia.org/wiki/Dora_Milaje",
-          "publisher": "Wikipedia",
-          "verified_at": "2026-08-30"
-        }
-      ]
-    },
-    {
       "id": "ulysses-klaue",
       "name": "Ulysses Klaue",
       "alias": "Klaw",
@@ -487,58 +378,6 @@
       "sources": [
         {
           "url": "https://en.wikipedia.org/wiki/Ulysses_Klaue_(Marvel_Cinematic_Universe)",
-          "publisher": "Wikipedia",
-          "verified_at": "2026-08-30"
-        }
-      ]
-    },
-    {
-      "id": "attuma",
-      "name": "Attuma",
-      "alias": "War Chief Attuma",
-      "aliases": [],
-      "portrayed_by": "Alex Livinalli",
-      "universe": "Earth-616 / MCU",
-      "continuity": "MCU",
-      "team_or_affiliation": [
-        "Talokan"
-      ],
-      "character_type": "Villain",
-      "tags": [
-        "mcu",
-        "talokan",
-        "villains"
-      ],
-      "status": "Active",
-      "debut_title": "Black Panther: Wakanda Forever (2022)",
-      "debut_year": 2022,
-      "summary": "The fierce Talokanil war chief who leads the underwater kingdom's assaults against Wakanda.",
-      "image_url": "",
-      "image_source_url": "",
-      "image_source_name": "",
-      "image_alt": "",
-      "image_verified": false,
-      "source_notes": [
-        "A secondary antagonist of Wakanda Forever."
-      ],
-      "related_titles": [
-        "Black Panther: Wakanda Forever (2022)"
-      ],
-      "allies": [
-        "namor",
-        "namora"
-      ],
-      "enemies": [
-        "okoye",
-        "shuri-black-panther",
-        "mbaku"
-      ],
-      "verified": true,
-      "notes": "",
-      "doomsday_cast_slug": null,
-      "sources": [
-        {
-          "url": "https://en.wikipedia.org/wiki/Attuma",
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }

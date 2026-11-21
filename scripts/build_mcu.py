@@ -10,6 +10,7 @@ Reads data/mcu.json (MCU release-order reference) plus data/cast.json and emits:
 Imports the shared page/nav/foot helpers from build_explore. Pure stdlib, deterministic.
 """
 import json
+import re
 from datetime import date
 from pathlib import Path
 
@@ -254,7 +255,7 @@ def build_timeline(cast_doc):
             + "<body>" + ex.site_nav("timeline")
             + f'<header class="hero char-hero"><h1>Timeline</h1>'
             + f'<p class="lede">The Marvel Cinematic Universe in release order — {len(films)} films from Iron Man (2008) to now, plus the announced multiversal double-bill.</p></header>'
-            + '<main class="wrap">'
+            + '<main class="wrap wrap-wide">'
 
             + f'<section><h2>Release Timeline <span class="count">({rail_count})</span></h2>'
             + f'<p class="muted">{E_(meta["note"])}</p>'
@@ -308,7 +309,7 @@ def _poster_for(poster_map, title):
 
 
 def _route_item(item, numbered=True, poster_map=None):
-    """Render a route item with optional poster thumbnail."""
+    """Render a route item with optional poster thumbnail and interactive watchlist checkbox."""
     n = f'<span class="r-n">{item.get("n", "▶")}</span>' if numbered else ""
     why = f'<span class="r-why muted">{E_(item.get("why", ""))}</span>' if item.get("why") else ""
     when = f'<span class="r-when badge">{E_(item.get("when", ""))}</span>' if item.get("when") else ""
@@ -319,7 +320,11 @@ def _route_item(item, numbered=True, poster_map=None):
     if poster_url:
         poster = f'<img class="r-poster" src="{poster_url}" alt="{E_(item["title"])}" loading="lazy">'
     li_class = 'r-item r-item-poster' if poster else 'r-item'
-    return f'<li class="{li_class}">{poster}{n}<div class="r-body"><span class="r-title">{E_(item["title"])}</span>{when}{why}</div></li>'
+    wid = re.sub(r'[^a-z0-9]+', '-', item.get("title", "").lower()).strip('-')
+    check = (f'<label class="wl-check-label" title="Mark as watched">'
+             f'<input type="checkbox" class="wl-checkbox" data-watch-id="{wid}" data-watch-title="{E_(item["title"])}" data-is-essential="true">'
+             f'<span class="wl-box" aria-hidden="true"></span></label>')
+    return f'<li class="{li_class}" data-wl-item="{wid}">{check}{poster}{n}<div class="r-body"><span class="r-title">{E_(item["title"])}</span>{when}{why}</div></li>'
 
 
 def _phase_marathon(movies):
@@ -331,16 +336,20 @@ def _phase_marathon(movies):
             order.append(m["phase"])
     for ph in order:
         items = [m for m in movies if m["phase"] == ph]
-        body = "".join(
-            (f'<li class="r-item r-item-poster"><img class="r-poster" src="{m["poster_url"]}" '
-             f'alt="{E_(m["title"])}" loading="lazy">'
-             if m.get("poster_url") else '<li class="r-item">')
-            + f'<span class="r-n">{m["n"]:02d}</span>'
-            f'<div class="r-body"><span class="r-title">{E_(m["title"])}</span>'
-            f'<span class="r-when badge">{fmt_date(m["release_date"])}</span></div></li>'
-            for m in items)
+        body = []
+        for m in items:
+            wid = re.sub(r'[^a-z0-9]+', '-', m["title"].lower()).strip('-')
+            check = (f'<label class="wl-check-label" title="Mark as watched">'
+                     f'<input type="checkbox" class="wl-checkbox" data-watch-id="{wid}" data-watch-title="{E_(m["title"])}">'
+                     f'<span class="wl-box" aria-hidden="true"></span></label>')
+            poster = (f'<img class="r-poster" src="{m["poster_url"]}" alt="{E_(m["title"])}" loading="lazy">'
+                      if m.get("poster_url") else "")
+            li_class = 'r-item r-item-poster' if poster else 'r-item'
+            body.append(f'<li class="{li_class}" data-wl-item="{wid}">{check}{poster}<span class="r-n">{m["n"]:02d}</span>'
+                        f'<div class="r-body"><span class="r-title">{E_(m["title"])}</span>'
+                        f'<span class="r-when badge">{fmt_date(m["release_date"])}</span></div></li>')
         phases.append(f'<details class="acc"><summary>{E_(ph)} <span class="count">({len(items)})</span></summary>'
-                      f'<ol class="route">{body}</ol></details>')
+                      f'<ol class="route">{"".join(body)}</ol></details>')
     return "".join(phases)
 
 
@@ -464,7 +473,25 @@ def build_watch_guide(cast_doc):
             + "<body>" + ex.site_nav("watch-guide")
             + '<header class="hero char-hero"><h1>Watch Guide</h1>'
             + '<p class="lede">Three routes — pick your depth. Everything collapses so you never face a wall of content.</p></header>'
-            + '<main class="wrap">'
+            + '<main class="wrap wrap-wide">'
+            + '<section class="card wl-progress-card" id="wl-progress-card">'
+            + '  <div class="wl-head">'
+            + '    <div><span class="badge">MCU Watchlist</span><h2 class="wl-title">Doomsday Prep Tracker</h2>'
+            + '    <p class="muted" style="margin-top:0.25rem;">Track your progress toward Dec 18, 2026. Saved automatically in your browser.</p></div>'
+            + '    <div class="wl-counter-box">'
+            + '      <span class="wl-counter-num" id="wl-counter-num">0 / 0</span>'
+            + '      <span class="wl-counter-pct" id="wl-counter-pct">0%</span>'
+            + '    </div>'
+            + '  </div>'
+            + '  <div class="wl-bar-track" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">'
+            + '    <div class="wl-bar-fill" id="wl-bar-fill"></div>'
+            + '  </div>'
+            + '  <div class="wl-actions">'
+            + '    <button class="btn btn-secondary btn-sm" id="wl-check-essential">Check Essential</button>'
+            + '    <button class="btn btn-secondary btn-sm" id="wl-clear-all">Reset All</button>'
+            + '    <span class="wl-status-label" id="wl-status-label">Ready to begin</span>'
+            + '  </div>'
+            + '</section>'
 
             + '<details class="acc open"><summary><span class="r-n">1</span>Essential before Doomsday <span class="count">(short)</span></summary>'
             + f'<div class="acc-body"><p class="muted">{E_(essential["note"])}</p><ol class="route">{ess_li}</ol></div></details>'
@@ -579,7 +606,7 @@ def build_stats(cast_doc):
             + "<body>" + ex.site_nav("stats")
             + f'<header class="hero char-hero"><h1>Stats</h1>'
             + f'<p class="lede">{total_cat} on-screen characters catalogued · {total_cast} confirmed Doomsday cast.</p></header>'
-            + '<main class="wrap">'
+            + '<main class="wrap wrap-wide">'
 
             # ---- Derived counts ---- #
             + '<section><h2>By the Numbers</h2><p class="muted">Counts derived from data — not hand-written.</p>'
@@ -635,6 +662,19 @@ def _mem_local_img(cid):
     return None
 
 
+VALID_CAT_IDS = None
+
+
+def _valid_cat_ids():
+    global VALID_CAT_IDS
+    if VALID_CAT_IDS is None:
+        try:
+            VALID_CAT_IDS = {r["id"] for r in cu.load_all()}
+        except Exception:
+            VALID_CAT_IDS = set()
+    return VALID_CAT_IDS
+
+
 def _mem_card(m, small=False):
     cls = E_(m["class"])
     cid = m.get("catalogue_id")
@@ -654,7 +694,7 @@ def _mem_card(m, small=False):
             f'<p class="muted mem-how">{E_(m["how"])}</p>'
             f'<p class="mem-where muted">{E_(m["appears_in"])}</p>')
     cid = m.get("catalogue_id")
-    if cid:
+    if cid and cid in _valid_cat_ids():
         href = f'catalogue/{E_(cid)}.html'
         body += f'<a class="mem-more" href="{href}">Character page &rarr;</a>'
     return f'<div class="mem-card {cls}{" small" if small else ""}" tabindex="0">{body}</div>'
@@ -674,7 +714,7 @@ def build_memorial_page():
             + "<body>" + ex.site_nav("memorial")
             + '<header class="hero char-hero mem-hero"><h1>Memorial</h1>'
             + f'<p class="lede">In memory of the fallen. {E_(mem["intro"])}</p></header>'
-            + "<main class=\"wrap\">"
+            + "<main class=\"wrap wrap-wide\">"
             + '<section><h2>Original Avengers &amp; Core Fallen</h2>'
             + f'<div class="mem-grid">{featured}</div></section>'
             + "<section><h2>Also Fallen &mdash; Guardians' Friends</h2>"

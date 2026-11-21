@@ -205,6 +205,9 @@
         b.classList.toggle('on', b.dataset.faction === label));
       crossfadeHeroBg();
       if (syncQuotePool) syncQuotePool();
+      if (window.doomsdayAudio) window.doomsdayAudio.playStinger(slug);
+      if (window.updateFactionPoll) window.updateFactionPoll(label);
+      if (window.glitchIncursionGauge) window.glitchIncursionGauge();
     }
 
     $$('.faction-btn').forEach(btn => {
@@ -668,8 +671,14 @@
       catch { return; }
       if (url.origin !== location.origin) return;            // external only
       e.preventDefault();
-      veil.classList.add('on');
-      setTimeout(() => { window.location.href = url.href; }, 340);
+      if (document.startViewTransition) {
+        document.startViewTransition(() => {
+          window.location.href = url.href;
+        });
+      } else {
+        veil.classList.add('on');
+        setTimeout(() => { window.location.href = url.href; }, 340);
+      }
     });
   }
 
@@ -719,6 +728,564 @@
     targets.forEach(el => observer.observe(el));
   }
 
+  // === HOLLYWOOD CINEMATIC AUDIO SUITE ===
+  function initAudioEngine() {
+    let ctx = null;
+    let enabled = localStorage.getItem('doomsday_audio_v1') === 'on';
+    let ambientAudio = null;
+    let synthDroneOsc1 = null;
+    let synthDroneOsc2 = null;
+    let synthDroneGain = null;
+
+    // Detect asset path prefix based on pathname depth
+    const isDeep = window.location.pathname.includes('/explore/');
+    const isCatDeep = window.location.pathname.includes('/catalogue/');
+    const prefix = isCatDeep ? '../../' : (isDeep ? '../' : '');
+
+    const getCtx = () => {
+      if (!ctx) {
+        const AudioCtx = window.AudioContext || window.webkitAudioContext;
+        if (AudioCtx) ctx = new AudioCtx();
+      }
+      if (ctx && ctx.state === 'suspended') {
+        ctx.resume();
+      }
+      return ctx;
+    };
+
+    // Deep cinematic dampened mechanical click (replaces arcade blip)
+    const playClick = () => {
+      if (!enabled) return;
+      try {
+        const c = getCtx();
+        if (!c) return;
+        const osc = c.createOscillator();
+        const gain = c.createGain();
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(140, c.currentTime);
+        osc.frequency.exponentialRampToValueAtTime(35, c.currentTime + 0.04);
+        gain.gain.setValueAtTime(0.08, c.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, c.currentTime + 0.04);
+        osc.connect(gain);
+        gain.connect(c.destination);
+        osc.start();
+        osc.stop(c.currentTime + 0.04);
+      } catch (err) {}
+    };
+
+    // Low-frequency tactile confirmation
+    const playCheck = () => {
+      if (!enabled) return;
+      try {
+        const c = getCtx();
+        if (!c) return;
+        const osc = c.createOscillator();
+        const gain = c.createGain();
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(90, c.currentTime);
+        osc.frequency.setValueAtTime(120, c.currentTime + 0.06);
+        gain.gain.setValueAtTime(0.09, c.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, c.currentTime + 0.18);
+        osc.connect(gain);
+        gain.connect(c.destination);
+        osc.start();
+        osc.stop(c.currentTime + 0.18);
+      } catch (err) {}
+    };
+
+    // Massive Hollywood Movie Trailer Sub-Bass Hit / Braam
+    const playTrailerImpact = () => {
+      if (!enabled) return;
+      // Try playing MP3 asset first
+      try {
+        const sfx = new Audio(`${prefix}assets/audio/cinematic-impact.mp3`);
+        sfx.volume = 0.65;
+        const playPromise = sfx.play();
+        if (playPromise !== undefined) {
+          playPromise.catch(() => {
+            // Fallback to high-end Web Audio sub-bass braam
+            synthesizeBraam();
+          });
+        }
+      } catch (e) {
+        synthesizeBraam();
+      }
+    };
+
+    const synthesizeBraam = () => {
+      try {
+        const c = getCtx();
+        if (!c) return;
+        const t = c.currentTime;
+        
+        // Primary sub-bass oscillator
+        const subOsc = c.createOscillator();
+        const subGain = c.createGain();
+        subOsc.type = 'sine';
+        subOsc.frequency.setValueAtTime(65, t);
+        subOsc.frequency.exponentialRampToValueAtTime(28, t + 0.85);
+
+        subGain.gain.setValueAtTime(0.35, t);
+        subGain.gain.exponentialRampToValueAtTime(0.001, t + 0.95);
+        subOsc.connect(subGain);
+        subGain.connect(c.destination);
+        subOsc.start(t);
+        subOsc.stop(t + 0.95);
+
+        // Low brass overtone with filter
+        const brassOsc = c.createOscillator();
+        const brassFilter = c.createBiquadFilter();
+        const brassGain = c.createGain();
+
+        brassOsc.type = 'sawtooth';
+        brassOsc.frequency.setValueAtTime(55, t);
+        brassOsc.frequency.exponentialRampToValueAtTime(45, t + 0.7);
+
+        brassFilter.type = 'lowpass';
+        brassFilter.frequency.setValueAtTime(160, t);
+        brassFilter.frequency.exponentialRampToValueAtTime(40, t + 0.8);
+
+        brassGain.gain.setValueAtTime(0.18, t);
+        brassGain.gain.exponentialRampToValueAtTime(0.001, t + 0.85);
+
+        brassOsc.connect(brassFilter);
+        brassFilter.connect(brassGain);
+        brassGain.connect(c.destination);
+        brassOsc.start(t);
+        brassOsc.stop(t + 0.85);
+      } catch (err) {}
+    };
+
+    // Background Ambient Score (MP3 + Atmospheric Drone Fallback)
+    const startAmbientTheme = () => {
+      if (!ambientAudio) {
+        ambientAudio = new Audio(`${prefix}assets/audio/ambient-theme.mp3`);
+        ambientAudio.loop = true;
+        ambientAudio.volume = 0.35;
+      }
+      ambientAudio.play().catch(() => {
+        // Fallback to atmospheric dark orchestral drone
+        startSynthDrone();
+      });
+    };
+
+    const stopAmbientTheme = () => {
+      if (ambientAudio) {
+        ambientAudio.pause();
+        ambientAudio.currentTime = 0;
+      }
+      stopSynthDrone();
+    };
+
+    const startSynthDrone = () => {
+      try {
+        const c = getCtx();
+        if (!c || synthDroneGain) return;
+        const t = c.currentTime;
+
+        synthDroneGain = c.createGain();
+        synthDroneGain.gain.setValueAtTime(0.001, t);
+        synthDroneGain.gain.linearRampToValueAtTime(0.08, t + 2.5);
+
+        const filter = c.createBiquadFilter();
+        filter.type = 'lowpass';
+        filter.frequency.setValueAtTime(95, t);
+
+        synthDroneOsc1 = c.createOscillator();
+        synthDroneOsc1.type = 'triangle';
+        synthDroneOsc1.frequency.setValueAtTime(55, t); // A1 note
+
+        synthDroneOsc2 = c.createOscillator();
+        synthDroneOsc2.type = 'sine';
+        synthDroneOsc2.frequency.setValueAtTime(55.4, t); // Detuned for slow beat
+
+        synthDroneOsc1.connect(filter);
+        synthDroneOsc2.connect(filter);
+        filter.connect(synthDroneGain);
+        synthDroneGain.connect(c.destination);
+
+        synthDroneOsc1.start();
+        synthDroneOsc2.start();
+      } catch (err) {}
+    };
+
+    const stopSynthDrone = () => {
+      try {
+        if (synthDroneGain && ctx) {
+          const t = ctx.currentTime;
+          synthDroneGain.gain.linearRampToValueAtTime(0.001, t + 0.8);
+          setTimeout(() => {
+            if (synthDroneOsc1) { synthDroneOsc1.stop(); synthDroneOsc1 = null; }
+            if (synthDroneOsc2) { synthDroneOsc2.stop(); synthDroneOsc2 = null; }
+            synthDroneGain = null;
+          }, 850);
+        }
+      } catch (err) {}
+    };
+
+    window.doomsdayAudio = {
+      playClick,
+      playCheck,
+      playTrailerImpact,
+      startAmbientTheme,
+      stopAmbientTheme
+    };
+    window.playTrailerImpact = playTrailerImpact;
+    window.playSfx = (type) => {
+      if (type === 'check') playCheck();
+      else if (type === 'impact') playTrailerImpact();
+      else playClick();
+    };
+
+    const toggle = $('#audio-toggle');
+    const updateBtn = () => {
+      if (!toggle) return;
+      const icon = toggle.querySelector('#audio-icon') || toggle;
+      const label = toggle.querySelector('#audio-label');
+      toggle.classList.toggle('active', enabled);
+      if (enabled) {
+        if (icon) icon.textContent = '🔊';
+        if (label) label.textContent = 'SOUND ON';
+      } else {
+        if (icon) icon.textContent = '🔇';
+        if (label) label.textContent = 'SOUND OFF';
+      }
+    };
+    updateBtn();
+
+    if (toggle) {
+      toggle.addEventListener('click', () => {
+        enabled = !enabled;
+        localStorage.setItem('doomsday_audio_v1', enabled ? 'on' : 'off');
+        updateBtn();
+        if (enabled) {
+          getCtx();
+          playClick();
+          startAmbientTheme();
+        } else {
+          stopAmbientTheme();
+        }
+      });
+    }
+
+    document.addEventListener('click', e => {
+      if (e.target.closest('.faction-btn, .btn, .pill, #share-btn, #add-calendar, .preset-card, .deck-slot')) {
+        playClick();
+      }
+    });
+  }
+
+  // === INCURSION THREAT GAUGE ===
+  function initIncursionGauge() {
+    const wrap = $('#incursion-gauge-wrap');
+    const numEl = $('#incursion-num');
+    const barEl = $('#incursion-bar-fill');
+    const statusEl = $('#incursion-status');
+    if (!wrap) return;
+
+    const ANCHOR_START = new Date('2024-07-26T18:00:00-07:00').getTime();
+    const TARGET = RELEASE_DATE.getTime();
+
+    function updateGauge() {
+      const now = Date.now();
+      const totalSpan = TARGET - ANCHOR_START;
+      const elapsed = now - ANCHOR_START;
+      const rawPct = Math.min(99.9, Math.max(10.0, (elapsed / totalSpan) * 100));
+      const displayPct = rawPct.toFixed(1) + '%';
+
+      if (numEl) numEl.textContent = displayPct;
+      if (barEl) barEl.style.width = displayPct;
+
+      if (statusEl) {
+        if (rawPct > 90) {
+          statusEl.textContent = 'INCURSION VECTOR: CRITICAL • PHASE VI COLLAPSE IMMINENT';
+          statusEl.style.color = '#ff4d6d';
+        } else if (rawPct > 70) {
+          statusEl.textContent = 'UNIVERSAL CONVERGENCE DETECTED • EARTH-616 & EARTH-828 PROXIMITY';
+          statusEl.style.color = 'var(--accent)';
+        } else {
+          statusEl.textContent = 'TIMELINE TELEMETRY ACTIVE • MONITORING INBOUND INCURSION';
+        }
+      }
+    }
+
+    updateGauge();
+
+    window.glitchIncursionGauge = () => {
+      wrap.style.boxShadow = '0 0 35px var(--glow), inset 0 0 25px rgba(var(--accent-rgb), 0.3)';
+      setTimeout(() => {
+        wrap.style.boxShadow = '';
+      }, 450);
+    };
+  }
+
+  // === INTERACTIVE WATCHLIST TRACKER ===
+  function initWatchlistTracker() {
+    const card = $('#wl-progress-card');
+    const checkboxes = $$('.wl-checkbox');
+    if (!card && !checkboxes.length) return;
+
+    const STORAGE_KEY = 'doomsday_watchlist_v1';
+    let watchedSet = new Set();
+    try {
+      const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+      if (Array.isArray(saved)) watchedSet = new Set(saved);
+    } catch (e) {}
+
+    const counterNum = $('#wl-counter-num');
+    const counterPct = $('#wl-counter-pct');
+    const barFill = $('#wl-bar-fill');
+    const statusLabel = $('#wl-status-label');
+
+    function syncUI() {
+      const total = checkboxes.length;
+      let count = 0;
+
+      checkboxes.forEach(cb => {
+        const id = cb.dataset.watchId;
+        const isWatched = watchedSet.has(id);
+        cb.checked = isWatched;
+        const item = cb.closest('li');
+        if (item) item.classList.toggle('wl-item-watched', isWatched);
+        if (isWatched) count++;
+      });
+
+      const pct = total > 0 ? Math.round((count / total) * 100) : 0;
+      if (counterNum) counterNum.textContent = `${count} / ${total}`;
+      if (counterPct) counterPct.textContent = `${pct}% Complete`;
+      if (barFill) barFill.style.width = `${pct}%`;
+
+      if (statusLabel) {
+        if (count === 0) statusLabel.textContent = 'Ready to begin your marathon';
+        else if (pct < 25) statusLabel.textContent = 'Timeline training underway';
+        else if (pct < 50) statusLabel.textContent = 'Approaching Multiverse collision';
+        else if (pct < 75) statusLabel.textContent = 'Battleworld clearance approved';
+        else if (pct < 100) statusLabel.textContent = 'Almost ready for Doomsday';
+        else statusLabel.textContent = '🏆 100% PREPARED FOR DOOMSDAY!';
+      }
+    }
+
+    checkboxes.forEach(cb => {
+      cb.addEventListener('change', () => {
+        const id = cb.dataset.watchId;
+        if (cb.checked) {
+          watchedSet.add(id);
+          if (window.doomsdayAudio) window.doomsdayAudio.playCheck();
+        } else {
+          watchedSet.delete(id);
+          if (window.doomsdayAudio) window.doomsdayAudio.playClick();
+        }
+        localStorage.setItem(STORAGE_KEY, JSON.stringify([...watchedSet]));
+        syncUI();
+      });
+    });
+
+    const btnEssential = $('#wl-check-essential');
+    if (btnEssential) {
+      btnEssential.addEventListener('click', () => {
+        checkboxes.forEach(cb => {
+          if (cb.dataset.isEssential === 'true') {
+            watchedSet.add(cb.dataset.watchId);
+          }
+        });
+        localStorage.setItem(STORAGE_KEY, JSON.stringify([...watchedSet]));
+        if (window.doomsdayAudio) window.doomsdayAudio.playCheck();
+        syncUI();
+      });
+    }
+
+    const btnClear = $('#wl-clear-all');
+    if (btnClear) {
+      btnClear.addEventListener('click', () => {
+        if (!confirm('Reset your watchlist progress?')) return;
+        watchedSet.clear();
+        localStorage.removeItem(STORAGE_KEY);
+        if (window.doomsdayAudio) window.doomsdayAudio.playClick();
+        syncUI();
+      });
+    }
+
+    syncUI();
+  }
+
+  // === FACTION WAR STANDINGS ===
+  function initFactionPoll() {
+    const container = $('#fs-list');
+    if (!container) return;
+
+    const baseWeights = {
+      'Villain': { name: 'Doctor Doom', class: 'villain', votes: 1420 },
+      'Avengers': { name: 'Avengers', class: 'avengers', votes: 1050 },
+      'Fantastic Four': { name: 'Fantastic Four', class: 'fantastic', votes: 610 },
+      'X-Men': { name: 'X-Men', class: 'xmen', votes: 480 },
+      'Wakandans': { name: 'Wakandans', class: 'wakandans', votes: 240 },
+      'New Avengers': { name: 'New Avengers', class: 'newavengers', votes: 160 }
+    };
+
+    function renderStandings(userFaction) {
+      const tally = { ...baseWeights };
+      if (userFaction && tally[userFaction]) {
+        tally[userFaction].votes += 60;
+      }
+
+      const totalVotes = Object.values(tally).reduce((acc, f) => acc + f.votes, 0);
+      const sorted = Object.entries(tally).sort((a, b) => b[1].votes - a[1].votes);
+
+      container.innerHTML = sorted.map(([key, data]) => {
+        const pct = Math.round((data.votes / totalVotes) * 100);
+        const isMine = userFaction === key;
+        return `
+          <div class="fs-item">
+            <div class="fs-meta">
+              <span class="fs-name">${data.name} ${isMine ? '<span class="badge" style="font-size:0.65rem;padding:0.1rem 0.4rem;">YOUR ALLEGIANCE</span>' : ''}</span>
+              <span class="fs-pct">${pct}%</span>
+            </div>
+            <div class="fs-track">
+              <div class="fs-fill ${data.class}" style="width: ${pct}%"></div>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      const totalEl = $('#fs-total');
+      if (totalEl) totalEl.textContent = `${totalVotes.toLocaleString()} multiversal votes logged`;
+    }
+
+    const currentSaved = localStorage.getItem('doomsday-faction') || 'Villain';
+    renderStandings(currentSaved);
+
+    window.updateFactionPoll = (chosen) => {
+      renderStandings(chosen);
+    };
+  }
+
+  // === MULTIVERSE VERSUS ARENA ===
+  async function initVersusArena() {
+    const sel1 = $('#vs-char-1');
+    const sel2 = $('#vs-char-2');
+    const stage = $('#vs-stage');
+    if (!sel1 || !sel2 || !stage) return;
+
+    let catalogue = [];
+    try {
+      const resp = await fetch('../data/catalogue.json');
+      catalogue = await resp.json();
+    } catch (e) {
+      try {
+        const resp = await fetch('data/catalogue.json');
+        catalogue = await resp.json();
+      } catch (err) {}
+    }
+
+    if (!catalogue.length) return;
+
+    const sorted = [...catalogue].sort((a, b) => (a.name || '').localeCompare(b.name || ''));
+
+    const optionsHtml = sorted.map(c =>
+      `<option value="${c.id}">${esc(c.name)} (${esc(c.alias || c.continuity || 'Marvel')})</option>`
+    ).join('');
+
+    sel1.innerHTML = optionsHtml;
+    sel2.innerHTML = optionsHtml;
+
+    const doom = sorted.find(c => c.id === 'doctor-doom') || sorted[0];
+    const rival = sorted.find(c => c.id === 'iron-man-tony-stark') || sorted[1] || sorted[0];
+
+    sel1.value = doom.id;
+    sel2.value = rival.id;
+
+    function renderMatchup() {
+      const c1 = catalogue.find(c => c.id === sel1.value) || sorted[0];
+      const c2 = catalogue.find(c => c.id === sel2.value) || sorted[1];
+
+      const getEmblem = (c) => {
+        if (c.image_url && c.image_verified) {
+          return `<img src="${esc(c.image_url)}" alt="${esc(c.name)}">`;
+        }
+        return `<img src="../assets/img/cat-${esc(c.id)}.svg" alt="${esc(c.name)}" onerror="this.src='../../assets/img/cat-${esc(c.id)}.svg'">`;
+      };
+
+      let verdict = 'MUTUAL MULTIVERSE COLLAPSE';
+      let analysis = 'Two titans of equal multiversal magnitude. The battle would crack reality itself.';
+      if (c1.id === 'doctor-doom') {
+        verdict = 'DOCTOR DOOM ADVANTAGE';
+        analysis = 'Victor von Doom commands both mastery of sorcery and peak cosmic science. Few survive his gaze.';
+      } else if (c2.id === 'doctor-doom') {
+        verdict = 'DOCTOR DOOM ADVANTAGE';
+        analysis = 'Von Doom’s intellect and armor make him nearly insurmountable in a battle of attrition.';
+      } else if (c1.continuity === c2.continuity) {
+        verdict = 'INTRA-UNIVERSE DUEL';
+        analysis = `Both fighters hail from ${c1.continuity}. Intimate knowledge of each other’s tactics guarantees an intense stalemate.`;
+      } else {
+        verdict = 'INCURSION ANOMALY';
+        analysis = `A cross-reality clash: ${c1.name} of ${c1.continuity} faces ${c2.name} of ${c2.continuity}. Unpredictable multiversal fallout!`;
+      }
+
+      stage.innerHTML = `
+        <div class="vs-fighter-card">
+          <div class="vs-emblem">${getEmblem(c1)}</div>
+          <div class="vs-name">${esc(c1.name)}</div>
+          <div class="vs-alias">${esc(c1.alias || '—')}</div>
+          <div class="vs-stat-pill">${esc(c1.continuity || 'MCU')} • ${esc(c1.status || 'Active')}</div>
+          <a class="btn btn-secondary btn-sm" href="catalogue/${esc(c1.id)}.html" style="margin-top:0.35rem;">Dossier &rarr;</a>
+        </div>
+        <div class="vs-verdict">
+          <div class="vs-verdict-title">${verdict}</div>
+          <div class="vs-verdict-sub">${analysis}</div>
+        </div>
+        <div class="vs-fighter-card">
+          <div class="vs-emblem">${getEmblem(c2)}</div>
+          <div class="vs-name">${esc(c2.name)}</div>
+          <div class="vs-alias">${esc(c2.alias || '—')}</div>
+          <div class="vs-stat-pill">${esc(c2.continuity || 'MCU')} • ${esc(c2.status || 'Active')}</div>
+          <a class="btn btn-secondary btn-sm" href="catalogue/${esc(c2.id)}.html" style="margin-top:0.35rem;">Dossier &rarr;</a>
+        </div>
+      `;
+    }
+
+    sel1.addEventListener('change', () => {
+      if (window.doomsdayAudio) window.doomsdayAudio.playClick();
+      renderMatchup();
+    });
+    sel2.addEventListener('change', () => {
+      if (window.doomsdayAudio) window.doomsdayAudio.playClick();
+      renderMatchup();
+    });
+
+    renderMatchup();
+  }
+
+  // === DENSITY VIEW SWITCHER (Characters Page) ===
+  function initDensityControls() {
+    const group = $('#density-group');
+    const grid = $('#cat-grid');
+    if (!group || !grid) return;
+
+    const STORAGE_KEY = 'doomsday_density_v1';
+    const saved = localStorage.getItem(STORAGE_KEY) || 'standard';
+
+    function setDensity(mode) {
+      grid.classList.remove('density-dense', 'density-comfortable');
+      if (mode === 'dense') grid.classList.add('density-dense');
+      if (mode === 'comfortable') grid.classList.add('density-comfortable');
+
+      $$('.density-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.density === mode);
+      });
+      localStorage.setItem(STORAGE_KEY, mode);
+    }
+
+    setDensity(saved);
+
+    group.addEventListener('click', e => {
+      const btn = e.target.closest('.density-btn');
+      if (!btn) return;
+      const mode = btn.dataset.density;
+      if (window.doomsdayAudio) window.doomsdayAudio.playClick();
+      setDensity(mode);
+    });
+  }
+
   // === INIT ===
   document.addEventListener('DOMContentLoaded', () => {
     initLoader();
@@ -737,6 +1304,20 @@
     initAccordions();
     initTimelineTracker();
     initScrollReveal();
+
+    // New interactive features
+    initAudioEngine();
+    initIncursionGauge();
+    initWatchlistTracker();
+    initFactionPoll();
+    initVersusArena();
+    initDensityControls();
+
+    // PWA Service Worker
+    if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+      const swPath = (location.pathname.includes('/explore/') || location.pathname.includes('/pages/')) ? '../sw.js' : 'sw.js';
+      navigator.serviceWorker.register(swPath).catch(() => {});
+    }
   });
 
 })();
