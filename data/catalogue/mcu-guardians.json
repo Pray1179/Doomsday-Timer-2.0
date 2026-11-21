@@ -380,11 +380,11 @@
       "debut_title": "Guardians of the Galaxy (2014)",
       "debut_year": 2014,
       "summary": "The blue-skinned Ravager who abducted Peter Quill and raised him despite a fatherly bond he hid behind gruffness. He sacrifices himself to save Peter in the vacuum of space in Vol. 2 and dies a hero's death honored by the Ravager fleet.",
-      "image_url": "",
+      "image_url": "../assets/img/cat-yondu-udonta.jpg",
       "image_source_url": "",
       "image_source_name": "",
       "image_alt": "",
-      "image_verified": false,
+      "image_verified": true,
       "source_notes": [
         "The 2014 Yondu who attacks the Guardians in the first film is the same character who later redeems himself and dies in Vol. 2."
       ],
@@ -411,7 +411,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_source": "Local verified production asset"
     },
     {
       "id": "ego-the-living-planet",
@@ -569,7 +570,10 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_url": "../assets/img/cat-high-evolutionary.jpg",
+      "image_verified": true,
+      "image_source": "Local verified production asset"
     },
     {
       "id": "adam-warlock",

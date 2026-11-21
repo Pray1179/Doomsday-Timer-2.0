@@ -111,7 +111,10 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_url": "../assets/img/cat-wolverine-logan.png",
+      "image_verified": true,
+      "image_source": "Local verified production asset"
     },
     {
       "id": "magneto-xmen",

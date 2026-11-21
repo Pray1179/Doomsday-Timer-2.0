@@ -228,16 +228,16 @@ def build_futures_page():
         "applicationCategory": "EntertainmentApplication"
     })
 
-    return (ex.page_head("14,000,605 Futures", "Doctor Strange's Multiverse Battle Simulator against Victor von Doom.",
+    return (ex.page_head("Eye of Agamotto — 14,000,605 Futures", "Doctor Strange's Multiverse Battle Simulator against Victor von Doom.",
                          "/explore/futures.html", jsonld)
             + "<body>" + ex.site_nav("futures")
             + f"""
 <header class="hero futures-hero">
   <div class="hero-bg-gem" aria-hidden="true"></div>
   <div class="futures-header-top">
-    <span class="gem-badge"><span class="gem-spark"></span> EYE OF AGAMOTTO // TEMPORAL ENGINE</span>
+    <span class="gem-badge"><span class="gem-spark"></span> 14,000,605 TIMELINES // TEMPORAL ENGINE</span>
   </div>
-  <h1 class="gem-title">14,000,605 Futures</h1>
+  <h1 class="gem-title">EYE OF AGAMOTTO</h1>
   <p class="gem-quote">&ldquo;I went forward in time... to view alternate futures. To see all the possible outcomes of the coming conflict.&rdquo; <span class="quote-author">&mdash; Doctor Strange</span></p>
   <p class="lede gem-lede">Assemble an elite Multiversal Strike Team (up to 5 champions) against Victor von Doom. Calculate survival odds, uncover Doom's tactical countermeasures, and witness the alternate futures of the Multiverse.</p>
 </header>

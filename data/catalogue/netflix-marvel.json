@@ -231,7 +231,10 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_url": "../assets/img/cat-jessica-jones.jpg",
+      "image_verified": true,
+      "image_source": "Local verified production asset"
     },
     {
       "id": "luke-cage",
@@ -290,7 +293,10 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_url": "../assets/img/cat-luke-cage.jpg",
+      "image_verified": true,
+      "image_source": "Local verified production asset"
     },
     {
       "id": "danny-rand-iron-fist",

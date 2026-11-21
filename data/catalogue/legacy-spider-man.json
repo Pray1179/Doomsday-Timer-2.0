@@ -453,7 +453,10 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_url": "../assets/img/cat-harry-osborn.webp",
+      "image_verified": true,
+      "image_source": "Local verified production asset"
     },
     {
       "id": "venom-hardy",

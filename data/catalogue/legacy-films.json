@@ -196,7 +196,10 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_url": "../assets/img/cat-frank-castle-punisher.jpg",
+      "image_verified": true,
+      "image_source": "Local verified production asset"
     },
     {
       "id": "frank-castle-warzone",
@@ -390,7 +393,10 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_url": "../assets/img/cat-matt-murdock-daredevil.jpg",
+      "image_verified": true,
+      "image_source": "Local verified production asset"
     },
     {
       "id": "elektra-2003",
@@ -411,11 +417,11 @@
       "debut_title": "Daredevil (2003)",
       "debut_year": 2003,
       "summary": "A deadly assassin who romances Matt Murdock. Believed killed by Bullseye, she returns in her own spinoff film, fighting for a young girl threatened by the Hand and their super-powered foes.",
-      "image_url": "",
+      "image_url": "../assets/img/cat-elektra-natchios.webp",
       "image_source_url": "",
       "image_source_name": "",
       "image_alt": "",
-      "image_verified": false,
+      "image_verified": true,
       "source_notes": [
         "Played by Jennifer Garner in Daredevil (2003) and Elektra (2005)."
       ],
@@ -441,7 +447,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_source": "Local verified production asset"
     },
     {
       "id": "bullseye-2003",

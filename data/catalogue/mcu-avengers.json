@@ -285,7 +285,10 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-29"
         }
-      ]
+      ],
+      "image_url": "../assets/img/cat-vision.jpg",
+      "image_verified": true,
+      "image_source": "Local verified production asset"
     },
     {
       "id": "war-machine-james-rhodes",

@@ -448,11 +448,11 @@
       "debut_title": "Shang-Chi and the Legend of the Ten Rings (2021)",
       "debut_year": 2021,
       "summary": "The immortal warlord who wielded the Ten Rings for a thousand years and fathered Shang-Chi. Nagged by grief for his wife, he was slain by the Dweller-in-Darkness, which then possessed him.",
-      "image_url": "",
+      "image_url": "../assets/img/cat-wenwu.jpg",
       "image_source_url": "",
       "image_source_name": "",
       "image_alt": "",
-      "image_verified": false,
+      "image_verified": true,
       "source_notes": [
         "The Mandarin reveal in Shang-Chi; killed by the Dweller-in-Darkness."
       ],
@@ -477,7 +477,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_source": "Local verified production asset"
     }
   ]
 }

@@ -57,7 +57,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_source": "Local verified production asset"
     },
     {
       "id": "sue-storm-ff",
@@ -114,7 +115,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_source": "Local verified production asset"
     },
     {
       "id": "johnny-storm-ff",
@@ -171,7 +173,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_source": "Local verified production asset"
     },
     {
       "id": "ben-grimm-ff",
@@ -198,11 +201,11 @@
       "debut_title": "Fantastic Four (2005)",
       "debut_year": 2005,
       "summary": "A kind-hearted pilot transformed into a rocky, super-strong orange brute by cosmic radiation. He struggles with his appearance but remains the team's fearless powerhouse and Reed's best friend.",
-      "image_url": "",
+      "image_url": "../assets/img/cat-ben-grimm.jpg",
       "image_source_url": "",
       "image_source_name": "",
       "image_alt": "",
-      "image_verified": false,
+      "image_verified": true,
       "source_notes": [
         "Played by Michael Chiklis (2005, practical suit) and Jamie Bell (2015, CGI)."
       ],
@@ -229,7 +232,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_source": "Local verified production asset"
     },
     {
       "id": "doctor-doom-ff",
@@ -253,11 +257,11 @@
       "debut_title": "Fantastic Four (2005)",
       "debut_year": 2005,
       "summary": "A brilliant but arrogant scientist whose rivalry with Reed Richards turns to villainy. In the films he gains metal-based powers that twist him into a despot bent on conquering Earth.",
-      "image_url": "",
+      "image_url": "../assets/img/cat-doctor-doom-ff.jpg",
       "image_source_url": "https://en.wikipedia.org/wiki/Riff%20funeral%20doom.ogg",
       "image_source_name": "Wikimedia Commons",
       "image_alt": "Nu riff di funeral doom di circa 30 sicunni.",
-      "image_verified": false,
+      "image_verified": true,
       "source_notes": [
         "Played by Julian McMahon (2005) and Toby Kebbell (2015). The character is slated to appear as the central antagonist of Avengers: Doomsday (2026)."
       ],
@@ -282,7 +286,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-30"
         }
-      ]
+      ],
+      "image_source": "Local verified production asset"
     },
     {
       "id": "silver-surfer-ff",

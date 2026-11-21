@@ -71,11 +71,11 @@
       "debut_title": "The Fantastic Four: First Steps (2025)",
       "debut_year": 2008,
       "summary": "The Thing",
-      "image_url": "",
+      "image_url": "../assets/img/cat-ben-grimm.jpg",
       "image_source_url": "https://en.wikipedia.org/wiki/Ebon%20Moss-Bachrach%20as%20Micro.jpeg",
       "image_source_name": "Wikimedia Commons",
       "image_alt": "Ben Grimm portrait",
-      "image_verified": false,
+      "image_verified": true,
       "source_notes": [
         "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
       ],
@@ -101,7 +101,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-29"
         }
-      ]
+      ],
+      "image_source": "Local verified production asset"
     },
     {
       "id": "bucky-barnes-winter-soldier",
@@ -181,11 +182,11 @@
       "debut_title": "Captain America: The First Avenger (2011)",
       "debut_year": 2008,
       "summary": "The Sentinel of Liberty",
-      "image_url": "",
+      "image_url": "../assets/img/cat-captain-america-steve-rogers.jpg",
       "image_source_url": "",
       "image_source_name": "",
       "image_alt": "",
-      "image_verified": false,
+      "image_verified": true,
       "source_notes": [
         "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
       ],
@@ -214,7 +215,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-29"
         }
-      ]
+      ],
+      "image_source": "Local verified production asset"
     },
     {
       "id": "cassie-lang",
@@ -236,11 +238,11 @@
       "debut_title": "Ant-Man and the Wasp: Quantumania (2023)",
       "debut_year": 2008,
       "summary": "The size-shifting Stature",
-      "image_url": "",
+      "image_url": "../assets/img/cat-cassie-lang.jpg",
       "image_source_url": "https://en.wikipedia.org/wiki/Kathryn%20Newton%20during%20an%20interview%2C%20February%202023.jpg",
       "image_source_name": "Wikimedia Commons",
       "image_alt": "Kathryn Newton during an interview for Ant-Man and The Wasp: Quantamania in February 2023",
-      "image_verified": false,
+      "image_verified": true,
       "source_notes": [
         "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
       ],
@@ -264,7 +266,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-29"
         }
-      ]
+      ],
+      "image_source": "Local verified production asset"
     },
     {
       "id": "cyclops-scott-summers",
@@ -342,11 +345,11 @@
       "debut_title": "Avengers: Doomsday (2026)",
       "debut_year": 2026,
       "summary": "The Multiverse Saga threat",
-      "image_url": "",
+      "image_url": "../assets/img/cat-doctor-doom.jpg",
       "image_source_url": "",
       "image_source_name": "Wikimedia Commons",
       "image_alt": "Victor von Doom portrait",
-      "image_verified": false,
+      "image_verified": true,
       "source_notes": [
         "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
       ],
@@ -371,7 +374,8 @@
           "publisher": "Marvel",
           "verified_at": "2026-08-29"
         }
-      ]
+      ],
+      "image_source": "Local verified production asset"
     },
     {
       "id": "gambit",
@@ -446,11 +450,11 @@
       "debut_title": "Ant-Man and the Wasp (2018)",
       "debut_year": 2008,
       "summary": "The phasing Ghost",
-      "image_url": "",
+      "image_url": "../assets/img/cat-ghost-ava-starr.jpg",
       "image_source_url": "https://en.wikipedia.org/wiki/Hannah%20John-Kamen%20Comic-Con%202024.jpg",
       "image_source_name": "Wikimedia Commons",
       "image_alt": "Alex Montiel entrevistando a Hannah John-Kamen y a Jake Schreier en la Comic-Con de San Diego 2024",
-      "image_verified": false,
+      "image_verified": true,
       "source_notes": [
         "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
       ],
@@ -472,7 +476,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-29"
         }
-      ]
+      ],
+      "image_source": "Local verified production asset"
     },
     {
       "id": "joaquin-torres-falcon",
@@ -496,11 +501,11 @@
       "debut_title": "The Falcon and the Winter Soldier (2021)",
       "debut_year": 2008,
       "summary": "The new Falcon",
-      "image_url": "",
+      "image_url": "../assets/img/cat-joaquin-torres-falcon.jpg",
       "image_source_url": "https://en.wikipedia.org/wiki/Joaqu%C3%ADn%20Torres%20Garc%C3%ADa%20-%20Autorretrato%20%281946%29.jpg",
       "image_source_name": "Wikimedia Commons",
       "image_alt": "Joaquin Torres portrait",
-      "image_verified": false,
+      "image_verified": true,
       "source_notes": [
         "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
       ],
@@ -522,7 +527,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-29"
         }
-      ]
+      ],
+      "image_source": "Local verified production asset"
     },
     {
       "id": "john-walker-us-agent",
@@ -547,11 +553,11 @@
       "debut_title": "The Falcon and the Winter Soldier (2021)",
       "debut_year": 2008,
       "summary": "U.S. Agent",
-      "image_url": "",
+      "image_url": "../assets/img/cat-john-walker-us-agent.jpg",
       "image_source_url": "https://en.wikipedia.org/wiki/Johnnie%20Walker%20Splash.JPG",
       "image_source_name": "Wikimedia Commons",
       "image_alt": "Chronophotograph at high speed. Johnnie Walker splash without any montage! Glass was glued to an inclined plane, which was dropped to create the splash",
-      "image_verified": false,
+      "image_verified": true,
       "source_notes": [
         "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
       ],
@@ -575,7 +581,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-29"
         }
-      ]
+      ],
+      "image_source": "Local verified production asset"
     },
     {
       "id": "johnny-storm",
@@ -599,11 +606,11 @@
       "debut_title": "The Fantastic Four: First Steps (2025)",
       "debut_year": 2008,
       "summary": "The Human Torch",
-      "image_url": "",
+      "image_url": "../assets/img/cat-johnny-storm.png",
       "image_source_url": "https://en.wikipedia.org/wiki/Human%20Torch%20%28Johnny%20Storm%29.png",
       "image_source_name": "Wikimedia Commons",
       "image_alt": "Artwork for the cover of Fantastic Four vol. 4, 645 (April 2015 Marvel Comics) Art by Michael Komarck (Variant cover art)",
-      "image_verified": false,
+      "image_verified": true,
       "source_notes": [
         "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
       ],
@@ -628,7 +635,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-29"
         }
-      ]
+      ],
+      "image_source": "Local verified production asset"
     },
     {
       "id": "loki",
@@ -651,11 +659,11 @@
       "debut_title": "Thor (2011)",
       "debut_year": 2008,
       "summary": "God of Mischief",
-      "image_url": "",
+      "image_url": "../assets/img/cat-loki.jpg",
       "image_source_url": "",
       "image_source_name": "",
       "image_alt": "",
-      "image_verified": false,
+      "image_verified": true,
       "source_notes": [
         "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
       ],
@@ -683,7 +691,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-29"
         }
-      ]
+      ],
+      "image_source": "Local verified production asset"
     },
     {
       "id": "magneto-erik",
@@ -706,11 +715,11 @@
       "debut_title": "X-Men (2000; Fox continuity)",
       "debut_year": 2008,
       "summary": "Master of magnetism",
-      "image_url": "",
+      "image_url": "../assets/img/cat-magneto-erik.jpg",
       "image_source_url": "https://en.wikipedia.org/wiki/Erik%20Lehnsherr",
       "image_source_name": "Wikipedia",
       "image_alt": "Marvel Comics character",
-      "image_verified": false,
+      "image_verified": true,
       "source_notes": [
         "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
       ],
@@ -736,7 +745,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-29"
         }
-      ]
+      ],
+      "image_source": "Local verified production asset"
     },
     {
       "id": "mbaku",
@@ -758,11 +768,11 @@
       "debut_title": "Black Panther (2018)",
       "debut_year": 2008,
       "summary": "Leader of the Jabari",
-      "image_url": "",
+      "image_url": "../assets/img/cat-mbaku.jpg",
       "image_source_url": "",
       "image_source_name": "",
       "image_alt": "",
-      "image_verified": false,
+      "image_verified": true,
       "source_notes": [
         "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
       ],
@@ -788,7 +798,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-29"
         }
-      ]
+      ],
+      "image_source": "Local verified production asset"
     },
     {
       "id": "mystique",
@@ -863,11 +874,11 @@
       "debut_title": "Black Panther: Wakanda Forever (2022)",
       "debut_year": 2008,
       "summary": "King of Talokan",
-      "image_url": "",
+      "image_url": "../assets/img/cat-namor.jpg",
       "image_source_url": "https://en.wikipedia.org/wiki/Guillermo%20Namor%20Kong.jpg",
       "image_source_name": "Wikimedia Commons",
       "image_alt": "Guillermo Namor Kong, membre de l'Assemblée constituante chilienne.",
-      "image_verified": false,
+      "image_verified": true,
       "source_notes": [
         "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
       ],
@@ -891,7 +902,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-29"
         }
-      ]
+      ],
+      "image_source": "Local verified production asset"
     },
     {
       "id": "namora",
@@ -913,11 +925,11 @@
       "debut_title": "Black Panther: Wakanda Forever (2022)",
       "debut_year": 2008,
       "summary": "Warrior of Talokan",
-      "image_url": "",
+      "image_url": "../assets/img/cat-namora.jpg",
       "image_source_url": "https://en.wikipedia.org/wiki/Retrato%20Fernando%20Namora.jpg",
       "image_source_name": "Wikimedia Commons",
       "image_alt": "portrait of Fernando Namora, portuguese writer (1919-1989)",
-      "image_verified": false,
+      "image_verified": true,
       "source_notes": [
         "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
       ],
@@ -941,7 +953,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-29"
         }
-      ]
+      ],
+      "image_source": "Local verified production asset"
     },
     {
       "id": "nightcrawler",
@@ -964,11 +977,11 @@
       "debut_title": "X2 (2003; Fox continuity)",
       "debut_year": 2008,
       "summary": "The blue teleporter",
-      "image_url": "",
+      "image_url": "../assets/img/cat-nightcrawler-xmen.jpg",
       "image_source_url": "",
       "image_source_name": "",
       "image_alt": "",
-      "image_verified": false,
+      "image_verified": true,
       "source_notes": [
         "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
       ],
@@ -990,7 +1003,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-29"
         }
-      ]
+      ],
+      "image_source": "Local verified production asset"
     },
     {
       "id": "professor-x-charles-xavier",
@@ -1071,11 +1085,11 @@
       "debut_title": "Black Widow (2021)",
       "debut_year": 2008,
       "summary": "The Red Guardian",
-      "image_url": "",
+      "image_url": "../assets/img/cat-red-guardian.jpg",
       "image_source_url": "https://en.wikipedia.org/wiki/Florence%20Pugh%20%26%20David%20Harbour%202025%2002.jpg",
       "image_source_name": "Wikimedia Commons",
       "image_alt": "Florence Pugh &amp; David Harbour in an interview with Escorpión Dorado in 2025  (2:00)",
-      "image_verified": false,
+      "image_verified": true,
       "source_notes": [
         "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
       ],
@@ -1096,7 +1110,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-29"
         }
-      ]
+      ],
+      "image_source": "Local verified production asset"
     },
     {
       "id": "reed-richards",
@@ -1120,11 +1135,11 @@
       "debut_title": "The Fantastic Four: First Steps (2025)",
       "debut_year": 2008,
       "summary": "Leader of the Fantastic Four",
-      "image_url": "",
+      "image_url": "../assets/img/cat-reed-richards.webp",
       "image_source_url": "https://en.wikipedia.org/wiki/Mister_Fantastic",
       "image_source_name": "Wikipedia",
       "image_alt": "Reed Richards portrait",
-      "image_verified": false,
+      "image_verified": true,
       "source_notes": [
         "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
       ],
@@ -1150,7 +1165,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-29"
         }
-      ]
+      ],
+      "image_source": "Local verified production asset"
     },
     {
       "id": "sam-wilson-captain-america",
@@ -1174,11 +1190,11 @@
       "debut_title": "Captain America: The Winter Soldier (2014)",
       "debut_year": 2008,
       "summary": "The new Captain America",
-      "image_url": "",
+      "image_url": "../assets/img/cat-sam-wilson-captain-america.jpg",
       "image_source_url": "https://en.wikipedia.org/wiki/Anthony%20Mackie%20as%20Captain%20America.jpeg",
       "image_source_name": "Wikimedia Commons",
       "image_alt": "Sam Wilson portrait",
-      "image_verified": false,
+      "image_verified": true,
       "source_notes": [
         "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
       ],
@@ -1208,7 +1224,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-29"
         }
-      ]
+      ],
+      "image_source": "Local verified production asset"
     },
     {
       "id": "scott-lang-ant-man",
@@ -1232,11 +1249,11 @@
       "debut_title": "Ant-Man (2015)",
       "debut_year": 2008,
       "summary": "The size-shifting Avenger",
-      "image_url": "",
+      "image_url": "../assets/img/cat-scott-lang-ant-man.jpg",
       "image_source_url": "https://en.wikipedia.org/wiki/Paul%20Rudd%20%28cropped%29.jpg",
       "image_source_name": "Wikimedia Commons",
       "image_alt": "www.redcarpetreportv.com\nMingle Media TV and our Red Carpet Report team were on hand for Marvel’s \"Ant-Man” World Premiere at the Dolby Theatre in Hollywood.\nGet the Story from the Red Carpet Report Team, follow us on Twitter and Facebook at:\ntwitter.com/TheRedCarpetTV\nwww.facebook.com/RedCarpetReportTV\nwww.youtube.com/MingleMediaTVNetwork\nwww.tsu.co/RedCarpetReport\nAbout Ant-Man\nThe next evolution of the Marvel Cinematic Universe brings a founding member of The Avengers to the big screen for the first time with Marvel Studios’ “Ant-Man.” Armed with the astonishing ability to shrink in scale but increase in strength, master thief Scott Lang must embrace his inner-hero and help his mentor, Dr. Hank Pym, protect the secret behind his spectacular Ant-Man suit from a new generation of towering threats. Against seemingly insurmountable obstacles, Pym and Lang must plan and pull off a heist that will save the world. \nMarvel’s “Ant-Man” stars Paul Rudd as Scott Lang aka Ant-Man, Evangeline Lilly as Hope Van Dyne, Corey Stoll as Darren Cross aka Yellowjacket, Bobby Cannavale as Paxton, Michael Peña as Luis, Judy Greer as Maggie, Tip “Ti” Harris as Dave, David Dastmalchian as Kurt, Wood Harris as Gale, Jordi Mollà as Castillo and Michael Douglas as Hank Pym.\nFollow Marvel on Twitter: twitter.com/marvel\nLike Marvel on FaceBook: www.facebook.com/Marvel\nFor even more Marvel Comics news follow at\nTumblr: marvelentertainment.tumblr.com/\nInstagram: instagram.com/marvel\nGoogle+: plus.google.com/+marvel/\nPintrest: pinterest.com/marvelofficial/\nFor more of Mingle Media TV’s Red Carpet Report coverage, please visit our website and follow us on Twitter and Facebook here:\nwww.facebook.com/minglemediatvnetwork\nwww.flickr.com/MingleMediaTVNetwork\n\nwww.twitter.com/minglemediatv",
-      "image_verified": false,
+      "image_verified": true,
       "source_notes": [
         "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
       ],
@@ -1264,7 +1281,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-29"
         }
-      ]
+      ],
+      "image_source": "Local verified production asset"
     },
     {
       "id": "sentry-bob-reynolds",
@@ -1289,11 +1307,11 @@
       "debut_title": "Thunderbolts* (2025)",
       "debut_year": 2008,
       "summary": "The Sentry",
-      "image_url": "",
+      "image_url": "../assets/img/cat-sentry-bob-reynolds.jpg",
       "image_source_url": "https://en.wikipedia.org/wiki/Bob-reynolds%20DSC08759.jpg",
       "image_source_name": "Wikimedia Commons",
       "image_alt": "Bob Reynolds playing with Snarky Puppy in Aarhus (Denmark 2019)",
-      "image_verified": false,
+      "image_verified": true,
       "source_notes": [
         "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
       ],
@@ -1312,7 +1330,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-29"
         }
-      ]
+      ],
+      "image_source": "Local verified production asset"
     },
     {
       "id": "shang-chi",
@@ -1443,11 +1462,11 @@
       "debut_title": "The Fantastic Four: First Steps (2025)",
       "debut_year": 2008,
       "summary": "The Invisible Woman",
-      "image_url": "",
+      "image_url": "../assets/img/cat-sue-storm.webp",
       "image_source_url": "https://en.wikipedia.org/wiki/Invisible_Woman",
       "image_source_name": "Wikipedia",
       "image_alt": "Sue Storm portrait",
-      "image_verified": false,
+      "image_verified": true,
       "source_notes": [
         "Confirmed for Avengers: Doomsday (cross-listed from the 30-member cast)"
       ],
@@ -1473,7 +1492,8 @@
           "publisher": "Wikipedia",
           "verified_at": "2026-08-29"
         }
-      ]
+      ],
+      "image_source": "Local verified production asset"
     },
     {
       "id": "thor",
