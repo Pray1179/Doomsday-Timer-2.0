@@ -1,7 +1,7 @@
 /**
  * Avengers: Doomsday — 14,000,605 Futures Simulator Engine
- * Client-side battle simulation, team builder, preset loader,
- * and multi-provider AI integration with dynamic model discovery.
+ * Client-side procedural multiversal battle simulation.
+ * Tailored, randomized narrative generation for any assembled strike team against Victor von Doom.
  */
 (function() {
   'use strict';
@@ -10,9 +10,6 @@
   let roster = [];
   let presets = [];
   let selectedChampions = [];
-  let apiKey = localStorage.getItem('time_stone_api_key') || '';
-  let apiProvider = localStorage.getItem('time_stone_provider') || 'gemini';
-  let selectedModel = localStorage.getItem('time_stone_model') || '';
 
   // Elements
   const searchInput = document.getElementById('champ-search-input');
@@ -30,28 +27,10 @@
   const resultOdds = document.getElementById('result-odds');
   const resultOddsPct = document.getElementById('result-odds-pct');
   const resultThreatMatrix = document.getElementById('result-threat-matrix');
+  const resultFatalBadge = document.getElementById('result-fatal-badge');
   const resultFatalNarrative = document.getElementById('result-fatal-narrative');
   const resultVictoryNarrative = document.getElementById('result-victory-narrative');
   const resultDivergenceText = document.getElementById('result-divergence-text');
-  const aiActiveBadge = document.getElementById('ai-active-badge');
-  const aiProviderLabel = document.getElementById('ai-provider-label');
-
-  // Modal elements
-  const openModalBtn = document.getElementById('open-api-modal');
-  const closeModalBtn = document.getElementById('close-api-modal');
-  const apiModal = document.getElementById('api-modal');
-  const saveKeyBtn = document.getElementById('save-key-btn');
-  const clearKeyBtn = document.getElementById('clear-key-btn');
-  const testKeyBtn = document.getElementById('test-key-btn');
-  const testKeyResult = document.getElementById('test-key-result');
-  const toggleKeyVisBtn = document.getElementById('toggle-key-visibility');
-  const aiProviderSelect = document.getElementById('ai-provider-select');
-  const aiKeyInput = document.getElementById('ai-key-input');
-  const aiModelSelect = document.getElementById('ai-model-select');
-  const fetchModelsBtn = document.getElementById('fetch-models-btn');
-  const aiCustomModelInput = document.getElementById('ai-custom-model-input');
-  const keyIndicator = document.getElementById('key-indicator');
-  const keyLabel = document.getElementById('key-label');
 
   // Init Data
   function initData() {
@@ -62,24 +41,6 @@
       if (pEl) presets = JSON.parse(pEl.textContent || '[]');
     } catch (e) {
       console.warn('Failed to parse roster/preset data:', e);
-    }
-  }
-
-  // Update UI key indicator
-  function updateKeyIndicator() {
-    if (apiKey) {
-      keyIndicator.classList.add('active');
-      const modelLabel = selectedModel ? ` (${selectedModel.replace(/^models\//, '')})` : '';
-      const names = {
-        gemini: `AI: Gemini${modelLabel}`,
-        groq: `AI: Groq Llama${modelLabel}`,
-        nvidia: `AI: NVIDIA NIM${modelLabel}`,
-        openrouter: `AI: OpenRouter${modelLabel}`
-      };
-      keyLabel.textContent = names[apiProvider] || 'AI Active';
-    } else {
-      keyIndicator.classList.remove('active');
-      keyLabel.textContent = 'Connect AI Key (Optional)';
     }
   }
 
@@ -99,6 +60,7 @@
           <div class="slot-meta">
             <div class="slot-name">${champ.name}</div>
             <div class="slot-alias">${champ.alias || champ.unit}</div>
+            <span class="slot-tag">${champ.continuity}</span>
           </div>
         `;
       } else {
@@ -108,12 +70,13 @@
       teamDeck.appendChild(slot);
     }
 
-    teamCount.textContent = selectedChampions.length;
+    const count = selectedChampions.length;
+    teamCount.textContent = count;
 
-    if (selectedChampions.length > 0) {
+    if (count > 0) {
       simBtn.disabled = false;
-      simBtn.querySelector('.sim-btn-text').textContent = 'SIMULATE 14,000,605 TIMELINES';
-      simHint.textContent = `Strike team of ${selectedChampions.length} champions assembled. Ready for temporal projection.`;
+      simBtn.querySelector('.sim-btn-text').textContent = `SIMULATE 14,000,605 FUTURES (${count}/5 CHAMPIONS)`;
+      simHint.textContent = `Strike team ready. Press above to peer through the Eye of Agamotto across all timeline branches.`;
     } else {
       simBtn.disabled = true;
       simBtn.querySelector('.sim-btn-text').textContent = 'SELECT AT LEAST 1 CHAMPION';
@@ -121,20 +84,19 @@
     }
   }
 
-  // Add Champion
+  // Add Champion to Team
   function addChampion(champ) {
     if (selectedChampions.length >= 5) {
-      alert('Strike team capacity reached (maximum 5 champions). Remove one to replace.');
+      alert('Strike Team full! Maximum 5 champions allowed.');
       return;
     }
     if (selectedChampions.some(c => c.id === champ.id)) {
-      alert(`${champ.name} is already in the strike team.`);
       return;
     }
     selectedChampions.push(champ);
     renderTeamDeck();
-    searchDropdown.style.display = 'none';
     searchInput.value = '';
+    searchDropdown.style.display = 'none';
     if (window.playSfx) window.playSfx('click');
   }
 
@@ -145,7 +107,7 @@
     if (window.playSfx) window.playSfx('click');
   }
 
-  // Search logic
+  // Autocomplete search
   function handleSearch() {
     const q = (searchInput.value || '').trim().toLowerCase();
     if (!q) {
@@ -228,451 +190,307 @@
     requestAnimationFrame(step);
   }
 
-  // Check if current squad matches any preset
-  function getMatchingPreset() {
-    if (selectedChampions.length === 0) return null;
-    const currentIds = selectedChampions.map(c => c.id).sort().join(',');
-    for (const p of presets) {
-      const pIds = p.members.slice().sort().join(',');
-      if (currentIds === pIds) return p;
+  // =========================================================================
+  // RICH PROCEDURAL NARRATIVE GENERATION ENGINE (CHARACTERS & POWER ARCHETYPES)
+  // =========================================================================
+
+  const CHARACTER_PROFILES = {
+    'doctor-strange': {
+      attack: 'weaving the Crimson Bands of Cyttorak and fracturing mirror dimensions across the throne room',
+      support: 'projecting Tao Mandalas to shield the strike team from Latverian eldritch radiation',
+      divergence: 'cast the Images of Ikonn in reverse phase, blinding Doom\'s astral sensors',
+      threat: '<strong>Anti-Vishanti Sigil Array:</strong> Doom weaves Chthonian null-hexes into his armor, transforming Strange\'s mirror dimensions into localized crushing vacuums.'
+    },
+    'wolverine-2024': {
+      attack: 'lunging with berserker fury, adamantium claws aimed directly at Doom\'s chest reactor',
+      support: 'soaking lethal plasma fire with his accelerated cellular healing factor to open a vanguard lane',
+      divergence: 'delay the claw strike by exactly 0.7 seconds until Doom\'s thermal exhaust vents',
+      threat: '<strong>Magnetic Inversion Solenoid:</strong> Doom polarizes the ambient magnetic field, locking Logan\'s adamantium skeleton in mid-air while cryogenic traps trigger.'
+    },
+    'spider-man-peter-parker': {
+      attack: 'launching high-velocity web-slings, swinging across the crumbling citadel pillars',
+      support: 'pulling teammates out of Doom\'s disintegration beams at the speed of precognition',
+      divergence: 'web-sling the secondary regulator valve instead of targeting Doom\'s faceplate',
+      threat: '<strong>Infrasonic Resonance Grid:</strong> Doom floods the chamber with 180dB sensory-overload pulses, scrambling spider-sense and disintegrating web fluids.'
+    },
+    'thor': {
+      attack: 'summoning a world-splitting barrage of Asgardian lightning and kinetic hammer strikes',
+      support: 'channeling atmospheric storm winds to deflect Doom\'s orbital particle lances',
+      divergence: 'hurl Stormbreaker into the leyline grounding rod rather than Doom\'s armor',
+      threat: '<strong>Divine Lightning Siphons:</strong> Latverian absorption conduits divert Asgardian thunder directly into Doom\'s reality battery, supercharging his shields.'
+    },
+    'iron-man-tony-stark': {
+      attack: 'unleashing an unibeam salvo backed by micro-missile kinetic swarms',
+      support: 'jamming Latverian targeting telemetry and hacking Doombot command protocols',
+      divergence: 'redirect all auxiliary arc reactor power into Doom\'s dimensional feedback dampener',
+      threat: '<strong>Sub-Atomic Nanite Virus:</strong> Doom injects a microscopic techno-plague that overrides Stark OS in 34 milliseconds, locking repulsors.'
+    },
+    'deadpool-wade-wilson': {
+      attack: 'flinging dual katanas and high-explosive ordnance through sheer fourth-wall lunacy',
+      support: 'distracting Doom with unrelenting psychological agitation and immortal meat-shielding',
+      divergence: 'throw the live thermite grenade into the primary exhaust hopper at the 3-second mark',
+      threat: '<strong>Chrono-Stasis Decapitation:</strong> Doom locks Wade Wilson in a micro-timeloop where cellular matter is annihilated faster than regeneration can ignite.'
+    },
+    'scarlet-witch-wanda-maximoff': {
+      attack: 'warping probability itself and tearing through Doom\'s reality shields with raw Chaos Magic',
+      support: 'anchoring the squad\'s physical existence against multiversal unraveling',
+      divergence: 'collapse the hex sphere inward onto Doom\'s power relays rather than his person',
+      threat: '<strong>Chthonic Resonance Siphon:</strong> Doom invokes darkhold dampening sigils, turning Wanda\'s chaos probability hexes back onto the team\'s life-force.'
+    },
+    'reed-richards': {
+      attack: 'stretching across spatial dimensions to manually rewire Doom\'s World Loom consoles',
+      support: 'calculating quantum probability angles to guide team strikes into micro-flaws',
+      divergence: 'sever the timeline anchor relay with a tachyon scalpel at 99.4% saturation',
+      threat: '<strong>Hyper-Spatial Shears:</strong> Driven by personal obsession, Doom deploys tachyon blades designed to dissect unstable-molecule elastic cells across 4 dimensions.'
+    },
+    'loki': {
+      attack: 'weaving thousands of temporal illusory duplicates while manipulating time-slipping currents',
+      support: 'rewriting minor narrative vectors to alter Doom\'s spell trajectories',
+      divergence: 'anchor the temporal weave into Doom\'s throne base rather than the outer portal',
+      threat: '<strong>Narrative Strand Disruptor:</strong> Doom plants chronos-dampener spikes, severing the God of Stories\' temporal threads in raw anti-matter.'
+    },
+    'captain-america-steve-rogers': {
+      attack: 'ricocheting the vibranium shield into Doom\'s optic sensors with pinpoint tactical precision',
+      support: 'coordinating battlefield movements and maintaining unbreakable squad morale',
+      divergence: 'use the shield to ground the Latverian energy arc rather than deflecting it',
+      threat: '<strong>Vibranium Sonic Fracture:</strong> Doom pulses ultrasonic shattering harmonics, neutralizing kinetic absorption and bruising bone through armor.'
+    },
+    'captain-america-sam-wilson': {
+      attack: 'sweeping down in high-velocity vibranium wing dives while deploying redwing telemetry scans',
+      support: 'providing aerial tactical reconnaissance and extracting wounded heroes from the kill-zone',
+      divergence: 'shear the secondary power conduit with the port wing blade at exactly 00:01:18',
+      threat: '<strong>Vortex Disruption Nets:</strong> Latverian atmospheric turrets fire gravimetric suppression webs, dragging aerial combatants into the killing field.'
+    },
+    'bucky-barnes': {
+      attack: 'firing high-caliber armor-piercing rounds while driving his vibranium cybernetic arm into Doom\'s joints',
+      support: 'laying heavy suppression fire to prevent Doombot reinforcements from encircling the team',
+      divergence: 'detonate the magnetic EMP charge inside the arm socket while locked with Doom\'s gauntlet',
+      threat: '<strong>Cybernetic EMP Lock:</strong> Doom triggers a wireless command override that locks Bucky\'s cybernetic servos in rigid stasis.'
+    },
+    'black-panther-shuri': {
+      attack: 'unleashing kinetic absorption bursts from suit-woven vibranium micro-threads and sonic gauntlets',
+      support: 'utilizing Wakandan stealth cloaking to disrupt Doom\'s thermal tracking arrays',
+      divergence: 'discharge the suit\'s stored kinetic pulse into the floor leyline instead of Doom',
+      threat: '<strong>Kinetic Null-Field:</strong> Doom activates an inverted gravity field that drains stored kinetic energy before discharge.'
+    },
+    'daredevil-matt-murdock': {
+      attack: 'striking nerve clusters and acoustic weak points with billy-club acrobatics',
+      support: 'sensing micro-vibrations in Doom\'s reality loom to forecast incoming attacks',
+      divergence: 'strike the resonant frequency node behind Doom\'s right shoulder blade at 00:01:12',
+      threat: '<strong>Acoustic Flash-Bangs:</strong> Automated citadel defense turrets detonate continuous high-frequency sound-bombs, blinding Matt Murdock\'s radar-sense.'
+    },
+    'blade': {
+      attack: 'slashing with etched titanium swords and delivering ultraviolet explosive ordnance',
+      support: 'executing lethal tactical decapitations against Doom\'s supernatural thralls',
+      divergence: 'drive the silver-alloy blade into the cooling conduit behind the throne',
+      threat: '<strong>Ultraviolet Absorption Barrier:</strong> Doom converts UV radiation and occult kinetic energy into a crimson barrier of blood magic.'
+    },
+    'punisher-frank-castle': {
+      attack: 'unloading heavy belt-fed armor-piercing rounds and detonating shaped claymores',
+      support: 'funneling Doom\'s cyborg legion into lethal ambush kill-zones',
+      divergence: 'fire the final tungsten-core round into the ventilation valve rather than Doom\'s head',
+      threat: '<strong>Ballistic Deflection Grid:</strong> Doom\'s personal forcefield deflects all kinetic projectiles back at the shooter at supersonic velocity.'
+    },
+    'magneto': {
+      attack: 'crushing Doom\'s citadel architecture and stripping the armor\'s titanium alloys',
+      support: 'erecting an impenetrable electromagnetic dome around the entire squad',
+      divergence: 'rip the ferrous iron from the planetary core below rather than Doom\'s armor',
+      threat: '<strong>Superconducting Solenoid Core:</strong> Doom generates a localized zero-magnetic void, rendering Erik Lehnsherr unable to manipulate the alloy.'
+    },
+    'hulk-bruce-banner': {
+      attack: 'delivering seismic-shattering haymakers that tear craters through the citadel floor',
+      support: 'drawing Doom\'s heaviest energy blasts through sheer indestructible mass',
+      divergence: 'smash the foundational tectonic anchor rather than charging Doom directly',
+      threat: '<strong>Kinetic Redistribution Plating:</strong> Doom\'s promethium-infused breastplate absorbs 100% of blunt force, converting gamma rage into radial plasma blasts.'
+    },
+    'captain-marvel-carol-danvers': {
+      attack: 'blasting binary photon beams capable of burning through planetary crusts',
+      support: 'intercepting and disintegrating orbital bombardment strikes from Doom\'s fleet',
+      divergence: 'channel photon reserves into the leyline battery to induce a reverse overload',
+      threat: '<strong>Photon Drain Grid:</strong> Citadel spires act as light-gathering prisms, draining Carol Danvers\' photon reserves to accelerate the reality incursion.'
+    },
+    'victor-von-doom': {
+      attack: 'unleashing matching Latverian sorcery and cosmic technology against his alternate self',
+      support: 'predicting every move of God Emperor Doom through identical strategic arrogance',
+      divergence: 'concede intellectual inferiority for exactly 1.4 seconds to breach his variant\'s guard',
+      threat: '<strong>Paradoxical Mirror Lockdown:</strong> God Emperor Doom deploys the Prime Sovereign Directive, locking the variant Doom in an existential reality tether.'
     }
-    return null;
+  };
+
+  // Archetype dynamic profile generator for any other Marvel character
+  function getProfile(c) {
+    if (CHARACTER_PROFILES[c.id]) {
+      return CHARACTER_PROFILES[c.id];
+    }
+
+    const tags = (c.tags || []).map(t => t.toLowerCase());
+    const name = (c.name || '').toLowerCase();
+    const cont = (c.continuity || '').toLowerCase();
+
+    const isMagic = tags.includes('magic') || tags.includes('sorcerer') || /strange|wong|clea|ancient|agatha|billy|witch/i.test(name);
+    const isMutant = tags.includes('mutant') || tags.includes('x-men') || cont.includes('x-men') || /cyclops|storm|jean|gambit|colossus|nightcrawler|beast|rogue|mystique|laura|x-23|sabretooth/i.test(name);
+    const isCosmic = tags.includes('cosmic') || tags.includes('god') || tags.includes('alien') || /surfer|warlock|sersi|nova|marvel|adam|asgardian/i.test(name);
+    const isTech = tags.includes('tech') || tags.includes('genius') || tags.includes('armor') || /shuri|pym|ant-man|wasp|rocket|war machine|vision/i.test(name);
+    const isBruiser = tags.includes('strength') || tags.includes('tank') || /thing|juggernaut|colossus|drax|abomination|red guardian/i.test(name);
+    const isAgile = tags.includes('spider') || /parker|morales|venom|spider/i.test(name);
+
+    if (isMagic) {
+      return {
+        attack: `channeling ancient mystical incantations and binding runes against Doom's astral perimeter`,
+        support: `erecting eldritch forcefields to absorb Doom's dark magical fallout`,
+        divergence: `whisper the sealing hex backwards into the leyline conduit at 00:01:20`,
+        threat: `<strong>Astral Ward Nullification:</strong> Doom counters ${c.name}'s mystic arts by siphoning eldritch leylines directly into his throne batteries.`
+      };
+    }
+    if (isMutant) {
+      return {
+        attack: `unleashing mutant genetic mastery in an overwhelming localized offensive`,
+        support: `flanking Doom's vanguard to prevent mutant suppression clamps from deploying`,
+        divergence: `redirect the mutant energy discharge into the primary exhaust vent rather than Doom's armor`,
+        threat: `<strong>Sentinel-Derived Genetic Dampener:</strong> Doom deploys micro-collars that emit neuro-frequencies, temporarily suppressing ${c.name}'s X-gene.`
+      };
+    }
+    if (isCosmic) {
+      return {
+        attack: `channeling raw cosmic stellar energy into Doom's outer planetary forcefield`,
+        support: `neutralizing incoming orbital kinetic bombardment strikes`,
+        divergence: `vent cosmic reserves into the reality anchor rather than sustaining the shield`,
+        threat: `<strong>Cosmic Energy Converter:</strong> Doom's siphon towers absorb ${c.name}'s cosmic output, converting divine radiation into Battleworld containment barriers.`
+      };
+    }
+    if (isTech) {
+      return {
+        attack: `overloading Latverian defense firewalls with counter-intrusion quantum viruses`,
+        support: `providing tactical frequency sweeps and jamming Doombot telemetry`,
+        divergence: `detonate the secondary battery inside the regulator housing at exactly 00:00:44`,
+        threat: `<strong>Techno-Organic EMP Wave:</strong> Doom pulses high-frequency magnetic waves that fry ${c.name}'s tech schematics and weapon relays.`
+      };
+    }
+    if (isBruiser) {
+      return {
+        attack: `shattering the citadel floor with titanic kinetic strikes, forcing Doom off balance`,
+        support: `absorbing Doom's primary repulsor beams with sheer physical invulnerability`,
+        divergence: `tackle Doom into the secondary grounding conduit rather than the primary throne`,
+        threat: `<strong>Kinetic Conversion Armor:</strong> Doom's promethium-titanium weave converts ${c.name}'s blunt impact into searing omnidirectional plasma.`
+      };
+    }
+    if (isAgile) {
+      return {
+        attack: `executing rapid acrobatic flanking strikes across the crumbling superstructure`,
+        support: `extracting teammates from targeted orbital kill-zones with split-second reflexes`,
+        divergence: `feint toward the left pillar, baiting Doom's blast into the cooling array`,
+        threat: `<strong>Acoustic Spatial Denial:</strong> Latverian sonic traps detonate at ultrasonic frequencies, denying ${c.name} close-quarters leverage.`
+      };
+    }
+
+    // Default soldier / martial / spy / legacy
+    return {
+      attack: `delivering surgical combat strikes and coordinated tactical suppression fire`,
+      support: `holding the perimeter against Doombot swarms and coordinating squad movements`,
+      divergence: `fire the final ordnance into the throne's lower heat baffle at exactly 00:01:05`,
+      threat: `<strong>Automated Flechette Array:</strong> Citadel turrets saturate the ground with 10,000 vibranium micro-darts, denying ${c.name} tactical footing.`
+    };
   }
 
-  // Procedural Generator for Custom Squads
-  function generateCustomOutcome(squad) {
-    const leadChamp = squad[0].name;
-    const secondChamp = squad[1] ? squad[1].name : squad[0].name;
+  // Pick random item from array
+  function pickRandom(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
+  }
 
-    const hasMagic = squad.some(c => (c.tags || []).includes('magic') || /strange|wanda|loki|wong/i.test(c.id));
-    const hasCosmic = squad.some(c => /thor|surfer|carol|marvel|adam/i.test(c.id));
-    const hasTech = squad.some(c => /stark|iron|richards|pym|shuri/i.test(c.id));
+  // Procedural Generator for Squad Outcomes
+  function generateSquadOutcome(squad) {
+    const lead = squad[0];
+    const second = squad[1] || squad[0];
+    const third = squad[2] || squad[1] || squad[0];
 
-    let threatItems = [];
-    if (hasTech) {
-      threatItems.push(`<div><strong>Tech Synchronization:</strong> Doom deploys a localized EMP pulse and nanotech siphons to fracture communications.</div>`);
-    } else {
-      threatItems.push(`<div><strong>Tech Dominance:</strong> Doom's satellite beam and Doombots maintain complete tactical battlefield control.</div>`);
+    const pLead = getProfile(lead);
+    const pSecond = getProfile(second);
+    const pThird = getProfile(third);
+
+    // Build Threat Matrix (3-4 tailored entries)
+    const threatItems = [];
+    squad.forEach(c => {
+      const p = getProfile(c);
+      if (p.threat && !threatItems.includes(p.threat)) {
+        threatItems.push(`<div>${p.threat}</div>`);
+      }
+    });
+    // Add universal Doom dominance threat if fewer than 3
+    if (threatItems.length < 3) {
+      threatItems.push(`<div><strong>God Emperor Sovereignty:</strong> Victor von Doom commands both supreme mastery of sorcery and peak cosmic science. His throne siphons reality itself.</div>`);
     }
 
-    if (hasMagic) {
-      threatItems.push(`<div><strong>Occult Resonance:</strong> Doom is forced to channel Vishanti defensive barriers, burning through his personal life-force leylines.</div>`);
-    } else {
-      threatItems.push(`<div><strong>Mystic Vulnerability:</strong> Without Sorcery Supreme mastery, the squad struggles to penetrate Doom's astral forcefield.</div>`);
-    }
+    // Dynamic Timeline Variation Numbers
+    const nearMissTimelineNum = pickRandom([
+      '14,000,604',
+      '13,998,412',
+      '14,000,599',
+      '13,874,205',
+      '14,000,601',
+      '13,999,998'
+    ]);
 
-    threatItems.push(`<div><strong>Direct Engagement:</strong> God Emperor Doom anticipates physical strikes; his armor converts kinetic shockwaves into raw plasma bolts.</div>`);
+    // Tragic Near-Victory Narrative Arcs
+    const fatalTemplates = [
+      `Vanguard ${lead.name} breaches the outer bastions of Doomstadt, ${pLead.attack}. ${second.name} coordinates tactical flanking, ${pSecond.support}. Pushed into the inner sanctum, Doom's titanium mask cracks under the onslaught. Victory is within reach—until Doom smiles. A subterranean antimatter pulse triggers beneath the floorplates. The squad is consumed in a blinding temporal feedback loop as Doom resets the local reality. Outcome: Absolute chronological erasure.`,
 
-    const fatal = `Timeline #14,000,604 — ${leadChamp} coordinates an aggressive assault breaching the perimeter of Doom's Citadel. ${secondChamp} provides critical covering fire, momentarily cracking Doom's armor visor. However, Doom detonates an internal temporal stasis mine. The shockwave freezes the squad in a recursive time dilation pocket while Doom recharges his primary reality loom. Outcome: Complete temporal erasure.`;
+      `${second.name} navigates the subterranean conduits while ${lead.name} draws God Emperor Doom's undivided fury in the upper court, ${pLead.attack}. At the critical juncture, the squad forces Doom onto one knee. ${second.name} severs the primary multiversal leyline, collapsing Doom's shields to zero. But Doom rigged the leyline as a dead-man's switch: without siphon restraint, the multiversal incursion collapses instantly onto the battlefield, crushing the entire sector in an inescapable dimensional sinkhole.`,
 
-    const victory = `Timeline #14,000,605 — Rather than targeting Victor von Doom directly, the squad focuses on his dimensional anchor relays. ${secondChamp} executes a coordinated thermal overload, forcing Doom to vent his mystic capacitors. In the exact 2.1-second refractory window, ${leadChamp} severs the multiversal leyline feed. Deprived of multiversal siphon energy, God Emperor Doom's throne collapses, freeing the branched timelines.`;
+      `Executing an audacious perimeter trap, the strike team encircles God Emperor Doom. ${lead.name} coordinates an overwhelming assault, ${pLead.attack}, while ${second.name} provides critical suppression, ${pSecond.support}. Doom appears contained within a folded pocket dimension for 3 minutes and 42 seconds. But Victor von Doom whispers an ancient incantation from the Darkhold, inverting the dimensional geometry. The folded pocket implodes, turning the heroes' own kinetic energy into a lethal shockwave.`,
 
-    const divergence = `T-minus 00:01:38: ${leadChamp} must hold back the final strike and wait until Doom's secondary heat baffles cycle to 100% capacity before severing the conduit.`;
+      `After an exhausting 40-minute war of attrition across the shattered ruins of Battleworld, ${lead.name} and ${second.name} corner Victor von Doom at the World Loom. ${lead.name} delivers a seemingly fatal blow, ${pLead.attack}. The tyrant's armor disintegrates into slag. But as the squad lowers their guard, the smoldering shell dissolves into celestial nanites—it was an astral Doombot proxy. The true God Emperor Doom descends from the tear in the sky, unleashing the full cosmic fury of the Beyonders.`,
+
+      `${lead.name} leads a relentless frontal assault, ${pLead.attack}. Backed by ${second.name}'s tactical cover, ${pSecond.support}, the team shatters Doom's defensive wards one by one. With Doom's forcefield exhausted, ${lead.name} prepares the execution strike. In the final microsecond, Doom detonates a localized chrono-grenade directly inside his own breastplate. Time dilates backward, freezing the heroes in an eternal stasis field while Doom recharges his cosmic matrix.`,
+
+      `${second.name} makes a desperate distraction run, soaking Doom's particle beams so that ${lead.name} can strike the exposed cooling core. ${lead.name} presses forward, ${pLead.attack}, driving Doom backward into the throne dais. But Doom's armored gauntlet clamps down with godlike grip onto ${lead.name}'s weapon. Whispering 'You fought well, but Doom is inevitable,' he discharges raw siphon energy straight through the conduit, terminating the timeline.`
+    ];
+
+    // Sole Victory Confluence Narrative Arcs
+    const victoryTemplates = [
+      `Rather than attempting to match God Emperor Doom's infinite cosmic power, the squad realizes raw force is fatal. ${second.name} executes an unexpected feint, ${pSecond.support}, forcing Doom to channel 100% of his siphon energy into an omnidirectional eradication wave. In the exact 1.8-second refractory window while Doom's mystic armor exhausts heat, ${lead.name} strikes not at Doom, but at the dimensional grounding capacitor, ${pLead.attack}. The redirected cosmic feedback overloads Doom's suit from within, shattering his divine mantle and restoring the multiverse.`,
+
+      `${lead.name} engages Victor von Doom in a ferocious duel, ${pLead.attack}, purposely taking the brunt of his wrath to hold his gaze. Meanwhile, ${second.name} ignores the duel completely and slips behind the throne dais, ${pSecond.support}. When Doom raises his hand for the fatal execution strike on ${lead.name}, ${third.name} severs the three multiversal anchor pylons simultaneously. Deprived of multiversal life-force, God Emperor Doom's godhood evaporates into harmless embers, freeing the branched realities.`,
+
+      `Drawing upon their distinct dimensional origins across the multiverse, ${lead.name} and ${second.name} strike Doom's barrier not with brute force, but at precise resonant frequencies. ${lead.name} strikes with full power, ${pLead.attack}, while ${second.name} synchronizes, ${pSecond.support}. The harmonic interference pattern creates an existential dissonance within Doom's reality loom. Cracks spread through the citadel's ceiling as the stolen universes reassert their sovereignty. Doom is disarmed, his armor shattered, and the Multiversal War is ended.`,
+
+      `Across 14,000,604 futures, Doom's precognitive sensors anticipate every hero's move. But in this solitary timeline, ${second.name} executes a seemingly irrational sacrifice maneuver, ${pSecond.support}. The sheer illogical nature of the move causes Doom's tactical algorithms to stall for 0.4 seconds. In that microscopic window, ${lead.name} slips past the perimeter wards and ${pLead.attack}, severing the master regulator valve. Battleworld fractures peacefully into restored timelines.`,
+
+      `As God Emperor Doom summons a colliding dying universe to crush the team, ${lead.name} and ${second.name} hold the perimeter against all odds. ${second.name} stabilizes the dimensional threshold, ${pSecond.support}. ${lead.name} channels the incoming cosmic energy directly into Doom's armor heatsinks, ${pLead.attack}. Unable to absorb the infinite weight of two colliding realities, Doom's containment systems rupture. The tyrant collapses, and the sacred leylines are liberated.`,
+
+      `The squad baits Doom into activating his ultimate temporal purge. As the reality loom begins spinning to erase the multiverse, ${lead.name} drives Doom onto the defense, ${pLead.attack}. ${second.name} uses the distraction to plant an inverted chronos crystal into the loom's drive gear. When Doom triggers the erasure wave, the paradox reflects backward into his own psyche. Victor von Doom's stolen omnipotence dissolves, leaving only a broken mortal in the ruins of his throne.`
+    ];
+
+    // Critical Divergence Point Templates
+    const divergenceTemplates = [
+      `T-minus 00:01:14: ${lead.name} must NOT strike Doom's breastplate, but instead feint left, allowing ${second.name} to ${pSecond.divergence}.`,
+      `T-minus 00:00:39: ${second.name} must hold fire for exactly 2.4 seconds until Doom's secondary heat baffles reach 100% saturation before severing the conduit.`,
+      `T-minus 00:02:08: ${lead.name} must sacrifice their weapon into the Latverian loom gear, opening an 0.8-second window for ${second.name} to breach the throne.`,
+      `T-minus 00:00:52: ${lead.name} must ${pLead.divergence}, triggering a recursive paradox within Doom's armor before the reality wave expands.`,
+      `T-minus 00:01:47: ${second.name} must resist the tactical instinct to save ${lead.name}, allowing the kinetic shockwave to propel ${lead.name} into the secondary power relay.`,
+      `T-minus 00:00:18: ${lead.name} must sever the left dimensional conduit at the exact millisecond Doom's armor visor shifts to emerald resonance.`,
+      `T-minus 00:02:35: ${second.name} must ${pSecond.divergence} precisely when Doom reaches the 3rd syllable of his Chthonian invocation.`,
+      `T-minus 00:01:05: The squad must cease all offensive fire for 3 consecutive seconds, baiting Doom into stepping onto the unshielded leyline junction.`
+    ];
 
     return {
-      odds: "1 in 14,000,605",
+      odds: "1 IN 14,000,605",
       odds_pct: "0.0000071%",
+      timeline_num: nearMissTimelineNum,
       threat_matrix: threatItems,
-      fatal_timeline: fatal,
-      victory_timeline: victory,
-      divergence_point: divergence
+      fatal_timeline: pickRandom(fatalTemplates),
+      victory_timeline: pickRandom(victoryTemplates),
+      divergence_point: pickRandom(divergenceTemplates)
     };
-  }
-
-  // Fetch available models from account API
-  async function fetchAvailableModels(provider, key) {
-    const cleanKey = (key || '').trim();
-    if (!cleanKey) {
-      testKeyResult.style.display = 'block';
-      testKeyResult.style.color = '#e63946';
-      testKeyResult.textContent = '❌ Please enter an API key first.';
-      return [];
-    }
-
-    testKeyResult.style.display = 'block';
-    testKeyResult.style.color = '#a3e6b8';
-    testKeyResult.textContent = '⏳ Querying available models from API...';
-
-    if (provider === 'gemini') {
-      try {
-        const endpoints = [
-          `https://generativelanguage.googleapis.com/v1beta/models?key=${encodeURIComponent(cleanKey)}`,
-          `https://generativelanguage.googleapis.com/v1/models?key=${encodeURIComponent(cleanKey)}`
-        ];
-        let models = [];
-        let lastErrTxt = '';
-        for (const ep of endpoints) {
-          try {
-            const res = await fetch(ep, {
-              headers: { 'x-goog-api-key': cleanKey }
-            });
-            if (res.ok) {
-              const data = await res.json();
-              if (data.models && data.models.length > 0) {
-                models = data.models;
-                break;
-              }
-            } else {
-              const txt = await res.text();
-              try {
-                const j = JSON.parse(txt);
-                lastErrTxt = j?.error?.message || txt;
-              } catch(_) {
-                lastErrTxt = txt;
-              }
-            }
-          } catch(e) {
-            lastErrTxt = e.message;
-          }
-        }
-
-        if (models.length > 0) {
-          aiModelSelect.innerHTML = '<option value="">-- Choose from your account\'s models --</option>';
-          const genModels = models.filter(m => (m.supportedGenerationMethods || []).includes('generateContent'));
-          const displayList = genModels.length > 0 ? genModels : models;
-
-          displayList.forEach(m => {
-            const opt = document.createElement('option');
-            const shortName = m.name.replace(/^models\//, '');
-            opt.value = shortName;
-            opt.textContent = `${m.displayName || shortName} (${shortName})`;
-            aiModelSelect.appendChild(opt);
-          });
-
-          // Preselect first or saved model
-          if (selectedModel) {
-            aiModelSelect.value = selectedModel.replace(/^models\//, '');
-            aiCustomModelInput.value = selectedModel;
-          } else if (displayList[0]) {
-            const firstShort = displayList[0].name.replace(/^models\//, '');
-            aiModelSelect.value = firstShort;
-            aiCustomModelInput.value = firstShort;
-          }
-
-          testKeyResult.style.color = '#00cc55';
-          testKeyResult.innerHTML = `✅ Successfully detected <strong>${displayList.length} models</strong>! Pick from the dropdown or type your model below.`;
-          return displayList;
-        } else {
-          testKeyResult.style.color = '#f59e0b';
-          testKeyResult.innerHTML = `⚠️ Could not auto-list models${lastErrTxt ? ': ' + lastErrTxt.slice(0, 100) : ''}. You can type your model name directly below (e.g. <code>gemini-2.0-flash</code>, <code>gemini-1.5-flash</code>, <code>gemini-4-hydrogen</code>).`;
-        }
-      } catch (err) {
-        testKeyResult.style.color = '#e63946';
-        testKeyResult.textContent = `❌ Model query failed: ${err.message}. You can still type your model name manually.`;
-      }
-    } else if (provider === 'groq') {
-      try {
-        const res = await fetch('https://api.groq.com/openai/v1/models', {
-          headers: { 'Authorization': `Bearer ${cleanKey}` }
-        });
-        if (res.ok) {
-          const data = await res.json();
-          aiModelSelect.innerHTML = '<option value="">-- Choose from Groq models --</option>';
-          (data.data || []).forEach(m => {
-            const opt = document.createElement('option');
-            opt.value = m.id;
-            opt.textContent = m.id;
-            aiModelSelect.appendChild(opt);
-          });
-          testKeyResult.style.color = '#00cc55';
-          testKeyResult.innerHTML = `✅ Successfully fetched Groq models! Select from the dropdown.`;
-        }
-      } catch(err) {
-        testKeyResult.style.color = '#e63946';
-        testKeyResult.textContent = `❌ Groq query error: ${err.message}`;
-      }
-    } else {
-      testKeyResult.style.color = '#a3e6b8';
-      testKeyResult.textContent = `Type your model identifier in the custom model field below.`;
-    }
-    return [];
-  }
-
-  // Call Google Gemini API with smart model discovery & dual auth
-  async function callGeminiApi(cleanKey, prompt) {
-    const payload = JSON.stringify({
-      contents: [{ parts: [{ text: prompt }] }],
-      generationConfig: {
-        temperature: 0.7,
-        maxOutputTokens: 1024
-      }
-    });
-
-    // Check user-specified custom model first
-    const userModel = (aiCustomModelInput && aiCustomModelInput.value ? aiCustomModelInput.value.trim() : '')
-      || (aiModelSelect && aiModelSelect.value ? aiModelSelect.value.trim() : '')
-      || (selectedModel || '').trim();
-
-    // Candidate models in priority order: user's chosen model first!
-    const modelCandidates = [];
-    if (userModel) {
-      modelCandidates.push(userModel);
-    }
-    // High-availability model fallbacks
-    [
-      'gemini-2.0-flash',
-      'gemini-2.0-flash-exp',
-      'gemini-1.5-flash',
-      'gemini-1.5-flash-latest',
-      'gemini-1.5-pro',
-      'gemini-pro'
-    ].forEach(m => {
-      if (!modelCandidates.includes(m)) modelCandidates.push(m);
-    });
-
-    let lastError = null;
-
-    for (const rawModel of modelCandidates) {
-      const cleanPath = rawModel.startsWith('models/') ? rawModel : `models/${rawModel}`;
-      const endpoints = [
-        `https://generativelanguage.googleapis.com/v1beta/${cleanPath}:generateContent`,
-        `https://generativelanguage.googleapis.com/v1/${cleanPath}:generateContent`
-      ];
-
-      for (const ep of endpoints) {
-        try {
-          const url = `${ep}?key=${encodeURIComponent(cleanKey)}`;
-          const res = await fetch(url, {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              'x-goog-api-key': cleanKey
-            },
-            body: payload
-          });
-
-          if (res.ok) {
-            const data = await res.json();
-            return data.candidates?.[0]?.content?.parts?.[0]?.text || '';
-          }
-
-          const errText = await res.text();
-          let errJson = null;
-          try { errJson = JSON.parse(errText); } catch (_) {}
-          const errMsg = errJson?.error?.message || errText.slice(0, 140);
-
-          if (res.status === 404) {
-            lastError = new Error(`HTTP 404 on ${cleanPath}: ${errMsg}`);
-            continue; // Try next endpoint or model
-          }
-
-          if (res.status === 400) {
-            throw new Error(`Google API Key Invalid: ${errMsg}`);
-          }
-
-          throw new Error(`Google HTTP ${res.status}: ${errMsg}`);
-        } catch (e) {
-          if (e.message && e.message.includes('Invalid')) throw e;
-          lastError = e;
-        }
-      }
-    }
-
-    throw lastError || new Error('All Gemini model endpoints returned 404. Please check the model name.');
-  }
-
-  // Dispatch AI Model API Call
-  async function callModelApi(provider, key, prompt) {
-    const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-    const cleanKey = (key || '').trim();
-
-    if (!cleanKey) {
-      throw new Error('Please enter an API key.');
-    }
-
-    if (provider === 'gemini') {
-      return await callGeminiApi(cleanKey, prompt);
-    }
-    else if (provider === 'groq') {
-      const model = (aiCustomModelInput && aiCustomModelInput.value ? aiCustomModelInput.value.trim() : '')
-        || (aiModelSelect && aiModelSelect.value ? aiModelSelect.value.trim() : '')
-        || 'llama-3.3-70b-versatile';
-
-      const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${cleanKey}`
-        },
-        body: JSON.stringify({
-          model: model,
-          messages: [{ role: 'user', content: prompt }],
-          temperature: 0.7,
-          max_tokens: 1024
-        })
-      });
-
-      if (!res.ok) {
-        const errText = await res.text();
-        throw new Error(`Groq HTTP ${res.status}: ${errText.slice(0, 150)}`);
-      }
-      const data = await res.json();
-      return data.choices?.[0]?.message?.content || '';
-    }
-    else if (provider === 'nvidia') {
-      const endpoint = isLocalhost ? '/api/nvidia-proxy' : 'https://integrate.api.nvidia.com/v1/chat/completions';
-      try {
-        const res = await fetch(endpoint, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${cleanKey}`
-          },
-          body: JSON.stringify({
-            model: 'meta/llama-3.1-70b-instruct',
-            messages: [{ role: 'user', content: prompt }],
-            temperature: 0.7,
-            max_tokens: 1024
-          })
-        });
-
-        if (res.status === 404 && endpoint === '/api/nvidia-proxy') {
-          throw new Error("Local NVIDIA proxy not running. Please run 'python3 scripts/serve.py' in your terminal, or select Groq (runs the same Llama 3.1 70B with browser CORS) or Google Gemini!");
-        }
-
-        if (!res.ok) {
-          const errText = await res.text();
-          throw new Error(`NVIDIA NIM HTTP ${res.status}: ${errText.slice(0, 150)}`);
-        }
-        const data = await res.json();
-        return data.choices?.[0]?.message?.content || '';
-      } catch (err) {
-        if (err.message && err.message.includes('Failed to fetch')) {
-          throw new Error("NVIDIA's cloud blocks direct browser CORS. Run 'python3 scripts/serve.py' locally, or switch provider to Groq (same Llama 3.1 70B) or Google Gemini!");
-        }
-        throw err;
-      }
-    } 
-    else {
-      // OpenRouter supports browser CORS
-      const model = (aiCustomModelInput && aiCustomModelInput.value ? aiCustomModelInput.value.trim() : '')
-        || 'meta-llama/llama-3.1-70b-instruct';
-
-      const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${cleanKey}`
-        },
-        body: JSON.stringify({
-          model: model,
-          messages: [{ role: 'user', content: prompt }],
-          temperature: 0.7,
-          max_tokens: 1024
-        })
-      });
-
-      if (!res.ok) {
-        const errText = await res.text();
-        throw new Error(`OpenRouter HTTP ${res.status}: ${errText.slice(0, 150)}`);
-      }
-      const data = await res.json();
-      return data.choices?.[0]?.message?.content || '';
-    }
-  }
-
-  // Parse structured AI response into sections
-  function parseAiResponse(raw) {
-    let threatText = '';
-    let fatalText = '';
-    let victoryText = '';
-    let divText = '';
-
-    const lines = raw.split('\n');
-    let currentSec = 0;
-
-    for (let line of lines) {
-      const lower = line.toLowerCase();
-      if (lower.includes('threat analysis') || lower.includes('tactical threat')) {
-        currentSec = 1;
-        continue;
-      } else if (lower.includes('14,000,604') || lower.includes('fatal near-victory') || lower.includes('near-victory')) {
-        currentSec = 2;
-        continue;
-      } else if (lower.includes('14,000,605') || lower.includes('sole victory') || lower.includes('victory path')) {
-        currentSec = 3;
-        continue;
-      } else if (lower.includes('divergence point') || lower.includes('critical divergence')) {
-        currentSec = 4;
-        continue;
-      }
-
-      if (currentSec === 1) threatText += line + '\n';
-      else if (currentSec === 2) fatalText += line + '\n';
-      else if (currentSec === 3) victoryText += line + '\n';
-      else if (currentSec === 4) divText += line + '\n';
-    }
-
-    if (!fatalText.trim() && !victoryText.trim()) {
-      const half = Math.floor(raw.length / 2);
-      fatalText = raw.slice(0, half);
-      victoryText = raw.slice(half);
-      threatText = "Tactical simulation synthesized by Time Stone AI neural engine.";
-      divText = "Critical Divergence Point: Exact temporal synchronization required at primary catalyst conduit.";
-    }
-
-    return {
-      threat: threatText.trim() || "Multiversal Leyline Siphon: Doom establishes astral supremacy.",
-      fatal: fatalText.trim() || raw.slice(0, 500),
-      victory: victoryText.trim() || raw.slice(500, 1200),
-      divergence: divText.trim() || "T-minus 00:01:24: Strict execution sequence required on Doom's secondary heat baffles."
-    };
-  }
-
-  // Live AI Stream Execution
-  async function runAiStream(squad) {
-    const names = squad.map(c => `${c.name} (${c.alias || c.unit})`).join(', ');
-    const systemPrompt = `You are Doctor Strange peering through the Eye of Agamotto across 14,000,605 alternate futures of the Multiversal War against Victor von Doom (Avengers: Doomsday).
-Analyze this assembled Strike Team: ${names}.
-Provide a vivid, serious, cinematic report with four clearly labeled sections:
-1) TACTICAL THREAT ANALYSIS: Specific Doom defensive countermeasures and siphon wards against this team's powers.
-2) TIMELINE #14,000,604 (THE TRAGIC NEAR-VICTORY): Detailed narrative of how they push Doom to the brink before a fatal trap destroys them.
-3) TIMELINE #14,000,605 (THE SOLE VICTORY CONFLUENCE): The exact sequence of moves, sacrifices, and reality breaches needed to overcome God Emperor Doom.
-4) CRITICAL DIVERGENCE POINT: The exact microsecond decision that decides victory.
-Keep the tone dark, thrilling, grounded in Marvel lore, and worthy of a Russo Brothers cinematic climax.`;
-
-    aiActiveBadge.style.display = 'inline-flex';
-    const providerNames = {
-      gemini: 'Google Gemini',
-      groq: 'Groq (Llama 3.3 70B)',
-      nvidia: 'NVIDIA NIM (Llama 3.1 70B)',
-      openrouter: 'OpenRouter (Llama 3.1 70B)'
-    };
-    const modelTag = selectedModel ? ` [${selectedModel.replace(/^models\//, '')}]` : '';
-    aiProviderLabel.textContent = `${providerNames[apiProvider] || 'AI Model'}${modelTag} Active`;
-
-    resultOdds.textContent = "1 IN 14,000,605";
-    resultOddsPct.textContent = "0.0000071% VICTORY PROBABILITY";
-    resultFatalNarrative.innerHTML = '<span class="streaming-text">Connecting to Multiversal Neural Matrix...</span>';
-    resultVictoryNarrative.innerHTML = '<span class="streaming-text">Streaming timeline vectors...</span>';
-    resultThreatMatrix.innerHTML = '<div class="streaming-text">Analyzing Doom defensive matrix...</div>';
-    resultDivergenceText.textContent = "Calculating timeline branch...";
-
-    try {
-      const text = await callModelApi(apiProvider, apiKey, systemPrompt);
-      const parsed = parseAiResponse(text);
-
-      resultThreatMatrix.innerHTML = `<div><strong>Neural Analysis:</strong> ${parsed.threat.replace(/\n/g, '<br>')}</div>`;
-      resultFatalNarrative.textContent = parsed.fatal;
-      resultVictoryNarrative.textContent = parsed.victory;
-      resultDivergenceText.textContent = parsed.divergence;
-    } catch (err) {
-      console.error('AI streaming error, falling back to local simulation:', err);
-      aiActiveBadge.style.display = 'none';
-
-      let msg = err.message || '';
-      alert(`AI API notice: ${msg}\n\nFalling back to high-fidelity built-in temporal archive.`);
-
-      const outcome = generateCustomOutcome(squad);
-      renderOutcome(outcome);
-    }
   }
 
   // Render Outcome to Dossier
   function renderOutcome(outcome) {
-    aiActiveBadge.style.display = 'none';
     resultOdds.textContent = outcome.odds;
     resultOddsPct.textContent = `${outcome.odds_pct} VICTORY PROBABILITY`;
+
+    if (resultFatalBadge && outcome.timeline_num) {
+      resultFatalBadge.innerHTML = `TIMELINE #${outcome.timeline_num} &bull; FATAL NEAR-VICTORY`;
+    }
 
     if (Array.isArray(outcome.threat_matrix)) {
       resultThreatMatrix.innerHTML = outcome.threat_matrix.join('');
@@ -704,49 +522,12 @@ Keep the tone dark, thrilling, grounded in Marvel lore, and worthy of a Russo Br
       simChamber.style.display = 'none';
       simResults.style.display = 'block';
 
-      const preset = getMatchingPreset();
-      if (apiKey) {
-        runAiStream(selectedChampions);
-      } else if (preset) {
-        renderOutcome(preset.canonical);
-      } else {
-        const customOutcome = generateCustomOutcome(selectedChampions);
-        renderOutcome(customOutcome);
-      }
+      // Generate dynamic character-tailored narrative
+      const outcome = generateSquadOutcome(selectedChampions);
+      renderOutcome(outcome);
 
       simResults.scrollIntoView({ behavior: 'smooth' });
     });
-  }
-
-  // Test Key Connection in Modal
-  async function testKeyConnection() {
-    const key = (aiKeyInput.value || '').trim();
-    const provider = aiProviderSelect.value;
-
-    if (!key) {
-      testKeyResult.style.display = 'block';
-      testKeyResult.style.color = '#e63946';
-      testKeyResult.textContent = '❌ Please enter an API key first.';
-      return;
-    }
-
-    testKeyResult.style.display = 'block';
-    testKeyResult.style.color = '#a3e6b8';
-    testKeyResult.textContent = '⏳ Testing connection to AI endpoint...';
-
-    try {
-      const pingPrompt = "Respond with exactly the single word 'ACTIVE'.";
-      const res = await callModelApi(provider, key, pingPrompt);
-      const usedModel = (aiCustomModelInput && aiCustomModelInput.value ? aiCustomModelInput.value.trim() : '')
-        || (aiModelSelect && aiModelSelect.value ? aiModelSelect.value.trim() : '')
-        || selectedModel;
-
-      testKeyResult.style.color = '#00cc55';
-      testKeyResult.innerHTML = `✅ <strong>Connected successfully!</strong><br>Model verified: <code>${usedModel || 'default'}</code><br>Response: "${res.trim().slice(0, 40)}"`;
-    } catch (err) {
-      testKeyResult.style.color = '#e63946';
-      testKeyResult.innerHTML = `❌ Connection failed: ${err.message}<br><small>Tip: Try clicking <strong>Fetch Models 🔄</strong> above to load the exact models your key has access to.</small>`;
-    }
   }
 
   // Event Listeners
@@ -790,98 +571,12 @@ Keep the tone dark, thrilling, grounded in Marvel lore, and worthy of a Russo Br
     });
 
     simBtn.addEventListener('click', handleSimulation);
-
-    // Modal events
-    openModalBtn.addEventListener('click', () => {
-      aiKeyInput.value = apiKey;
-      aiProviderSelect.value = apiProvider;
-      aiCustomModelInput.value = selectedModel;
-      testKeyResult.style.display = 'none';
-      apiModal.style.display = 'flex';
-    });
-
-    closeModalBtn.addEventListener('click', () => {
-      apiModal.style.display = 'none';
-    });
-
-    apiModal.addEventListener('click', (e) => {
-      if (e.target === apiModal) apiModal.style.display = 'none';
-    });
-
-    if (toggleKeyVisBtn) {
-      toggleKeyVisBtn.addEventListener('click', () => {
-        aiKeyInput.type = aiKeyInput.type === 'password' ? 'text' : 'password';
-      });
-    }
-
-    if (aiProviderSelect) {
-      aiProviderSelect.addEventListener('change', () => {
-        const prov = aiProviderSelect.value;
-        if (prov === 'gemini') {
-          aiCustomModelInput.placeholder = 'e.g. gemini-2.0-flash, gemini-1.5-flash, gemini-4-hydrogen...';
-        } else if (prov === 'groq') {
-          aiCustomModelInput.placeholder = 'e.g. llama-3.3-70b-versatile, llama-3.1-8b-instant...';
-        } else if (prov === 'nvidia') {
-          aiCustomModelInput.placeholder = 'e.g. meta/llama-3.1-70b-instruct...';
-        } else {
-          aiCustomModelInput.placeholder = 'e.g. meta-llama/llama-3.1-70b-instruct...';
-        }
-        testKeyResult.style.display = 'none';
-      });
-    }
-
-    if (fetchModelsBtn) {
-      fetchModelsBtn.addEventListener('click', () => {
-        fetchAvailableModels(aiProviderSelect.value, aiKeyInput.value);
-      });
-    }
-
-    if (aiModelSelect) {
-      aiModelSelect.addEventListener('change', () => {
-        if (aiModelSelect.value) {
-          aiCustomModelInput.value = aiModelSelect.value;
-        }
-      });
-    }
-
-    if (testKeyBtn) {
-      testKeyBtn.addEventListener('click', testKeyConnection);
-    }
-
-    saveKeyBtn.addEventListener('click', () => {
-      apiKey = (aiKeyInput.value || '').trim();
-      apiProvider = aiProviderSelect.value;
-      selectedModel = (aiCustomModelInput.value || aiModelSelect.value || '').trim();
-
-      localStorage.setItem('time_stone_api_key', apiKey);
-      localStorage.setItem('time_stone_provider', apiProvider);
-      localStorage.setItem('time_stone_model', selectedModel);
-
-      updateKeyIndicator();
-      apiModal.style.display = 'none';
-      alert(`Time Stone AI configured with ${apiProvider} (${selectedModel || 'auto'}). Simulations will now stream live AI battle reports.`);
-    });
-
-    clearKeyBtn.addEventListener('click', () => {
-      apiKey = '';
-      selectedModel = '';
-      localStorage.removeItem('time_stone_api_key');
-      localStorage.removeItem('time_stone_model');
-      aiKeyInput.value = '';
-      aiCustomModelInput.value = '';
-      aiModelSelect.innerHTML = '<option value="">-- Click \'Fetch Models\' to load your account\'s models --</option>';
-      testKeyResult.style.display = 'none';
-      updateKeyIndicator();
-      apiModal.style.display = 'none';
-      alert('Time Stone AI Key removed. The simulator will use built-in canonical timelines.');
-    });
   }
 
   // Startup
   document.addEventListener('DOMContentLoaded', () => {
     initData();
     renderTeamDeck();
-    updateKeyIndicator();
     attachEvents();
   });
 

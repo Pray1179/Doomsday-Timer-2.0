@@ -236,14 +236,10 @@ def build_futures_page():
   <div class="hero-bg-gem" aria-hidden="true"></div>
   <div class="futures-header-top">
     <span class="gem-badge"><span class="gem-spark"></span> EYE OF AGAMOTTO // TEMPORAL ENGINE</span>
-    <button id="open-api-modal" class="btn-api-key" type="button" aria-haspopup="dialog" title="Configure NVIDIA NIM or Gemini API Key">
-      <span class="key-status-dot" id="key-indicator"></span>
-      <span id="key-label">Connect AI Key (Optional)</span>
-    </button>
   </div>
   <h1 class="gem-title">14,000,605 Futures</h1>
   <p class="gem-quote">&ldquo;I went forward in time... to view alternate futures. To see all the possible outcomes of the coming conflict.&rdquo; <span class="quote-author">&mdash; Doctor Strange</span></p>
-  <p class="lede gem-lede">Assemble an elite Multiversal Strike Team (up to 5 champions) against Victor von Doom. Calculate survival odds, identify critical divergence points, or stream live AI battle reports.</p>
+  <p class="lede gem-lede">Assemble an elite Multiversal Strike Team (up to 5 champions) against Victor von Doom. Calculate survival odds, uncover Doom's tactical countermeasures, and witness the alternate futures of the Multiverse.</p>
 </header>
 
 <main class="wrap wrap-wide futures-main">
@@ -329,11 +325,6 @@ def build_futures_page():
         </div>
       </div>
 
-      <!-- Live AI stream indicator if AI key used -->
-      <div id="ai-active-badge" class="ai-stream-badge" style="display:none;">
-        <span class="ai-spark">⚡</span> <span id="ai-provider-label">NVIDIA NIM Neural Inference (Llama 3.1 70B) Active</span>
-      </div>
-
       <!-- Threat matrix -->
       <div class="dossier-section">
         <h3 class="section-title">⚔️ Tactical Threat Analysis vs God Emperor Doom</h3>
@@ -342,7 +333,7 @@ def build_futures_page():
 
       <!-- Timeline 14,000,604 -->
       <div class="dossier-section fatal-section">
-        <div class="timeline-badge fatal">TIMELINE #14,000,604 &bull; FATAL NEAR-VICTORY</div>
+        <div class="timeline-badge fatal" id="result-fatal-badge">TIMELINE #14,000,604 &bull; FATAL NEAR-VICTORY</div>
         <h3 class="timeline-title">The Tragic Near-Victory</h3>
         <p class="timeline-narrative" id="result-fatal-narrative"></p>
       </div>
@@ -363,68 +354,6 @@ def build_futures_page():
   </section>
 
 </main>
-
-<!-- API KEY CONFIGURATION MODAL -->
-<div id="api-modal" class="modal-backdrop" style="display:none;" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-  <div class="modal-card">
-    <div class="modal-head">
-      <h3 id="modal-title">⚙️ Connect Time Stone AI</h3>
-      <button id="close-api-modal" class="modal-close" type="button" aria-label="Close dialog">&times;</button>
-    </div>
-    <div class="modal-body">
-      <p class="muted" style="margin-bottom:1rem;font-size:0.88rem;line-height:1.5;">
-        Upgrade the simulator with live AI battle chronologies! Your API key is stored strictly in your browser's <code>localStorage</code> and never shared.
-      </p>
-
-      <div class="form-group">
-        <label for="ai-provider-select">Select AI Model Provider:</label>
-        <select id="ai-provider-select" class="cmd-input">
-          <option value="nvidia">NVIDIA NIM (meta/llama-3.1-70b-instruct) — Via local proxy or build.nvidia.com</option>
-          <option value="groq">Groq (Llama 3.3 / 3.1 70B) — Free, 500 tok/s, Instant Browser CORS</option>
-          <option value="gemini">Google Gemini (gemini-1.5-flash) — Free, Instant Browser CORS</option>
-          <option value="openrouter">OpenRouter (Llama 3.1 70B) — Free / Bring Your Own Key</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label for="ai-key-input">Enter API Key:</label>
-        <div style="display:flex;gap:0.5rem;">
-          <input id="ai-key-input" type="password" class="cmd-input" placeholder="Paste your API key here..." autocomplete="off" style="flex:1;">
-          <button id="toggle-key-visibility" class="btn btn-sm btn-secondary" type="button" title="Show/Hide Key">👁️</button>
-        </div>
-        <p class="hint-text" id="provider-hint">
-          Get a free key: <a id="provider-link" href="https://build.nvidia.com" target="_blank" rel="noopener">build.nvidia.com</a> (NVIDIA) &bull; <a href="https://console.groq.com" target="_blank" rel="noopener">console.groq.com</a> (Groq) &bull; <a href="https://aistudio.google.com" target="_blank" rel="noopener">aistudio.google.com</a> (Gemini).
-        </p>
-      </div>
-
-      <div class="form-group" id="model-select-group">
-        <label for="ai-model-select">Selected Model (Auto-detect or Custom):</label>
-        <div style="display:flex;gap:0.5rem;margin-bottom:0.4rem;">
-          <select id="ai-model-select" class="cmd-input" style="flex:1;">
-            <option value="">-- Click 'Fetch Models' to load your account's models --</option>
-          </select>
-          <button id="fetch-models-btn" class="btn btn-sm btn-outline" type="button" title="Fetch all models available for your key">Fetch Models 🔄</button>
-        </div>
-        <div style="display:flex;gap:0.5rem;">
-          <input id="ai-custom-model-input" type="text" class="cmd-input" placeholder="Or enter exact model name (e.g. gemini-2.0-flash, gemini-4-hydrogen, gemini-3.8-flash)..." style="flex:1;">
-        </div>
-        <p class="hint-text">Choose from your account's detected models, or type any model identifier shown on your Google AI Studio quickstart.</p>
-      </div>
-
-      <div id="test-key-result" class="test-key-result" style="display:none;margin-bottom:1rem;"></div>
-
-      <div class="modal-actions">
-        <button id="test-key-btn" class="btn btn-secondary" type="button">Test Connection</button>
-        <button id="save-key-btn" class="btn btn-primary" type="button">Save Settings</button>
-        <button id="clear-key-btn" class="btn btn-secondary" type="button">Remove Key</button>
-      </div>
-
-      <div class="local-proxy-tip" id="local-proxy-tip" style="margin-top:1.25rem;padding:0.75rem;background:rgba(0,204,85,0.08);border:1px solid rgba(0,204,85,0.25);border-radius:8px;font-size:0.78rem;color:#a3e6b8;">
-        💡 <strong>Tip for NVIDIA NIM keys:</strong> NVIDIA's cloud servers do not allow direct browser-to-server CORS. When testing locally, run <code>python3 scripts/serve.py</code> (which provides our automatic local proxy). For 1-click browser access without a proxy, select <strong>Groq</strong> (runs the same Llama-3.1 70B) or <strong>Google Gemini</strong>!
-      </div>
-    </div>
-  </div>
-</div>
 
 <script id="roster-data" type="application/json">{roster_json}</script>
 <script id="presets-data" type="application/json">{presets_json}</script>
