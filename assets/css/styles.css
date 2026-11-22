@@ -3106,12 +3106,26 @@ a.pnav:hover { color: var(--accent-villain); }
 /* === 14,000,605 FUTURES SIMULATOR (explore/futures.html) === */
 .futures-hero {
   position: relative;
-  background:
-    radial-gradient(circle at 50% 25%, rgba(0, 204, 85, 0.22) 0%, rgba(6, 12, 8, 0.88) 65%, rgba(6, 12, 8, 0.98) 100%),
-    url('../img/eye-of-agamotto-bg.jpg') center top / cover no-repeat;
+  overflow: hidden;
+  background: #050b07;
   border-bottom: 1px solid rgba(0, 204, 85, 0.25);
   padding: 4.5rem 1.5rem 3.5rem;
   text-align: center;
+}
+.hero-bg-gem {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 50% 25%, rgba(0, 204, 85, 0.25) 0%, rgba(5, 11, 7, 0.55) 55%, rgba(5, 11, 7, 0.95) 100%),
+    url('../img/eye-of-agamotto-bg.jpg') center top / cover no-repeat;
+  opacity: 0.34; /* 66% transparency / darkened backdrop */
+  filter: brightness(0.85) contrast(1.1);
+}
+.futures-hero > *:not(.hero-bg-gem) {
+  position: relative;
+  z-index: 1;
 }
 .futures-header-top {
   display: flex;
