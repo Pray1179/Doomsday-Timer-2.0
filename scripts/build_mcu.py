@@ -721,24 +721,29 @@ def _mem_card(m, small=False):
     cid = m.get("catalogue_id")
     local = _mem_local_img(cid)
     img_url = local or m.get("image_url")
+    status_label = E_(m["status"])
+    status_badge = f'<span class="mem-badge-status">{status_label}</span>'
     if img_url:
         face = (f'<div class="mem-img{" small" if small else ""}">'
+                f'{status_badge}'
                 f'<img src="{E_(img_url)}" alt="{E_(m["name"])}" loading="lazy" '
                 f'onerror="this.parentNode.classList.add(\'noimg\');this.remove()">'
                 f'<span class="mem-initials">{E_(_mem_initials(m))}</span></div>')
     else:
-        face = f'<div class="mem-img small"><span class="mem-initials">{E_(_mem_initials(m))}</span></div>'
-    body = (f'{face}'
+        face = (f'<div class="mem-img{" small" if small else ""}">'
+                f'{status_badge}'
+                f'<span class="mem-initials">{E_(_mem_initials(m))}</span></div>')
+    body = (f'<div class="mem-body">'
             f'<h3>{E_(m["name"])}</h3>'
             f'<p class="mem-alias muted">{E_(m["alias"])}</p>'
-            f'<span class="mem-status">{E_(m["status"])}</span>'
+            f'<span class="mem-status">{status_label}</span>'
             f'<p class="muted mem-how">{E_(m["how"])}</p>'
             f'<p class="mem-where muted">{E_(m["appears_in"])}</p>')
-    cid = m.get("catalogue_id")
     if cid and cid in _valid_cat_ids():
         href = f'catalogue/{E_(cid)}.html'
         body += f'<a class="mem-more" href="{href}">Character page &rarr;</a>'
-    return f'<div class="mem-card {cls}{" small" if small else ""}" tabindex="0">{body}</div>'
+    body += '</div>'
+    return f'<div class="mem-card {cls}{" small" if small else ""}" tabindex="0">{face}{body}</div>'
 
 
 def build_memorial_page():
